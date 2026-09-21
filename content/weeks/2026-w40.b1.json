@@ -1,0 +1,147 @@
+{
+  "intro": "Установи й документи: кожен, хто живе в Польщі, знає, що таке «okienko». Цього тижня — розмова з урядником, e-mail до установи, заява. Тексти навчальні: актуальні вимоги до документів перевіряй в офіційних джерелах.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "W urzędzie",
+      "scene": { "bg": "office", "caption": "Urząd miasta, godzina 10:15", "desk": [58, 60, 36], "items": [["🧑‍💼", 76, 46, 22], ["🧍", 26, 50, 19], ["🧍‍♀️", 44, 50, 19], ["📄", 62, 57, 8], ["🖊️", 86, 57, 7], ["🔢", 50, 14, 12], ["🕙", 90, 14, 10], ["🪴", 8, 60, 12]] },
+      "prompt": "Opisz ilustrację. Powiedz, gdzie są te osoby, co robią i jak się czują. Powiedz też, co według Ciebie stanie się później.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, де ці люди, що вони роблять і що відчувають. Скажіть також, що, на вашу думку, станеться пізніше.",
+      "time": [60, 120], "prep": 60,
+      "points": ["Gdzie jesteśmy i kto tu jest?", "Co robią te osoby?", "Jak się czują?", "Co stanie się później?"],
+      "keywords": ["urząd|urząd", "kolejka|kolejk", "urzędnik|urzędnik", "formularz|formularz", "dokumenty|dokument", "wniosek|wniosk", "okienko|okienk", "zniecierpliwiony|zniecierpl"],
+      "phrases": [
+        { "pl": "Na ilustracji widzę urząd.", "ua": "На ілюстрації я бачу установу." },
+        { "pl": "Ludzie czekają w kolejce do okienka.", "ua": "Люди чекають у черзі до віконця." },
+        { "pl": "Ktoś składa wniosek.", "ua": "Хтось подає заяву." },
+        { "pl": "Wyglądają na zniecierpliwionych.", "ua": "Виглядають знетерпеливленими." }
+      ],
+      "model": "Na ilustracji widzę urząd, w którym ludzie stoją w kolejce do okienka. Po prawej stronie, za biurkiem, siedzi urzędnik i sprawdza dokumenty. Dwie osoby czekają na swoją kolej i trzymają w rękach formularze. Na ścianie wisi wyświetlacz z numerami, a zegar pokazuje piętnaście po dziesiątej. Myślę, że ludzie są trochę zniecierpliwieni, bo kolejka jest długa, ale urzędnik wygląda na spokojnego. Prawdopodobnie osoba, która jest przy okienku, składa wniosek albo odbiera zaświadczenie. Moim zdaniem za chwilę urzędnik poprosi o dodatkowy dokument, a interesant będzie musiał wrócić następnego dnia.",
+      "tips": ["**Urząd** ≠ «уряд»! Це установа (urząd miasta, skarbowy). «Уряд» — **rząd**.", "**Interesant** — відвідувач установи; слово потрібне й у листах, і в усній частині.", "Використай «kolejka → numerek → okienko» — це реалістичний сценарій із деталями."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Moje doświadczenia z urzędami",
+      "prompt": "Opowiedz o swoim doświadczeniu z załatwianiem spraw w urzędzie (w Polsce lub w innym kraju). Powiedz, co było łatwe, co trudne i co można by poprawić.",
+      "promptUa": "Розкажіть про свій досвід залагодження справ в установі (в Польщі чи іншій країні). Скажіть, що було легко, що важко і що можна було б покращити.",
+      "time": [90, 150], "prep": 60,
+      "points": ["Jaką sprawę załatwiałeś?", "Co było łatwe?", "Co było trudne?", "Co można poprawić?"],
+      "keywords": ["urząd|urząd", "dokumenty|dokument", "kolejka|kolejk", "formularz|formularz", "zameldowanie|zamelduj", "informacja|informacj", "okienka|okien", "internet|internet"],
+      "phrases": [
+        { "pl": "Niedawno musiałam załatwić…", "ua": "Нещодавно мені довелося залагодити…" },
+        { "pl": "Łatwe było to, że… a trudne, że…", "ua": "Легким було те, що… а важким, що…" },
+        { "pl": "Moim zdaniem urzędy powinny…", "ua": "На мою думку, установи мали б…" },
+        { "pl": "Teraz wiem, że warto…", "ua": "Тепер знаю, що варто…" }
+      ],
+      "model": "Niedawno musiałam załatwić w urzędzie zameldowanie i to było dla mnie duże wyzwanie. Najpierw nie wiedziałam, jakie dokumenty są potrzebne, więc poszłam na próżno i musiałam wrócić drugi raz. Kolejka była długa, a urzędniczka mówiła szybko, więc nie wszystko zrozumiałam. Na szczęście pomogła mi koleżanka, która dobrze zna polski. Łatwe było to, że formularz można było wypełnić przez internet, a trudne, że trzeba było czekać prawie dwie godziny. Moim zdaniem urzędy powinny mieć więcej okienek i informacji w kilku językach. Teraz wiem, że przed wizytą warto sprawdzić wszystko na stronie internetowej.",
+      "tips": ["**Poszłam na próżno** — «пішла марно»: чудова ідіома для розповіді про невдалий візит.", "Контраст **Łatwe było…, a trudne…** дає природну структуру і зв’язність.", "Наприкінці — висновок із досвіду: «Teraz wiem, że warto…»."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "W okienku urzędu",
+      "prompt": "Jesteś w urzędzie i chcesz złożyć wniosek o kartę pobytu. Rozmawiasz z urzędnikiem. Dowiedz się, jakie dokumenty są potrzebne, i zapytaj o dalsze kroki.",
+      "promptUa": "Ви в установі й хочете подати заяву на карту побиту. Розмовляєте з урядником. Дізнайтеся, які потрібні документи, і запитайте про подальші кроки.",
+      "points": ["Powiedz, w jakiej sprawie przychodzisz", "Przedstaw dokumenty", "Zapytaj o opłatę", "Zapytaj o czas oczekiwania"],
+      "keywords": ["wniosek|wniosk", "karta pobytu|pobytu", "formularz|formularz", "paszport|paszport", "umowa|umow", "opłata|opłat", "decyzja|decyzj"],
+      "phrases": [
+        { "pl": "Chciałabym złożyć wniosek o…", "ua": "Хотіла б подати заяву про…" },
+        { "pl": "Czy jestem w dobrym okienku?", "ua": "Я в правильному віконці?" },
+        { "pl": "Czy potrzebne jest jeszcze…?", "ua": "Чи потрібно ще…?" },
+        { "pl": "Jak długo trzeba czekać na decyzję?", "ua": "Як довго треба чекати на рішення?" }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, w czym mogę pomóc?", "hint": "Powiedz, w jakiej sprawie przyszłaś, i zapytaj o okienko.", "model": "Dzień dobry. Chciałabym złożyć wniosek o kartę pobytu. Czy jestem w dobrym okienku?" },
+        { "ex": "Tak, proszę podać dokument tożsamości. Czy ma Pani wypełniony formularz i zdjęcia?", "hint": "Pokaż dokumenty i zapytaj, czego jeszcze brakuje.", "model": "Formularz mam wypełniony, a zdjęcia są w kopercie. Oto mój paszport. Czy potrzebna jest jeszcze umowa o pracę?" },
+        { "ex": "Tak, potrzebna jest umowa albo zaświadczenie od pracodawcy oraz potwierdzenie opłaty skarbowej.", "hint": "Powiedz, co masz, a czego nie, i zapytaj, jak zapłacić.", "model": "Umowę o pracę mam ze sobą, ale niestety nie zapłaciłam jeszcze opłaty. Czy mogę zapłacić w urzędzie, czy muszę pójść do banku?" },
+        { "ex": "Opłatę trzeba wpłacić w banku albo przez internet. Proszę wrócić z potwierdzeniem, a wtedy przyjmę wniosek. Czy jest coś jeszcze?", "hint": "Zapytaj o czas oczekiwania na decyzję.", "model": "Tak, jeszcze jedno pytanie. Jak długo trzeba czekać na decyzję? Bardzo dziękuję za pomoc." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["Спершу **скажи мету візиту**: «Chciałabym złożyć wniosek o…» — урядник одразу зорієнтується.", "**Potwierdzenie opłaty** — підтвердження сплати; запитуй, як і де платити — це типова слабка точка.", "Не бійся перепитувати: «Czy mógłby Pan powtórzyć wolniej?» — урядники зазвичай допомагають."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "formal", "title": "Zapytanie do urzędu",
+      "prompt": "Chcesz złożyć wniosek o kartę pobytu, ale nie wiesz, w jakich godzinach urząd przyjmuje interesantów i jakie dokumenty są potrzebne. Napisz krótki e-mail do urzędu.",
+      "promptUa": "Ви хочете подати заяву на карту побиту, але не знаєте, у які години установа приймає відвідувачів і які потрібні документи. Напишіть короткого листа до установи.",
+      "min": 25, "max": 50, "time": 10,
+      "points": [
+        { "text": "Cel pisma", "keys": ["wniosek", "kartę pobytu", "chciałabym", "chciałbym"] },
+        { "text": "Pytanie o godziny przyjęć", "keys": ["godzinach", "godziny", "przyjmują"] },
+        { "text": "Pytanie o dokumenty", "keys": ["dokument"] }
+      ],
+      "phrases": [
+        { "pl": "Uprzejmie proszę o informację, w jakich godzinach…", "ua": "Ввічливо прошу повідомити, у які години…" },
+        { "pl": "Czy potrzebna jest wcześniejsza rejestracja?", "ua": "Чи потрібна попередня реєстрація?" },
+        { "pl": "Z góry dziękuję za odpowiedź.", "ua": "Заздалегідь дякую за відповідь." }
+      ],
+      "model": "Dzień dobry, chciałabym złożyć wniosek o kartę pobytu. Uprzejmie proszę o informację, w jakich godzinach przyjmują Państwo interesantów i jakie dokumenty muszę przynieść. Czy potrzebna jest wcześniejsza rejestracja? Z góry dziękuję za odpowiedź. Z poważaniem, Anna Kowalenko",
+      "tips": ["**Uprzejmie proszę o + biernik** — базова формула офіційного прохання.", "Одне питання — одне речення: так відповідь буде чіткою."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "Prośba o zmianę terminu",
+      "prompt": "Masz wyznaczony termin w urzędzie na 15 października, ale w tym dniu musisz iść ze swoim dzieckiem do szpitala. Napisz e-mail do urzędu z prośbą o zmianę terminu. Podaj swoje dane, wyjaśnij powód, zaproponuj nowe terminy i poproś o potwierdzenie.",
+      "promptUa": "У вас призначено час в установі на 15 жовтня, але цього дня ви мусите піти з дитиною до лікарні. Напишіть листа з проханням змінити термін: вкажіть свої дані, поясніть причину, запропонуйте нові терміни й попросіть підтвердження.",
+      "min": 150, "max": 175, "time": 35,
+      "points": [
+        { "text": "Dane i numer sprawy", "keys": ["nazywam się", "numer sprawy", "wniosek"] },
+        { "text": "Powód prośby", "keys": ["ponieważ", "szpital", "chore"] },
+        { "text": "Propozycja nowych terminów", "keys": ["terminy", "mogłabym przyjść", "we wtorek", "następnego tygodnia"] },
+        { "text": "Prośba o potwierdzenie", "keys": ["potwierdz"] }
+      ],
+      "phrases": [
+        { "pl": "Mam wyznaczony termin na dzień…", "ua": "Мені призначено час на день…" },
+        { "pl": "Niestety nie będę mogła przyjść, ponieważ…", "ua": "На жаль, не зможу прийти, тому що…" },
+        { "pl": "Uprzejmie proszę o zmianę terminu.", "ua": "Ввічливо прошу змінити термін." },
+        { "pl": "Byłabym wdzięczna za potwierdzenie.", "ua": "Була б вдячна за підтвердження." }
+      ],
+      "model": "Szanowni Państwo,\n\nnazywam się Ołena Kowalenko i mam wyznaczony termin złożenia wniosku o kartę pobytu na dzień 15 października o godzinie 9:30. Mój numer sprawy to 2025/1234, a swoją rejestrację potwierdziłam już kilka tygodni temu.\n\nNiestety w tym dniu nie będę mogła przyjść do urzędu, ponieważ moje dziecko jest chore i mamy umówioną wizytę w szpitalu. Bardzo przepraszam za kłopot i zależy mi na tym, żeby złożyć wniosek na czas, dlatego piszę z takim wyprzedzeniem.\n\nUprzejmie proszę o zmianę terminu. Mogłabym przyjść w dowolny dzień następnego tygodnia, najlepiej we wtorek albo w czwartek przed południem. Jeśli te terminy nie są możliwe, proszę o informację, kiedy jest najbliższy wolny termin, a dostosuję do niego swoje plany.\n\nByłabym wdzięczna za potwierdzenie zmiany na mój adres e-mail. Załączam skan dotychczasowego potwierdzenia rejestracji, które może ułatwić znalezienie mojej sprawy w systemie.\n\nZ góry dziękuję za pomoc i za zrozumienie.\n\nZ poważaniem\nOłena Kowalenko",
+      "tips": ["Лист-прохання: **дані → причина → що пропонуєш → що просиш**. Порядок «спершу причина» пом’якшує тон.", "Завжди додавай **номер справи** й дані — без них установа не знайде вашого досьє.", "**Załączam** — «додаю» (вкладення) — коротке й офіційне."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Infolinia urzędu", "intro": "Прослухай автовідповідач установи й дай відповіді.",
+      "lines": [
+        { "t": "Dzień dobry, dodzwonili się Państwo do Urzędu Miasta. Aby złożyć wniosek o dowód osobisty, wciśnij jeden. W sprawie zameldowania wciśnij dwa. Informacje o godzinach otwarcia usłyszą Państwo po wciśnięciu trzech." },
+        { "t": "Urząd jest otwarty w poniedziałki od ósmej do osiemnastej, od wtorku do czwartku od ósmej do szesnastej, a w piątki do piętnastej. Umówić wizytę można także przez internet na stronie urzędu." },
+        { "t": "Jeśli chcą Państwo połączyć się z pracownikiem, proszę pozostać na linii. Czas oczekiwania to około pięciu minut. Dziękujemy za cierpliwość." }
+      ],
+      "questions": [
+        { "q": "Który przycisk należy wcisnąć w sprawie zameldowania?", "options": ["Jeden.", "Dwa.", "Trzy.", "Zero."], "answer": 1, "why": "«W sprawie zameldowania wciśnij dwa»." },
+        { "q": "Do której urząd jest otwarty w poniedziałki?", "options": ["Do piętnastej.", "Do szesnastej.", "Do osiemnastej.", "Do dwudziestej."], "answer": 2, "why": "«W poniedziałki od ósmej do osiemnastej»." },
+        { "q": "Jak można umówić wizytę?", "options": ["Tylko osobiście.", "Przez internet na stronie urzędu.", "Tylko listownie.", "Nie trzeba się umawiać."], "answer": 1, "why": "«Umówić wizytę można także przez internet na stronie urzędu»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Wniosek o kartę pobytu", "textTitle": "Jak złożyć wniosek — krok po kroku",
+      "text": "Aby dostać kartę pobytu, trzeba złożyć wniosek w odpowiednim urzędzie. Warto zrobić to jak najwcześniej, zanim skończy się legalny pobyt, ponieważ rozpatrywanie wniosków może trwać długo. Do wniosku dołącza się wypełniony formularz, zdjęcia, kopię paszportu i dokumenty, które potwierdzają cel pobytu, na przykład umowę o pracę albo zaświadczenie ze szkoły.\n\nKażdy dokument w obcym języku zwykle wymaga tłumaczenia wykonanego przez tłumacza przysięgłego. Trzeba też zapłacić opłatę i pokazać potwierdzenie wpłaty. Podczas wizyty w urzędzie pobiera się dane biometryczne, dlatego wniosek trzeba złożyć osobiście.\n\nPo złożeniu wniosku czas oczekiwania zależy od miasta i liczby spraw, zwykle jest to kilka miesięcy. W tym czasie ważne jest, żeby zachować potwierdzenie złożenia wniosku, ponieważ dokumentuje ono legalny pobyt do czasu wydania decyzji.",
+      "questions": [
+        { "q": "Kiedy warto złożyć wniosek?", "options": ["W dniu wygaśnięcia pobytu.", "Jak najwcześniej, zanim skończy się legalny pobyt.", "Dopiero po podpisaniu umowy.", "Po otrzymaniu decyzji."], "answer": 1, "why": "«Warto zrobić to jak najwcześniej, zanim skończy się legalny pobyt»." },
+        { "q": "Co zwykle trzeba zrobić z dokumentami w obcym języku?", "options": ["Przetłumaczyć je u tłumacza przysięgłego.", "Zostawić je w domu.", "Przesłać je pocztą.", "Podpisać je u notariusza."], "answer": 0, "why": "«Wymaga tłumaczenia wykonanego przez tłumacza przysięgłego»." },
+        { "q": "Dlaczego warto zachować potwierdzenie złożenia wniosku?", "options": ["Bo pozwala odzyskać opłatę.", "Bo dokumentuje legalny pobyt do czasu decyzji.", "Bo zastępuje paszport.", "Bo skraca czas oczekiwania."], "answer": 1, "why": "«Dokumentuje ono legalny pobyt do czasu wydania decyzji»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Urząd: kogo? o co? komu?", "intro": "Керування дієслів і прийменників у діловому мовленні.",
+      "questions": [
+        { "q": "Proszę o ___ dokumentów.", "options": ["sprawdzenie", "sprawdzenia", "sprawdzeniem", "sprawdzić"], "answer": 0, "why": "**prosić o + знахідний**: «proszę o sprawdzenie»." },
+        { "q": "Muszę ___ wniosek do piątku.", "options": ["złożyć", "składam", "złożyłam", "składając"], "answer": 0, "why": "**muszę + інфінітив**. Доконаний вид (złożyć) — одноразова, завершена дія до терміну." },
+        { "q": "Urzędnik poprosił mnie ___ paszport.", "options": ["o", "na", "do", "w"], "answer": 0, "why": "**poprosić kogoś o coś** — «попросив мене про паспорт»." },
+        { "q": "Czy może Pan mi ___, jak wypełnić ten formularz?", "options": ["wyjaśnić", "wyjaśnia", "wyjaśnił", "wyjaśniając"], "answer": 0, "why": "**Czy może Pan + інфінітив** — ввічливе прохання." },
+        { "q": "Numer sprawy jest na ___ stronie formularza.", "options": ["pierwszej", "pierwsza", "pierwszą", "pierwszym"], "answer": 0, "why": "**na + місцевий**: «na pierwszej stronie» (strona — жін. рід)." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "wniosek", "ua": "заява, клопотання", "ex": "Złożyłam wniosek o kartę pobytu." },
+    { "pl": "urząd", "ua": "установа, відомство", "ex": "Urząd jest czynny do szesnastej." },
+    { "pl": "formularz", "ua": "бланк, форма", "ex": "Wypełnij formularz drukowanymi literami." },
+    { "pl": "zaświadczenie", "ua": "довідка", "ex": "Potrzebuję zaświadczenia od pracodawcy." },
+    { "pl": "opłata skarbowa", "ua": "гербовий збір", "ex": "Opłatę skarbową można zapłacić przelewem." },
+    { "pl": "karta pobytu", "ua": "карта побиту", "ex": "Czekam na kartę pobytu od pięciu miesięcy." },
+    { "pl": "interesant", "ua": "відвідувач установи", "ex": "Interesanci czekają w kolejce." },
+    { "pl": "załączyć", "ua": "додати (вкладення)", "ex": "Załączam kopię paszportu." }
+  ]
+}

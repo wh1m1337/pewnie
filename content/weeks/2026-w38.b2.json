@@ -1,0 +1,153 @@
+{
+  "intro": "B2: система охорони здоров’я як тема дискусії — аптека, безкоштовна медицина, профілактика, телемедицина. Аргументуємо, зіставляємо, пропонуємо.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "W aptece",
+      "scene": { "bg": "clinic", "caption": "Apteka, godzina 12:30", "desk": [46, 60, 48], "items": [["👵", 22, 48, 22], ["👩‍⚕️", 72, 46, 22], ["📄", 40, 57, 8], ["💊", 58, 57, 8], ["🧴", 84, 57, 8], ["🕧", 50, 13, 12], ["💊", 14, 20, 9], ["🩹", 86, 22, 9]] },
+      "prompt": "Opisz ilustrację i skomentuj sytuację. Powiedz, jaką rolę pełni farmaceuta i czy leki powinny być dostępne bez recepty w zwykłych sklepach.",
+      "promptUa": "Опишіть ілюстрацію й прокоментуйте ситуацію. Скажіть, яку роль виконує фармацевт і чи повинні ліки бути доступні без рецепта у звичайних магазинах.",
+      "time": [90, 150], "prep": 90,
+      "points": ["Opis sytuacji", "Jak czują się bohaterowie i dlaczego", "Rola farmaceuty", "Twoja opinia o lekach bez recepty"],
+      "keywords": ["apteka|apte", "recepta|recept", "farmaceuta|farmaceu", "samoleczenie|samoleczen", "leki bez recepty|bez recepty", "skutki uboczne|skutki uboczne", "zaufanie|ufa", "rada|radę"],
+      "phrases": [
+        { "pl": "Można przypuszczać, że…", "ua": "Можна припустити, що…" },
+        { "pl": "Farmaceuci pełnią kluczową rolę w…", "ua": "Фармацевти відіграють ключову роль у…" },
+        { "pl": "Z drugiej strony istnieje ryzyko, że…", "ua": "З іншого боку, існує ризик, що…" },
+        { "pl": "Moim zdaniem powinniśmy…", "ua": "На мою думку, нам слід…" }
+      ],
+      "model": "Na ilustracji widzę wnętrze apteki. Po prawej stronie, za ladą, stoi farmaceutka w białym fartuchu, a po lewej starsza pani, która trzyma receptę i wygląda na zdezorientowaną. Prawdopodobnie nie wie, który lek wybrać albo nie rozumie dawkowania. Na półkach widać mnóstwo opakowań, a zegar pokazuje wpół do pierwszej. Wydaje mi się, że farmaceutka cierpliwie wyjaśnia, jak brać tabletki, i to jest bardzo ważna część jej pracy. Uważam, że farmaceuci pełnią kluczową rolę w systemie ochrony zdrowia, ponieważ często to oni jako pierwsi zauważają, że pacjent przyjmuje zbyt wiele leków. Z drugiej strony coraz więcej osób stosuje samoleczenie i kupuje leki bez recepty, co może być niebezpieczne z powodu skutków ubocznych. Moim zdaniem powinniśmy ufać specjalistom i zawsze pytać o radę, zanim kupimy coś na własną rękę.",
+      "tips": ["На B2 після опису йде **оцінка ролі/проблеми** — не зупиняйся на «widzę starszą panią».", "**Coraz więcej osób…, co może być…** — конструкція «що може бути…» (co + zdanie) збагачує мову.", "Закінчуй порадою або власною позицією — це пункт «twoja opinia»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Bezpłatna opieka zdrowotna",
+      "prompt": "Przedstaw swoje zdanie na temat: „Dostęp do lekarza powinien być całkowicie bezpłatny dla wszystkich”. Uzasadnij opinię, odnieś się do własnych doświadczeń i weź pod uwagę argumenty przeciwników.",
+      "promptUa": "Викладіть свою думку щодо тези: «Доступ до лікаря має бути повністю безкоштовним для всіх». Обґрунтуйте, зверніться до власного досвіду й урахуйте аргументи опонентів.",
+      "time": [120, 180], "prep": 120,
+      "points": ["Twoje stanowisko", "Argumenty za", "Własne doświadczenie", "Argument przeciwników i odpowiedź", "Wniosek"],
+      "keywords": ["opieka zdrowotna|opiek", "ubezpieczenie|ubezpiecz", "kolejki|kolejk", "prywatne|prywatn", "dostęp|dostęp", "profilaktyka|profilakt", "sprawiedliwy|sprawiedliw", "zdrowie|zdrowi"],
+      "phrases": [
+        { "pl": "Uważam, że… , chociaż nie jestem pewna, czy…", "ua": "Вважаю, що…, хоча не певна, чи…" },
+        { "pl": "Z własnego doświadczenia wiem, że…", "ua": "З власного досвіду знаю, що…" },
+        { "pl": "Zwolennicy… twierdzą, że…", "ua": "Прихильники… стверджують, що…" },
+        { "pl": "Pod warunkiem, że system działa sprawnie.", "ua": "За умови, що система працює справно." }
+      ],
+      "model": "Uważam, że dostęp do lekarza powinien być gwarantowany wszystkim, chociaż nie jestem pewna, czy musi być całkowicie bezpłatny w każdym przypadku. Po pierwsze, zdrowie jest podstawowym prawem człowieka, a nikt nie powinien rezygnować z leczenia tylko dlatego, że nie stać go na wizytę. Po drugie, dobra profilaktyka jest tańsza niż leczenie zaawansowanych chorób, dlatego państwo zyskuje, gdy ludzie regularnie chodzą do lekarza. Z własnego doświadczenia wiem, że w Polsce publiczna opieka jest dostępna, ale długo się czeka na wizytę u specjalisty, więc wiele osób płaci za prywatne konsultacje. Zwolennicy płatnego systemu twierdzą, że wysokie koszty leczenia można pokryć tylko z dodatkowych opłat. Rozumiem ten argument, jednak przecież już teraz płacimy składki na ubezpieczenie zdrowotne, więc najpierw trzeba poprawić organizację i zmniejszyć kolejki. Podsumowując, bezpłatna podstawowa opieka jest sprawiedliwym rozwiązaniem, pod warunkiem, że system działa sprawnie.",
+      "tips": ["**Pod warunkiem, że…** — фраза «за умови, що» ідеально завершує зважену позицію.", "Не тримайся крайнощів: «chociaż nie jestem pewna, czy…» звучить розумніше, ніж «ja mam rację».", "Використай факти, які знаєш із життя в Польщі — це аргумент із власного досвіду."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Skarga w rejestracji",
+      "prompt": "Czekasz na wizytę u lekarza już półtorej godziny po umówionym terminie. Rozmawiasz z pracownikiem rejestracji. Wyraź niezadowolenie, przedstaw swoje oczekiwania i zdecyduj, jak chcesz rozwiązać sytuację.",
+      "promptUa": "Ви чекаєте на прийом до лікаря вже півтори години після призначеного часу. Розмовляєте з працівником реєстратури. Висловіть невдоволення, окресліть свої очікування й вирішіть, як розв’язати ситуацію.",
+      "points": ["Zgłoś problem", "Zareaguj na tłumaczenie", "Postaw warunki", "Ustal dalsze kroki"],
+      "keywords": ["wizyta|wizyt", "skarga|skarg", "poinformować|poinformow", "potwierdzenie|potwierdzeni", "opóźnienie|opóźni", "przepisy|przepis"],
+      "phrases": [
+        { "pl": "Chciałabym wiedzieć, dlaczego…", "ua": "Хотіла б знати, чому…" },
+        { "pl": "Nikt nas o tym nie poinformował.", "ua": "Ніхто нас про це не повідомив." },
+        { "pl": "Chciałabym złożyć pisemną skargę.", "ua": "Хотіла б подати письмову скаргу." },
+        { "pl": "Proszę o potwierdzenie na piśmie.", "ua": "Прошу підтвердити письмово." }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, w czym mogę pomóc?", "hint": "Zgłoś opóźnienie i zapytaj o przyczynę.", "model": "Dzień dobry. Mam wizytę zapisaną na dziesiątą, a jest już wpół do dwunastej. Chciałabym wiedzieć, dlaczego tak długo czekam i kiedy zostanę przyjęta." },
+        { "ex": "Bardzo przepraszam, doktor miał nagły przypadek. Mogę zapisać Panią na inny dzień.", "hint": "Nie zgadzaj się od razu — wyjaśnij swoją sytuację.", "model": "Rozumiem, że zdarzają się sytuacje nagłe, ale nikt nas o tym nie poinformował. Wzięłam dziś wolne w pracy, więc zapisanie na inny dzień nie rozwiązuje problemu." },
+        { "ex": "Rozumiem Pani frustrację. Może wejdzie Pani jako pierwsza po tym pacjencie, ale to będzie jeszcze około trzydziestu minut.", "hint": "Zaakceptuj, ale postaw warunek i zapowiedz skargę.", "model": "Dobrze, w takim razie poczekam, ale proszę o zapisanie w systemie, że wizyta się opóźniła. Poza tym chciałabym złożyć pisemną skargę." },
+        { "ex": "Oczywiście, formularz skargi jest w recepcji. Przekażemy go kierownikowi przychodni.", "hint": "Poproś o potwierdzenie i odpowiedź w terminie.", "model": "Dziękuję. Chciałabym też dostać potwierdzenie, że skarga została przyjęta, i odpowiedź w ciągu czternastu dni, zgodnie z przepisami." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["Skargę zaczynaj **spokojnie i konkretnie** (godziny, fakty) — agresja obniża ocenę za styl.", "**Rozumiem…, ale…** — двоступенева реакція показує повагу до співрозмовника й твердість.", "Наприкінці завжди домовляйся про наступний крок (термін, форма, підтвердження)."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "letter-formal", "register": "formal", "title": "Prośba o zaświadczenie",
+      "prompt": "Potrzebujesz zaświadczenia lekarskiego dla pracodawcy po wizycie w przychodni. Napisz e-mail do przychodni: podaj dane wizyty, wyjaśnij, po co potrzebujesz dokumentu, i poproś o przesłanie go drogą elektroniczną w określonym terminie.",
+      "promptUa": "Вам потрібна медична довідка для роботодавця після візиту до поліклініки. Напишіть листа до поліклініки: вкажіть дані візиту, поясніть, навіщо довідка, і попросіть надіслати її електронною поштою у певний термін.",
+      "min": 60, "max": 90, "time": 15,
+      "points": [
+        { "text": "Dane wizyty", "keys": ["w dniu", "wizycie", "byłam", "byłem"] },
+        { "text": "Cel zaświadczenia", "keys": ["pracodawc", "potrzebne", "nieobecności"] },
+        { "text": "Prośba o wysłanie drogą elektroniczną", "keys": ["elektronicz", "e-mail", "mailow"] },
+        { "text": "Termin", "keys": ["w ciągu", "dni roboczych", "do piątku"] }
+      ],
+      "phrases": [
+        { "pl": "Uprzejmie proszę o wystawienie…", "ua": "Ввічливо прошу видати…" },
+        { "pl": "Byłabym wdzięczna za przesłanie…", "ua": "Була б вдячна за надсилання…" },
+        { "pl": "w ciągu trzech dni roboczych", "ua": "протягом трьох робочих днів" },
+        { "pl": "Z góry dziękuję za pomoc.", "ua": "Заздалегідь дякую за допомогу." }
+      ],
+      "model": "Szanowni Państwo,\n\nw dniu 12 września byłam na wizycie u doktora Nowaka w związku z zapaleniem oskrzeli. Uprzejmie proszę o wystawienie zaświadczenia lekarskiego, które jest potrzebne mojemu pracodawcy do rozliczenia nieobecności. Dokument jest mi potrzebny jeszcze w tym tygodniu. Byłabym wdzięczna za przesłanie dokumentu drogą elektroniczną na mój adres e-mail w ciągu trzech dni roboczych. Z góry dziękuję za pomoc.\n\nZ wyrazami szacunku\nAnna Kowalenko",
+      "tips": ["**Byłabym wdzięczna za + biernik/rzeczownik odczasownikowy** (за przesłanie) — офіційний і ввічливий стиль.", "Термін вказуй конкретно: «w ciągu trzech dni roboczych» — це і чемність, і чіткість."]
+    },
+    {
+      "id": "w2", "kind": "opinion", "register": "neutral", "title": "Zdrowy styl życia — moda czy konieczność?",
+      "prompt": "Napisz wpis na blog na temat: „Zdrowy styl życia — moda czy konieczność?”. Przedstaw swoje zdanie, opisz zjawiska, które obserwujesz, wskaż zagrożenia związane z przesadą i zakończ radą dla czytelników.",
+      "promptUa": "Напишіть допис для блогу на тему: «Здоровий спосіб життя — мода чи необхідність?». Викладіть свою думку, опишіть явища, що спостерігаєте, вкажіть ризики надмірності й завершіть порадою читачам.",
+      "min": 200, "max": 250, "time": 50,
+      "points": [
+        { "text": "Wyraźna teza", "keys": ["moim zdaniem", "uważam", "sądzę"] },
+        { "text": "Obserwacje ze świata", "keys": ["obserwuję", "znajomych", "zauważ", "coraz więcej"] },
+        { "text": "Zagrożenia przesady", "keys": ["przesad", "zaszkodz", "kontuzj", "zagroż", "presj"] },
+        { "text": "Rada dla czytelników", "keys": ["radzę", "warto", "proponuję"] }
+      ],
+      "phrases": [
+        { "pl": "W ostatnich latach coraz więcej osób…", "ua": "Останніми роками дедалі більше людей…" },
+        { "pl": "Trzeba jednak uważać na przesadę.", "ua": "Проте треба остерігатися надмірності." },
+        { "pl": "co prowadzi do…", "ua": "що призводить до…" },
+        { "pl": "Dlatego radzę czytelnikom, aby…", "ua": "Тому раджу читачам, щоб…" }
+      ],
+      "model": "Zdrowy styl życia — moda czy konieczność?\n\nW ostatnich latach trudno przejść przez miasto, nie zauważając siłowni, sklepów ze zdrową żywnością i ludzi biegających po parkach. Moim zdaniem zdrowy styl życia nie jest już tylko modą, ale realną koniecznością, którą wymusza współczesny świat.\n\nObserwuję to na co dzień. Coraz więcej moich znajomych rezygnuje z fast foodów, kontroluje liczbę kroków i regularnie się bada. Widać to także w internecie, gdzie przepisy na zdrowe posiłki i plany treningowe zbierają miliony wyświetleń. Siedzący tryb pracy, stres i brak snu sprawiają, że choroby cywilizacyjne pojawiają się coraz wcześniej, dlatego profilaktyka nabiera znaczenia.\n\nTrzeba jednak uważać na przesadę. Skrajne diety, obsesja na punkcie liczenia kalorii czy nadmierne treningi mogą zaszkodzić równie mocno jak brak ruchu. Dodatkowo media społecznościowe tworzą presję, by wyglądać idealnie, co prowadzi do kompleksów i zaburzeń odżywiania. Ponadto niektórzy zaczynają wierzyć, że każda dolegliwość to wina złego odżywiania, i zamiast iść do lekarza, szukają rozwiązań na forach. Sama przez pewien czas ćwiczyłam codziennie po dwie godziny i skończyło się to kontuzją.\n\nDlatego radzę czytelnikom, aby traktowali zdrowie jak długi maraton, a nie jak sprint. Zdrowie to wartość, o którą warto dbać z rozsądkiem. Warto wprowadzać małe zmiany, słuchać własnego organizmu i w razie wątpliwości pytać lekarza, zamiast ufać modnym radom z internetu.",
+      "tips": ["**co prowadzi do + родовий** — зручний зв’язок «що призводить до…», який будує складне речення з наслідком.", "Порівняння-метафора («jak maraton, a nie jak sprint») запам’ятовується й показує стилістичний діапазон.", "Не забудь про власний досвід — він додає тексту достовірності й закриває окремий пункт."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Badania po trzydziestce", "intro": "Радіоінтерв’ю про профілактику. Прослухай і вибери правильні відповіді.",
+      "lines": [
+        { "who": "A", "t": "Wracamy po krótkiej przerwie. Naszym gościem jest lekarz rodzinny, doktor Adam Bielski. Panie doktorze, po trzydziestce wielu z nas zapomina o badaniach kontrolnych. Dlaczego to błąd?" },
+        { "who": "B", "t": "Bo wiele poważnych chorób na początku nie daje żadnych objawów. Cukrzyca, nadciśnienie czy podwyższony cholesterol mogą rozwijać się latami. Proste badanie krwi raz w roku pozwala wykryć je wcześnie, kiedy leczenie jest łatwiejsze i tańsze." },
+        { "who": "A", "t": "A co z osobami, które czują się świetnie?" },
+        { "who": "B", "t": "To paradoks: właśnie one najrzadziej przychodzą do lekarza. Zachęcam, żeby traktować badania jak przegląd samochodu: robimy go, zanim coś się zepsuje." },
+        { "who": "A", "t": "Czy są badania, których nie powinniśmy odkładać?" },
+        { "who": "B", "t": "Morfologia, poziom cukru i cholesterolu oraz ciśnienie krwi. Kobiety powinny pamiętać o cytologii, a mężczyźni po czterdziestce o badaniu prostaty. Wiele z nich jest bezpłatnych w ramach ubezpieczenia." }
+      ],
+      "questions": [
+        { "q": "Dlaczego badania są ważne, nawet gdy czujemy się dobrze?", "options": ["Bo są obowiązkowe.", "Bo wiele chorób na początku nie ma objawów.", "Bo można dzięki nim zmienić lekarza.", "Bo zastępują wizytę u specjalisty."], "answer": 1, "why": "«Wiele poważnych chorób na początku nie daje żadnych objawów»." },
+        { "q": "Z czym lekarz porównuje badania kontrolne?", "options": ["Z podróżą.", "Z przeglądem samochodu.", "Z nauką języka.", "Z treningiem."], "answer": 1, "why": "«Traktować badania jak przegląd samochodu: robimy go, zanim coś się zepsuje»." },
+        { "q": "Co lekarz mówi o kosztach badań?", "options": ["Wszystkie są bardzo drogie.", "Wiele z nich jest bezpłatnych w ramach ubezpieczenia.", "Płaci się tylko za morfologię.", "Kosztują tyle samo w każdej przychodni."], "answer": 1, "why": "«Wiele z nich jest bezpłatnych w ramach ubezpieczenia»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Teleporady", "textTitle": "Wizyta przez telefon — wygoda czy ryzyko?",
+      "text": "Jeszcze dziesięć lat temu wizyta u lekarza oznaczała stanie w kolejce i siedzenie w poczekalni pełnej kaszlących pacjentów. Dziś coraz częściej wystarczy telefon lub komputer. Teleporady, czyli konsultacje na odległość, stały się w Polsce popularne w czasie pandemii i pozostały w systemie na stałe. Zwolennicy podkreślają, że taka forma oszczędza czas, zwłaszcza mieszkańcom małych miejscowości, którzy do najbliższego specjalisty musieliby jechać wiele kilometrów.\n\nKrytycy zwracają jednak uwagę na ograniczenia. Lekarz nie może zbadać pacjenta, osłuchać płuc ani zmierzyć ciśnienia, więc przy niektórych schorzeniach postawienie trafnej diagnozy jest trudne. Ponadto starsze osoby, które często potrzebują opieki najbardziej, nie zawsze radzą sobie z technologią.\n\nWiększość ekspertów zgadza się, że teleporady powinny uzupełniać tradycyjne wizyty, a nie je zastępować. Sprawdzają się przy kontroli przewlekłych chorób, przepisywaniu leków, które pacjent już zna, czy omawianiu wyników badań. Kiedy jednak objawy są nowe lub niepokojące, nic nie zastąpi badania w gabinecie.",
+      "questions": [
+        { "q": "Dlaczego teleporady stały się w Polsce popularne?", "options": ["Bo są tańsze niż leki.", "Bo rozpowszechniły się w czasie pandemii i zostały w systemie.", "Bo zastąpiły wszystkie wizyty.", "Bo lekarze tego zażądali."], "answer": 1, "why": "«Stały się popularne w czasie pandemii i pozostały w systemie na stałe»." },
+        { "q": "Jaką zaletę teleporad podkreślają zwolennicy?", "options": ["Dokładniejsze badanie.", "Oszczędność czasu, zwłaszcza w małych miejscowościach.", "Niższe ceny leków.", "Większa liczba lekarzy."], "answer": 1, "why": "«Oszczędza czas, zwłaszcza mieszkańcom małych miejscowości»." },
+        { "q": "Jaki problem dotyczy osób starszych?", "options": ["Nie chcą chodzić do lekarza.", "Nie zawsze radzą sobie z technologią.", "Mają za mało czasu.", "Nie potrzebują opieki."], "answer": 1, "why": "«Starsze osoby… nie zawsze radzą sobie z technologią»." },
+        { "q": "Co sądzi większość ekspertów o teleporadach?", "options": ["Powinny całkowicie zastąpić wizyty.", "Należy je zakazać.", "Powinny uzupełniać tradycyjne wizyty.", "Nadają się tylko dla młodych."], "answer": 2, "why": "«Powinny uzupełniać tradycyjne wizyty, a nie je zastępować»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Zdrowie: składnia B2", "intro": "Складні конструкції: відносні речення, часові сполучники, прийменники причини.",
+      "questions": [
+        { "q": "Pacjent, ___ wykonano badania wczoraj, czuje się już lepiej.", "options": ["któremu", "którego", "który", "którym"], "answer": 0, "why": "«Wykonano badania (komu?) pacjentowi» → давальний: **któremu**." },
+        { "q": "Zanim ___ do lekarza, zmierz temperaturę.", "options": ["pójdziesz", "pójść", "poszedłeś", "idąc"], "answer": 0, "why": "Після **zanim** — майбутній доконаного виду: «zanim pójdziesz»." },
+        { "q": "___ choroby musiał zostać w domu przez dwa tygodnie.", "options": ["Z powodu", "Dzięki", "Mimo", "Wbrew"], "answer": 0, "why": "**z powodu** + родовий — причина (негативна); «dzięki» — позитивна, «mimo» — всупереч." },
+        { "q": "Zażywaj lek ___ dziennie, po posiłku.", "options": ["dwa razy", "dwóch razy", "dwie razy", "dwa raz"], "answer": 0, "why": "«dwa razy» — 2–4 + називний множини: dwa, trzy, cztery razy." },
+        { "q": "Wyniki badań ___ do końca tygodnia.", "options": ["zostaną przesłane", "zostanie przesłane", "zostały przesłać", "przesłano się"], "answer": 0, "why": "Пасив майбутнього: «wyniki zostaną przesłane» — множина." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "przewlekły", "ua": "хронічний", "ex": "Cukrzyca to choroba przewlekła." },
+    { "pl": "objaw", "ua": "симптом", "ex": "Pierwszym objawem była wysoka gorączka." },
+    { "pl": "skierowanie", "ua": "направлення", "ex": "Do specjalisty potrzebne jest skierowanie." },
+    { "pl": "profilaktyka", "ua": "профілактика", "ex": "Profilaktyka jest tańsza niż leczenie." },
+    { "pl": "teleporada", "ua": "телеконсультація", "ex": "Dostałem receptę podczas teleporady." },
+    { "pl": "refundacja", "ua": "відшкодування вартості ліків", "ex": "Ten lek jest objęty refundacją." },
+    { "pl": "powikłania", "ua": "ускладнення", "ex": "Grypa może dać poważne powikłania." },
+    { "pl": "rekonwalescencja", "ua": "одужання, період відновлення", "ex": "Rekonwalescencja po operacji trwa kilka tygodni." }
+  ]
+}

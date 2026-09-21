@@ -1,0 +1,156 @@
+{
+  "intro": "Цього тижня — робота: телефонна розмова з роботодавцем, співбесіда, заява електронною поштою. Це одна з найчастіших тем на іспиті B1.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Rozmowa kwalifikacyjna w biurze",
+      "scene": { "bg": "office", "caption": "Biuro, godzina 9:00", "desk": [16, 60, 68], "items": [["🧑‍💼", 30, 46, 24], ["👩‍💼", 70, 46, 24], ["🗂️", 47, 55, 10], ["☕", 62, 56, 8], ["📄", 38, 56, 8], ["🖥️", 89, 27, 13], ["🪴", 9, 50, 15], ["🕘", 50, 13, 13]] },
+      "prompt": "Opisz ilustrację. Powiedz, gdzie są te osoby, co robią i jak się czują. Powiedz też, co według Ciebie stanie się później.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, де ці люди, що вони роблять і що відчувають. Скажіть також, що, на вашу думку, станеться пізніше.",
+      "time": [60, 120], "prep": 60,
+      "points": ["Gdzie jesteśmy i kto tu jest?", "Co robią te osoby?", "Jak się czują?", "Co stanie się później?"],
+      "keywords": ["biuro|biur", "rozmowa kwalifikacyjna|rozmow", "kandydat|kandydat", "pracodawca|pracodaw", "dokumenty|dokument", "stres|stres", "prawdopodobnie|prawdopodob", "moim zdaniem|moim zdaniem"],
+      "phrases": [
+        { "pl": "Na ilustracji widzę…", "ua": "На ілюстрації я бачу…" },
+        { "pl": "Po lewej / po prawej stronie siedzi…", "ua": "Зліва / справа сидить…" },
+        { "pl": "W tle widać…", "ua": "На задньому плані видно…" },
+        { "pl": "Wygląda na zdenerwowanego.", "ua": "Виглядає знервованим." },
+        { "pl": "Prawdopodobnie / Chyba…", "ua": "Ймовірно / Мабуть…" }
+      ],
+      "model": "Na ilustracji widzę biuro. Prawdopodobnie odbywa się tam rozmowa kwalifikacyjna. Po lewej stronie siedzi kandydat, a po prawej pracodawczyni albo pracownica działu kadr. Na biurku leżą dokumenty, chyba CV kandydata, i stoi filiżanka kawy. W tle widać komputer i dużą roślinę. Kandydat wygląda na zdenerwowanego, ale stara się być miły. Kobieta jest spokojna i zadaje pytania. Myślę, że jest rano, bo zegar pokazuje dziewiątą. Moim zdaniem po rozmowie kandydat dostanie odpowiedź w ciągu kilku dni. Jeśli rozmowa pójdzie dobrze, dostanie tę pracę. Też byłoby mi trudno na jego miejscu.",
+      "tips": ["Йди від загального до деталей: **gdzie → kto → co robi → jak się czuje → co dalej**. Саме ці чотири кроки екзаменатор чекає.", "Не знаєш слова — обійди його: «taki stół do pracy» замість «biurko». Мовчання гірше за перифраз.", "Здогади виглядають природно з **prawdopodobnie / chyba / wygląda na** — це ще й показує різноманіття мови."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Praca moich marzeń",
+      "prompt": "Opowiedz o pracy, którą chciałbyś (chciałabyś) wykonywać w przyszłości. Wyjaśnij, dlaczego ta praca jest dla Ciebie interesująca.",
+      "promptUa": "Розкажіть про роботу, яку ви хотіли б виконувати в майбутньому. Поясніть, чому ця робота для вас цікава.",
+      "time": [90, 150], "prep": 60,
+      "points": ["Jaki to zawód i gdzie chcesz pracować?", "Dlaczego ta praca Cię interesuje?", "Czego potrzebujesz, żeby ją dostać (wykształcenie, umiejętności)?", "Co robisz teraz, żeby ten plan zrealizować?"],
+      "keywords": ["zawód|zawod", "marzenie|marz", "wykształcenie|wykształc", "umiejętności|umiejętn", "zarobki|zarobk", "atmosfera|atmosfer", "zespół|zespo", "plan|plan"],
+      "phrases": [
+        { "pl": "Moim marzeniem jest praca jako…", "ua": "Моя мрія — працювати… (ким)" },
+        { "pl": "Interesuje mnie ten zawód, ponieważ…", "ua": "Мене цікавить ця професія, тому що…" },
+        { "pl": "Żeby to robić, trzeba…", "ua": "Щоб це робити, потрібно…" },
+        { "pl": "Teraz uczę się / pracuję, żeby…", "ua": "Зараз я вчуся / працюю, щоб…" }
+      ],
+      "model": "Marzę o pracy w szpitalu, jako pielęgniarka. Interesuje mnie medycyna od dzieciństwa, bo moja babcia często chorowała i widziałam, jak ważna jest pomoc drugiego człowieka. Żeby wykonywać ten zawód, trzeba skończyć studia albo szkołę medyczną i mieć dużo cierpliwości. Zarobki nie są bardzo wysokie, ale dla mnie ważniejsza jest dobra atmosfera w zespole i poczucie, że robię coś potrzebnego. Teraz pracuję w sklepie i uczę się polskiego, bo chcę zdać egzamin B1 i zacząć kurs zawodowy. Myślę, że za pięć lat będę już pracować w szpitalu. To trudny plan, ale jestem przekonana, że mi się uda.",
+      "tips": ["Конструкція «**marzę o** + місцевий» (marzę o pracy) — gender-нейтральна: не треба вибирати «-ł/-ła».", "**Żeby** + інфінітив/минулий = «щоб»: показує складніше речення вже на B1.", "Закінчуй висновком («Myślę, że…»): відповідь звучить завершеною."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Telefon w sprawie ogłoszenia",
+      "prompt": "Dzwonisz do sklepu „Smak-Pol” w sprawie ogłoszenia o pracy sprzedawcy. Rozmawiasz z pracownikiem firmy. Dowiedz się o szczegóły i umów się na rozmowę.",
+      "promptUa": "Ви телефонуєте до магазину «Smak-Pol» щодо оголошення про роботу продавця. Розмовляєте з працівником фірми. Дізнайтеся подробиці й домовтеся про співбесіду.",
+      "points": ["Przywitaj się i powiedz, po co dzwonisz", "Opowiedz o swoim doświadczeniu", "Ustal godziny pracy", "Umów się na rozmowę"],
+      "keywords": ["ogłoszenie|ogłoszen", "doświadczenie|doświadcz", "zmiana|zmian", "termin|termin", "CV|cv", "godziny|godzin"],
+      "phrases": [
+        { "pl": "Dzwonię w sprawie ogłoszenia o pracy.", "ua": "Телефоную щодо оголошення про роботу." },
+        { "pl": "Czy to stanowisko jest jeszcze aktualne?", "ua": "Ця вакансія ще актуальна?" },
+        { "pl": "Czy mógłbym / mogłabym…?", "ua": "Чи міг би / могла б я…?" },
+        { "pl": "Ten termin mi odpowiada.", "ua": "Цей термін мені підходить." }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, sklep Smak-Pol, słucham?", "hint": "Przywitaj się, przedstaw i powiedz, że dzwonisz w sprawie ogłoszenia.", "model": "Dzień dobry, nazywam się Anna Kowalenko. Dzwonię w sprawie ogłoszenia o pracy sprzedawcy. Czy to stanowisko jest jeszcze aktualne?" },
+        { "ex": "Tak, jest aktualne. Czy ma Pani jakieś doświadczenie w sprzedaży?", "hint": "Opowiedz krótko o doświadczeniu (albo powiedz, że go nie masz, ale chcesz się uczyć).", "model": "Tak, mam dwuletnie doświadczenie: pracowałam w sklepie spożywczym, obsługiwałam klientów i pracowałam przy kasie. Bardzo lubię kontakt z ludźmi." },
+        { "ex": "Świetnie. Praca jest na dwie zmiany, także w soboty. Czy to Pani odpowiada?", "hint": "Zgódź się albo zaproponuj inne godziny — grzecznie.", "model": "Tak, mogę pracować w soboty, ale wolałabym zmianę poranną, bo po południu zajmuję się dzieckiem. Czy godziny pracy mogłyby być tak ustalone?" },
+        { "ex": "Postaramy się o tym pamiętać. Zapraszam Panią na rozmowę w czwartek o dziesiątej. Czy ten termin pasuje?", "hint": "Potwierdź termin i zapytaj o dokumenty lub adres.", "model": "Tak, ten termin mi odpowiada. Czy powinnam przynieść CV i jakieś dokumenty? I jaki jest dokładny adres sklepu?" }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["Реагуй **саме на питання**, а потім додай одну свою деталь — так виходить жива розмова, а не «так/ні».", "Не зрозумів — перепитай: «Przepraszam, czy mógłby Pan powtórzyć?» Це не мінус, а компетенція.", "Умовний спосіб («wolałabym», «czy mogłabym») звучить ввічливо — використовуй у проханнях."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "informal", "title": "Nie mogę przyjść",
+      "prompt": "Jutro masz ważne spotkanie w pracy, ale jesteś chory (chora) i nie możesz przyjść. Napisz krótką wiadomość do koleżanki z pracy. Przeproś, wyjaśnij powód i poproś o pomoc.",
+      "promptUa": "Завтра у вас важлива зустріч на роботі, але ви хворі й не можете прийти. Напишіть коротке повідомлення колезі: перепросіть, поясніть причину й попросіть про допомогу.",
+      "min": 25, "max": 50, "time": 10,
+      "points": [
+        { "text": "Przeprosiny", "keys": ["przepraszam", "przykro", "wybacz"] },
+        { "text": "Powód (choroba)", "keys": ["chor", "gorączk", "grypę", "źle się czuję", "lekarz"] },
+        { "text": "Prośba o pomoc", "keys": ["czy mogłabyś", "czy możesz", "czy mógłbyś", "proszę", "poproszę", "popros"] }
+      ],
+      "phrases": [
+        { "pl": "Bardzo Cię przepraszam, ale…", "ua": "Дуже перепрошую, але…" },
+        { "pl": "Od wczoraj mam gorączkę.", "ua": "З учора в мене температура." },
+        { "pl": "Czy mogłabyś / Czy mógłbyś…?", "ua": "Чи не могла б / міг би ти…?" },
+        { "pl": "Dziękuję i pozdrawiam!", "ua": "Дякую й вітаю!" }
+      ],
+      "model": "Cześć Kasia! Bardzo Cię przepraszam, ale jutro nie przyjdę na spotkanie. Od wczoraj mam gorączkę i lekarz kazał mi zostać w domu. Czy mogłabyś powiedzieć kierowniczce, że jest mi przykro? Możesz też zapisać dla mnie najważniejsze informacje? Dziękuję i pozdrawiam! Ola",
+      "tips": ["У короткому тексті **кожне речення = один пункт**. Три пункти — три речення, і ще привітання/прощання.", "Займенники звертання в листах пишемо з великої: **Cię, Ci, Ty, Twój**."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "Podanie o pracę w kawiarni",
+      "prompt": "Znalazłeś (Znalazłaś) ogłoszenie: kawiarnia „Pod Lipą” szuka baristy lub baristki na pół etatu. Napisz e-mail do właściciela kawiarni. Przedstaw się, napisz o swoim doświadczeniu, wyjaśnij, dlaczego chcesz tam pracować, i zapytaj o godziny pracy oraz wynagrodzenie.",
+      "promptUa": "Ви знайшли оголошення: кав’ярня «Pod Lipą» шукає бариста на півставки. Напишіть листа власнику: представтесь, розкажіть про досвід, поясніть, чому хочете там працювати, і запитайте про години роботи та зарплату.",
+      "min": 150, "max": 175, "time": 35,
+      "points": [
+        { "text": "Przedstawienie się i powód pisania", "keys": ["nazywam się", "piszę w odpowiedzi", "piszę w sprawie"] },
+        { "text": "Doświadczenie zawodowe", "keys": ["doświadcz", "pracowałam", "pracowałem", "pracuję"] },
+        { "text": "Dlaczego chcesz tam pracować", "keys": ["ponieważ", "dlatego", "chcę pracować", "lubię", "interesuje"] },
+        { "text": "Pytanie o godziny pracy", "keys": ["godzin", "dni tygodnia", "grafik"] },
+        { "text": "Pytanie o wynagrodzenie", "keys": ["wynagrodz", "zarobk", "stawk", "płac"] }
+      ],
+      "phrases": [
+        { "pl": "Szanowni Państwo,", "ua": "Шановні панове," },
+        { "pl": "Piszę w odpowiedzi na ogłoszenie o pracy…", "ua": "Пишу у відповідь на оголошення про роботу…" },
+        { "pl": "Mam doświadczenie w…", "ua": "Маю досвід у…" },
+        { "pl": "Chciałabym zapytać o…", "ua": "Хотіла б запитати про…" },
+        { "pl": "Z wyrazami szacunku", "ua": "З повагою" }
+      ],
+      "model": "Szanowni Państwo,\n\nnazywam się Ołena Kowalenko i piszę w odpowiedzi na ogłoszenie o pracy baristki w kawiarni „Pod Lipą”, które znalazłam na stronie internetowej.\n\nMieszkam w Polsce od dwóch lat i dobrze mówię po polsku, ponieważ codziennie uczę się języka i rozmawiam z polskimi sąsiadami. Przez rok pracowałam jako kelnerka w restauracji w Krakowie, dlatego mam doświadczenie w obsłudze klientów i w parzeniu kawy. Jestem odpowiedzialna, punktualna i szybko się uczę. W wolnym czasie ćwiczę przygotowywanie espresso i cappuccino w domu.\n\nChcę pracować w Państwa kawiarni, ponieważ bardzo lubię kawę i atmosferę małych, rodzinnych miejsc. Lubię też pracę w zespole i rozmowy z klientami. Praca na pół etatu jest dla mnie idealna, gdyż jednocześnie uczę się na kursie zawodowym.\n\nChciałabym zapytać, w jakich godzinach i w jakie dni tygodnia trzeba by pracować, oraz jakie jest wynagrodzenie za godzinę. Czy mogłabym przyjść na rozmowę w przyszłym tygodniu? Chętnie przyjdę także na próbny dzień pracy.\n\nZ wyrazami szacunku\nOłena Kowalenko",
+      "tips": ["Структура листа: **звертання → мета → про себе → мотивація → питання → прощання**. Кожен блок — окремий абзац.", "Офіційно — **Pan/Pani/Państwo** з великої літери; жодних «cześć» і «ty».", "Пиши **ponieważ / dlatego / gdyż** — вони входять у критерій «spójność»."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Telefon od rekruterki", "intro": "Прослухай розмову двічі й вибери правильні відповіді.",
+      "lines": [
+        { "who": "A", "t": "Dzień dobry, mówi Marta Zielińska z firmy Logi-Trans. Czy rozmawiam z panem Piotrem Wójcikiem?" },
+        { "who": "B", "t": "Tak, dzień dobry, przy telefonie." },
+        { "who": "A", "t": "Dzwonię w sprawie pana zgłoszenia na stanowisko magazyniera. Chciałabym zaprosić pana na rozmowę kwalifikacyjną. Czy może pan przyjść w środę o jedenastej?" },
+        { "who": "B", "t": "W środę niestety pracuję do trzynastej. Czy byłaby możliwość w czwartek?" },
+        { "who": "A", "t": "W czwartek mam wolny termin o dziewiątej albo o piętnastej." },
+        { "who": "B", "t": "Piętnasta mi odpowiada." },
+        { "who": "A", "t": "Świetnie. Proszę zabrać dowód osobisty i świadectwa pracy. Firma mieści się przy ulicy Długiej dwanaście, wejście od podwórka." },
+        { "who": "B", "t": "Dziękuję bardzo, będę na pewno. Do zobaczenia w czwartek." }
+      ],
+      "questions": [
+        { "q": "Dlaczego pan Piotr nie może przyjść w środę?", "options": ["Jest chory.", "Pracuje do trzynastej.", "Ma wizytę u lekarza.", "Wyjeżdża z miasta."], "answer": 1, "why": "Pan Piotr mówi: «W środę niestety pracuję do trzynastej»." },
+        { "q": "Na kiedy umówiono rozmowę kwalifikacyjną?", "options": ["Na środę o jedenastej.", "Na czwartek o dziewiątej.", "Na czwartek o piętnastej.", "Na piątek o piętnastej."], "answer": 2, "why": "Rekruterka proponuje 9:00 albo 15:00, a pan Piotr wybiera «piętnastą»." },
+        { "q": "Co trzeba zabrać na rozmowę?", "options": ["CV i list motywacyjny.", "Dowód osobisty i świadectwa pracy.", "Zdjęcie i zaświadczenie z urzędu.", "Umowę i paszport."], "answer": 1, "why": "«Proszę zabrać dowód osobisty i świadectwa pracy»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Jak przygotować się do rozmowy o pracę", "textTitle": "Rozmowa kwalifikacyjna — bez stresu",
+      "text": "Rozmowa kwalifikacyjna to dla wielu osób największy stres w całym procesie szukania pracy. Tymczasem dobre przygotowanie naprawdę może pomóc. Przede wszystkim warto dowiedzieć się, czym zajmuje się firma. Wystarczy pół godziny na jej stronie internetowej, żeby wiedzieć, jakie produkty sprzedaje i ilu ma pracowników.\n\nDrugi krok to zastanowienie się nad pytaniami, które usłyszysz prawie na pewno: „Proszę opowiedzieć o sobie” i „Dlaczego chce pan pracować właśnie u nas?”. Odpowiedzi warto przećwiczyć na głos, najlepiej przed lustrem albo z przyjacielem.\n\nW dniu rozmowy trzeba przyjść punktualnie, czyli około dziesięciu minut wcześniej. Ubiór powinien być schludny i dopasowany do stanowiska. Nie musisz zakładać garnituru do pracy w magazynie, ale brudne buty mogą zrobić złe wrażenie.\n\nNa końcu rozmowy rekruter zwykle pyta, czy masz jakieś pytania. Lepiej je mieć! Możesz zapytać na przykład o zakres obowiązków albo o możliwości rozwoju. Taka ciekawość pokazuje, że naprawdę zależy ci na tej pracy.",
+      "questions": [
+        { "q": "Co według autora warto zrobić najpierw?", "options": ["Kupić nowe ubranie.", "Dowiedzieć się czegoś o firmie.", "Zadzwonić do rekrutera.", "Napisać CV od nowa."], "answer": 1, "why": "«Przede wszystkim warto dowiedzieć się, czym zajmuje się firma»." },
+        { "q": "Jak najlepiej ćwiczyć odpowiedzi na pytania?", "options": ["Tylko w myślach.", "Pisząc długie listy.", "Mówiąc na głos.", "Czytając ogłoszenia."], "answer": 2, "why": "«Odpowiedzi warto przećwiczyć na głos»." },
+        { "q": "Dlaczego warto zadać pytanie na końcu rozmowy?", "options": ["Żeby rozmowa trwała dłużej.", "Bo tego wymaga prawo.", "Bo to pokazuje zainteresowanie pracą.", "Bo można wtedy negocjować pensję."], "answer": 2, "why": "«Taka ciekawość pokazuje, że naprawdę zależy ci na tej pracy»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Przypadki w kontekście pracy", "intro": "Вибери правильну форму. Зверни увагу на відмінки після прийменників.",
+      "questions": [
+        { "q": "Pracuję jako ___ w dużej firmie.", "options": ["kierownik", "kierownika", "kierownikiem", "kierownikowi"], "answer": 0, "why": "Після **jako** — називний: «pracuję jako kierownik». В українській «працюю керівником» (орудний) — тут це помилка." },
+        { "q": "Dzwonię w sprawie ___.", "options": ["ogłoszenie", "ogłoszenia", "ogłoszeniem", "o ogłoszeniu"], "answer": 1, "why": "**w sprawie** + родовий: «w sprawie ogłoszenia»." },
+        { "q": "Lubię ludzi, z ___ pracuję.", "options": ["którzy", "których", "którymi", "którym"], "answer": 2, "why": "«z» + орудний множини: «z którymi»." },
+        { "q": "Wczoraj ___ na rozmowę kwalifikacyjną.", "options": ["poszłam", "pójdę", "idę", "chodziłam"], "answer": 0, "why": "Одноразова дія в минулому — доконаний вид: «poszłam». «Chodziłam» — багаторазово." },
+        { "q": "Jeśli dostanę tę pracę, ___ się do Krakowa.", "options": ["przeprowadzę", "przeprowadziłam", "przeprowadzałam", "bym przeprowadziła"], "answer": 0, "why": "Після «jeśli» + майбутнє: «jeśli dostanę → przeprowadzę się». Умовний спосіб тут не потрібен." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "rozmowa kwalifikacyjna", "ua": "співбесіда", "ex": "Jutro mam rozmowę kwalifikacyjną." },
+    { "pl": "pracodawca", "ua": "роботодавець", "ex": "Mój pracodawca płaci zawsze na czas." },
+    { "pl": "wynagrodzenie", "ua": "заробітна плата", "ex": "Wynagrodzenie wypłacają do dziesiątego dnia miesiąca." },
+    { "pl": "umowa o pracę", "ua": "трудовий договір", "ex": "Podpisałam umowę o pracę na rok." },
+    { "pl": "doświadczenie", "ua": "досвід", "ex": "Mam trzyletnie doświadczenie w handlu." },
+    { "pl": "zatrudnić", "ua": "прийняти на роботу", "ex": "Firma zatrudniła dwudziestu nowych pracowników." },
+    { "pl": "urlop", "ua": "відпустка", "ex": "W sierpniu biorę dwa tygodnie urlopu." },
+    { "pl": "złożyć wypowiedzenie", "ua": "подати заяву про звільнення", "ex": "Złożyłam wypowiedzenie i kończę pracę za miesiąc." }
+  ]
+}

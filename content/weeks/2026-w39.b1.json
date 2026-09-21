@@ -1,0 +1,147 @@
+{
+  "intro": "Житло — тема, з якою стикається кожен, хто живе в Польщі: пошук квартири, розмова з власником, скарга на несправність. Особливо корисна «Rozmowa» про оренду й офіційний лист-скарга.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Oglądanie mieszkania",
+      "scene": { "bg": "home", "caption": "Nowe mieszkanie, sobota", "desk": [4, 66, 26], "items": [["🧑‍💼", 30, 46, 22], ["👫", 68, 46, 24], ["🔑", 46, 60, 9], ["🛋️", 16, 60, 17], ["🪟", 86, 22, 14], ["🖼️", 50, 18, 11], ["🪴", 92, 62, 10]] },
+      "prompt": "Opisz ilustrację. Powiedz, gdzie są te osoby, co robią i jak się czują. Powiedz też, co według Ciebie stanie się później.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, де ці люди, що вони роблять і що відчувають. Скажіть також, що, на вашу думку, станеться пізніше.",
+      "time": [60, 120], "prep": 60,
+      "points": ["Gdzie jesteśmy i kto tu jest?", "Co robią te osoby?", "Jak się czują?", "Co stanie się później?"],
+      "keywords": ["mieszkanie|mieszkani", "wynająć|wynaj", "agent|agent", "para|par", "czynsz|czynsz", "kaucja|kaucj", "meble|mebl", "umowa|umow"],
+      "phrases": [
+        { "pl": "Na ilustracji widzę mieszkanie do wynajęcia.", "ua": "На ілюстрації я бачу квартиру в оренду." },
+        { "pl": "Agent nieruchomości pokazuje…", "ua": "Агент з нерухомості показує…" },
+        { "pl": "Wyglądają na zainteresowanych.", "ua": "Виглядають зацікавленими." },
+        { "pl": "Prawdopodobnie zapytają o…", "ua": "Ймовірно, запитають про…" }
+      ],
+      "model": "Na ilustracji widzę mieszkanie, które ktoś chce wynająć. Po lewej stronie stoi agent nieruchomości z kluczami, a po prawej młoda para, która ogląda pokój. W tle widać duże okno, obraz na ścianie i kwiat w doniczce, a po lewej stronie stoi sofa. Ludzie wyglądają na zainteresowanych, para się uśmiecha i chyba rozmawia o cenie i o meblach. Agent jest uprzejmy i pokazuje, gdzie jest kuchnia. Prawdopodobnie para zapyta jeszcze o czynsz i o kaucję. Moim zdaniem to mieszkanie im się spodoba i wkrótce podpiszą umowę.",
+      "tips": ["Словник оренди — вже половина відповіді: **czynsz, kaucja, umowa, meble**. Використай їх у прогнозі («zapytają o…»).", "**Para** — «пара»; **para młoda** — наречені! Уточнюй: «młoda para» (молода пара).", "Прогноз наприкінці — обов’язковий пункт: «Moim zdaniem… wkrótce…»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Moje wymarzone mieszkanie",
+      "prompt": "Opisz mieszkanie, w którym chciałbyś (chciałabyś) mieszkać. Powiedz, gdzie ono się znajduje, jak wygląda i dlaczego byłoby dla Ciebie idealne.",
+      "promptUa": "Опишіть квартиру, у якій хотіли б жити. Скажіть, де вона розташована, як виглядає і чому була б для вас ідеальною.",
+      "time": [90, 150], "prep": 60,
+      "points": ["Gdzie się znajduje?", "Ile ma pokoi i jak wygląda?", "Co jest w nim najważniejsze?", "Gdzie mieszkasz teraz?"],
+      "keywords": ["centrum|centrum", "okolica|okolic", "pokoje|pok", "balkon|balkon", "meble|mebl", "światło|świat", "sypialnia|sypial", "kawalerka|kawaler"],
+      "phrases": [
+        { "pl": "Moje wymarzone mieszkanie znajdowałoby się…", "ua": "Моя омріяна квартира була б розташована…" },
+        { "pl": "Chciałabym, żeby miało…", "ua": "Хотіла б, щоб у ній були…" },
+        { "pl": "Bardzo ważne są dla mnie…", "ua": "Дуже важливі для мене…" },
+        { "pl": "Na razie mieszkam w…", "ua": "Наразі я живу в…" }
+      ],
+      "model": "Moje wymarzone mieszkanie znajdowałoby się w centrum miasta, ale w cichej okolicy, blisko parku i metra. Chciałabym, żeby miało trzy pokoje: sypialnię, salon połączony z kuchnią i mały gabinet do pracy. Bardzo ważne są dla mnie duże okna, dużo światła i balkon, na którym mogłabym pić poranną kawę. Meble chciałabym mieć proste i jasne, a na ścianach dużo obrazów i roślin. Takie mieszkanie byłoby idealne, bo mogłabym w nim odpoczywać po pracy i zapraszać przyjaciół. Na razie mieszkam w małej kawalerce, ale mam nadzieję, że za kilka lat uda mi się kupić coś większego.",
+      "tips": ["**Tryb warunkowy** (znajdowałoby się, byłoby, mogłabym) — природний для «мрії» і одразу дає «zakres środków».", "Побудова: **де → скільки кімнат → що найважливіше → чому ідеальна → де живу зараз**.", "**Uda mi się** («вдасться мені») — корисна безособова конструкція."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Rozmowa z właścicielem mieszkania",
+      "prompt": "Dzwonisz do właściciela mieszkania, które jest do wynajęcia. Zapytaj o szczegóły, warunki i umów się na oglądanie.",
+      "promptUa": "Ви телефонуєте власнику квартири, що здається в оренду. Дізнайтеся подробиці й умови та домовтеся про огляд.",
+      "points": ["Zapytaj, czy mieszkanie jest wolne", "Zapytaj o opłaty", "Powiedz o zwierzęciu", "Ustal termin i warunki umowy"],
+      "keywords": ["mieszkanie|mieszkani", "czynsz|czynsz", "kaucja|kaucj", "opłaty|opłat", "umowa|umow", "obejrzeć|obejrz"],
+      "phrases": [
+        { "pl": "Czy mieszkanie jest jeszcze wolne?", "ua": "Квартира ще вільна?" },
+        { "pl": "Czy w czynszu są opłaty za prąd?", "ua": "Чи входять у орендну плату комунальні за світло?" },
+        { "pl": "Czy trzeba płacić kaucję?", "ua": "Чи треба вносити заставу?" },
+        { "pl": "Chętnie obejrzę mieszkanie.", "ua": "Залюбки огляну квартиру." }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, mówi Jan Kowalski. Dzwoni Pani w sprawie mieszkania na Mickiewicza?", "hint": "Potwierdź i zapytaj, czy mieszkanie jest wolne.", "model": "Dzień dobry. Tak, dzwonię w sprawie ogłoszenia. Czy mieszkanie jest jeszcze wolne i czy mogłabym je obejrzeć?" },
+        { "ex": "Jest wolne. Mogę je pokazać jutro o osiemnastej. Ma dwa pokoje i czterdzieści osiem metrów. Czynsz to dwa tysiące złotych miesięcznie.", "hint": "Potwierdź termin i zapytaj o opłaty i kaucję.", "model": "Jutro o osiemnastej mi pasuje. Czy w tym czynszu są też opłaty za prąd i internet? I czy trzeba płacić kaucję?" },
+        { "ex": "Media płaci się osobno, to około czterysta złotych. Kaucja to jeden czynsz. Czy ma Pani zwierzęta?", "hint": "Powiedz o zwierzęciu i uspokój właściciela.", "model": "Mam małego kota. Czy to byłby problem? Jestem spokojną lokatorką i dbam o mieszkanie." },
+        { "ex": "Kot to nie problem. Umowę podpisujemy na rok. Czy to Pani odpowiada?", "hint": "Zgódź się na warunki (z zastrzeżeniem).", "model": "Tak, rok mi odpowiada. Zobaczę mieszkanie i jeśli mi się spodoba, chętnie podpiszę umowę." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Media** — комунальні платежі (prąd, woda, gaz, internet). Завжди питай, що входить у czynsz.", "**Kaucja** повертається при виїзді — не плутай з «czynsz» (орендна плата).", "«Jeśli mi się spodoba, chętnie podpiszę» — обережна згода без зобов’язань, дуже корисна в реальному житті."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "informal", "title": "Zaproszenie na parapetówkę",
+      "prompt": "Przeprowadziłeś (Przeprowadziłaś) się do nowego mieszkania. Napisz SMS do znajomych: zaproś ich na parapetówkę w sobotę, podaj adres i godzinę i poproś, żeby dali znać, czy przyjdą.",
+      "promptUa": "Ви переїхали в нову квартиру. Напишіть SMS друзям: запросіть на новосілля в суботу, вкажіть адресу й годину та попросіть повідомити, чи прийдуть.",
+      "min": 25, "max": 50, "time": 10,
+      "points": [
+        { "text": "Zaproszenie", "keys": ["zapraszam", "zapraszamy"] },
+        { "text": "Adres i godzina", "keys": ["ulic", "o osiemnastej", "godzin", "o 18"] },
+        { "text": "Prośba o odpowiedź", "keys": ["dajcie znać", "napiszcie", "potwierdz"] }
+      ],
+      "phrases": [
+        { "pl": "Zapraszam Was na parapetówkę!", "ua": "Запрошую вас на новосілля!" },
+        { "pl": "Będzie pizza i dużo dobrej muzyki.", "ua": "Буде піца й багато гарної музики." },
+        { "pl": "Dajcie znać, czy przyjdziecie.", "ua": "Дайте знати, чи прийдете." }
+      ],
+      "model": "Cześć wszystkim! W sobotę o osiemnastej zapraszam Was na parapetówkę do mojego nowego mieszkania przy ulicy Kwiatowej 5, mieszkanie 12. Będzie pizza i dużo dobrej muzyki. Dajcie znać do czwartku, czy przyjdziecie. Bardzo się cieszę na spotkanie! Ola",
+      "tips": ["**Parapetówka** — новосілля; слово на іспиті любить траплятися саме в такому SMS.", "**Zapraszam Was** — у листах «Was/Wam/Wasz» до кількох осіб пишемо з великої."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "Awaria ogrzewania",
+      "prompt": "Wynajmujesz mieszkanie od trzech miesięcy. Od tygodnia nie działa ogrzewanie i w mieszkaniu jest bardzo zimno. Napisz e-mail do właściciela. Opisz problem, wyjaśnij, co już zrobiłeś (zrobiłaś), i poproś o szybką naprawę.",
+      "promptUa": "Ви орендуєте квартиру три місяці. Вже тиждень не працює опалення, у квартирі дуже холодно. Напишіть листа власнику: опишіть проблему, поясніть, що вже зробили, і попросіть швидко полагодити.",
+      "min": 150, "max": 175, "time": 35,
+      "points": [
+        { "text": "Kim jesteś i o które mieszkanie chodzi", "keys": ["wynajmuję", "ulicy", "mieszkanie"] },
+        { "text": "Opis problemu", "keys": ["grzejnik", "zimn", "ogrzewani", "temperatur"] },
+        { "text": "Co już zrobiłeś", "keys": ["próbowałam", "próbowałem", "sprawdziłam", "sprawdziłem", "zadzwoniłam", "zadzwoniłem"] },
+        { "text": "Prośba o naprawę i termin", "keys": ["uprzejmie proszę", "naprawę", "w ciągu"] }
+      ],
+      "phrases": [
+        { "pl": "Piszę w sprawie awarii ogrzewania.", "ua": "Пишу щодо несправності опалення." },
+        { "pl": "Niestety problem nadal występuje.", "ua": "На жаль, проблема досі є." },
+        { "pl": "Uprzejmie proszę o jak najszybszą naprawę.", "ua": "Ввічливо прошу якнайшвидше полагодити." },
+        { "pl": "Byłabym wdzięczna, gdyby fachowiec mógł przyjść…", "ua": "Була б вдячна, якби майстер міг прийти…" }
+      ],
+      "model": "Szanowny Panie,\n\nnazywam się Ołena Kowalenko i wynajmuję od Pana mieszkanie przy ulicy Leśnej 8 od trzech miesięcy. Piszę w sprawie awarii ogrzewania. Do tej pory nigdy nie miałam z Panem żadnych problemów, dlatego liczę na szybkie rozwiązanie.\n\nOd ośmiu dni grzejniki w całym mieszkaniu są zimne, a temperatura w pokojach spada wieczorem do szesnastu stopni. Niestety mieszka ze mną dziecko, które ostatnio zaczęło kaszleć. W mieszkaniu jest teraz tak zimno, że musimy spać w ciepłych swetrach i używamy dodatkowych koców. Próbowałam już odpowietrzyć grzejniki i sprawdziłam licznik, ale to nie pomogło. W zeszły wtorek zadzwoniłam do Pana, lecz nikt nie odebrał telefonu.\n\nDlatego uprzejmie proszę o jak najszybszą naprawę ogrzewania. Byłabym wdzięczna, gdyby fachowiec mógł przyjść w ciągu najbliższych trzech dni. Jestem w domu po południu i chętnie otworzę drzwi w dowolnym terminie. Jeśli potrzebna jest moja obecność w konkretnym dniu, proszę o wcześniejszą informację, żebym mogła zaplanować pracę.\n\nZ góry dziękuję za szybką odpowiedź.\n\nZ poważaniem\nOłena Kowalenko",
+      "tips": ["Скаргу будуй як **факти → що вже зроблено → чого чекаєш** — тон ввічливий, але конкретний.", "**Byłabym wdzięczna, gdyby…** — умовний спосіб робить прохання шанобливим.", "Вказуй терміни («w ciągu trzech dni»): без терміну лист — лише скарга, а не прохання."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Ogłoszenie zarządcy", "intro": "Прослухай оголошення на сходовій клітці й відповідай на питання.",
+      "lines": [
+        { "t": "Szanowni Mieszkańcy, informujemy, że w przyszłym tygodniu, od poniedziałku do środy, w godzinach od ósmej do szesnastej, będzie wyłączona ciepła woda. Powodem jest wymiana rur w piwnicy. We wtorek między dziesiątą a dwunastą nie będzie też działać winda." },
+        { "t": "Prosimy o zabezpieczenie zapasów wody. Osoby starsze, które mają problem z wejściem po schodach, mogą zgłosić się do administracji, a pracownicy pomogą im w noszeniu zakupów." },
+        { "t": "Wszelkie pytania prosimy kierować do administracji, która jest czynna od poniedziałku do piątku od dziewiątej do piętnastej. Przepraszamy za utrudnienia." }
+      ],
+      "questions": [
+        { "q": "Dlaczego będzie wyłączona ciepła woda?", "options": ["Z powodu awarii prądu.", "Z powodu wymiany rur w piwnicy.", "Z powodu remontu windy.", "Z powodu braku opłat."], "answer": 1, "why": "«Powodem jest wymiana rur w piwnicy»." },
+        { "q": "Kiedy nie będzie działać winda?", "options": ["W poniedziałek rano.", "We wtorek między dziesiątą a dwunastą.", "W środę po południu.", "Przez cały tydzień."], "answer": 1, "why": "«We wtorek między dziesiątą a dwunastą nie będzie też działać winda»." },
+        { "q": "Co mogą zrobić osoby starsze?", "options": ["Zadzwonić do straży miejskiej.", "Zgłosić się do administracji po pomoc.", "Poprosić o zwrot czynszu.", "Zostać w domu przez cały tydzień."], "answer": 1, "why": "«Mogą zgłosić się do administracji, a pracownicy pomogą im…»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Jak nie dać się oszukać przy wynajmie", "textTitle": "Wynajem bez stresu",
+      "text": "Wynajem mieszkania to duży wydatek i dlatego warto uważać na oszustów. Najczęstszy problem to ogłoszenia z bardzo niską ceną. Jeśli mieszkanie w centrum kosztuje o połowę mniej niż inne, prawdopodobnie jest to pułapka. Wtedy rzekomy właściciel prosi o przelanie zaliczki, a po otrzymaniu pieniędzy znika.\n\nZanim podpiszesz umowę, obejrzyj mieszkanie osobiście. Sprawdź, czy osoba, która pokazuje lokal, naprawdę jest jego właścicielem, i poproś o dokument tożsamości. Warto też zapytać sąsiadów o okolicę.\n\nUmowa powinna być pisemna. Powinna zawierać wysokość czynszu, termin płatności, kwotę kaucji i zasady zakończenia umowy. Nie podpisuj papierów, których nie rozumiesz. Jeśli masz wątpliwości, poproś o pomoc kogoś, kto dobrze zna polskie prawo. Na koniec zrób zdjęcia stanu mieszkania i sprawdź liczniki prądu, wody i gazu — to pomoże uniknąć sporów przy zwrocie kaucji.",
+      "questions": [
+        { "q": "Co powinno budzić podejrzenia?", "options": ["Wysoka kaucja.", "Bardzo niska cena w porównaniu z innymi ogłoszeniami.", "Obecność sąsiadów.", "Długa umowa."], "answer": 1, "why": "«Ogłoszenia z bardzo niską ceną… prawdopodobnie jest to pułapka»." },
+        { "q": "Co warto zrobić przed podpisaniem umowy?", "options": ["Przelać zaliczkę.", "Obejrzeć mieszkanie i sprawdzić, kto jest właścicielem.", "Wyprowadzić się od sąsiadów.", "Zapłacić czynsz z góry za rok."], "answer": 1, "why": "«Obejrzyj mieszkanie osobiście. Sprawdź, czy osoba… naprawdę jest jego właścicielem»." },
+        { "q": "Po co warto zrobić zdjęcia stanu mieszkania?", "options": ["Żeby wysłać je rodzinie.", "Żeby uniknąć sporów przy zwrocie kaucji.", "Żeby obniżyć czynsz.", "Żeby zgłosić awarię."], "answer": 1, "why": "«To pomoże uniknąć sporów przy zwrocie kaucji»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Mieszkanie: przyimki i formy", "intro": "Прийменники, ступені порівняння й часові форми в темі «житло».",
+      "questions": [
+        { "q": "Mieszkam ___ trzecim piętrze.", "options": ["na", "w", "pod", "przy"], "answer": 0, "why": "Поверх: **na piętrze** («на поверсі»): «na trzecim piętrze»." },
+        { "q": "Płacę czynsz ___ dziesiątego dnia każdego miesiąca.", "options": ["do", "od", "na", "po"], "answer": 0, "why": "**do** + родовий = «до» (крайній термін): «do dziesiątego»." },
+        { "q": "Właściciel pozwolił mi ___ kota.", "options": ["mieć", "mam", "miałam", "mając"], "answer": 0, "why": "**pozwolić komuś + інфінітив**: «pozwolił mi mieć»." },
+        { "q": "To mieszkanie jest ___ niż poprzednie.", "options": ["tańsze", "najtańsze", "tanio", "tańszy"], "answer": 0, "why": "Вищий ступінь: **tańsze niż** (mieszkanie — середній рід)." },
+        { "q": "Kiedy ___ się do nowego mieszkania, kupimy nową szafę.", "options": ["przeprowadzimy", "przeprowadziliśmy", "przeprowadzaliśmy", "przeprowadzilibyśmy"], "answer": 0, "why": "Дія в майбутньому після «kiedy» → майбутній доконаний: «kiedy się przeprowadzimy»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "czynsz", "ua": "орендна плата", "ex": "Czynsz płacę do dziesiątego dnia miesiąca." },
+    { "pl": "kaucja", "ua": "застава (депозит)", "ex": "Kaucję zwracają po wyprowadzce." },
+    { "pl": "wynajmować", "ua": "орендувати; здавати в оренду", "ex": "Wynajmuję mieszkanie od roku." },
+    { "pl": "lokator", "ua": "орендар, мешканець", "ex": "Lokatorzy mają ciszę nocną od dwudziestej drugiej." },
+    { "pl": "właściciel", "ua": "власник", "ex": "Właściciel obiecał naprawić okno." },
+    { "pl": "umowa najmu", "ua": "договір оренди", "ex": "Przeczytaj uważnie umowę najmu." },
+    { "pl": "media", "ua": "комунальні послуги", "ex": "Media płaci się osobno." },
+    { "pl": "przeprowadzka", "ua": "переїзд", "ex": "Przeprowadzka zajęła nam cały dzień." }
+  ]
+}

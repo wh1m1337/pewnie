@@ -1,0 +1,154 @@
+{
+  "intro": "B2: конфлікти в багатоквартирному будинку, оренда чи купівля, повернення застави. Вчимося вести переговори й аргументувати вибір.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Konflikt sąsiedzki",
+      "scene": { "bg": "home", "caption": "Klatka schodowa, wieczór", "desk": [4, 68, 92], "items": [["😠", 22, 46, 20], ["👵", 74, 46, 22], ["🔊", 92, 30, 12], ["🐕", 52, 74, 12], ["📦", 60, 66, 11], ["🚪", 88, 50, 18], ["🕘", 50, 13, 11]] },
+      "prompt": "Opisz ilustrację. Powiedz, na czym polega konflikt i jak według Ciebie sąsiedzi powinni go rozwiązać. Powiedz też, jakie zasady współżycia w bloku uważasz za najważniejsze.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, у чому полягає конфлікт і як, на вашу думку, сусіди мають його розв’язати. Скажіть також, які правила співжиття в багатоквартирному домі вважаєте найважливішими.",
+      "time": [90, 150], "prep": 90,
+      "points": ["Opis sytuacji", "Na czym polega konflikt", "Jak go rozwiązać", "Zasady współżycia w bloku"],
+      "keywords": ["hałas|hałas", "sąsiedzi|sąsied", "konflikt|konflikt", "cisza nocna|cisza", "szacunek|szacun", "kompromis|kompromis", "administracja|administrac", "mediacja|mediac"],
+      "phrases": [
+        { "pl": "Można przypuszczać, że konflikt dotyczy…", "ua": "Можна припустити, що конфлікт стосується…" },
+        { "pl": "Według mnie powinni najpierw spokojnie porozmawiać.", "ua": "На мою думку, вони мають спершу спокійно поговорити." },
+        { "pl": "W bloku najważniejsze są… oraz…", "ua": "У багатоквартирному домі найважливіші… та…" },
+        { "pl": "Jeśli rozmowa nie pomoże, można…", "ua": "Якщо розмова не допоможе, можна…" }
+      ],
+      "model": "Na ilustracji widzę korytarz w bloku, w którym stoją dwie osoby. Po lewej stronie mężczyzna wygląda na zdenerwowanego i wskazuje ręką na drzwi, natomiast po prawej starsza kobieta ma zdziwioną minę. Ich twarze pokazują, że sytuacja jest napięta i że żadna ze stron nie chce ustąpić. Z sąsiedniego mieszkania dochodzi głośna muzyka, a przed drzwiami stoją pudła i szczeka pies. Można przypuszczać, że konflikt dotyczy hałasu, który przeszkadza mężczyźnie po całym dniu pracy. Kobieta prawdopodobnie nie wie, że jej wnuk nastawił muzykę zbyt głośno. Według mnie sąsiedzi powinni najpierw spokojnie porozmawiać, zamiast od razu wzywać administrację albo policję. Uważam, że w bloku najważniejsze są szacunek, cisza po dwudziestej drugiej i gotowość do kompromisu. Jeśli rozmowa nie pomoże, można poprosić o mediację zarządcę budynku.",
+      "tips": ["Конфлікт **не осуджуй** — аналізуй: «wygląda na…», «prawdopodobnie nie wie, że…». Це B2-інтерпретація.", "Структура «zamiast + інфінітив» («zamiast wzywać policję») — точна й елегантна.", "**Cisza nocna** — нічна тиша (у Польщі зазвичай 22:00–6:00, за регламентом будинку)."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Wynajem czy kupno?",
+      "prompt": "Czy w dzisiejszych czasach lepiej wynajmować mieszkanie, czy kupować je na kredyt? Przedstaw swoje zdanie, uzasadnij je i odnieś się do argumentów przeciwnych.",
+      "promptUa": "Чи краще нині орендувати квартиру, чи купувати в кредит? Викладіть свою думку, обґрунтуйте її й поясніть, що ви думаєте про протилежні аргументи.",
+      "time": [120, 180], "prep": 120,
+      "points": ["Twoje stanowisko", "Argument 1", "Argument 2 lub przykład", "Argument przeciwników i odpowiedź", "Wniosek"],
+      "keywords": ["kredyt|kredyt", "wynajem|wynaj", "rata|rat", "elastyczność|elastyczn", "inwestycja|inwestycj", "ryzyko|ryzyk", "stabilność|stabiln", "oszczędności|oszczędn"],
+      "phrases": [
+        { "pl": "W obecnej sytuacji wynajem wydaje mi się rozsądniejszy.", "ua": "У нинішній ситуації оренда здається мені розумнішою." },
+        { "pl": "Znam rodzinę, która…", "ua": "Знаю родину, яка…" },
+        { "pl": "Oczywiście rozumiem zwolenników zakupu, którzy…", "ua": "Звісно, розумію прихильників купівлі, які…" },
+        { "pl": "Podsumowując, wybór zależy od…", "ua": "Підсумовуючи, вибір залежить від…" }
+      ],
+      "model": "Moim zdaniem nie ma jednej dobrej odpowiedzi, ale w obecnej sytuacji na rynku wynajem wydaje mi się rozsądniejszy, zwłaszcza dla młodych ludzi. Po pierwsze, wynajem daje elastyczność: jeśli zmienię pracę albo miasto, nie muszę martwić się o sprzedaż mieszkania. Po drugie, kredyt hipoteczny to zobowiązanie na kilkadziesiąt lat, a wysokie raty mogą stać się poważnym ryzykiem, gdy wzrosną stopy procentowe albo stracimy pracę. Znam rodzinę, która kupiła mieszkanie tuż przed wzrostem rat i przez dwa lata prawie nie miała pieniędzy na nic poza spłatą. Oczywiście rozumiem zwolenników zakupu, którzy mówią, że własne mieszkanie daje stabilność i jest inwestycją na przyszłość. Płacąc czynsz, nie budujemy przecież żadnego majątku. Jednak uważam, że różnicę między ratą a czynszem można zainwestować w inny sposób, na przykład w oszczędności lub naukę. Podsumowując, wybór zależy od sytuacji życiowej, lecz zanim podpiszemy umowę kredytową, warto dokładnie policzyć wszystkie koszty.",
+      "tips": ["**Płacąc czynsz, …** — дієприслівник (-ąc) на початку: акуратний B2-прийом, як «Decydując się…».", "Наведи приклад «Znam rodzinę, która…» — це швидкий аргумент із досвіду, навіть узагальнений.", "Завершуй умовою: «zanim podpiszemy…, warto…» — практична порада звучить переконливо."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Zwrot kaucji",
+      "prompt": "Wyprowadziłeś (Wyprowadziłaś) się z wynajmowanego mieszkania, ale właściciel nie chce zwrócić całej kaucji. Rozmawiasz z nim przez telefon. Broń swojego stanowiska i spróbuj dojść do porozumienia.",
+      "promptUa": "Ви виїхали з орендованої квартири, але власник не хоче повертати всю заставу. Розмовляєте з ним по телефону. Обстоюйте свою позицію й спробуйте дійти згоди.",
+      "points": ["Zgłoś problem i powołaj się na umowę", "Odpowiedz na zarzut o zniszczenia", "Przedstaw dowody", "Zaproponuj porozumienie na piśmie"],
+      "keywords": ["kaucja|kaucj", "umowa|umow", "protokół|protok", "zdjęcia|zdjęc", "potrącenie|potrąc", "szkoda|szkod", "porozumienie|porozumieni", "na piśmie|piśmie"],
+      "phrases": [
+        { "pl": "Zgodnie z umową powinnam ją otrzymać w ciągu…", "ua": "Згідно з договором я мала б її отримати протягом…" },
+        { "pl": "Nie zgadzam się z tym stwierdzeniem.", "ua": "Я не погоджуюся з цим твердженням." },
+        { "pl": "Mam na to dowody: zdjęcia i protokół.", "ua": "Маю на це докази: фото й акт." },
+        { "pl": "Wolałabym, żebyśmy spisali to na piśmie.", "ua": "Я хотіла б, щоб ми записали це письмово." }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, dzwoni Pani w sprawie kaucji?", "hint": "Przypomnij o umowie i terminie zwrotu.", "model": "Dzień dobry, tak. Wyprowadziłam się dwa tygodnie temu i do tej pory nie dostałam zwrotu kaucji, chociaż zgodnie z umową powinnam ją otrzymać w ciągu czternastu dni." },
+        { "ex": "Niestety nie mogę jej zwrócić w całości, bo w mieszkaniu były zniszczone ściany i trzeba je odmalować.", "hint": "Nie zgadzaj się — powołaj się na protokół i zdjęcia.", "model": "Nie zgadzam się z tym stwierdzeniem. Przy przekazaniu mieszkania sporządziliśmy protokół zdawczo-odbiorczy i nie było w nim żadnych uwag. Mam też zdjęcia, które zrobiłam w dniu wyprowadzki." },
+        { "ex": "Zdjęcia nie muszą pokazywać wszystkiego, a koszt malowania to około tysiąca złotych.", "hint": "Odróżnij normalne zużycie od szkody i poproś o dokumenty.", "model": "Normalne zużycie ścian, na przykład małe przebarwienia, nie jest szkodą, za którą można potrącić pieniądze. Jeśli ma Pan rachunek lub kosztorys, chętnie go zobaczę, ale bez dokumentów nie mogę się zgodzić na potrącenie całej kwoty." },
+        { "ex": "Dobrze, zwrócę osiemdziesiąt procent, a resztę zatrzymam na malowanie. Czy to Pani odpowiada?", "hint": "Zaproponuj porozumienie na piśmie i termin przelewu.", "model": "To jest krok w dobrym kierunku, ale wolałabym, żebyśmy spisali to porozumienie na piśmie. Jeśli Pan się zgodzi, proszę przelać pieniądze do piątku, a ja podpiszę oświadczenie, że sprawa jest zamknięta." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Normalne zużycie ≠ szkoda** — ключовий юридичний аргумент у спорах про заставу.", "Завжди пропонуй **письмове порозуміння** («na piśmie») — це те, що робить переговори результативними.", "Тримай ввічливий тон навіть у суперечці: «Jeśli ma Pan…, chętnie go zobaczę»."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "neutral", "title": "Szukam współlokatora",
+      "prompt": "Szukasz współlokatora do dwupokojowego mieszkania. Napisz ogłoszenie na portal: opisz mieszkanie i okolicę, podaj koszt miesięczny, wymień swoje oczekiwania wobec współlokatora i podaj sposób kontaktu.",
+      "promptUa": "Ви шукаєте співмешканця в двокімнатну квартиру. Напишіть оголошення для порталу: опишіть квартиру й район, вкажіть щомісячну вартість, назвіть очікування від співмешканця й спосіб зв’язку.",
+      "min": 60, "max": 90, "time": 15,
+      "points": [
+        { "text": "Opis mieszkania i okolicy", "keys": ["mieszkani", "powierzchni", "metra"] },
+        { "text": "Koszt miesięczny", "keys": ["koszt", "zł", "czynsz"] },
+        { "text": "Oczekiwania wobec współlokatora", "keys": ["szukam osoby", "spokojn", "niepal", "odpowiedzialn"] },
+        { "text": "Kontakt", "keys": ["kontakt"] }
+      ],
+      "phrases": [
+        { "pl": "Do dyspozycji jest osobny pokój z balkonem.", "ua": "До вашого розпорядження — окрема кімната з балконом." },
+        { "pl": "Miesięczny koszt wynosi… wraz z opłatami.", "ua": "Щомісячна вартість становить… разом з оплатою комунальних." },
+        { "pl": "Szukam osoby spokojnej i odpowiedzialnej.", "ua": "Шукаю спокійну й відповідальну людину." },
+        { "pl": "Zainteresowanych proszę o kontakt.", "ua": "Зацікавлених прошу зв’язатися." }
+      ],
+      "model": "Szukam współlokatora do dwupokojowego mieszkania o powierzchni 48 m² na Mokotowie, dziesięć minut od metra. Do dyspozycji jest osobny pokój z balkonem, wspólna kuchnia i pralka. Miesięczny koszt wynosi 1800 zł wraz z opłatami, do tego kaucja w wysokości jednego czynszu. Szukam osoby spokojnej, niepalącej i odpowiedzialnej, najlepiej pracującej lub studiującej. Zwierzęta niestety odpadają. Zainteresowanych proszę o kontakt telefoniczny lub e-mailowy.",
+      "tips": ["Оголошення — **лаконічно й конкретно**: метраж, район, ціна, що входить, кого шукаєш.", "**Wraz z opłatami** — «разом із комунальними»: критична інформація для будь-якого орендаря."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "Skarga na hałas",
+      "prompt": "Od kilku miesięcy w sąsiednim mieszkaniu trwa remont, który zaczyna się już o siódmej rano, także w weekendy. Napisz oficjalny list do zarządcy budynku. Opisz problem i jego skutki, przypomnij o obowiązujących zasadach, zaproponuj rozwiązanie i poinformuj o dalszych krokach, jeśli sytuacja się nie zmieni.",
+      "promptUa": "Кілька місяців у сусідній квартирі триває ремонт, який починається вже о сьомій ранку, у вихідні також. Напишіть офіційного листа управителю будинку: опишіть проблему та її наслідки, нагадайте про правила, запропонуйте рішення й повідомте про подальші кроки, якщо нічого не зміниться.",
+      "min": 200, "max": 250, "time": 50,
+      "points": [
+        { "text": "Opis problemu", "keys": ["remont", "hałas"] },
+        { "text": "Skutki dla Ciebie i rodziny", "keys": ["dziecko", "skupić", "uniemożliwia", "odpocząć", "nie może"] },
+        { "text": "Zasady (regulamin, cisza)", "keys": ["regulamin", "zasad", "cisza", "przepis"] },
+        { "text": "Propozycja rozwiązania", "keys": ["wnoszę", "harmonogram", "proszę o", "proponuję"] },
+        { "text": "Dalsze kroki", "keys": ["jeśli sytuacja", "będę zmuszona", "zwrócić się", "skargę"] }
+      ],
+      "phrases": [
+        { "pl": "Piszę w sprawie uciążliwego hałasu…", "ua": "Пишу щодо докучливого шуму…" },
+        { "pl": "Zgodnie z regulaminem budynku…", "ua": "Згідно з регламентом будинку…" },
+        { "pl": "Wnoszę zatem o…", "ua": "Тому прошу (офіційно)…" },
+        { "pl": "Jeśli sytuacja nie ulegnie poprawie, będę zmuszona…", "ua": "Якщо ситуація не покращиться, я буду змушена…" }
+      ],
+      "model": "Szanowny Panie Zarządco,\n\njestem mieszkanką budynku przy ulicy Klonowej 14 i piszę w sprawie uciążliwego hałasu, który od trzech miesięcy dobiega z remontowanego mieszkania na drugim piętrze.\n\nPrace budowlane rozpoczynają się zwykle już o godzinie siódmej rano, a w wielu przypadkach trwają także w soboty i niedziele. Pracuję zdalnie, dlatego hałas uniemożliwia mi skupienie się na obowiązkach zawodowych. Ponadto moje dziecko, które wraca ze szkoły po południu, nie może odpocząć ani odrobić lekcji w spokoju. Nie jestem jedyną osobą, której to przeszkadza, o czym mogę przekonać się w rozmowach z sąsiadami. Kilku z nich również skarżyło się, że przez hałas nie mogą spać po nocnej zmianie ani wypoczywać w niedzielę.\n\nZgodnie z regulaminem budynku prace głośne są dozwolone wyłącznie w dni powszednie w godzinach od ósmej do osiemnastej, natomiast w weekendy obowiązuje cisza. Wnoszę zatem o przypomnienie tych zasad właścicielowi remontowanego lokalu oraz o ustalenie harmonogramu prac, który uwzględni potrzeby wszystkich mieszkańców. Uważam, że takie rozwiązanie pozwoli uniknąć konfliktu i będzie korzystne dla obu stron.\n\nJeśli sytuacja nie ulegnie poprawie w ciągu dwóch tygodni, będę zmuszona zwrócić się z oficjalną skargą do administracji osiedla, a w razie potrzeby także do odpowiednich służb.\n\nLiczę na zrozumienie i polubowne rozstrzygnięcie sprawy. Z góry dziękuję za szybką reakcję.\n\nZ wyrazami szacunku\nAnna Kowalenko",
+      "tips": ["Офіційна скарга: **факти → наслідки → підстава (регламент) → вимога → наслідок для сторони**. П’ять абзаців — п’ять пунктів.", "**Wnoszę o + biernik** — суто офіційне «прошу/клопочу про» — доречне в листах до установ.", "Не погрожуй, а **інформуй про кроки**: «będę zmuszona zwrócić się…» — професійний тон."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Rynek najmu w dużych miastach", "intro": "Радіоінтерв’ю з аналітиком ринку нерухомості.",
+      "lines": [
+        { "who": "A", "t": "Ceny wynajmu mieszkań w dużych miastach rosną od kilku lat. Zapytałam o przyczyny analityka rynku nieruchomości, pana Michała Zawadę. Panie Michale, co się dzieje?" },
+        { "who": "B", "t": "Przyczyn jest kilka. Po pierwsze, w miastach brakuje mieszkań, bo nowych powstaje mniej, niż potrzeba. Po drugie, wielu właścicieli woli wynajmować lokale turystom na krótki okres, bo to bardziej się opłaca. No i wreszcie liczba osób szukających mieszkania wzrosła, także dzięki napływowi pracowników z zagranicy." },
+        { "who": "A", "t": "Czy najemcy mogą coś zrobić, żeby nie przepłacać?" },
+        { "who": "B", "t": "Warto porównywać oferty z kilku portali i nie decydować pod presją, bo pośpiech to najdroższy doradca. Dobrym pomysłem jest wynajem mieszkania nieco dalej od centrum, ale blisko komunikacji. Różnica w cenie bywa nawet trzydziestoprocentowa. I koniecznie trzeba czytać umowę, zwłaszcza zapisy o podwyżkach czynszu." },
+        { "who": "A", "t": "Czy sytuacja szybko się poprawi?" },
+        { "who": "B", "t": "Raczej nie w najbliższych dwóch latach. Zmiana wymaga budowy nowych osiedli, a to trwa." }
+      ],
+      "questions": [
+        { "q": "Jedną z przyczyn wzrostu cen jest to, że…", "options": ["mieszkań jest za dużo.", "wielu właścicieli woli wynajmować turystom na krótki okres.", "cudzoziemcy nie płacą czynszu.", "banki nie dają kredytów."], "answer": 1, "why": "«Wielu właścicieli woli wynajmować lokale turystom na krótki okres, bo to bardziej się opłaca»." },
+        { "q": "Jaką radę daje ekspert osobom szukającym mieszkania?", "options": ["Kupować mieszkanie na kredyt.", "Porównywać oferty i rozważyć mieszkanie dalej od centrum, ale blisko komunikacji.", "Podpisywać umowę jak najszybciej.", "Wynajmować tylko przez agencje."], "answer": 1, "why": "«Warto porównywać oferty… wynajem nieco dalej od centrum, ale blisko komunikacji»." },
+        { "q": "Jaka jest prognoza eksperta?", "options": ["Ceny spadną za rok.", "Sytuacja nie poprawi się szybko, w najbliższych dwóch latach raczej nie.", "Ceny zostaną zamrożone.", "Znikną krótkoterminowe wynajmy."], "answer": 1, "why": "«Raczej nie w najbliższych dwóch latach»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Mikromieszkania", "textTitle": "Czy warto mieszkać na dwudziestu metrach?",
+      "text": "W dużych polskich miastach powstaje coraz więcej mikroapartamentów o powierzchni od piętnastu do dwudziestu pięciu metrów kwadratowych. Deweloperzy chwalą je jako rozwiązanie dla osób, które nie chcą płacić za zbędne metry, a jednocześnie marzą o własnym miejscu w centrum. Wielu młodych ludzi rzeczywiście traktuje takie mieszkanie jako pierwszy krok na rynku nieruchomości albo jako inwestycję, którą można później wynająć.\n\nArchitekci są jednak ostrożni. Ich zdaniem w bardzo małych wnętrzach szybko brakuje miejsca na przechowywanie rzeczy, a życie w jednym pomieszczeniu bywa męczące, zwłaszcza gdy pracuje się z domu. Psychologowie zwracają uwagę, że brak prywatnej przestrzeni sprzyja stresowi i konfliktom, jeśli mieszka więcej niż jedna osoba.\n\nMiasta z kolei zaczynają wprowadzać ograniczenia: w niektórych z nich nie wolno już budować lokali mniejszych niż dwadzieścia pięć metrów. Jak podkreśla jeden z urbanistów, mieszkanie powinno być nie tylko tanie, ale przede wszystkim zdatne do życia przez wiele lat, a nie wyłącznie atrakcyjne w reklamie.",
+      "questions": [
+        { "q": "Dlaczego deweloperzy promują mikroapartamenty?", "options": ["Bo są droższe od zwykłych mieszkań.", "Bo pozwalają mieć własne miejsce w centrum bez płacenia za zbędne metry.", "Bo miasta tego wymagają.", "Bo młodzi ludzie chcą mieszkać za miastem."], "answer": 1, "why": "«Rozwiązanie dla osób, które nie chcą płacić za zbędne metry, a marzą o własnym miejscu w centrum»." },
+        { "q": "Jakie problemy widzą architekci i psychologowie?", "options": ["Brak miejsca na rzeczy i brak prywatności, co sprzyja stresowi.", "Za wysokie czynsze.", "Zbyt duże okna.", "Brak parkingów."], "answer": 0, "why": "«Brakuje miejsca na przechowywanie… brak prywatnej przestrzeni sprzyja stresowi»." },
+        { "q": "Co robią niektóre miasta?", "options": ["Dofinansowują zakup mikroapartamentów.", "Ograniczają budowę bardzo małych lokali.", "Zwiększają czynsze.", "Zakazują deweloperom reklamy."], "answer": 1, "why": "«Nie wolno już budować lokali mniejszych niż dwadzieścia pięć metrów»." },
+        { "q": "Jakie zdanie ma urbanista?", "options": ["Mieszkanie powinno być przede wszystkim tanie.", "Mieszkanie powinno nadawać się do życia przez wiele lat, a nie tylko dobrze wyglądać w reklamie.", "Mikroapartamenty są przyszłością.", "Ludzie nie potrzebują dużych mieszkań."], "answer": 1, "why": "«Zdatne do życia przez wiele lat, a nie wyłącznie atrakcyjne w reklamie»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Warunek, zdania względne, przyczyna", "intro": "B2: умовні речення, відносні сполучники, причинні конструкції.",
+      "questions": [
+        { "q": "Gdyby czynsz ___ niższy, wynajęłabym to mieszkanie.", "options": ["był", "jest", "będzie", "byłby"], "answer": 0, "why": "**gdyby** + форма минулого часу (був): «gdyby czynsz był niższy»; «by» вже входить у «gdyby»." },
+        { "q": "Mieszkanie, ___ kupiliśmy w zeszłym roku, wymaga remontu.", "options": ["które", "którego", "którym", "w którym"], "answer": 0, "why": "«Kupić (co?) mieszkanie» → знахідний середнього роду: **które**." },
+        { "q": "Umowa wygasa, ___ jej nie przedłużymy.", "options": ["chyba że", "dlatego że", "mimo że", "tak że"], "answer": 0, "why": "**chyba że** = «хіба що»: виняток. «Dlatego że» — причина." },
+        { "q": "Właściciel zgodził się obniżyć czynsz, ___ zostaniemy w mieszkaniu jeszcze rok.", "options": ["pod warunkiem, że", "dlatego, że", "mimo, że", "tak, jak"], "answer": 0, "why": "**pod warunkiem, że** = «за умови, що»." },
+        { "q": "Wynajmujący ___ do zwrotu kaucji w ciągu czternastu dni.", "options": ["jest zobowiązany", "jest zobowiązując", "zobowiązuje się", "zobowiązany ma"], "answer": 0, "why": "**być zobowiązanym do + родовий** — офіційна конструкція «зобов’язаний до…»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "najemca", "ua": "орендар", "ex": "Najemca musi dbać o mieszkanie." },
+    { "pl": "wynajmujący", "ua": "орендодавець", "ex": "Wynajmujący ma prawo do kontroli mieszkania." },
+    { "pl": "protokół zdawczo-odbiorczy", "ua": "акт приймання-передачі", "ex": "Przy wprowadzeniu podpisaliśmy protokół zdawczo-odbiorczy." },
+    { "pl": "kredyt hipoteczny", "ua": "іпотечний кредит", "ex": "Kredyt hipoteczny to zobowiązanie na dziesiątki lat." },
+    { "pl": "rata", "ua": "внесок (кредиту)", "ex": "Rata wzrosła o pięćset złotych." },
+    { "pl": "zarządca", "ua": "управитель будинку", "ex": "Zgłosiłam awarię zarządcy budynku." },
+    { "pl": "deweloper", "ua": "забудовник", "ex": "Deweloper oddał budynek z opóźnieniem." },
+    { "pl": "przepłacać", "ua": "переплачувати", "ex": "Nie chcę przepłacać za wynajem." }
+  ]
+}

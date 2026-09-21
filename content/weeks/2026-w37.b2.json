@@ -1,0 +1,155 @@
+{
+  "intro": "Рівень B2: від опису ситуації — до аргументованої позиції. Цього тижня тема роботи розкривається через віддалену роботу, вигорання, мотивацію й переговори про зарплату.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Praca zdalna w domu",
+      "scene": { "bg": "home", "caption": "Dom, godzina 10:30", "desk": [8, 60, 46], "items": [["👩‍💻", 30, 45, 24], ["💻", 26, 58, 9], ["☕", 44, 57, 7], ["🎧", 36, 30, 8], ["🐈", 60, 80, 12], ["🧒", 84, 52, 22], ["🖼️", 65, 22, 12], ["🕥", 88, 16, 11]] },
+      "prompt": "Opisz ilustrację i skomentuj sytuację. Powiedz, jakie są według Ciebie zalety i wady pracy zdalnej, i czy chciałbyś (chciałabyś) tak pracować.",
+      "promptUa": "Опишіть ілюстрацію й прокоментуйте ситуацію. Скажіть, які, на вашу думку, переваги й недоліки віддаленої роботи і чи хотіли б ви так працювати.",
+      "time": [90, 150], "prep": 90,
+      "points": ["Opis sytuacji: kto, gdzie, co się dzieje", "Jak czuje się bohaterka i dlaczego", "Zalety i wady pracy zdalnej", "Twoja opinia"],
+      "keywords": ["praca zdalna|zdaln", "rozproszenie|rozprosz", "koncentracja|koncentr", "elastyczny|elastycz", "dojazd|dojazd", "kontakt|kontakt", "równowaga|równowag", "model hybrydowy|hybryd"],
+      "phrases": [
+        { "pl": "Na pierwszym planie widać… / W tle widać…", "ua": "На передньому плані видно… / На задньому…" },
+        { "pl": "Wydaje się, że… / Można przypuszczać, że…", "ua": "Здається, що… / Можна припустити, що…" },
+        { "pl": "Z jednej strony… z drugiej strony…", "ua": "З одного боку… з іншого…" },
+        { "pl": "Moim zdaniem najlepszym rozwiązaniem jest…", "ua": "На мою думку, найкраще рішення — це…" }
+      ],
+      "model": "Na ilustracji widzę kobietę, która pracuje w domu przy komputerze. Prawdopodobnie ma właśnie ważną rozmowę online, ponieważ ma słuchawki i wygląda na skupioną. Niestety w tym samym momencie do pokoju wchodzi dziecko, a na podłodze siedzi kot, więc trudno jej się skoncentrować. Na biurku stoi kawa, a zegar pokazuje wpół do jedenastej. Praca zdalna ma wiele zalet: nie trzeba dojeżdżać do biura, można elastycznie planować dzień i oszczędzać czas oraz pieniądze. Z drugiej strony łatwo się rozproszyć, a granica między życiem prywatnym a zawodowym się zaciera. Brakuje też bezpośredniego kontaktu z zespołem. Moim zdaniem najlepszym rozwiązaniem jest model hybrydowy: kilka dni w biurze i kilka w domu. Sama chciałabym tak pracować, bo pozwala to zachować równowagę i nie czuć się samotnie.",
+      "tips": ["На B2 від тебе чекають **опису + інтерпретації + власної думки**. Не зупиняйся на «widzę kobietę» — йди до «wydaje się, że…».", "Структура «**z jednej strony… z drugiej strony…**» одразу підвищує враження від зв'язності.", "Закінчуй особистою позицією: екзаменатор оцінює вміння аргументувати, а не тільки описувати."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Pieniądze czy satysfakcja?",
+      "prompt": "Przedstaw swoje stanowisko w sprawie stwierdzenia: „Lepiej mieć dobrze płatną pracę, która nas nie cieszy, niż pracę, która daje satysfakcję, ale mało płaci”. Uzasadnij opinię, podaj przykłady i weź pod uwagę inny punkt widzenia.",
+      "promptUa": "Викладіть свою позицію щодо твердження: «Краще мати добре оплачувану роботу, яка не радує, ніж роботу, що дає задоволення, але мало платить». Обґрунтуйте, наведіть приклади й врахуйте іншу точку зору.",
+      "time": [120, 180], "prep": 120,
+      "points": ["Twoje stanowisko", "Co najmniej dwa argumenty", "Przykład z życia", "Kontrargument i odpowiedź na niego", "Wniosek"],
+      "keywords": ["satysfakcja|satysfakcj", "wynagrodzenie|wynagrodz", "stabilność|stabiln", "motywacja|motywac", "wypalenie|wypalen", "kompromis|kompromis", "rozwój|rozw", "zdaniem|zdaniem"],
+      "phrases": [
+        { "pl": "Nie zgadzam się z tym stwierdzeniem, ponieważ…", "ua": "Я не погоджуюся з цим твердженням, бо…" },
+        { "pl": "Po pierwsze… po drugie… poza tym…", "ua": "По-перше… по-друге… крім того…" },
+        { "pl": "Oczywiście rozumiem argument, że…, jednak…", "ua": "Звісно, розумію аргумент, що…, однак…" },
+        { "pl": "Podsumowując, można powiedzieć, że…", "ua": "Підсумовуючи, можна сказати, що…" }
+      ],
+      "model": "Moim zdaniem to nie jest wybór między czarnym a białym, ale gdybym miała wybierać, wybrałabym pracę, która daje satysfakcję. Po pierwsze, spędzamy w pracy około jednej trzeciej życia, więc jeśli robimy coś, czego nie lubimy, łatwo o wypalenie zawodowe. Po drugie, człowiek zadowolony z pracy rozwija się szybciej i często w końcu zarabia więcej, bo jest bardziej zmotywowany. Znam to z własnego doświadczenia: moja znajoma zostawiła dobrze płatną posadę w banku i została nauczycielką. Zarabia mniej, ale, jak mówi, wreszcie wraca do domu w dobrym nastroju. Oczywiście rozumiem argument, że pieniądze dają stabilność, zwłaszcza gdy ktoś ma rodzinę i kredyt. Jednak uważam, że nie trzeba wybierać skrajności. Można poszukać kompromisu, na przykład zmienić stanowisko w tej samej branży albo rozwijać dodatkowe umiejętności. Podsumowując, pieniądze są ważne, ale to satysfakcja sprawia, że praca ma sens.",
+      "tips": ["Завжди **згадай контраргумент** («Oczywiście rozumiem…, jednak…») — це прямий пункт критерію «argumentacja».", "Приклад із життя («znam to z doświadczenia…») робить відповідь переконливою й дає час подумати.", "Тримай 2–3 хвилини: 3 думки по 40 секунд + висновок."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Rozmowa o podwyżce",
+      "prompt": "Rozmawiasz z szefową. Chcesz uzyskać podwyżkę wynagrodzenia. Przedstaw argumenty, reaguj na jej zastrzeżenia i spróbuj wynegocjować kompromis.",
+      "promptUa": "Ви розмовляєте з керівницею. Хочете отримати підвищення зарплати. Наведіть аргументи, реагуйте на її застереження й спробуйте домовитися про компроміс.",
+      "points": ["Rozpocznij rozmowę i wyjaśnij cel", "Przedstaw argumenty", "Zareaguj na propozycję premii", "Ustal dalsze kroki"],
+      "keywords": ["podwyżka|podwyżk", "wynagrodzenie|wynagrodz", "obowiązki|obowiązk", "osiągnięcia|osiągni", "premia|premi", "budżet|budżet", "kompromis|kompromis", "propozycja|propozyc"],
+      "phrases": [
+        { "pl": "Chciałabym porozmawiać o moim wynagrodzeniu.", "ua": "Я хотіла б поговорити про свою зарплату." },
+        { "pl": "Doceniam tę propozycję, ale…", "ua": "Ціную цю пропозицію, але…" },
+        { "pl": "Czy moglibyśmy rozważyć…?", "ua": "Чи могли б ми розглянути…?" },
+        { "pl": "Jestem otwarta na kompromis.", "ua": "Я відкрита до компромісу." }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, wspominała Pani, że chce porozmawiać. Słucham.", "hint": "Przedstaw cel rozmowy — spokojnie i konkretnie.", "model": "Dzień dobry, dziękuję za czas. Chciałabym porozmawiać o moim wynagrodzeniu. Pracuję w firmie już trzy lata i uważam, że nadszedł dobry moment, żeby omówić podwyżkę." },
+        { "ex": "Rozumiem. Dlaczego uważa Pani, że zasługuje na podwyżkę?", "hint": "Podaj konkretne osiągnięcia i zmiany obowiązków.", "model": "W tym roku przejęłam obowiązki po koleżance, która odeszła, i jednocześnie zwiększyłam sprzedaż o piętnaście procent. Poza tym zdobyłam certyfikat, który przydaje się w naszych projektach." },
+        { "ex": "Cieszę się z Pani wyników, ale budżet na ten rok jest ograniczony. Może zaproponuję premię zamiast podwyżki?", "hint": "Nie odrzucaj od razu — pokaż, że rozumiesz, i zaproponuj alternatywę.", "model": "Doceniam tę propozycję, ale premia jest jednorazowa, a moje obowiązki zwiększyły się na stałe. Czy moglibyśmy rozważyć podwyżkę od nowego kwartału, a premię potraktować jako dodatek?" },
+        { "ex": "Dobrze, porozmawiam z dyrekcją i odpowiem w przyszłym tygodniu. Czy to Pani odpowiada?", "hint": "Zgódź się i ustal, co będzie dalej.", "model": "Tak, oczywiście. Dziękuję za rozmowę. Będę czekać na odpowiedź do piątku, a w razie pytań chętnie przygotuję zestawienie moich osiągnięć." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["W negocjacjach zaczynaj od **«Doceniam…, ale…»** — grzecznie, a jednocześnie stanowczo.", "Proponuj konkret (termin, kwota, warunek) — to pokazuje aktywną, a nie tylko odtwórczą kompetencję.", "Nie bój się prosić o powtórzenie: «Czy mogłaby Pani wyjaśnić, co Pani ma na myśli?»"]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "neutral", "title": "Zmiana terminu spotkania",
+      "prompt": "Jesteś kierownikiem (kierowniczką) projektu. Musisz zmienić termin czwartkowego spotkania zespołu, ponieważ klient przesunął prezentację. Napisz e-mail do zespołu: podaj powód zmiany, nowy termin i miejsce, poproś o potwierdzenie obecności oraz o przygotowanie krótkich raportów.",
+      "promptUa": "Ви керівник проєкту. Потрібно змінити термін четвергової наради, бо клієнт переніс презентацію. Напишіть листа команді: причина, новий термін і місце, прохання підтвердити присутність і підготувати короткі звіти.",
+      "min": 60, "max": 90, "time": 15,
+      "points": [
+        { "text": "Powód zmiany", "keys": ["z powodu", "ponieważ", "przesunął", "przełoż"] },
+        { "text": "Nowy termin i miejsce", "keys": ["w piątek", "w poniedziałek", "sali", "godzinie", "o godz"] },
+        { "text": "Prośba o potwierdzenie obecności", "keys": ["potwierdz", "obecność", "obecności"] },
+        { "text": "Prośba o raporty", "keys": ["raport", "sprawozdan", "podsumowan"] }
+      ],
+      "phrases": [
+        { "pl": "Z powodu zmiany terminu… musimy przełożyć…", "ua": "Через зміну терміну… мусимо перенести…" },
+        { "pl": "Proszę o potwierdzenie obecności do…", "ua": "Прошу підтвердити присутність до…" },
+        { "pl": "Jednocześnie proszę o przygotowanie…", "ua": "Водночас прошу підготувати…" },
+        { "pl": "W razie trudności proszę o kontakt.", "ua": "У разі труднощів прошу зв’язатися." }
+      ],
+      "model": "Szanowni Państwo,\n\nz powodu zmiany terminu prezentacji u klienta musimy przełożyć czwartkowe spotkanie. Odbędzie się ono w piątek, 3 października, o godzinie 10:00 w sali konferencyjnej na drugim piętrze. Proszę o potwierdzenie obecności do środy do końca dnia. Jednocześnie proszę każdego z Państwa o przygotowanie krótkiego raportu z postępów w swoich zadaniach. W razie trudności z nowym terminem proszę o kontakt.\n\nPozdrawiam\nMarta Nowak",
+      "tips": ["У короткому діловому листі **кожне речення несе один пункт** — і жодних зайвих вступів.", "Ввічлива форма прохання: **«Proszę o + biernik/dopełniacz»** (proszę o potwierdzenie) — ділова й компактна."]
+    },
+    {
+      "id": "w2", "kind": "opinion", "register": "neutral", "title": "Praca zdalna — za i przeciw",
+      "prompt": "Twoja firma zastanawia się nad wprowadzeniem stałej pracy zdalnej. Napisz artykuł na blog firmowy, w którym przedstawisz swoje zdanie. Wymień zalety i wady, odnieś się do własnych doświadczeń i zaproponuj rozwiązanie.",
+      "promptUa": "Ваша фірма розглядає постійну віддалену роботу. Напишіть статтю для корпоративного блогу з вашою позицією: перелічіть плюси й мінуси, зверніться до власного досвіду і запропонуйте рішення.",
+      "min": 200, "max": 250, "time": 50,
+      "points": [
+        { "text": "Wyraźne stanowisko", "keys": ["moim zdaniem", "uważam", "sądzę", "według mnie"] },
+        { "text": "Zalety pracy zdalnej", "keys": ["zalet", "elastyczn", "oszczędz", "dojazd"] },
+        { "text": "Wady pracy zdalnej", "keys": ["wad", "minus", "wolniej", "odizolow", "samotn", "przemęcz"] },
+        { "text": "Własne doświadczenie", "keys": ["doświadczyłam", "doświadczyłem", "sama", "sam ", "z własnego", "pracowałam", "pracowałem"] },
+        { "text": "Propozycja rozwiązania", "keys": ["proponuję", "hybryd", "rozwiązanie", "sugeruję"] }
+      ],
+      "phrases": [
+        { "pl": "Od pewnego czasu coraz więcej firm…", "ua": "Останнім часом дедалі більше фірм…" },
+        { "pl": "Moim zdaniem… / Uważam, że…", "ua": "На мою думку… / Вважаю, що…" },
+        { "pl": "Nie można jednak zapominać, że…", "ua": "Проте не можна забувати, що…" },
+        { "pl": "Dlatego proponuję, aby…", "ua": "Тому пропоную, щоб…" },
+        { "pl": "Podsumowując, …", "ua": "Підсумовуючи, …" }
+      ],
+      "model": "Praca zdalna — złoty środek?\n\nOd pandemii wiele firm stanęło przed pytaniem, czy pracownicy powinni wrócić do biur. Moim zdaniem stuprocentowa praca zdalna nie jest najlepszym rozwiązaniem, ale całkowity powrót do dawnego systemu też nie ma sensu.\n\nPo pierwsze, praca w domu daje ogromną elastyczność. Nie tracimy godzin na dojazdy, możemy lepiej zaplanować dzień i pogodzić obowiązki zawodowe z rodzinnymi. Ponadto firmy oszczędzają na wynajmie biur, a pracownicy często deklarują większą satysfakcję z pracy.\n\nZ drugiej strony pojawiają się wyraźne minusy. Zespoły, które nie spotykają się osobiście, wolniej budują zaufanie, a nowe osoby trudniej wdrażają się w obowiązki. Poza tym granica między pracą a odpoczynkiem zaciera się, co prowadzi do przemęczenia. Sama doświadczyłam tego przez rok pracy w domu: pracowałam dłużej, niż powinnam, i czułam się coraz bardziej odizolowana.\n\nDlatego proponuję model hybrydowy. Dwa lub trzy dni w tygodniu w biurze pozwoliłyby utrzymać kontakt z zespołem, a pozostałe dni w domu dałyby spokój potrzebny do pracy wymagającej koncentracji. Ważne jest też, żeby firma jasno ustaliła zasady, dzięki czemu nikt nie będzie miał wrażenia, że musi być dostępny przez całą dobę.\n\nNie chodzi więc o wybór między biurem a domem, lecz o mądry kompromis, który uwzględnia potrzeby firmy i pracowników.\n\nPodsumowując, elastyczność jest cenna, ale tylko wtedy, gdy nie kosztuje nas relacji z ludźmi.",
+      "tips": ["Схема **теза → аргументи «за» → аргументи «проти» → власний досвід → пропозиція → висновок** — універсальна для будь-якого argumentacyjnego тексту.", "Умовний спосіб («pozwoliłyby», «dałyby») — приклад «zakres środków», який B2-екзаменатор шукає.", "Використай **dzięki czemu / co prowadzi do** — так ти будуєш складні речення з причиново-наслідковим зв’язком."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Wypalenie zawodowe — wywiad radiowy", "intro": "Прослухай фрагмент радіоінтерв'ю й вибери правильні відповіді.",
+      "lines": [
+        { "who": "A", "t": "W dzisiejszym wydaniu porannego magazynu rozmawiamy z psycholożką pracy, doktor Ewą Lis, o wypaleniu zawodowym. Pani doktor, czym właściwie jest wypalenie?" },
+        { "who": "B", "t": "To nie jest zwykłe zmęczenie. Zmęczenie mija po weekendzie, a wypalenie trwa tygodniami i miesiącami. Osoba wypalona traci motywację, staje się cyniczna wobec pracy i ma poczucie, że nic, co robi, nie ma sensu." },
+        { "who": "A", "t": "Kto jest najbardziej narażony?" },
+        { "who": "B", "t": "Paradoksalnie osoby bardzo zaangażowane: nauczyciele, lekarze, ale też programiści, którzy nie potrafią odmawiać dodatkowych zadań." },
+        { "who": "A", "t": "Co można zrobić, żeby temu zapobiec?" },
+        { "who": "B", "t": "Przede wszystkim reagować wcześnie. Jeśli po urlopie nadal czujemy się wyczerpani, to sygnał alarmowy. Pomaga rozmowa z przełożonym o podziale obowiązków, ustalenie granic, na przykład niesprawdzanie służbowej poczty wieczorami, i zwykły ruch na świeżym powietrzu. W poważniejszych przypadkach warto skorzystać z pomocy specjalisty." }
+      ],
+      "questions": [
+        { "q": "Czym według rozmówczyni wypalenie różni się od zmęczenia?", "options": ["Jest mniej groźne.", "Trwa znacznie dłużej i odbiera poczucie sensu pracy.", "Mija po weekendzie.", "Dotyczy tylko młodych ludzi."], "answer": 1, "why": "«Zmęczenie mija po weekendzie, a wypalenie trwa tygodniami i miesiącami… ma poczucie, że nic nie ma sensu»." },
+        { "q": "Kto jest szczególnie narażony na wypalenie?", "options": ["Osoby, które unikają obowiązków.", "Osoby bardzo zaangażowane w pracę.", "Pracownicy fizyczni.", "Osoby na emeryturze."], "answer": 1, "why": "«Paradoksalnie osoby bardzo zaangażowane»." },
+        { "q": "Co jest sygnałem alarmowym?", "options": ["Brak apetytu w weekend.", "Chęć zmiany pracy.", "Wyczerpanie, które nie mija po urlopie.", "Konflikt z przełożonym."], "answer": 2, "why": "«Jeśli po urlopie nadal czujemy się wyczerpani, to sygnał alarmowy»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Czterodniowy tydzień pracy", "textTitle": "Cztery dni w tygodniu — eksperyment, który się udał",
+      "text": "W Polsce coraz więcej firm testuje skrócony tydzień pracy. Jedna z warszawskich agencji marketingowych przez sześć miesięcy pozwoliła zespołowi pracować cztery dni w tygodniu bez obniżki pensji. Zanim ruszył eksperyment, zarząd obawiał się spadku wydajności. Okazało się jednak, że wyniki firmy nie tylko się nie pogorszyły, lecz wręcz poprawiły: liczba zrealizowanych projektów wzrosła o kilka procent, a absencja chorobowa spadła o jedną trzecią.\n\nPracownicy przyznają, że skrócenie tygodnia zmieniło sposób organizacji pracy. Spotkania są krótsze i rzadziej organizowane, a e-maile nie muszą być odsyłane natychmiast. Dłuższy weekend pomaga się zregenerować, dlatego w poniedziałek wracają bardziej skoncentrowani.\n\nNie wszyscy są jednak zachwyceni. Część klientów narzekała na trudniejszy kontakt w piątki, a niektórzy pracownicy skarżyli się na większą presję, bo te same zadania trzeba wykonać w krótszym czasie. Eksperci podkreślają, że taki model sprawdza się głównie w branżach opartych na wiedzy, a w handlu czy w produkcji jego wprowadzenie jest znacznie trudniejsze.",
+      "questions": [
+        { "q": "Jakie były wyniki eksperymentu w agencji?", "options": ["Wydajność spadła, ale ludzie byli zadowoleni.", "Wyniki firmy się poprawiły.", "Firma obniżyła pensje.", "Eksperyment przerwano po miesiącu."], "answer": 1, "why": "«Wyniki firmy nie tylko się nie pogorszyły, lecz wręcz poprawiły»." },
+        { "q": "Co zmieniło się w organizacji pracy?", "options": ["Spotkań jest więcej.", "Na e-maile trzeba odpowiadać od razu.", "Spotkania są krótsze i rzadsze.", "W piątki pracuje się dłużej."], "answer": 2, "why": "«Spotkania są krótsze i rzadziej organizowane, a e-maile nie muszą być odsyłane natychmiast»." },
+        { "q": "Jaki problem zauważono po wprowadzeniu zmian?", "options": ["Klienci mieli trudniejszy kontakt w piątki, a część osób odczuwała większą presję.", "Pracownicy chorowali częściej.", "Firma straciła wszystkich klientów.", "Zarząd zwolnił połowę zespołu."], "answer": 0, "why": "«Część klientów narzekała na trudniejszy kontakt w piątki, a niektórzy pracownicy skarżyli się na większą presję»." },
+        { "q": "Według ekspertów czterodniowy tydzień najłatwiej wprowadzić…", "options": ["w handlu.", "w produkcji.", "w branżach opartych na wiedzy.", "w każdej firmie."], "answer": 2, "why": "«Taki model sprawdza się głównie w branżach opartych na wiedzy»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Zdania złożone i strona bierna", "intro": "B2: складні речення, пасив, дієприкметники. Обери форму, що пасує граматично.",
+      "questions": [
+        { "q": "Firma, ___ pracuję od trzech lat, planuje otworzyć nowy oddział.", "options": ["w której", "której", "którą", "w którym"], "answer": 0, "why": "«Firma» — жіночий рід; «pracować w» + місцевий: **w której**." },
+        { "q": "Umowa ___ w zeszłym tygodniu.", "options": ["została podpisana", "został podpisany", "było podpisane", "podpisał"], "answer": 0, "why": "Пасив: **została podpisana** — узгоджується з «umowa» (жін. рід)." },
+        { "q": "Gdybym miała więcej czasu, ___ na kurs zawodowy.", "options": ["zapisałabym się", "zapisałam się", "zapiszę się", "zapisywałam się"], "answer": 0, "why": "Умовне речення з «gdybym» → **tryb warunkowy** (-łabym)." },
+        { "q": "___ na nową pracę, warto sprawdzić opinie o pracodawcy.", "options": ["Decydując się", "Decydować się", "Decyduje się", "Zdecydowany"], "answer": 0, "why": "Дієприслівник теперішнього часу (**-ąc**): «Decydując się na… warto…» — дві дії одного суб’єкта." },
+        { "q": "Pomimo ___ pogody wyruszyliśmy w góry.", "options": ["złej", "zła", "złą", "złym"], "answer": 0, "why": "**pomimo** + родовий: «pomimo złej pogody»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "awans", "ua": "підвищення по службі", "ex": "Dostała awans na stanowisko kierowniczki działu." },
+    { "pl": "podwyżka", "ua": "підвищення зарплати", "ex": "Poprosiłem szefa o podwyżkę." },
+    { "pl": "wypalenie zawodowe", "ua": "професійне вигорання", "ex": "Wypalenie zawodowe dotyka coraz więcej osób." },
+    { "pl": "praca hybrydowa", "ua": "гібридна робота", "ex": "Nasza firma wprowadziła pracę hybrydową." },
+    { "pl": "zakres obowiązków", "ua": "коло обов’язків", "ex": "Zakres obowiązków jest opisany w umowie." },
+    { "pl": "umiejętności miękkie", "ua": "м’які навички (soft skills)", "ex": "Rekruterzy cenią umiejętności miękkie, np. komunikatywność." },
+    { "pl": "wynagrodzenie brutto / netto", "ua": "зарплата до / після податків", "ex": "Proponują 6000 zł brutto, czyli około 4300 zł netto." },
+    { "pl": "wdrożyć się", "ua": "влитися в роботу, освоїтися", "ex": "Nowa pracownica szybko wdrożyła się w obowiązki." }
+  ]
+}

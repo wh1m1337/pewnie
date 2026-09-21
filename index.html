@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pewnie — польська B1/B2: мовлення й письмо</title>
+<meta name="description" content="Тренажер до державного іспиту з польської B1/B2: усна й письмова частини, запис голосу, перевірка тексту, нові завдання щотижня.">
+<meta name="theme-color" content="#F5F0E1">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon.svg">
+<link rel="preload" href="assets/fonts/alegreya-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  // тема до першого малювання — без спалаху
+  try {
+    var s = JSON.parse(localStorage.getItem('pewnie.v1') || '{}');
+    var dark = s.theme === 'dark' || ((!s.theme || s.theme === 'auto') && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  } catch (e) {}
+</script>
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="padding:2rem;font:18px system-ui">Pewnie працює на JavaScript. Увімкни його в браузері.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

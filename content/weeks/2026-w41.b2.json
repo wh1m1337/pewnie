@@ -1,0 +1,154 @@
+{
+  "intro": "B2: масовий туризм, «повільні» подорожі, скарга в турагентство, залізниця vs авіація. Тренуємо аргументацію в темі, де у кожного є власний досвід.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Turystyka masowa",
+      "scene": { "bg": "sea", "caption": "Plaża w środku sierpnia", "desk": [0, 74, 100], "items": [["👨‍👩‍👧‍👦", 26, 56, 22], ["📸", 56, 56, 12], ["🧍", 62, 50, 18], ["🚢", 78, 30, 22], ["☀️", 12, 14, 14], ["🗑️", 90, 70, 10], ["⛱️", 40, 62, 12]] },
+      "prompt": "Opisz ilustrację i skomentuj zjawisko masowej turystyki. Powiedz, jakie korzyści i problemy niesie ona dla mieszkańców, i zaproponuj, jak podróżować odpowiedzialnie.",
+      "promptUa": "Опишіть ілюстрацію й прокоментуйте явище масового туризму. Скажіть, які вигоди й проблеми воно несе для мешканців, і запропонуйте, як подорожувати відповідально.",
+      "time": [90, 150], "prep": 90,
+      "points": ["Opis ilustracji", "Zalety turystyki masowej", "Problemy dla mieszkańców i środowiska", "Twoja propozycja"],
+      "keywords": ["turystyka|turystyk", "sezon|sezon", "środowisko|środowisk", "mieszkańcy|mieszkańc", "ceny|ceny", "odpowiedzialnie|odpowiedzialn", "zanieczyszczenie|zanieczyszczeni", "lokalne|lokaln"],
+      "phrases": [
+        { "pl": "Na pierwszym planie widać…, a w tle…", "ua": "На передньому плані видно…, а на задньому…" },
+        { "pl": "Masowa turystyka ma zarówno zalety, jak i wady.", "ua": "Масовий туризм має як переваги, так і недоліки." },
+        { "pl": "Mieszkańcy czują się wypierani z…", "ua": "Мешканці почуваються витісненими з…" },
+        { "pl": "Warto wybierać mniej popularne miejsca.", "ua": "Варто обирати менш популярні місця." }
+      ],
+      "model": "Na ilustracji widzę zatłoczoną plażę nad morzem. Na pierwszym planie rodzina rozkłada koc i parasol, obok turysta robi zdjęcie telefonem, a w tle stoi ogromny statek wycieczkowy. Można zauważyć, że plaża jest pełna ludzi i śmieci, co sugeruje, że miejsce jest przeciążone. Nad wodą unosi się hałas, a mewy krążą nad stosem odpadków. Wydaje się, że turyści cieszą się słońcem, ale nie zastanawiają się nad skutkami swojej obecności. Masowa turystyka ma oczywiście zalety: tworzy miejsca pracy i przynosi pieniądze lokalnym firmom. Z drugiej strony powoduje wzrost cen, hałas i zanieczyszczenie środowiska, a mieszkańcy czują się wypierani z własnych miast. Moim zdaniem powinniśmy podróżować odpowiedzialnie: wybierać mniej popularne miejsca, także poza sezonem, korzystać z lokalnych usług i zabierać ze sobą własne śmieci.",
+      "tips": ["**Zarówno…, jak i…** («як…, так і…») — складний сполучник рівня B2, який додає точності.", "Обґрунтуй: **не «turystyka jest zła»**, а «ma zalety i wady» — екзаменатор цінує баланс.", "Конкретна порада наприкінці («wybierać poza sezonem») — сильніше, ніж загальне «trzeba dbać o środowisko»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Czy podróże kształcą?",
+      "prompt": "Czy podróżowanie naprawdę uczy więcej niż nauka w szkole? Przedstaw swoje zdanie, podaj przykłady i weź pod uwagę argumenty przeciwników.",
+      "promptUa": "Чи справді подорожі вчать більше, ніж навчання в школі? Викладіть думку, наведіть приклади й урахуйте аргументи опонентів.",
+      "time": [120, 180], "prep": 120,
+      "points": ["Twoje stanowisko", "Argument 1", "Argument 2 lub przykład z życia", "Argument przeciwników i odpowiedź", "Wniosek"],
+      "keywords": ["doświadczenie|doświadcz", "kultura|kultur", "tolerancja|toleranc", "język|język", "stereotypy|stereotyp", "komfort|komfort", "horyzonty|horyzont", "edukacja|edukacj"],
+      "phrases": [
+        { "pl": "Uważam, że podróże uczą wielu rzeczy, ale…", "ua": "Вважаю, що подорожі вчать багатьох речей, але…" },
+        { "pl": "Kontakt z inną kulturą pomaga pozbyć się stereotypów.", "ua": "Контакт з іншою культурою допомагає позбутися стереотипів." },
+        { "pl": "Zgadzam się z tym, jednak…", "ua": "Погоджуюся з цим, однак…" },
+        { "pl": "Podsumowując, podróże poszerzają horyzonty, ale…", "ua": "Підсумовуючи, подорожі розширюють горизонти, але…" }
+      ],
+      "model": "Uważam, że podróże uczą wielu rzeczy, których nie da się znaleźć w podręcznikach, ale nie zastąpią systematycznej edukacji. Po pierwsze, kontakt z inną kulturą pomaga pozbyć się stereotypów i uczy tolerancji. Kiedy zamieszkałam w Polsce, zrozumiałam, że wiele rzeczy, które wcześniej uważałam za oczywiste, wcale takie nie jest. Po drugie, podróżując, uczymy się języków w naturalny sposób, bo musimy porozumieć się w sklepie czy na dworcu. Oczywiście rozumiem argument, że podróże są drogie i nie każdy może sobie na nie pozwolić, a turysta, który jedzie na tydzień do hotelu, rzadko poznaje prawdziwe życie mieszkańców. Zgadzam się z tym, jednak nauka w szkole daje wiedzę, a podróże doświadczenie, i najlepiej działają razem. Podsumowując, podróże poszerzają horyzonty i wyprowadzają poza strefę komfortu, ale wartościowe stają się dopiero wtedy, gdy podróżujemy z ciekawością, a nie tylko po to, by zrobić zdjęcie.",
+      "tips": ["Особиста історія («kiedy zamieszkałam w Polsce…») — найкращий аргумент і легше для запам’ятовування.", "**Nie da się znaleźć w podręcznikach** — безособове «da się» (можна/вдається) — B2-конструкція.", "Фінальне «ale wartościowe stają się dopiero wtedy, gdy…» — нюансований висновок замість категоричного."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Reklamacja w biurze podróży",
+      "prompt": "Wróciłeś (Wróciłaś) z wycieczki zorganizowanej przez biuro podróży, ale hotel nie odpowiadał ofercie. Rozmawiasz z pracownikiem biura. Przedstaw problem, odpowiedz na jego pytania i przedstaw swoje oczekiwania.",
+      "promptUa": "Ви повернулися з екскурсійної поїздки від турагентства, але готель не відповідав пропозиції. Розмовляєте з працівником агентства. Викладіть проблему, дайте відповіді на його запитання й окресліть свої очікування.",
+      "points": ["Zgłoś reklamację", "Opisz problemy", "Wykaż, że reklamowałaś na miejscu", "Przedstaw oczekiwania"],
+      "keywords": ["reklamacja|reklamac", "oferta|ofert", "hotel|hotel", "potwierdzenie|potwierdzeni", "zwrot|zwrot", "rzecznik|rzecznik", "klimatyzacja|klimatyzac", "rezydent|rezydent"],
+      "phrases": [
+        { "pl": "Chciałabym złożyć reklamację, ponieważ…", "ua": "Хотіла б подати рекламацію, тому що…" },
+        { "pl": "Okazało się, że… nie odpowiada opisowi z oferty.", "ua": "Виявилося, що… не відповідає опису з пропозиції." },
+        { "pl": "Mam na to potwierdzenie mailowe i zdjęcia.", "ua": "Маю на це підтвердження на пошті й фото." },
+        { "pl": "Oczekuję zwrotu części kosztów.", "ua": "Очікую повернення частини витрат." }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, w czym mogę pomóc?", "hint": "Zgłoś reklamację i wyjaśnij, o co chodzi.", "model": "Dzień dobry. Wróciłam wczoraj z wycieczki zorganizowanej przez Państwa biuro i chciałabym złożyć reklamację, ponieważ hotel nie odpowiadał opisowi z oferty." },
+        { "ex": "Bardzo mi przykro. Co dokładnie było nie tak?", "hint": "Wymień konkretne problemy.", "model": "W ofercie był hotel czterogwiazdkowy z basenem i widokiem na morze. Na miejscu okazało się, że basen jest zamknięty z powodu remontu, a nasz pokój miał okna na parking. Poza tym w pokoju nie działała klimatyzacja, o czym informowałam recepcję już pierwszego dnia." },
+        { "ex": "Rozumiem. Zgodnie z regulaminem reklamację trzeba zgłosić na miejscu, u rezydenta. Czy Pani to zrobiła?", "hint": "Potwierdź i wskaż dowody.", "model": "Tak, zgłosiłam problem rezydentowi drugiego dnia i mam na to potwierdzenie mailowe. Obiecał zmianę pokoju, ale do końca pobytu nic się nie zmieniło. Załączam też zdjęcia." },
+        { "ex": "Dobrze, w takim razie przekażę sprawę do działu reklamacji. Czego Pani oczekuje?", "hint": "Zaproponuj konkretne rozwiązanie i termin.", "model": "Oczekuję zwrotu części kosztów, co najmniej trzydziestu procent, oraz pisemnej odpowiedzi w ciągu czternastu dni. Jeśli propozycja będzie niewystarczająca, będę zmuszona skorzystać z pomocy rzecznika konsumentów." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["Порядок аргументів: **що обіцяли → що було насправді → що ти зробила → чого чекаєш**.", "Конкретика («okna na parking», «klimatyzacja») переконує краще, ніж «było źle».", "**Rzecznik konsumentów** — уповноважений із захисту споживачів: згадка про нього — м’який, але серйозний аргумент."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "neutral", "title": "Zmiana programu wyjazdu",
+      "prompt": "Organizujesz wyjazd integracyjny firmy. Z powodu prognozy pogody musisz zmienić program. Napisz e-mail do uczestników: poinformuj o zmianie, podaj nowy plan dnia, poproś o strój odpowiedni do warunków i o potwierdzenie udziału do końca tygodnia.",
+      "promptUa": "Ви організовуєте корпоративний виїзд. Через прогноз погоди потрібно змінити програму. Напишіть листа учасникам: повідомте про зміну, вкажіть новий план дня, попросіть відповідний одяг і підтвердити участь до кінця тижня.",
+      "min": 60, "max": 90, "time": 15,
+      "points": [
+        { "text": "Powód zmiany", "keys": ["ze względu na", "z powodu", "prognoz"] },
+        { "text": "Nowy plan dnia", "keys": ["zamiast", "program", "zwiedzanie", "warsztaty"] },
+        { "text": "Prośba o odpowiedni strój", "keys": ["strój", "obuwie", "ubranie"] },
+        { "text": "Prośba o potwierdzenie udziału", "keys": ["potwierdzeni"] }
+      ],
+      "phrases": [
+        { "pl": "Ze względu na prognozy pogody…", "ua": "З огляду на прогноз погоди…" },
+        { "pl": "Zamiast… odbędzie się…", "ua": "Замість… відбудеться…" },
+        { "pl": "Proszę o wygodny strój i obuwie.", "ua": "Прошу про зручний одяг і взуття." },
+        { "pl": "Proszę o potwierdzenie udziału do piątku.", "ua": "Прошу підтвердити участь до п’ятниці." }
+      ],
+      "model": "Szanowni Państwo,\n\nze względu na prognozy pogody, które zapowiadają intensywne opady deszczu, musimy zmienić program sobotniego wyjazdu integracyjnego. Zamiast pieszej wycieczki po górach odbędzie się zwiedzanie muzeum w Krakowie, a po obiedzie warsztaty kulinarne. Wyjazd autokaru o godzinie 8:00 spod biura pozostaje bez zmian. Proszę o wygodny strój i obuwie oraz o potwierdzenie udziału do piątku do końca dnia.\n\nPozdrawiam\nMarta Nowak",
+      "tips": ["**Ze względu na + знахідний** («з огляду на») — офіційніше за «z powodu», гарне для ділового листа.", "Розділяй інформацію: **що змінилося / що лишилося / що від учасників** — читач швидко все знайде."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "List do redakcji: koleją zamiast samolotem",
+      "prompt": "W mieście trwa dyskusja o ograniczeniu krótkich lotów krajowych na rzecz kolei. Napisz list do redakcji lokalnej gazety, w którym przedstawisz swoje stanowisko. Uwzględnij argumenty ekologiczne i praktyczne, odwołaj się do własnych doświadczeń z podróży i zaproponuj konkretne rozwiązanie.",
+      "promptUa": "У місті триває дискусія про обмеження коротких внутрішніх авіарейсів на користь залізниці. Напишіть листа до редакції місцевої газети зі своєю позицією. Врахуйте екологічні й практичні аргументи, зверніться до власного досвіду подорожей і запропонуйте конкретне рішення.",
+      "min": 200, "max": 250, "time": 50,
+      "points": [
+        { "text": "Stanowisko", "keys": ["stanowisk", "uważam"] },
+        { "text": "Argumenty ekologiczne i praktyczne", "keys": ["ekolog", "dwutlenk", "emituje", "środowisk", "dojazd"] },
+        { "text": "Własne doświadczenie", "keys": ["doświadczeni", "w zeszłym roku"] },
+        { "text": "Obawy przeciwników", "keys": ["obaw", "przeciwnik", "punktualnie", "droższe"] },
+        { "text": "Propozycja rozwiązania", "keys": ["proponuję", "rozwiązani", "stopniowo"] }
+      ],
+      "phrases": [
+        { "pl": "W związku z toczącą się dyskusją chciałabym przedstawić swoje stanowisko.", "ua": "У зв’язку з дискусією, що триває, хотіла б викласти свою позицію." },
+        { "pl": "Argumenty ekologiczne są oczywiste.", "ua": "Екологічні аргументи очевидні." },
+        { "pl": "Rozumiem jednak obawy przeciwników.", "ua": "Проте розумію побоювання опонентів." },
+        { "pl": "Dlatego proponuję, aby ograniczenia wprowadzać stopniowo.", "ua": "Тому пропоную вводити обмеження поступово." }
+      ],
+      "model": "Szanowni Państwo Redaktorzy,\n\nw związku z toczącą się w naszym mieście dyskusją o ograniczeniu krótkich lotów krajowych chciałabym przedstawić swoje stanowisko. Uważam, że w większości przypadków powinniśmy zastąpić je koleją, pod warunkiem, że jej oferta stanie się naprawdę konkurencyjna.\n\nArgumenty ekologiczne są oczywiste: samolot na krótkiej trasie emituje kilka razy więcej dwutlenku węgla na pasażera niż pociąg. Ponadto podróż koleją od centrum do centrum miasta często trwa tyle samo, ile lot razem z dojazdem na lotnisko, kontrolą bezpieczeństwa i oczekiwaniem przy bramce. Warto też pamiętać, że lotniska są zwykle położone daleko od centrum, co dodatkowo wydłuża dojazd. Z własnego doświadczenia wiem, że w zeszłym roku pociąg do Gdańska był szybszy niż samolot moich znajomych, którzy poświęcili na całą podróż więcej czasu, mimo że lecieli tylko godzinę.\n\nRozumiem jednak obawy przeciwników. Nie wszędzie pociągi kursują punktualnie, a bilety bywają droższe niż w tanich liniach lotniczych. Dla osób z mniejszych miejscowości brak połączenia kolejowego oznacza, że samolot jest jedyną sensowną opcją, i trzeba to uczciwie przyznać.\n\nDlatego proponuję, aby ograniczenia wprowadzać stopniowo, równolegle z modernizacją torów i obniżeniem cen biletów. Wtedy zmiana nie będzie karą dla podróżnych, lecz ich świadomym wyborem, a miasto zyska czystsze powietrze. Takie podejście pozwoli jednocześnie chronić klimat i wygodę podróżnych.\n\nZ poważaniem\nAnna Kowalenko",
+      "tips": ["Лист до редакції: **привід → позиція → аргументи → опоненти → пропозиція**. Формальний регістр без агресії.", "**Pod warunkiem, że…** у тезі одразу показує чесну позицію: «так, але за умови…».", "Визнання аргументів опонентів («trzeba to uczciwie przyznać») підвищує довіру до тексту."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Slow travel", "intro": "Інтерв’ю з блогеркою-мандрівницею.",
+      "lines": [
+        { "who": "A", "t": "Jest z nami blogerka podróżnicza Julia Wrona, zwolenniczka tak zwanej powolnej turystyki. Julio, na czym ona polega?" },
+        { "who": "B", "t": "Na tym, żeby zamiast zaliczać pięć miast w tydzień, spędzić kilka dni w jednym miejscu i naprawdę je poznać. Podróżuję pociągami i autobusami, mieszkam u lokalnych gospodarzy i jem tam, gdzie jedzą mieszkańcy." },
+        { "who": "A", "t": "Czy to nie jest drożej?" },
+        { "who": "B", "t": "Wręcz przeciwnie. Mniej wydaję na transport, a noclegi na dłuższy pobyt są tańsze. Największym kosztem jest czas, a nie pieniądze." },
+        { "who": "A", "t": "Czego nauczyły Panią takie wyjazdy?" },
+        { "who": "B", "t": "Cierpliwości. Kiedyś stresowałam się każdym opóźnieniem, dziś wiem, że to często początek najciekawszych historii. I jeszcze jednego: że najlepsze rekomendacje dostaje się od ludzi, a nie z przewodników." }
+      ],
+      "questions": [
+        { "q": "Na czym polega powolna turystyka?", "options": ["Na odwiedzaniu jak największej liczby miast.", "Na dłuższym pobycie w jednym miejscu i poznawaniu go.", "Na podróżowaniu samolotami.", "Na spędzaniu wakacji w domu."], "answer": 1, "why": "«Zamiast zaliczać pięć miast w tydzień, spędzić kilka dni w jednym miejscu i naprawdę je poznać»." },
+        { "q": "Co blogerka mówi o kosztach takich podróży?", "options": ["Są znacznie wyższe.", "Są niższe, a największym kosztem jest czas.", "Nie ma różnicy.", "Są wyższe tylko w sezonie."], "answer": 1, "why": "«Wręcz przeciwnie. Mniej wydaję na transport… Największym kosztem jest czas»." },
+        { "q": "Czego nauczyły ją takie wyjazdy?", "options": ["Planowania z wyprzedzeniem.", "Cierpliwości.", "Oszczędzania.", "Języków obcych."], "answer": 1, "why": "«Cierpliwości. Kiedyś stresowałam się każdym opóźnieniem…»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Kolej dużych prędkości", "textTitle": "Czy Polska potrzebuje szybkiej kolei?",
+      "text": "Polska od lat planuje budowę linii kolei dużych prędkości, która połączy największe miasta kraju. Według założeń pociągi będą jeździły znacznie szybciej niż dziś, a podróż między dużymi ośrodkami skróci się o kilkadziesiąt minut. Zwolennicy projektu przekonują, że inwestycja ożywi mniejsze miasta położone przy trasie i zachęci ludzi do rezygnacji z samochodów.\n\nKrytycy zwracają uwagę na koszty, które są bardzo wysokie. Ich zdaniem część tych pieniędzy lepiej wydać na modernizację istniejących linii, ponieważ dzięki temu więcej osób odczuje poprawę szybciej i taniej. Pojawiają się też obawy dotyczące ochrony przyrody, gdyż nowe tory mogą przebiegać przez tereny leśne.\n\nZ badań wynika, że popularność kolei dużych prędkości zależy nie tyle od samej szybkości, ile od częstotliwości połączeń i cen biletów. Jeśli pociągi będą kursowały rzadko lub będą zbyt drogie, nawet najnowocześniejsza trasa nie przyciągnie pasażerów.",
+      "questions": [
+        { "q": "Jakiego efektu spodziewają się zwolennicy projektu?", "options": ["Wzrostu cen biletów lotniczych.", "Ożywienia mniejszych miast przy trasie i rezygnacji z samochodów.", "Likwidacji starych linii.", "Zmniejszenia liczby pasażerów."], "answer": 1, "why": "«Inwestycja ożywi mniejsze miasta… i zachęci ludzi do rezygnacji z samochodów»." },
+        { "q": "Co proponują krytycy?", "options": ["Nie budować żadnych torów.", "Wydać część pieniędzy na modernizację istniejących linii.", "Zamknąć lotniska.", "Podnieść ceny biletów."], "answer": 1, "why": "«Część tych pieniędzy lepiej wydać na modernizację istniejących linii»." },
+        { "q": "Jakie obawy dotyczą środowiska?", "options": ["Hałas w miastach.", "Przebieg torów przez tereny leśne.", "Emisja z samolotów.", "Zanieczyszczenie rzek."], "answer": 1, "why": "«Nowe tory mogą przebiegać przez tereny leśne»." },
+        { "q": "Od czego zależy popularność szybkiej kolei według badań?", "options": ["Tylko od prędkości pociągów.", "Od częstotliwości połączeń i cen biletów.", "Od koloru wagonów.", "Od liczby stacji."], "answer": 1, "why": "«Nie tyle od samej szybkości, ile od częstotliwości połączeń i cen biletów»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Podróże: składnia B2", "intro": "Умовні речення, відносні сполучники, наслідкові конструкції.",
+      "questions": [
+        { "q": "Gdybym wcześniej ___ bilet, zapłaciłabym mniej.", "options": ["kupiła", "kupię", "kupiłabym", "kupować"], "answer": 0, "why": "**gdybym** + форма минулого часу: «gdybym kupiła» (не «gdybym kupiłabym»)." },
+        { "q": "Podróżni, ___ pociąg został odwołany, dostaną zwrot pieniędzy.", "options": ["których", "którym", "którzy", "z którymi"], "answer": 0, "why": "**których pociąg** — «чий потяг»: присвійний зворот у множині: «podróżni, których pociąg…»." },
+        { "q": "Nie wiem, ___ pociąg się spóźnia.", "options": ["dlaczego", "dlatego", "ponieważ", "żeby"], "answer": 0, "why": "Питальне підрядне: **dlaczego** («чому»). «Dlatego» — «тому»." },
+        { "q": "Gdybyśmy wyjechali wcześniej, ___ na czas.", "options": ["zdążylibyśmy", "zdążymy", "zdążyliśmy", "zdążając"], "answer": 0, "why": "Нереальна умова в минулому → **tryb warunkowy** у головній частині: «zdążylibyśmy»." },
+        { "q": "Rezerwacja zostanie anulowana, ___ nie potwierdzą Państwo jej do piątku.", "options": ["jeśli", "chyba że", "dopóki", "mimo że"], "answer": 0, "why": "**jeśli + майбутній** — умова: «jeśli nie potwierdzą, zostanie anulowana»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "przewoźnik", "ua": "перевізник", "ex": "Skargę wysłałam do przewoźnika kolejowego." },
+    { "pl": "odszkodowanie", "ua": "відшкодування збитків", "ex": "Pasażerowie mogą ubiegać się o odszkodowanie." },
+    { "pl": "bagaż podręczny", "ua": "ручна поклажа", "ex": "Bagaż podręczny nie może ważyć więcej niż osiem kilogramów." },
+    { "pl": "wycieczka fakultatywna", "ua": "факультативна екскурсія", "ex": "Wycieczka fakultatywna kosztuje dodatkowo sto euro." },
+    { "pl": "atrakcje turystyczne", "ua": "туристичні принади", "ex": "Kraków ma wiele atrakcji turystycznych." },
+    { "pl": "zatłoczony", "ua": "переповнений", "ex": "Plaża była zatłoczona już rano." },
+    { "pl": "ekoturystyka", "ua": "екотуризм", "ex": "Ekoturystyka wspiera lokalne społeczności." },
+    { "pl": "biuro podróży", "ua": "турагентство", "ex": "Zarezerwowałam wycieczkę w biurze podróży." }
+  ]
+}

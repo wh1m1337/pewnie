@@ -1,0 +1,14 @@
+{
+  "name": "Pewnie — польська B1/B2",
+  "short_name": "Pewnie",
+  "description": "Мовлення й письмо для державного іспиту з польської. Нові завдання щотижня.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5F0E1",
+  "theme_color": "#1B2A4E",
+  "lang": "uk",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

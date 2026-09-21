@@ -1,0 +1,149 @@
+{
+  "intro": "Подорожі: квиток у касі, затримка потяга, скарга перевізнику, відпустка мрії. Класична тема іспиту — і дуже практична для життя в Польщі.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Na dworcu kolejowym",
+      "scene": { "bg": "station", "caption": "Dworzec, godzina 16:00", "desk": [4, 66, 92], "items": [["🚆", 72, 42, 28], ["🧍‍♀️", 24, 50, 20], ["👨‍👩‍👧", 46, 50, 22], ["🧳", 12, 62, 11], ["🎫", 38, 64, 8], ["🕓", 50, 12, 12], ["📢", 90, 14, 10]] },
+      "prompt": "Opisz ilustrację. Powiedz, gdzie są te osoby, co robią i jak się czują. Powiedz też, co według Ciebie stanie się później.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, де ці люди, що вони роблять і що відчувають. Скажіть також, що, на вашу думку, станеться пізніше.",
+      "time": [60, 120], "prep": 60,
+      "points": ["Gdzie jesteśmy i kto tu jest?", "Co robią te osoby?", "Jak się czują?", "Co stanie się później?"],
+      "keywords": ["dworzec|dworc", "pociąg|pociąg", "peron|peron", "bilet|bilet", "walizka|walizk", "podróżni|podróż", "spóźnić|spóźn", "tablica|tablic"],
+      "phrases": [
+        { "pl": "Na ilustracji widzę dworzec kolejowy.", "ua": "На ілюстрації я бачу залізничний вокзал." },
+        { "pl": "Na peronie czekają podróżni.", "ua": "На пероні чекають пасажири." },
+        { "pl": "Boi się, że spóźni się na pociąg.", "ua": "Боїться, що запізниться на потяг." },
+        { "pl": "Pociąg za chwilę odjedzie.", "ua": "Потяг за мить відійде." }
+      ],
+      "model": "Na ilustracji widzę dworzec kolejowy. Po prawej stronie stoi pociąg, a na peronie czekają podróżni z walizkami i plecakami. Po lewej stronie młoda kobieta patrzy na zegar i wygląda na zdenerwowaną, bo chyba boi się, że spóźni się na pociąg. Obok niej stoi rodzina z dzieckiem, która trzyma bilety. W tle widać tablicę z informacjami i głośnik. Myślę, że jest po południu, bo zegar pokazuje szesnastą. Prawdopodobnie pociąg za chwilę odjedzie, a kobieta wsiądzie w ostatniej chwili. Moim zdaniem podróż będzie miła, jeśli wszyscy zdążą na czas.",
+      "tips": ["**Spóźnić się na + biernik** (na pociąg) — типова пастка: не «do pociągu».", "Слова для вокзалу: **peron, tor, odjazd, przyjazd, opóźnienie** — вплітай їх у опис.", "Прогноз: «prawdopodobnie zdążą / nie zdążą» — простий і ефектний варіант «co dalej»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Wymarzone wakacje",
+      "prompt": "Opowiedz o wakacjach, które chciałbyś (chciałabyś) spędzić. Powiedz, dokąd byś pojechał(a), z kim, co chciałbyś zobaczyć i dlaczego to miejsce jest dla Ciebie wyjątkowe.",
+      "promptUa": "Розкажіть про відпустку, яку хотіли б провести. Скажіть, куди б ви поїхали, з ким, що хотіли б побачити й чому це місце для вас особливе.",
+      "time": [90, 150], "prep": 60,
+      "points": ["Dokąd byś pojechał(a) i z kim?", "Czym byś pojechał(a) i gdzie byś mieszkał(a)?", "Co chciałbyś zobaczyć?", "Dlaczego to miejsce jest wyjątkowe?"],
+      "keywords": ["wakacje|wakacj", "podróż|podróż", "zabytki|zabytk", "hotel|hotel", "pociąg|pociąg", "wspomnienia|wspomnieni", "turyści|turyst", "spacer|spacer"],
+      "phrases": [
+        { "pl": "Moje wymarzone wakacje to podróż do…", "ua": "Моя омріяна відпустка — це подорож до…" },
+        { "pl": "Pojechałabym z…", "ua": "Поїхала б з…" },
+        { "pl": "Chciałabym zobaczyć… i spróbować…", "ua": "Хотіла б побачити… і спробувати…" },
+        { "pl": "To miejsce jest dla mnie wyjątkowe, ponieważ…", "ua": "Це місце для мене особливе, тому що…" }
+      ],
+      "model": "Moje wymarzone wakacje to podróż do Włoch, najlepiej wiosną, kiedy jest ciepło, ale nie ma jeszcze tłumów turystów. Pojechałabym z mężem i z córką pociągiem, bo lubię oglądać krajobrazy z okna. Chciałabym zobaczyć Rzym, Florencję i małe miasteczka w Toskanii, a także spróbować prawdziwej włoskiej pizzy i lodów. To miejsce jest dla mnie wyjątkowe, ponieważ od dziecka marzę o zwiedzaniu starych zabytków. Zatrzymalibyśmy się w małym hotelu albo w wynajętym mieszkaniu i codziennie chodzilibyśmy na spacery. Myślę, że po takich wakacjach wróciłabym pełna energii, a moja córka miałaby wspaniałe wspomnienia.",
+      "tips": ["**Tryb warunkowy** — головний інструмент цієї теми: «pojechałabym, zobaczyłabym, zatrzymalibyśmy się».", "Конкретика (Rzym, Florencja, pizza) робить мрію реальною — ім’я міста важить більше, ніж «piękne miejsce».", "Заверши образом: «wróciłabym pełna energii» — елегантно й запам’ятовується."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Kupno biletu w kasie",
+      "prompt": "Jesteś w kasie dworcowej. Chcesz kupić bilet na pociąg do Krakowa. Dowiedz się o godziny, cenę i zniżki, i wybierz najlepsze połączenie.",
+      "promptUa": "Ви в залізничній касі. Хочете купити квиток на потяг до Кракова. Дізнайтеся про години, ціну й знижки та виберіть найкраще сполучення.",
+      "points": ["Powiedz, dokąd chcesz jechać i kiedy", "Wybierz godzinę", "Zapytaj o zniżkę", "Zapytaj o peron i opóźnienia"],
+      "keywords": ["bilet|bilet", "pociąg|pociąg", "miejsca|miejsc", "zniżka|zniżk", "peron|peron", "legitymacja|legitymacj"],
+      "phrases": [
+        { "pl": "Poproszę bilet do Krakowa na jutro rano.", "ua": "Прошу квиток до Кракова на завтра зранку." },
+        { "pl": "Czy jest zniżka dla studentów?", "ua": "Чи є знижка для студентів?" },
+        { "pl": "Z którego peronu odjeżdża pociąg?", "ua": "З якого перону відходить потяг?" },
+        { "pl": "W jedną stronę czy w obie strony?", "ua": "В один бік чи в обидва боки?" }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, słucham.", "hint": "Powiedz, dokąd i kiedy jedziesz.", "model": "Dzień dobry. Chciałabym kupić bilet do Krakowa na jutro rano. Czy są jeszcze wolne miejsca?" },
+        { "ex": "Tak, jest pociąg o siódmej piętnaście i o dziewiątej trzydzieści. Bilet w drugiej klasie kosztuje osiemdziesiąt złotych. Czy jedzie Pani w obie strony?", "hint": "Wybierz godzinę i zapytaj o zniżkę.", "model": "Poproszę ten o siódmej piętnaście. Tak, w obie strony, wracam w niedzielę wieczorem. Czy jest zniżka dla studentów?" },
+        { "ex": "Tak, dla studentów jest zniżka. Czy ma Pani legitymację studencką?", "hint": "Wytłumacz, że masz legitymację w telefonie.", "model": "Niestety nie mam jej przy sobie, ale mam elektroniczną legitymację w telefonie. Czy to wystarczy?" },
+        { "ex": "Tak, elektroniczna też jest ważna. Proszę bilet. Pociąg odjeżdża z peronu trzeciego. Życzę miłej podróży.", "hint": "Podziękuj i zapytaj o opóźnienie.", "model": "Bardzo dziękuję. Czy pociąg ma jakieś opóźnienie? Życzę miłego dnia." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Poproszę + biernik** («poproszę bilet») — найприродніша форма замовлення в касі, кафе, магазині.", "**W jedną stronę / w obie strony** — в один/обидва боки. Постав вибір одразу, щоб не питали двічі.", "Знижка → назви статус («student», «senior») і документ: так розмова коротка й ефективна."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "informal", "title": "Pocztówka z wakacji",
+      "prompt": "Jesteś na wakacjach. Napisz krótką kartkę do przyjaciela: napisz, gdzie jesteś, jaka jest pogoda i co robisz, i zaproś go na wspólny wyjazd w przyszłym roku.",
+      "promptUa": "Ви у відпустці. Напишіть коротку листівку другові: де ви, яка погода, що робите, і запросіть його на спільну поїздку наступного року.",
+      "min": 25, "max": 50, "time": 10,
+      "points": [
+        { "text": "Gdzie jesteś", "keys": ["pozdrowienia z", "jestem w", "jestem nad"] },
+        { "text": "Pogoda", "keys": ["pogoda", "słońce", "deszcz"] },
+        { "text": "Co robisz", "keys": ["zwiedzam", "opalam", "pływam", "spaceruję"] },
+        { "text": "Zaproszenie", "keys": ["pojedziemy razem", "zapraszam", "może w przyszłym roku"] }
+      ],
+      "phrases": [
+        { "pl": "Pozdrowienia z Gdańska!", "ua": "Вітання з Гданська!" },
+        { "pl": "Pogoda jest wspaniała.", "ua": "Погода чудова." },
+        { "pl": "Może w przyszłym roku pojedziemy razem?", "ua": "Може, наступного року поїдемо разом?" },
+        { "pl": "Ściskam!", "ua": "Обіймаю!" }
+      ],
+      "model": "Cześć Marku! Pozdrowienia z Gdańska! Pogoda jest wspaniała, słońce świeci codziennie, a woda w morzu jest ciepła. Rano zwiedzam stare miasto, a po południu opalam się na plaży. Bardzo Ci się tu spodobałoby! Może w przyszłym roku pojedziemy razem? Ściskam! Ola",
+      "tips": ["Листівка = **привітання → де → погода → що роблю → запрошення → прощання**. Кожен елемент — окреме коротке речення.", "**Bardzo Ci się tu spodobałoby** — умовний спосіб додає теплоти й показує рівень."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "Reklamacja opóźnionego pociągu",
+      "prompt": "Kupiłeś (Kupiłaś) bilet na pociąg do Wrocławia. Pociąg miał czterdzieści minut opóźnienia i przez to spóźniłeś się (spóźniłaś się) na ważne spotkanie. Napisz oficjalny e-mail do przewoźnika. Opisz sytuację, wyjaśnij, jakie problemy Ci to sprawiło, i poproś o zwrot części ceny biletu.",
+      "promptUa": "Ви купили квиток на потяг до Вроцлава. Потяг запізнився на сорок хвилин, і через це ви запізнилися на важливу зустріч. Напишіть офіційного листа перевізнику: опишіть ситуацію, поясніть, які проблеми це створило, і попросіть повернути частину вартості квитка.",
+      "min": 150, "max": 175, "time": 35,
+      "points": [
+        { "text": "Dane podróży (data, trasa, pociąg)", "keys": ["w dniu", "relacji", "pociągiem", "podróżowałam", "podróżowałem"] },
+        { "text": "Opóźnienie i jego skutki", "keys": ["spóźniłam się", "spóźniłem się", "spotkani", "z powodu"] },
+        { "text": "Prośba o zwrot", "keys": ["zwrot", "zwrotu"] },
+        { "text": "Numer biletu i załącznik", "keys": ["numer biletu", "załączam", "kopię"] }
+      ],
+      "phrases": [
+        { "pl": "Piszę w sprawie opóźnienia pociągu relacji…", "ua": "Пишу щодо запізнення потяга сполучення…" },
+        { "pl": "Z powodu tego opóźnienia…", "ua": "Через це запізнення…" },
+        { "pl": "Uprzejmie proszę o zwrot części ceny biletu.", "ua": "Ввічливо прошу повернути частину вартості квитка." },
+        { "pl": "Załączam kopię biletu.", "ua": "Додаю копію квитка." }
+      ],
+      "model": "Szanowni Państwo,\n\npiszę w sprawie opóźnienia pociągu relacji Warszawa–Wrocław, którym podróżowałam w dniu 5 października. Bilet kupiłam wcześniej przez internet i miałam wykupione miejsce w wagonie drugiej klasy. Pociąg miał odjechać o godzinie 8:10, jednak wyjechał ze stacji dopiero po czterdziestu minutach, a informacji o przyczynie nie było ani na peronie, ani w pociągu.\n\nZ powodu tego opóźnienia spóźniłam się na ważne spotkanie w pracy i musiałam przesunąć rozmowę z klientem na kolejny dzień. Poza tym w wagonie było bardzo tłoczno i przez prawie godzinę musiałam stać z ciężkim bagażem, co było bardzo męczące.\n\nW związku z tym uprzejmie proszę o zwrot części ceny biletu zgodnie z zasadami przewoźnika. Numer biletu to 123456789, a jego kopię załączam do wiadomości. Jeśli potrzebują Państwo dodatkowych informacji, chętnie ich udzielę.\n\nBędę wdzięczna za odpowiedź w ciągu czternastu dni. Mam nadzieję na pozytywne rozpatrzenie mojej prośby. Z góry dziękuję za pomoc.\n\nZ poważaniem\nOłena Kowalenko",
+      "tips": ["Скарга перевізнику: **дані поїздки → що сталося → наслідки → чого хочеш → вкладення**.", "**Zgodnie z zasadami przewoźnika** — покликання на правила робить вимогу обґрунтованою.", "Додай контакт для уточнень («chętnie udzielę informacji») — це звучить професійно."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Komunikat na dworcu", "intro": "Прослухай оголошення на вокзалі.",
+      "lines": [
+        { "t": "Uwaga! Pociąg Intercity do Gdyni, planowy odjazd szesnasta piętnaście, jest opóźniony o dwadzieścia minut. Pociąg odjedzie z peronu drugiego, tor czwarty. Za opóźnienie serdecznie przepraszamy." },
+        { "t": "Podróżnych, którzy mają przesiadkę w Gdańsku, prosimy o kontakt z obsługą pociągu. Prosimy o zachowanie ostrożności na peronach i o nieprzekraczanie żółtej linii." },
+        { "t": "Uwaga! Na peron pierwszy wjedzie pociąg osobowy z Łodzi. Życzymy Państwu przyjemnej podróży." }
+      ],
+      "questions": [
+        { "q": "O ile minut opóźniony jest pociąg do Gdyni?", "options": ["O dziesięć.", "O piętnaście.", "O dwadzieścia.", "O trzydzieści."], "answer": 2, "why": "«Jest opóźniony o dwadzieścia minut»." },
+        { "q": "Z którego peronu odjedzie pociąg do Gdyni?", "options": ["Z pierwszego.", "Z drugiego.", "Z trzeciego.", "Z czwartego."], "answer": 1, "why": "«Odjedzie z peronu drugiego, tor czwarty» — czwarty to tor, nie peron." },
+        { "q": "Co powinni zrobić podróżni z przesiadką w Gdańsku?", "options": ["Wysiąść w Gdyni.", "Skontaktować się z obsługą pociągu.", "Zostać na peronie.", "Kupić nowy bilet."], "answer": 1, "why": "«Prosimy o kontakt z obsługą pociągu»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Jak tanio podróżować po Polsce", "textTitle": "Podróże bez wielkiego wydatku",
+      "text": "Podróżowanie po Polsce nie musi być drogie. Najtańszym środkiem transportu na dłuższe trasy są zwykle autobusy dalekobieżne, ale pociągi są wygodniejsze i często szybsze. Bilety kupione z wyprzedzeniem bywają nawet o połowę tańsze niż te z ostatniej chwili, dlatego warto planować podróż kilka tygodni wcześniej.\n\nStudenci i seniorzy mogą liczyć na zniżki. W wielu miastach działają też bilety weekendowe, które pozwalają jechać po całym regionie za niewielką kwotę. Jeśli podróżujesz w większej grupie, sprawdź oferty grupowe. Czasem czterem osobom opłaca się wynająć samochód lub skorzystać ze wspólnych przejazdów.\n\nPodobnie jest z noclegami. Hostele i mieszkania wynajmowane na krótki okres są tańsze niż hotele, a poza sezonem ceny spadają nawet o trzydzieści procent. Pamiętaj tylko, żeby zawsze przeczytać opinie innych podróżnych i sprawdzić, czy w cenie jest śniadanie.",
+      "questions": [
+        { "q": "Dlaczego warto kupować bilety z wyprzedzeniem?", "options": ["Bo w pociągu nie ma biletów.", "Bo bywają znacznie tańsze niż te z ostatniej chwili.", "Bo są ważne dłużej.", "Bo autobusy są droższe."], "answer": 1, "why": "«Bilety kupione z wyprzedzeniem bywają nawet o połowę tańsze»." },
+        { "q": "Kto może liczyć na zniżki?", "options": ["Kierowcy.", "Studenci i seniorzy.", "Osoby podróżujące samotnie.", "Tylko turyści zagraniczni."], "answer": 1, "why": "«Studenci i seniorzy mogą liczyć na zniżki»." },
+        { "q": "Co autor radzi w sprawie noclegów?", "options": ["Rezerwować tylko hotele.", "Czytać opinie i sprawdzić, czy w cenie jest śniadanie.", "Nie planować z wyprzedzeniem.", "Zawsze wynajmować samochód."], "answer": 1, "why": "«Przeczytać opinie… i sprawdzić, czy w cenie jest śniadanie»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Podróże: przypadki i liczebniki", "intro": "Транспорт, кількість і час — типові пастки в темі подорожей.",
+      "questions": [
+        { "q": "Pociąg ___ z peronu trzeciego.", "options": ["odjeżdża", "odjeżdżają", "odjeżdżamy", "odjedzie się"], "answer": 0, "why": "Підмет «pociąg» — однина: **odjeżdża** (3 особа)." },
+        { "q": "Do Krakowa pojechałam ___.", "options": ["pociągiem", "pociąg", "pociągu", "z pociągiem"], "answer": 0, "why": "Засіб транспорту — орудний без прийменника: «pociągiem, autobusem, samolotem»." },
+        { "q": "Kupiłam dwa ___ do Warszawy.", "options": ["bilety", "biletów", "bilet", "biletami"], "answer": 0, "why": "Числа 2–4 + називний множини: «dwa bilety»; 5+ — родовий: «pięć biletów»." },
+        { "q": "Jeśli pociąg ___ opóźniony, zadzwonię do Ciebie.", "options": ["będzie", "był", "byłby", "byłoby"], "answer": 0, "why": "Реальна умова в майбутньому: «jeśli będzie opóźniony, zadzwonię»." },
+        { "q": "Lecę na urlop ___ tygodnie.", "options": ["na dwa", "na dwóch", "za dwoma", "dwa"], "answer": 0, "why": "Тривалість, на яку їдемо: **na + знахідний**: «na dwa tygodnie»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "opóźnienie", "ua": "затримка, запізнення", "ex": "Pociąg ma czterdzieści minut opóźnienia." },
+    { "pl": "peron", "ua": "перон", "ex": "Pociąg odjeżdża z peronu trzeciego." },
+    { "pl": "przesiadka", "ua": "пересадка", "ex": "W Poznaniu mam przesiadkę." },
+    { "pl": "bagaż", "ua": "багаж", "ex": "Mój bagaż został w pociągu." },
+    { "pl": "rezerwacja", "ua": "бронювання", "ex": "Zrobiłam rezerwację noclegu przez internet." },
+    { "pl": "nocleg", "ua": "нічліг", "ex": "Nocleg kosztuje sto złotych za noc." },
+    { "pl": "zniżka", "ua": "знижка", "ex": "Studenci mają zniżkę na bilety." },
+    { "pl": "bilet w obie strony", "ua": "квиток туди й назад", "ex": "Poproszę bilet w obie strony." }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1B2A4E"/>
+  <g fill="none" stroke="#F5F0E1" stroke-opacity=".12" stroke-width="2">
+    <path d="M0 128h512M0 256h512M0 384h512M128 0v512M256 0v512M384 0v512"/>
+  </g>
+  <path d="M256 92c98-6 168 52 160 142-8 92-88 160-178 152C148 378 92 316 100 226c8-78 74-128 156-134z" fill="#F5F0E1" stroke="#E45A4C" stroke-width="16" transform="rotate(-6 256 256)"/>
+  <text x="256" y="338" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="900" font-size="270" fill="#1B2A4E">P</text>
+  <path d="M120 430c60-16 90 12 148 0s90-14 124 2" fill="none" stroke="#E45A4C" stroke-width="14" stroke-linecap="round"/>
+</svg>

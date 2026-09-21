@@ -1,0 +1,154 @@
+{
+  "intro": "B2: цифровізація установ, бюрократія, апеляція від рішення. Формуємо аргументовану позицію й вчимося вести офіційні переговори. Тексти навчальні: актуальні правила перевіряй в офіційних джерелах.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Urząd w epoce cyfrowej",
+      "scene": { "bg": "office", "caption": "Urząd, hol główny", "desk": [58, 62, 36], "items": [["👴", 26, 48, 22], ["🖥️", 40, 50, 16], ["👩‍💼", 74, 46, 22], ["📚", 64, 58, 10], ["🔢", 50, 13, 12], ["📄", 82, 58, 8], ["🕐", 90, 14, 10]] },
+      "prompt": "Opisz ilustrację. Powiedz, z jakimi trudnościami mogą spotkać się osoby starsze i cudzoziemcy przy załatwianiu spraw online, i oceń, czy cyfryzacja urzędów ułatwia życie.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, з якими труднощами можуть зіткнутися літні люди й іноземці, залагоджуючи справи онлайн, і оцініть, чи полегшує життя цифровізація установ.",
+      "time": [90, 150], "prep": 90,
+      "points": ["Opis sytuacji", "Trudności osób starszych i cudzoziemców", "Ocena cyfryzacji", "Twoja propozycja"],
+      "keywords": ["cyfryzacja|cyfryzacj", "terminal|terminal", "dokumenty|dokument", "kolejki|kolejk", "osoby starsze|starsz", "cudzoziemcy|cudzoziem", "system|system", "pomoc|pomoc"],
+      "phrases": [
+        { "pl": "Można przypuszczać, że…", "ua": "Можна припустити, що…" },
+        { "pl": "Cyfryzacja jest korzystna, ponieważ…", "ua": "Цифровізація вигідна, тому що…" },
+        { "pl": "Nie można zapominać o osobach, które…", "ua": "Не можна забувати про людей, які…" },
+        { "pl": "Dlatego uważam, że powinny nadal istnieć…", "ua": "Тому вважаю, що й надалі мають існувати…" }
+      ],
+      "model": "Na ilustracji widzę wnętrze urzędu, w którym starszy mężczyzna stoi przed terminalem z ekranem dotykowym. Wygląda na zdezorientowanego i chyba nie wie, gdzie kliknąć. Obok niego stoi młoda pracownica, która próbuje mu pomóc i pokazuje coś na ekranie. Na biurku leży stos papierowych dokumentów, co sugeruje, że mimo cyfryzacji nadal wiele spraw wymaga papieru. Można przypuszczać, że mężczyzna przyszedł załatwić prostą sprawę, ale system okazał się dla niego zbyt skomplikowany. Moim zdaniem cyfryzacja urzędów jest korzystna, ponieważ oszczędza czas i pozwala uniknąć kolejek. Jednocześnie nie można zapominać o osobach starszych i cudzoziemcach, którzy mogą mieć problem z obsługą systemów albo z językiem. Dlatego uważam, że obok formularzy elektronicznych powinny nadal istnieć tradycyjne okienka oraz pomoc pracowników.",
+      "tips": ["Оцінка + застереження: **«jest korzystna, ponieważ…, jednocześnie nie można zapominać…»** — збалансована позиція.", "**Cudzoziemcy** — іноземці; у формальному мовленні краще, ніж «obcokrajowcy» (теж правильно).", "Пропозиція наприкінці («powinny nadal istnieć…») — гарний фінал, що закриває пункт «twoja propozycja»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Biurokracja — zło konieczne?",
+      "prompt": "Czy biurokracja jest złem koniecznym, czy można ją znacznie ograniczyć? Przedstaw swoje stanowisko, podaj przykłady i weź pod uwagę argumenty zwolenników obecnych przepisów.",
+      "promptUa": "Чи є бюрократія необхідним злом, чи її можна суттєво обмежити? Викладіть позицію, наведіть приклади й урахуйте аргументи прихильників чинних правил.",
+      "time": [120, 180], "prep": 120,
+      "points": ["Twoje stanowisko", "Argumenty za koniecznością przepisów", "Przykład z życia", "Rozwiązania", "Wniosek"],
+      "keywords": ["biurokracja|biurokracj", "przepisy|przepis", "procedury|procedur", "korupcja|korupcj", "kontrola|kontrol", "uproszczenie|uproszcz", "przejrzystość|przejrzyst", "zaufanie|zaufan"],
+      "phrases": [
+        { "pl": "Biurokracja jest w pewnym stopniu koniecznością, ale…", "ua": "Бюрократія певною мірою необхідна, але…" },
+        { "pl": "Znam przykład, kiedy…", "ua": "Знаю приклад, коли…" },
+        { "pl": "Rozumiem argument, że…, jednak…", "ua": "Розумію аргумент, що…, однак…" },
+        { "pl": "Celem powinna być przejrzystość, a nie…", "ua": "Метою має бути прозорість, а не…" }
+      ],
+      "model": "Moim zdaniem biurokracja jest w pewnym stopniu koniecznością, ale w wielu krajach, także w Polsce i na Ukrainie, jest zdecydowanie zbyt rozbudowana. Po pierwsze, przepisy i procedury chronią obywateli przed nadużyciami i korupcją, ponieważ każda decyzja musi być udokumentowana. Po drugie, kontrola pozwala państwu sprawdzać, czy pieniądze publiczne są wydawane właściwie. Znam jednak przykłady, kiedy prosta sprawa wymagała pięciu zaświadczeń z różnych urzędów, chociaż dane były już w systemie. Tak nadmierna formalność zabiera czas i odbiera ludziom zaufanie do instytucji. Rozumiem argument, że każde uproszczenie może otworzyć drogę do błędów, jednak uważam, że da się to pogodzić. Wystarczy, by urzędy wymieniały się informacjami między sobą, zamiast żądać ich od obywatela, i by przepisy były pisane zrozumiałym językiem. Podsumowując, celem powinna być przejrzystość, a nie liczba papierów.",
+      "tips": ["**Zamiast + інфінітив** («zamiast żądać») — маркер вміння будувати складне речення з альтернативою.", "Наводь нейтральні приклади («znam przykłady…»): критикувати систему обережно й аргументовано безпечніше.", "**Da się to pogodzić** — «це можна поєднати»: корисний вираз-компроміс."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Odwołanie od decyzji",
+      "prompt": "Otrzymałeś (Otrzymałaś) decyzję odmowną w sprawie swojego wniosku. Rozmawiasz z urzędnikiem. Zapytaj o powody, przedstaw swoje argumenty i dowiedz się, jak złożyć odwołanie.",
+      "promptUa": "Ви отримали відмовне рішення щодо своєї заяви. Розмовляєте з урядником. Дізнайтеся про причини, наведіть аргументи й з’ясуйте, як подати апеляцію.",
+      "points": ["Zapytaj o powody odmowy", "Odpowiedz na zarzut braków", "Zapytaj o odwołanie", "Poproś o potwierdzenie"],
+      "keywords": ["decyzja|decyzj", "odmowa|odmown", "uzasadnienie|uzasadni", "odwołanie|odwoła", "dokumenty|dokument", "termin|termin", "potwierdzenie|potwierdzeni", "wezwanie|wezwani"],
+      "phrases": [
+        { "pl": "Chciałabym dowiedzieć się, jakie były powody odmowy.", "ua": "Хотіла б дізнатися, які були причини відмови." },
+        { "pl": "W wezwaniu nie było wzmianki o…", "ua": "У виклику не було згадки про…" },
+        { "pl": "Do kogo mam skierować odwołanie?", "ua": "Кому мені спрямувати апеляцію?" },
+        { "pl": "Poproszę o potwierdzenie na piśmie.", "ua": "Прошу підтвердження в письмовій формі." }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, słucham.", "hint": "Powiedz, że dostałaś decyzję odmowną i chcesz poznać powody.", "model": "Dzień dobry. Otrzymałam decyzję odmowną w sprawie mojego wniosku i chciałabym dowiedzieć się, jakie były powody, ponieważ w uzasadnieniu nie znalazłam konkretnych informacji." },
+        { "ex": "Według dokumentów brakowało jednego zaświadczenia, które musiało być złożone w terminie.", "hint": "Zaprzecz spokojnie: powołaj się na wezwanie i dowody.", "model": "Rozumiem, ale w wezwaniu, które dostałam, nie było wzmianki o tym zaświadczeniu, a wszystkie wymienione dokumenty dostarczyłam osobiście. Mam na to potwierdzenie." },
+        { "ex": "Termin na odwołanie to czternaście dni od doręczenia decyzji. Czy zamierza Pani złożyć odwołanie?", "hint": "Potwierdź i zapytaj, gdzie i z czym.", "model": "Tak, zamierzam, ale chciałabym najpierw wiedzieć, do kogo je skierować i jakie dokumenty załączyć, żeby uniknąć kolejnej odmowy z powodów formalnych." },
+        { "ex": "Odwołanie składa się do organu wyższego stopnia za naszym pośrednictwem. Mogę wydać Pani wzór pisma.", "hint": "Podziękuj i poproś o potwierdzenie zgłoszenia.", "model": "To bardzo pomocne, dziękuję. Czy mogłabym także prosić o potwierdzenie na piśmie, że dziś zgłosiłam się w tej sprawie?" }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["Zamiast oskarżać — **pytaj o podstawę decyzji**: «jakie były powody», «na jakiej podstawie».", "Zapamiętaj terminy: przy odwołaniach termin jest kluczowy — pytaj o niego wprost (dane orientacyjne, sprawdź w decyzji).", "**Za naszym pośrednictwem** — «через нас (як посередника)»: офіційний зворот, який варто вміти розуміти."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "letter-formal", "register": "formal", "title": "Zapytanie o stan sprawy",
+      "prompt": "Trzy miesiące temu złożyłeś (złożyłaś) wniosek w urzędzie, ale nie dostałeś (dostałaś) żadnej informacji. Napisz krótki e-mail z prośbą o informację o stanie sprawy. Podaj numer sprawy i datę złożenia wniosku, wyraź zaniepokojenie brakiem odpowiedzi i poproś o odpowiedź w określonym terminie.",
+      "promptUa": "Три місяці тому ви подали заяву в установі, але не отримали жодної інформації. Напишіть короткого листа з проханням повідомити про стан справи. Вкажіть номер справи й дату подання, висловіть занепокоєння відсутністю відповіді та попросіть відповісти у певний термін.",
+      "min": 60, "max": 90, "time": 15,
+      "points": [
+        { "text": "Numer sprawy i data wniosku", "keys": ["numer sprawy", "w dniu", "złożyłam", "złożyłem"] },
+        { "text": "Zaniepokojenie brakiem odpowiedzi", "keys": ["niepokoi", "zaniepokoj", "martwi", "do dzisiaj nie"] },
+        { "text": "Prośba o informację o etapie", "keys": ["etapie", "stan", "wyjaśnien", "informację"] },
+        { "text": "Termin odpowiedzi", "keys": ["w ciągu", "dni roboczych"] }
+      ],
+      "phrases": [
+        { "pl": "W dniu… złożyłam wniosek o… (numer sprawy: …).", "ua": "Такого-то дня я подала заяву про… (номер справи: …)." },
+        { "pl": "Do dzisiaj nie otrzymałam żadnej informacji.", "ua": "Досі не отримала жодної інформації." },
+        { "pl": "Uprzejmie proszę o wyjaśnienie, na jakim etapie jest postępowanie.", "ua": "Ввічливо прошу пояснити, на якому етапі провадження." },
+        { "pl": "w ciągu siedmiu dni roboczych", "ua": "протягом семи робочих днів" }
+      ],
+      "model": "Szanowni Państwo,\n\nw dniu 10 czerwca złożyłam wniosek o wydanie karty pobytu (numer sprawy: 2025/5678). Do dzisiaj nie otrzymałam żadnej informacji na temat stanu mojej sprawy, co bardzo mnie niepokoi, ponieważ mój dotychczasowy dokument traci ważność za dwa miesiące. Uprzejmie proszę o wyjaśnienie, na jakim etapie jest postępowanie, oraz o odpowiedź w ciągu siedmiu dni roboczych, abym mogła odpowiednio zaplanować dalsze kroki.\n\nZ poważaniem\nAnna Kowalenko",
+      "tips": ["Обґрунтуй занепокоєння **конкретним ризиком** («dokument traci ważność») — тоді лист сприймають серйозно.", "**Abym mogła…** — мета після прохання: «щоб я могла…» показує розуміння складного речення."]
+    },
+    {
+      "id": "w2", "kind": "opinion", "register": "neutral", "title": "Cyfryzacja urzędów — szansa czy zagrożenie?",
+      "prompt": "Napisz artykuł do lokalnej gazety o cyfryzacji usług publicznych. Przedstaw korzyści i zagrożenia (na przykład wykluczenie cyfrowe, bezpieczeństwo danych), odwołaj się do własnego doświadczenia i zaproponuj, jak państwo powinno wspierać osoby, które nie radzą sobie z technologią.",
+      "promptUa": "Напишіть статтю до місцевої газети про цифровізацію публічних послуг. Викладіть користь і загрози (наприклад, цифрове виключення, безпека даних), зверніться до власного досвіду й запропонуйте, як держава має підтримувати людей, які не справляються з технологіями.",
+      "min": 200, "max": 250, "time": 50,
+      "points": [
+        { "text": "Stanowisko", "keys": ["moim zdaniem", "uważam"] },
+        { "text": "Korzyści", "keys": ["zaleta", "oszczędność", "korzyść", "szansa"] },
+        { "text": "Zagrożenia", "keys": ["wykluczeni", "bezpieczeństw", "zagroż", "problem"] },
+        { "text": "Własne doświadczenie", "keys": ["z własnego doświadczenia", "doświadczen"] },
+        { "text": "Propozycja wsparcia", "keys": ["powinno", "proponuję", "warto", "szkolenia"] }
+      ],
+      "phrases": [
+        { "pl": "Jeszcze kilka lat temu załatwienie sprawy wymagało…", "ua": "Ще кілька років тому залагодження справи вимагало…" },
+        { "pl": "Największą zaletą jest oszczędność czasu.", "ua": "Найбільша перевага — заощадження часу." },
+        { "pl": "Z drugiej strony pojawia się problem wykluczenia cyfrowego.", "ua": "З іншого боку, виникає проблема цифрового виключення." },
+        { "pl": "Dzięki temu cyfryzacja stanie się ułatwieniem, a nie barierą.", "ua": "Завдяки цьому цифровізація стане полегшенням, а не бар’єром." }
+      ],
+      "model": "Cyfryzacja urzędów — szansa czy zagrożenie?\n\nJeszcze kilka lat temu załatwienie prostej sprawy w urzędzie wymagało wzięcia wolnego dnia w pracy. Dziś wiele wniosków można złożyć przez internet, bez wychodzenia z domu. Moim zdaniem cyfryzacja to ogromna szansa, ale tylko pod warunkiem, że nie zostawi nikogo z tyłu.\n\nNajwiększą zaletą jest oszczędność czasu. Elektroniczny wniosek nie ginie w kolejce, a status sprawy można sprawdzić w każdej chwili. Ponadto cyfrowe procedury zmniejszają ryzyko korupcji, ponieważ każdy krok jest zapisany w systemie. Z własnego doświadczenia wiem, że odnowienie dokumentu przez internet zajęło mi dziesięć minut, podczas gdy w okienku spędziłabym pół dnia. Dodatkowo powiadomienia o zmianie statusu przychodzą na telefon, więc nie trzeba wielokrotnie dzwonić na infolinię.\n\nZ drugiej strony pojawia się problem wykluczenia cyfrowego. Osoby starsze, mieszkańcy małych miejscowości bez szybkiego internetu i cudzoziemcy, którzy nie znają języka, często nie radzą sobie z formularzami online. Poza tym gromadzenie ogromnej ilości danych rodzi pytanie o ich bezpieczeństwo, a każdy wyciek informacji może mieć poważne konsekwencje.\n\nDlatego uważam, że państwo powinno równolegle rozwijać system elektroniczny i utrzymywać tradycyjne punkty obsługi z pracownikami, którzy pomagają w wypełnianiu formularzy. Warto również organizować bezpłatne szkolenia dla seniorów oraz udostępniać instrukcje w kilku językach. Dzięki temu cyfryzacja stanie się prawdziwym ułatwieniem, a nie kolejną barierą.",
+      "tips": ["**Pod warunkiem, że…** у тезі одразу показує зважену позицію: не «за» і не «проти», а «за, якщо…».", "**Rodzi pytanie o…** — «породжує питання про…»: колокація рівня B2 для переходу до загроз.", "Пропозиція має бути **конкретною** (szkolenia, instrukcje w kilku językach), а не «państwo powinno coś zrobić»."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Najczęstsze błędy we wnioskach", "intro": "Інтерв’ю з працівницею установи про типові помилки.",
+      "lines": [
+        { "who": "A", "t": "Naszym gościem jest pani Katarzyna Lis, która od piętnastu lat pracuje w urzędzie wojewódzkim. Pani Katarzyno, jakie błędy najczęściej robią osoby składające wnioski?" },
+        { "who": "B", "t": "Zdecydowanie największy problem to niekompletne dokumenty. Ludzie przychodzą z kopią zamiast oryginału albo zapominają o załączniku, który jest wymieniony w instrukcji. Drugi błąd to niedokładne wypełnienie formularza: brakuje podpisu albo daty, a wtedy wniosek nie jest rozpatrywany." },
+        { "who": "A", "t": "Czy urząd wzywa wtedy do uzupełnienia?" },
+        { "who": "B", "t": "Tak, ale to wydłuża procedurę o kilka tygodni. Dlatego radzę, żeby przed wizytą przeczytać dokładnie listę wymaganych dokumentów i sprawdzić wszystko dwa razy. Jeśli coś jest niejasne, można zadzwonić na infolinię." },
+        { "who": "A", "t": "A co z osobami, które słabo mówią po polsku?" },
+        { "who": "B", "t": "Mogą przyjść z osobą towarzyszącą albo poprosić o tłumacza, ale tłumaczenia dokumentów muszą być przysięgłe. To często zaskakuje interesantów." }
+      ],
+      "questions": [
+        { "q": "Jaki błąd jest według rozmówczyni najczęstszy?", "options": ["Spóźnienie na wizytę.", "Niekompletne dokumenty.", "Zbyt wiele pytań.", "Brak tłumacza."], "answer": 1, "why": "«Zdecydowanie największy problem to niekompletne dokumenty»." },
+        { "q": "Co się dzieje, gdy wniosek jest niekompletny?", "options": ["Jest odrzucany od razu.", "Urząd wzywa do uzupełnienia, co wydłuża procedurę.", "Wniosek trafia do archiwum.", "Trzeba zapłacić karę."], "answer": 1, "why": "«Tak, ale to wydłuża procedurę o kilka tygodni»." },
+        { "q": "Co często zaskakuje cudzoziemców?", "options": ["Wysokie opłaty.", "Konieczność przysięgłych tłumaczeń dokumentów.", "Zakaz przychodzenia z osobą towarzyszącą.", "Brak infolinii."], "answer": 1, "why": "«Tłumaczenia dokumentów muszą być przysięgłe. To często zaskakuje interesantów»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Chatboty w urzędach", "textTitle": "Wirtualny urzędnik",
+      "text": "Coraz więcej urzędów testuje chatboty, które odpowiadają na pytania obywateli o wnioski i terminy. Zwolennicy takiego rozwiązania podkreślają, że wirtualny asystent działa przez całą dobę i nie męczy się powtarzaniem tych samych informacji. Dzięki temu pracownicy mają więcej czasu na trudniejsze przypadki, a interesanci nie muszą czekać na połączenie z infolinią.\n\nSceptycy zwracają jednak uwagę, że algorytm nie zawsze rozumie pytania sformułowane niestandardowo. Zdarza się, że chatbot udziela informacji nieaktualnych lub zbyt ogólnych, a obywatel, który się do nich zastosuje, może popełnić błąd formalny. Pojawiają się też pytania, kto ponosi odpowiedzialność za taką pomyłkę.\n\nEksperci sugerują, że asystent powinien zawsze wyraźnie informować, że jest programem, i umożliwiać szybki kontakt z człowiekiem. Ich zdaniem sztuczna inteligencja sprawdza się jako pierwszy punkt kontaktu, ale decyzje, które wpływają na życie ludzi, powinien nadal podejmować urzędnik.",
+      "questions": [
+        { "q": "Jaką zaletę chatbotów podkreślają zwolennicy?", "options": ["Wydają wiążące decyzje.", "Działają całą dobę i odciążają pracowników.", "Zastępują wszystkie okienka.", "Nie popełniają błędów."], "answer": 1, "why": "«Działa przez całą dobę… pracownicy mają więcej czasu na trudniejsze przypadki»." },
+        { "q": "Jaki problem widzą sceptycy?", "options": ["Chatbot jest zbyt drogi.", "Algorytm nie zawsze rozumie nietypowe pytania i może udzielić nieaktualnych informacji.", "Obywatele nie chcą korzystać z internetu.", "Chatboty mówią tylko po angielsku."], "answer": 1, "why": "«Algorytm nie zawsze rozumie pytania sformułowane niestandardowo… informacje nieaktualne»." },
+        { "q": "Co sugerują eksperci?", "options": ["Chatbot powinien udawać człowieka.", "Chatbot powinien jasno informować, że jest programem, i umożliwiać kontakt z człowiekiem.", "Chatboty powinny zastąpić infolinię.", "Nie należy używać chatbotów."], "answer": 1, "why": "«Asystent powinien wyraźnie informować, że jest programem, i umożliwiać szybki kontakt z człowiekiem»." },
+        { "q": "Kto według ekspertów powinien podejmować ważne decyzje?", "options": ["Sztuczna inteligencja.", "Urzędnik.", "Sam obywatel.", "Zarządca budynku."], "answer": 1, "why": "«Decyzje, które wpływają na życie ludzi, powinien nadal podejmować urzędnik»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Język urzędowy: składnia B2", "intro": "Офіційний стиль: пасив, відносні речення, сполучники.",
+      "questions": [
+        { "q": "Wniosek ___ rozpatrzony w ciągu trzydziestu dni.", "options": ["zostanie", "został by", "zostać", "jest się"], "answer": 0, "why": "Майбутній пасив: «wniosek **zostanie** rozpatrzony»." },
+        { "q": "Osoba, ___ wniosek odrzucono, może złożyć odwołanie.", "options": ["której", "którą", "która", "którego"], "answer": 0, "why": "«Której wniosek» — чия заява: присвійний зворот **której** (родовий)." },
+        { "q": "Zanim ___ wniosek, sprawdź, czy masz wszystkie załączniki.", "options": ["złożysz", "składając", "złożyć", "złożyłeś"], "answer": 0, "why": "Після **zanim** — доконаний вид майбутнього: «zanim złożysz»." },
+        { "q": "___ konieczności przedłużenia pobytu, warto zgłosić się do urzędu wcześniej.", "options": ["W razie", "Z razu", "Na razie", "Za razem"], "answer": 0, "why": "**w razie + родовий** — «у разі»: «w razie konieczności»." },
+        { "q": "Chciałabym wiedzieć, ___ decyzja jest już gotowa.", "options": ["czy", "że", "żeby", "bo"], "answer": 0, "why": "Питання в підрядному: **czy** («чи»): «chciałabym wiedzieć, czy…»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "odwołanie od decyzji", "ua": "апеляція проти рішення", "ex": "Termin na odwołanie od decyzji jest krótki." },
+    { "pl": "rozpatrzyć wniosek", "ua": "розглянути заяву", "ex": "Urząd rozpatrzy wniosek w ciągu miesiąca." },
+    { "pl": "uzupełnić braki formalne", "ua": "усунути формальні недоліки", "ex": "Wezwano mnie do uzupełnienia braków formalnych." },
+    { "pl": "załącznik", "ua": "додаток, вкладення", "ex": "Do wniosku dołącz wszystkie załączniki." },
+    { "pl": "doręczenie", "ua": "вручення", "ex": "Termin liczy się od doręczenia decyzji." },
+    { "pl": "tłumacz przysięgły", "ua": "присяжний перекладач", "ex": "Dokumenty musi przetłumaczyć tłumacz przysięgły." },
+    { "pl": "wykluczenie cyfrowe", "ua": "цифрове виключення", "ex": "Wykluczenie cyfrowe dotyka głównie seniorów." },
+    { "pl": "uzasadnienie decyzji", "ua": "обґрунтування рішення", "ex": "W uzasadnieniu decyzji wskazano braki w dokumentach." }
+  ]
+}

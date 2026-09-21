@@ -1,0 +1,153 @@
+{
+  "intro": "Здоров’я — беззаперечна тема іспиту: запис до лікаря, симптоми, розмова в аптеці. Особлива увага — на «Rozmowa» з лікарем і листі до подруги з порадами.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "W poczekalni w przychodni",
+      "scene": { "bg": "clinic", "caption": "Przychodnia, godzina 14:00", "desk": [50, 60, 44], "items": [["🤧", 22, 48, 20], ["👩‍⚕️", 74, 46, 22], ["🩺", 60, 57, 8], ["📋", 86, 57, 8], ["🪑", 38, 64, 12], ["🌡️", 32, 74, 7], ["🕑", 50, 13, 12], ["💊", 12, 22, 9]] },
+      "prompt": "Opisz ilustrację. Powiedz, gdzie są te osoby, co robią i jak się czują. Powiedz też, co według Ciebie zrobi lekarz.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, де ці люди, що вони роблять і що відчувають. Скажіть також, що, на вашу думку, зробить лікар.",
+      "time": [60, 120], "prep": 60,
+      "points": ["Gdzie jesteśmy i kto tu jest?", "Co robią te osoby?", "Jak się czują?", "Co zrobi lekarz?"],
+      "keywords": ["przychodnia|przychodni", "pacjent|pacjent", "lekarz|lekarz", "chory|chor", "rejestratorka|rejestrator", "leki|leki", "zmęczony|zmęcz", "prawdopodobnie|prawdopodob"],
+      "phrases": [
+        { "pl": "Na ilustracji widzę przychodnię.", "ua": "На ілюстрації я бачу поліклініку." },
+        { "pl": "Pacjent wygląda na chorego.", "ua": "Пацієнт виглядає хворим." },
+        { "pl": "Prawdopodobnie ma katar albo grypę.", "ua": "Ймовірно, у нього нежить або грип." },
+        { "pl": "Lekarz zbada go i przepisze leki.", "ua": "Лікар обстежить його й випише ліки." }
+      ],
+      "model": "Na ilustracji widzę przychodnię lekarską. Po lewej stronie siedzi pacjent, który wygląda na chorego, prawdopodobnie ma katar albo grypę. Po prawej stronie, przy biurku, stoi rejestratorka. Ma w ręku dokumenty i chyba pyta pacjenta o dane. Na biurku leży stetoskop, a w tle wisi zegar, który pokazuje drugą po południu. Pacjent czuje się źle i jest zmęczony, ale kobieta jest miła i spokojna. Myślę, że za chwilę pacjent wejdzie do gabinetu, a lekarz zbada go i przepisze mu leki. Moim zdaniem powinien też zostać kilka dni w domu.",
+      "tips": ["Для здоров’я корисні слова «wygląda na + знахідний»: «wygląda na chorego / zmęczonego».", "Не знаєш назви хвороби — скажи «ma objawy przeziębienia» (має симптоми застуди).", "Завершуй прогнозом: «za chwilę…», «prawdopodobnie…» — це вимагає пункт «co dalej»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Zdrowy styl życia",
+      "prompt": "Opowiedz, co robisz, żeby dbać o zdrowie. Wyjaśnij, co jest dla Ciebie najtrudniejsze i co chciałbyś (chciałabyś) zmienić.",
+      "promptUa": "Розкажіть, що ви робите, щоб дбати про здоров’я. Поясніть, що для вас найважче і що б ви хотіли змінити.",
+      "time": [90, 150], "prep": 60,
+      "points": ["Co robisz dla zdrowia (jedzenie, sport, sen)?", "Co jest dla Ciebie najtrudniejsze?", "Co chciałbyś zmienić?", "Jaką radę dasz innym?"],
+      "keywords": ["zdrowie|zdrow", "woda|wod", "basen|basen", "spacer|spacer", "stres|stres", "nawyki|nawyk", "regularnie|regularn", "spanie|spani"],
+      "phrases": [
+        { "pl": "Staram się dbać o zdrowie.", "ua": "Я намагаюся дбати про здоров’я." },
+        { "pl": "Najtrudniejsze dla mnie jest…", "ua": "Найважче для мене — це…" },
+        { "pl": "W przyszłym miesiącu chcę zacząć…", "ua": "Наступного місяця хочу почати…" },
+        { "pl": "Radzę wszystkim, żeby…", "ua": "Раджу всім, щоб…" }
+      ],
+      "model": "Staram się dbać o zdrowie, chociaż nie zawsze mi się to udaje. Rano piję dużo wody i jem śniadanie, a w ciągu dnia próbuję jeść owoce i warzywa. Dwa razy w tygodniu chodzę na basen, a w weekendy często idę na spacer z rodziną. Najtrudniejsze dla mnie jest regularne spanie, ponieważ pracuję do późna i często siedzę przy telefonie w nocy. Chciałabym też mniej się stresować, więc zaczęłam ćwiczyć oddychanie. W przyszłym miesiącu chcę zacząć chodzić spać przed jedenastą. Uważam, że zdrowie to małe codzienne nawyki, dlatego radzę wszystkim zacząć od jednej prostej zmiany.",
+      "tips": ["**Staram się + інфінітив** («намагаюся») — ввічливо визнає недосконалість і звучить природно.", "Приклад із власного життя робить монолог живим: цифри («dwa razy w tygodniu»), частота, час.", "Порада наприкінці («radzę wszystkim…») — гарний природний висновок."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Wizyta u lekarza",
+      "prompt": "Jesteś u lekarza rodzinnego. Opowiedz o swoich objawach, odpowiedz na pytania lekarza i zapytaj o zwolnienie z pracy.",
+      "promptUa": "Ви на прийомі в сімейного лікаря. Розкажіть про симптоми, дайте відповіді на запитання лікаря і запитайте про лікарняний.",
+      "points": ["Opisz objawy", "Powiedz o lekach i uczuleniach", "Zapytaj o zwolnienie", "Dopytaj o zalecenia"],
+      "keywords": ["gardło|gardł", "kaszel|kasz", "gorączka|gorączk", "uczulona|uczulon", "leki|leków", "zwolnienie|zwolnien"],
+      "phrases": [
+        { "pl": "Od trzech dni boli mnie gardło.", "ua": "Вже три дні в мене болить горло." },
+        { "pl": "Jestem uczulona na penicylinę.", "ua": "У мене алергія на пеніцилін." },
+        { "pl": "Czy mogę dostać zwolnienie lekarskie?", "ua": "Чи можу я отримати лікарняний?" },
+        { "pl": "Co mam robić, żeby szybciej wyzdrowieć?", "ua": "Що мені робити, щоб швидше одужати?" }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, proszę usiąść. Co Pani dolega?", "hint": "Opisz objawy: co boli i od kiedy.", "model": "Dzień dobry. Od trzech dni boli mnie gardło i mam kaszel. Wczoraj miałam też gorączkę, trzydzieści osiem stopni." },
+        { "ex": "Czy bierze Pani jakieś leki albo jest na coś uczulona?", "hint": "Odpowiedz o lekach i uczuleniach.", "model": "Nie biorę żadnych leków na stałe, ale jestem uczulona na penicylinę. Wczoraj wzięłam tylko tabletkę na gorączkę." },
+        { "ex": "Ma Pani zapalenie gardła. Przepiszę syrop i tabletki, a Pani musi odpoczywać. Czy pracuje Pani fizycznie?", "hint": "Odpowiedz i poproś o zwolnienie.", "model": "Nie, pracuję w biurze, ale mam dużo spotkań. Czy mogę dostać zwolnienie lekarskie na kilka dni?" },
+        { "ex": "Dobrze, wypiszę zwolnienie na pięć dni. Proszę brać lek trzy razy dziennie po jedzeniu i przyjść na kontrolę za tydzień. Czy wszystko jest jasne?", "hint": "Zapytaj o zalecenia (picie, spacery).", "model": "Tak, dziękuję. Czy mam pić dużo ciepłych napojów? I czy mogę wyjść na spacer, jeśli nie będę miała gorączki?" }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Boli mnie + називний** — «болить голова» по-польськи «boli mnie głowa»: частина тіла тут — підмет.", "Числа й дозування вимовляй чітко: «trzy razy dziennie po jedzeniu».", "Не зрозумів — перепитай: «Przepraszam, czy mógłby Pan powiedzieć to jeszcze raz wolniej?»"]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "formal", "title": "Odwołanie wizyty u dentysty",
+      "prompt": "Masz wizytę u dentysty w piątek, ale musisz ją odwołać. Napisz krótką wiadomość do przychodni. Przeproś, podaj powód i zaproponuj nowy termin.",
+      "promptUa": "У п’ятницю у вас візит до стоматолога, але ви мусите його скасувати. Напишіть коротке повідомлення до клініки: перепросіть, вкажіть причину й запропонуйте новий термін.",
+      "min": 25, "max": 50, "time": 10,
+      "points": [
+        { "text": "Przeprosiny", "keys": ["przepraszam", "przykro"] },
+        { "text": "Powód odwołania", "keys": ["ponieważ", "z powodu", "wyjeżdżam", "choruj"] },
+        { "text": "Propozycja nowego terminu", "keys": ["termin", "wtorek", "umówić", "umówi"] }
+      ],
+      "phrases": [
+        { "pl": "Niestety muszę odwołać wizytę.", "ua": "На жаль, мушу скасувати візит." },
+        { "pl": "Bardzo przepraszam za kłopot.", "ua": "Дуже перепрошую за клопіт." },
+        { "pl": "Czy mogłabym umówić się na…?", "ua": "Чи могла б я записатися на…?" }
+      ],
+      "model": "Dzień dobry, nazywam się Anna Kowalenko i mam wizytę u dentysty w piątek o dziesiątej. Niestety muszę ją odwołać, ponieważ wyjeżdżam w delegację. Bardzo przepraszam za kłopot. Czy mogłabym umówić się na przyszły wtorek po południu? Dziękuję i pozdrawiam.",
+      "tips": ["Офіційна коротка записка: **привітання → хто → проблема → причина → прохання → подяка**.", "**Bardzo przepraszam za kłopot** — універсальна ввічлива формула для скасувань і перенесень."]
+    },
+    {
+      "id": "w2", "kind": "letter-informal", "register": "informal", "title": "Rady dla zmęczonej koleżanki",
+      "prompt": "Twoja koleżanka napisała, że od tygodnia jest zmęczona i często boli ją głowa. Napisz do niej list. Wyraź troskę, opowiedz o swoim podobnym doświadczeniu, daj trzy rady i zaproponuj spotkanie.",
+      "promptUa": "Ваша подруга написала, що вже тиждень втомлена й часто болить голова. Напишіть їй листа: висловіть турботу, розкажіть про схожий власний досвід, дайте три поради й запропонуйте зустрітися.",
+      "min": 150, "max": 175, "time": 35,
+      "points": [
+        { "text": "Wyrażenie troski", "keys": ["martwię", "przykro", "współczuję"] },
+        { "text": "Własne doświadczenie", "keys": ["miałam", "miałem", "kiedyś", "temu"] },
+        { "text": "Trzy rady", "keys": ["radzę", "po pierwsze", "powinnaś", "warto", "staraj się"] },
+        { "text": "Propozycja spotkania", "keys": ["spotkajmy", "spotkać", "zapraszam"] }
+      ],
+      "phrases": [
+        { "pl": "Bardzo się martwię po Twoim liście.", "ua": "Дуже переживаю після твого листа." },
+        { "pl": "Kiedyś miałam podobny problem.", "ua": "Колись у мене була схожа проблема." },
+        { "pl": "Radzę Ci…  / Powinnaś…", "ua": "Раджу тобі… / Тобі варто…" },
+        { "pl": "Spotkajmy się w sobotę!", "ua": "Зустрінемося в суботу!" },
+        { "pl": "Ściskam mocno!", "ua": "Міцно обіймаю!" }
+      ],
+      "model": "Cześć Kasiu!\n\nBardzo się martwię po Twoim ostatnim liście. Przykro mi, że od tygodnia jesteś zmęczona i boli Cię głowa. Mam nadzieję, że szybko poczujesz się lepiej.\n\nKilka lat temu miałam podobny problem. Pracowałam za dużo, spałam po pięć godzin i piłam tylko kawę. W końcu poszłam do lekarza, który powiedział, że jestem przemęczona i powinnam odpocząć. Wtedy wszystko zaczęło się poprawiać, chociaż potrzebowałam prawie miesiąca, żeby wrócić do formy.\n\nDlatego radzę Ci trzy rzeczy. Po pierwsze, umów się do lekarza, żeby sprawdzić, czy wszystko jest w porządku. Po drugie, staraj się spać co najmniej siedem godzin, a wieczorem nie siedź długo przy telefonie. Po trzecie, pij więcej wody i wychodź codziennie na krótki spacer.\n\nJeśli masz ochotę, spotkajmy się w sobotę na kawie, oczywiście bez kofeiny! Chętnie z Tobą porozmawiam i pomogę Ci coś zaplanować. Mogę też przyjść do Ciebie z gorącą zupą.\n\nDaj znać, co o tym myślisz.\n\nŚciskam mocno\nOla",
+      "tips": ["У неформальному листі **Ty/Ci/Cię/Twój** пишемо з великої — це норма листування.", "Три поради краще пронумерувати словами: **po pierwsze / po drugie / po trzecie** — одразу видно структуру.", "Складне речення з **żeby** («umów się, żeby sprawdzić…») — маленький крок до B2."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Zapis do lekarza", "intro": "Прослухай телефонну розмову й вибери правильні відповіді.",
+      "lines": [
+        { "who": "A", "t": "Przychodnia Zdrowie, słucham." },
+        { "who": "B", "t": "Dzień dobry, chciałbym umówić się na wizytę do lekarza rodzinnego. Od kilku dni mam silny ból pleców." },
+        { "who": "A", "t": "Najbliższy wolny termin u doktora Nowaka jest w poniedziałek o wpół do dziesiątej. Może być?" },
+        { "who": "B", "t": "W poniedziałek rano niestety pracuję. Czy jest coś po południu?" },
+        { "who": "A", "t": "Mamy jeszcze wtorek o szesnastej piętnaście albo środę o dwunastej." },
+        { "who": "B", "t": "Wtorek o szesnastej piętnaście będzie w porządku." },
+        { "who": "A", "t": "Dobrze. Proszę przyjść dziesięć minut wcześniej i zabrać kartę ubezpieczenia oraz wcześniejsze badania, jeśli pan je ma." },
+        { "who": "B", "t": "Dziękuję bardzo, do widzenia." }
+      ],
+      "questions": [
+        { "q": "Dlaczego pacjent dzwoni do przychodni?", "options": ["Chce odebrać wyniki badań.", "Ma silny ból pleców.", "Potrzebuje recepty.", "Chce zmienić lekarza."], "answer": 1, "why": "«Od kilku dni mam silny ból pleców»." },
+        { "q": "Na kiedy umówiono wizytę?", "options": ["Na poniedziałek o wpół do dziesiątej.", "Na wtorek o szesnastej piętnaście.", "Na środę o dwunastej.", "Na czwartek po południu."], "answer": 1, "why": "Pacjent wybiera wtorek o 16:15, bo w poniedziałek rano pracuje." },
+        { "q": "Co powinien zabrać pacjent?", "options": ["Kartę ubezpieczenia i wcześniejsze badania.", "Tylko dowód osobisty.", "Skierowanie od dentysty.", "Wyniki badań krwi z ostatniego roku."], "answer": 0, "why": "«Zabrać kartę ubezpieczenia oraz wcześniejsze badania»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Jak nie dać się grypie", "textTitle": "Jesienna profilaktyka",
+      "text": "Jesień to czas, kiedy najłatwiej się przeziębić. Lekarze przypominają, że kilka prostych zasad może znacznie zmniejszyć ryzyko choroby. Po pierwsze, warto często myć ręce, zwłaszcza po powrocie do domu i przed jedzeniem. Po drugie, dobrze jest spać co najmniej siedem godzin, bo zmęczony organizm słabiej walczy z wirusami.\n\nWiele osób wierzy, że najlepszym sposobem jest duża ilość witaminy C. Tymczasem eksperci mówią, że witamina C nie chroni przed zachorowaniem, ale może trochę skrócić czas choroby. Ważniejsze jest zdrowe jedzenie i ruch na świeżym powietrzu: nawet półgodzinny spacer dziennie pomaga.\n\nJeśli jednak już zachorujemy, nie powinniśmy iść do pracy. Chory pracownik zaraża innych, a jego wydajność i tak jest niska. Najlepiej zostać w domu, dużo pić i odpoczywać. Do lekarza trzeba iść, gdy gorączka trwa dłużej niż trzy dni albo pojawia się trudność w oddychaniu.",
+      "questions": [
+        { "q": "Dlaczego warto spać co najmniej siedem godzin?", "options": ["Bo wtedy mniej się je.", "Bo zmęczony organizm słabiej walczy z wirusami.", "Bo w nocy nie ma wirusów.", "Bo tak zalecają lekarze rodzinni."], "answer": 1, "why": "«Zmęczony organizm słabiej walczy z wirusami»." },
+        { "q": "Co mówią eksperci o witaminie C?", "options": ["Chroni przed każdą chorobą.", "Jest szkodliwa jesienią.", "Nie chroni przed zachorowaniem, ale może skrócić chorobę.", "Trzeba ją brać codziennie w tabletkach."], "answer": 2, "why": "«Witamina C nie chroni przed zachorowaniem, ale może trochę skrócić czas choroby»." },
+        { "q": "Kiedy trzeba iść do lekarza?", "options": ["Gdy boli głowa.", "Gdy gorączka trwa dłużej niż trzy dni albo trudno oddychać.", "Gdy trzeba zostać w domu.", "Zawsze przy pierwszym kaszlu."], "answer": 1, "why": "«Gdy gorączka trwa dłużej niż trzy dni albo pojawia się trudność w oddychaniu»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Zdrowie: przypadki i czasy", "intro": "Вибери правильну форму. Тема — здоров’я, лікар, ліки.",
+      "questions": [
+        { "q": "Lekarz przepisał mi ___.", "options": ["antybiotyk", "antybiotyka", "antybiotykiem", "antybiotyku"], "answer": 0, "why": "Знахідний неістоти чол. роду = називний: «przepisał antybiotyk»." },
+        { "q": "Od tygodnia ___ się źle.", "options": ["czuję", "czułam", "będę czuć", "czuła"], "answer": 0, "why": "Дія триває й досі → теперішній час: «od tygodnia czuję się źle» (як в українській «вже тиждень почуваюся»)." },
+        { "q": "Jestem uczulona ___ orzechy.", "options": ["na", "w", "z", "o"], "answer": 0, "why": "**uczulony na** + знахідний: «na orzechy», «na penicylinę»." },
+        { "q": "Lekarz kazał mi ___ w domu.", "options": ["zostać", "zostałam", "zostanę", "zostając"], "answer": 0, "why": "**kazać komuś + інфінітив**: «kazał mi zostać»." },
+        { "q": "Nie mam ___ na sport.", "options": ["czasu", "czas", "czasem", "czasie"], "answer": 0, "why": "**nie mam** + родовий: «nie mam czasu»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "przychodnia", "ua": "поліклініка", "ex": "Idę do przychodni na kontrolę." },
+    { "pl": "recepta", "ua": "рецепт", "ex": "Lekarz wypisał mi receptę na antybiotyk." },
+    { "pl": "zwolnienie lekarskie", "ua": "лікарняний", "ex": "Dostałam zwolnienie lekarskie na tydzień." },
+    { "pl": "gorączka", "ua": "температура (жар)", "ex": "Mam gorączkę od wczoraj." },
+    { "pl": "przeziębienie", "ua": "застуда", "ex": "Jesienią łatwo o przeziębienie." },
+    { "pl": "badanie", "ua": "обстеження, аналіз", "ex": "Jutro mam badanie krwi." },
+    { "pl": "uczulenie", "ua": "алергія", "ex": "Mam uczulenie na kurz." },
+    { "pl": "ubezpieczenie zdrowotne", "ua": "медична страховка", "ex": "Czy ma Pani ubezpieczenie zdrowotne?" }
+  ]
+}
