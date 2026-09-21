@@ -262,7 +262,7 @@ export async function speakView(weekId, taskId) {
       const say = () => {
         if (!ttsSupported) return toast('Озвучення недоступне — прочитай репліку.');
         if (!hasPolishVoice()) toast('Польського голосу в системі немає — додай його в налаштуваннях ОС.', 4000);
-        speak([{ text: t.ex, pitch: 0.85 }], { rate: store.get().rate });
+        speak([{ text: t.ex, pitch: 0.85, role: 'm' }], { rate: store.get().rate });
       };
       const model = h('div', { class: 'note note--green', hidden: true }, h('div', { class: 'eyebrow' }, 'Так можна відповісти'), h('p', { class: 'modelline' }, t.model, ' ', speakBtn(t.model, { cls: 'ico--sm' })));
       const panelSlot = h('div');
@@ -289,7 +289,7 @@ export async function speakView(weekId, taskId) {
       wrap.append(h('div', { class: 'eyebrow' }, 'Крок 3 · Розбір розмови'),
         h('div', { class: 'note' }, h('div', { class: 'eyebrow' }, 'Повна модель діалогу'),
           h('div', { class: 'dlg' }, turns.flatMap((t) => [h('p', { class: 'dlg-ex' }, h('b', null, 'Egzaminator: '), t.ex), h('p', { class: 'dlg-you' }, h('b', null, 'Ty: '), t.model)])),
-          h('button', { class: 'btn btn--sm', type: 'button', onclick: () => speak(turns.flatMap((t) => [{ text: t.ex, pitch: 0.85, pause: 350 }, { text: t.model, pitch: 1.12, pause: 500 }]), { rate: store.get().rate }) }, icon('play', 14), 'Послухати весь діалог')),
+          h('button', { class: 'btn btn--sm', type: 'button', onclick: () => speak(turns.flatMap((t) => [{ text: t.ex, pitch: 0.85, pause: 350, role: 'm' }, { text: t.model, pitch: 1.12, pause: 500, role: 'f' }]), { rate: store.get().rate }) }, icon('play', 14), 'Послухати весь діалог')),
         finishSection(() => transcript, () => dur, forAnalysis));
     }
     turnView();

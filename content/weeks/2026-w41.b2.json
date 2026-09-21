@@ -101,7 +101,7 @@
   ],
   "listening": [
     {
-      "id": "l1", "title": "Slow travel", "intro": "Інтерв’ю з блогеркою-мандрівницею.",
+      "id": "l1", "voices": { "A": "m", "B": "f" }, "title": "Slow travel", "intro": "Інтерв’ю з блогеркою-мандрівницею.",
       "lines": [
         { "who": "A", "t": "Jest z nami blogerka podróżnicza Julia Wrona, zwolenniczka tak zwanej powolnej turystyki. Julio, na czym ona polega?" },
         { "who": "B", "t": "Na tym, żeby zamiast zaliczać pięć miast w tydzień, spędzić kilka dni w jednym miejscu i naprawdę je poznać. Podróżuję pociągami i autobusami, mieszkam u lokalnych gospodarzy i jem tam, gdzie jedzą mieszkańcy." },

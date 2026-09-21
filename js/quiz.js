@@ -56,7 +56,8 @@ export async function quizView(skill, weekId, taskId) {
   if (skill === 'listening') {
     const counter = h('span', { class: 'meta' }, 'Прослухано: 0 з 2 (на іспиті — двічі)');
     const btn = h('button', { class: 'btn btn--red btn--lg', type: 'button' }, icon('play', 18), 'Слухати запис');
-    const items = (task.lines || [{ t: task.script }]).map((l) => ({ text: l.t, pitch: l.who === 'B' ? 1.15 : l.who === 'A' ? 0.88 : 1, pause: 450 }));
+    const vm = { A: 'f', B: 'm', ...(task.voices || {}) };
+    const items = (task.lines || [{ t: task.script }]).map((l) => ({ text: l.t, role: vm[l.who] || 'f', pitch: vm[l.who] === 'm' ? 0.88 : 1.12, pause: 450 }));
     let playing = null;
     btn.addEventListener('click', () => {
       if (!ttsSupported) return toast('Озвучення недоступне в цьому браузері. Спробуй Chrome або Safari.');

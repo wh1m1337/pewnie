@@ -1,5 +1,8 @@
-// Озвучення (Web Speech Synthesis), запис голосу (MediaRecorder) і розпізнавання (SpeechRecognition).
-// Усе працює в браузері, без сервера.
+// Озвучення: заздалегідь згенеровані нейронні кліпи (content/audio) → запасний варіант: голос системи.
+// Запис голосу (MediaRecorder) і розпізнавання (SpeechRecognition) — нижче.
+import { splitSentences, clipId, cleanForSpeech } from './textutil.js';
+
+export { splitSentences };
 
 const synth = 'speechSynthesis' in window ? window.speechSynthesis : null;
 let voices = [];
@@ -8,53 +11,91 @@ if (synth) { refresh(); synth.addEventListener?.('voiceschanged', refresh); }
 
 export const ttsSupported = !!synth;
 
+// ---------------------------------------------------------------- нейронні кліпи
+let clipSet = null;          // Set ідентифікаторів, що є на сервері
+let neuralOn = true;         // користувач може вимкнути в «Прогрес»
+export const setNeural = (on) => { neuralOn = on !== false; };
+export const neuralAvailable = () => !!clipSet && clipSet.size > 0;
+export async function loadClips() {
+  try {
+    const r = await fetch('content/audio/index.json', { cache: 'no-cache' });
+    if (r.ok) clipSet = new Set((await r.json()).clips || []);
+  } catch { /* без кліпів — працює голос системи */ }
+}
+const clipUrl = (item) => {
+  if (!neuralOn || !clipSet) return null;
+  const id = clipId(item.text, item.role || 'f');
+  return clipSet.has(id) ? `content/audio/${id}.mp3` : null;
+};
+
+// ---------------------------------------------------------------- голос системи (запасний)
 export function plVoices() { return voices.filter((v) => /^pl([-_]|$)/i.test(v.lang)); }
 export function plVoice(pref) {
   const pl = plVoices();
   if (pref) { const v = pl.find((x) => x.name === pref); if (v) return v; }
-  return pl.find((v) => /premium|enhanced|natural|neural/i.test(v.name)) || pl.find((v) => v.localService) || pl[0] || null;
+  const notGoogle = pl.filter((v) => !/google/i.test(v.name)); // «Google polski» звучить як Google Translate
+  const pool = notGoogle.length ? notGoogle : pl;
+  return pool.find((v) => /premium|enhanced|natural|neural|zosia/i.test(v.name)) || pool.find((v) => v.localService) || pool[0] || null;
 }
-export const hasPolishVoice = () => plVoices().length > 0;
+// «Чи можна озвучити польською»: є нейронні кліпи або хоч якийсь польський голос
+export const hasPolishVoice = () => neuralAvailable() || plVoices().length > 0;
 let prefVoice = null;
 export const setVoicePref = (name) => { prefVoice = name || null; };
 
-export function splitSentences(text) {
-  const parts = text.replace(/\s+/g, ' ').match(/[^.!?…]+[.!?…]+["”»)]*|[^.!?…]+$/g);
-  return (parts || [text]).map((s) => s.trim()).filter(Boolean);
-}
-
 let current = null;
 export function stopSpeaking() {
-  if (current) current.cancelled = true;
+  if (current) { current.cancelled = true; current.audio?.pause(); }
   current = null;
   if (synth) synth.cancel();
 }
 
-// items: [{text, pitch?, rate?}] | string[]
+// items: [{text, role?:'f'|'m', pitch?, rate?, pause?}] | string[]
+// rate: 0.9 — «нормально» (для кліпів це швидкість 1×); для голосу системи — множник rate
 export function speak(items, { rate = 0.9, onItem, onDone } = {}) {
-  if (!synth) { onDone?.(); return { stop() {} }; }
   stopSpeaking();
-  const ctl = { cancelled: false };
+  const ctl = { cancelled: false, audio: null };
   current = ctl;
   const list = items.map((x) => (typeof x === 'string' ? { text: x } : x));
+  const finish = () => { if (current === ctl) current = null; onDone?.(); };
+  if (!list.length || (!synth && !neuralAvailable())) { finish(); return { stop() {} }; }
+
   let i = 0;
-  const next = () => {
-    if (ctl.cancelled) return;
-    if (i >= list.length) { if (current === ctl) current = null; onDone?.(); return; }
-    const idx = i++;
-    const it = list[idx];
-    const u = new SpeechSynthesisUtterance(it.text);
+  const prefetch = (k) => { const u = list[k] && clipUrl(list[k]); if (u) { const a = new Audio(); a.preload = 'auto'; a.src = u; } };
+
+  const viaSystem = (it, idx, done) => {
+    if (!synth) return done();
+    const u = new SpeechSynthesisUtterance(cleanForSpeech(it.text));
     u.lang = 'pl-PL';
-    const v = plVoice(it.voice || prefVoice);
+    const v = plVoice(prefVoice);
     if (v) u.voice = v;
     u.rate = (it.rate ?? 1) * rate;
     u.pitch = it.pitch ?? 1;
     u.onstart = () => onItem?.(idx);
-    u.onend = () => setTimeout(next, it.pause ?? 120);
-    u.onerror = () => { if (!ctl.cancelled) setTimeout(next, 50); };
+    u.onend = done;
+    u.onerror = done;
     synth.speak(u);
   };
-  setTimeout(next, 80);
+
+  const next = () => {
+    if (ctl.cancelled) return;
+    if (i >= list.length) return finish();
+    const idx = i++;
+    const it = list[idx];
+    const gap = () => { if (!ctl.cancelled) setTimeout(next, it.pause ?? 140); };
+    const url = clipUrl(it);
+    prefetch(idx + 1);
+    if (!url) return viaSystem(it, idx, gap);
+
+    const a = new Audio(url);
+    ctl.audio = a;
+    a.playbackRate = Math.min(1.4, Math.max(0.6, (rate / 0.9) * (it.rate ?? 1)));
+    a.preservesPitch = true;
+    a.onplay = () => onItem?.(idx);
+    a.onended = gap;
+    a.onerror = () => { if (!ctl.cancelled) viaSystem(it, idx, gap); }; // кліп не завантажився — голос системи
+    a.play().catch(() => { if (!ctl.cancelled) viaSystem(it, idx, gap); });
+  };
+  setTimeout(next, 60);
   return { stop() { if (current === ctl) stopSpeaking(); else ctl.cancelled = true; } };
 }
 

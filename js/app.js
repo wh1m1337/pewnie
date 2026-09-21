@@ -1,7 +1,7 @@
 // Оболонка: навігація, роутер, онбординг.
 import { h, icon, runCleanups, todayISO, toast } from './util.js';
 import * as store from './store.js';
-import { stopSpeaking, setVoicePref } from './speech.js';
+import { stopSpeaking, setVoicePref, setNeural, loadClips } from './speech.js';
 import { errorBox, loading } from './ui.js';
 import { homeView, weeksView, weekView, hubView } from './pages.js';
 import { speakView } from './speak.js';
@@ -12,6 +12,8 @@ import { progressView } from './progress.js';
 
 store.applyTheme();
 setVoicePref(store.get().voice);
+setNeural(store.get().neural);
+loadClips();
 matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => store.applyTheme());
 
 const NAV = [

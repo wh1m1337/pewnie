@@ -26,6 +26,13 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/generate-week.mjs --min-buffer 4 ${{ inputs.force && '--force' || '' }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Neural voice-over for new content
+        run: |
+          pip install edge-tts
+          node scripts/build-audio.mjs
       - name: Commit and request Pages build
         env:
           GH_TOKEN: ${{ github.token }}

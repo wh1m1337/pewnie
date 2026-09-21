@@ -101,7 +101,7 @@
   ],
   "listening": [
     {
-      "id": "l1", "title": "Najczęstsze błędy we wnioskach", "intro": "Інтерв’ю з працівницею установи про типові помилки.",
+      "id": "l1", "voices": { "A": "m", "B": "f" }, "title": "Najczęstsze błędy we wnioskach", "intro": "Інтерв’ю з працівницею установи про типові помилки.",
       "lines": [
         { "who": "A", "t": "Naszym gościem jest pani Katarzyna Lis, która od piętnastu lat pracuje w urzędzie wojewódzkim. Pani Katarzyno, jakie błędy najczęściej robią osoby składające wnioski?" },
         { "who": "B", "t": "Zdecydowanie największy problem to niekompletne dokumenty. Ludzie przychodzą z kopią zamiast oryginału albo zapominają o załączniku, który jest wymieniony w instrukcji. Drugi błąd to niedokładne wypełnienie formularza: brakuje podpisu albo daty, a wtedy wniosek nie jest rozpatrywany." },

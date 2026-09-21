@@ -9,7 +9,8 @@ const DEFAULTS = () => ({
   examDate: null,
   theme: 'auto',
   rate: 0.9,             // швидкість озвучення
-  voice: null,           // ім'я польського голосу
+  voice: null,           // ім'я польського голосу (запасний варіант)
+  neural: true,          // нейронні кліпи замість голосу системи
   done: {},              // "weekId:skill:taskId" -> {ts, score, extra}
   drafts: {},            // taskId -> {text, ts}
   submissions: {},       // taskId -> [{ts,text,words,score}]

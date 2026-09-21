@@ -33,7 +33,7 @@ export async function toolkitView(tab = 'exam') {
     body = h('div', { class: 'tk grid2' }, tk.connectors.map((g) => h('div', { class: 'card' }, h('h3', null, g.fn), phraseRows(g.items))));
   } else if (t === 'letters') {
     body = h('div', { class: 'tk' }, tk.letters.map((l) => h('article', { class: 'card letter' }, h('div', { class: 'brief-top' }, stamp(l.register === 'formal' ? 'Formalny' : l.register === 'informal' ? 'Nieformalny' : 'Neutralny'), h('span', { class: 'meta' }, l.when)), h('h3', null, l.title),
-      h('div', { class: 'skeleton' }, l.parts.map((p) => h('div', { class: 'sk-row' }, h('div', { class: 'sk-label' }, p.label), h('div', { class: 'sk-pl' }, p.pl, ' ', speakBtn(p.pl.replace(/\[.*?\]|…/g, ''), { cls: 'ico--sm' })), h('div', { class: 'sk-ua' }, p.ua)))))));
+      h('div', { class: 'skeleton' }, l.parts.map((p) => h('div', { class: 'sk-row' }, h('div', { class: 'sk-label' }, p.label), h('div', { class: 'sk-pl' }, p.pl, ' ', speakBtn(p.pl, { cls: 'ico--sm' })), h('div', { class: 'sk-ua' }, p.ua)))))));
   } else if (t === 'phrases') {
     body = h('div', { class: 'tk grid2' }, tk.phrases.map((g) => h('div', { class: 'card' }, h('h3', null, g.group), g.note && h('p', { class: 'hint' }, g.note), phraseRows(g.items))));
   } else if (t === 'friends') {

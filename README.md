@@ -26,6 +26,19 @@
 
    > **Увімкнення:** файли лежать у `scripts/github-workflows/`, бо токен, яким публікували репозиторій, не мав scope `workflow`. Щоб активувати: `gh auth refresh -s workflow`, потім `mkdir -p .github && git mv scripts/github-workflows .github/workflows && git commit -am "enable workflows" && git push`.
 
+## Голос
+
+Озвучення — це **заздалегідь згенеровані нейронні записи** (`content/audio/*.mp3`, голоси `pl-PL-ZofiaNeural` і `pl-PL-MarekNeural`), тож звучить однаково на будь-якому пристрої й не залежить від голосів системи. Кліп визначається хешем тексту (`js/textutil.js`); якщо кліпа немає — сайт мовчки переходить на голос системи. Чоловічий голос — екзаменатор і співрозмовники в аудіюванні, жіночий — решта.
+
+```bash
+pip install edge-tts
+node scripts/build-audio.mjs             # згенерувати те, чого бракує (інкрементально)
+node scripts/build-audio.mjs --check     # лише порахувати прогалини
+node scripts/build-audio.mjs --provider azure   # офіційний Azure AI Speech (ті самі голоси): AZURE_SPEECH_KEY + AZURE_SPEECH_REGION
+```
+
+> `edge` — безкоштовний, але неофіційний ендпоїнт Microsoft: підходить для прототипу. Для комерційного продукту перегенеруйте кліпи через `--provider azure --force` (голоси ті самі, умови використання — офіційні).
+
 ## Локально
 
 ```bash
@@ -47,6 +60,7 @@ content/weeks/*.json           — завдання (по файлу на рів
 content/toolkit.json           — довідник
 scripts/validate.mjs           — перевірка контенту
 scripts/generate-week.mjs      — генерація нового тижня через Claude API
+scripts/build-audio.mjs        — нейронне озвучення (content/audio)
 scripts/github-workflows/      — CI (валідація) і щотижневе поповнення черги
 sw.js · manifest.webmanifest   — офлайн і PWA
 ```

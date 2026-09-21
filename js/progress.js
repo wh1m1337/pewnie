@@ -5,7 +5,7 @@ import { pageHead, pencilBar, circledGrade } from './ui.js';
 import { gradeFromScore } from './analyze.js';
 import { levelSwitch } from './pages.js';
 import { SKILLS } from './util.js';
-import { plVoices, hasPolishVoice, speak, setVoicePref, ttsSupported, asrSupported } from './speech.js';
+import { plVoices, hasPolishVoice, speak, setVoicePref, setNeural, neuralAvailable, ttsSupported, asrSupported } from './speech.js';
 
 const rerender = () => window.dispatchEvent(new Event('pewnie:rerender'));
 
@@ -33,6 +33,7 @@ export async function progressView() {
   const rate = h('input', { type: 'range', min: 0.6, max: 1.15, step: 0.05, value: st.rate, class: 'range' });
   const rateOut = h('span', { class: 'mono' }, `${st.rate.toFixed(2)}×`);
   rate.addEventListener('input', () => { store.patch({ rate: +rate.value }); rateOut.textContent = `${(+rate.value).toFixed(2)}×`; });
+  const neural = h('div', { class: 'seg' }, [[true, 'Нейронний'], [false, 'Системний']].map(([v, l]) => h('button', { type: 'button', class: `seg-b ${(st.neural !== false) === v ? 'on' : ''}`, onclick: () => { store.patch({ neural: v }); setNeural(v); rerender(); } }, l)));
   const voices = plVoices();
   const voiceSel = h('select', { class: 'input' }, h('option', { value: '' }, voices.length ? 'Автоматично' : 'Польських голосів не знайдено'), voices.map((v) => h('option', { value: v.name, selected: st.voice === v.name }, `${v.name} (${v.lang})`)));
   voiceSel.addEventListener('change', () => { store.patch({ voice: voiceSel.value || null }); setVoicePref(voiceSel.value); });
@@ -53,9 +54,10 @@ export async function progressView() {
       h('div', { class: 'setrow' }, h('label', null, 'Дата іспиту'), date),
       h('div', { class: 'setrow' }, h('label', null, 'Вигляд'), theme),
       h('div', { class: 'setrow' }, h('label', null, 'Швидкість озвучення'), h('div', { class: 'rangewrap' }, rate, rateOut)),
-      h('div', { class: 'setrow' }, h('label', null, 'Польський голос'), h('div', { class: 'rangewrap' }, voiceSel, h('button', { class: 'btn btn--sm', type: 'button', onclick: () => speak(['Dzień dobry! Nazywam się Ania i uczę się polskiego.'], { rate: st.rate }) }, icon('play', 14), 'Тест'))),
+      h('div', { class: 'setrow' }, h('label', null, 'Озвучення'), neural),
+      h('div', { class: 'setrow' }, h('label', null, 'Системний голос (запасний)'), h('div', { class: 'rangewrap' }, voiceSel, h('button', { class: 'btn btn--sm', type: 'button', onclick: () => speak(['Dzień dobry! Nazywam się Ania i uczę się polskiego.'], { rate: st.rate }) }, icon('play', 14), 'Тест'))),
       !hasPolishVoice() && ttsSupported && h('p', { class: 'note note--red' }, 'У цьому пристрої не знайдено польського голосу. На Mac/iPhone: Системні налаштування → Універсальний доступ → Промовлений вміст → Голоси → додай Polski (Zosia / Krzysztof). На Windows: Параметри → Час і мова → Мова → Польська. Без нього озвучення не працюватиме.'),
-      h('div', { class: 'facts' }, h('span', { class: `chip ${ttsSupported ? 'chip--ok' : 'chip--warn'}` }, `Озвучення: ${ttsSupported ? 'є' : 'немає'}`), h('span', { class: `chip ${asrSupported ? 'chip--ok' : 'chip--warn'}` }, `Розпізнавання польської: ${asrSupported ? 'є' : 'немає — лише запис'}`))),
+      h('div', { class: 'facts' }, h('span', { class: `chip ${neuralAvailable() ? 'chip--ok' : 'chip--warn'}` }, `Нейронні голоси: ${neuralAvailable() ? 'є' : 'не завантажено'}`), h('span', { class: `chip ${ttsSupported ? 'chip--ok' : 'chip--warn'}` }, `Голос системи: ${ttsSupported ? 'є' : 'немає'}`), h('span', { class: `chip ${asrSupported ? 'chip--ok' : 'chip--warn'}` }, `Розпізнавання польської: ${asrSupported ? 'є' : 'немає — лише запис'}`))),
     h('section', { class: 'card' },
       h('h2', null, 'Мої дані'),
       h('div', { class: 'row' },
