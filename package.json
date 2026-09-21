@@ -7,7 +7,11 @@
   "scripts": {
     "serve": "node scripts/serve.mjs",
     "validate": "node scripts/validate.mjs",
-    "generate": "node scripts/generate-week.mjs"
+    "generate": "node scripts/generate-week.mjs",
+    "weekly": "node scripts/weekly.mjs",
+    "translate": "node scripts/translate-content.mjs",
+    "audio": "node scripts/build-audio.mjs",
+    "test:pipeline": "node scripts/test-pipeline.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -1,51 +1,52 @@
 name: Weekly content
-# Щопонеділка перевіряє «запас» тижнів і, якщо його мало, генерує новий (потрібен секрет ANTHROPIC_API_KEY).
-# Сайт сам відкриває тижні за датою релізу, тому цей воркфлоу лише поповнює чергу.
+# Щопонеділка поповнює чергу тижнів: нові теми й матеріали (Claude API) → англійські переклади → нейронне озвучення → перевірка → публікація.
+# Сайт сам відкриває тижні за датою релізу, тож запас у 4 тижні дає час переглянути згенероване до того, як його побачать учні.
+# Потрібен секрет репозиторію ANTHROPIC_API_KEY. Без нього воркфлоу нічого не робить (і не падає).
 on:
   schedule:
-    - cron: '0 5 * * 1'
+    - cron: '0 5 * * 1'   # понеділок, 05:00 UTC
   workflow_dispatch:
     inputs:
       force:
-        description: 'Згенерувати ще один тиждень попри запас'
+        description: 'Створити тиждень попри наявний запас'
         type: boolean
         default: false
+      max_new:
+        description: 'Скільки тижнів створити максимум'
+        default: '2'
 permissions:
   contents: write
   pages: write
+concurrency:
+  group: weekly-content
+  cancel-in-progress: false
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm ci
-      - name: Generate next week (if buffer is low)
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node scripts/generate-week.mjs --min-buffer 4 ${{ inputs.force && '--force' || '' }}
-      - name: English overlays for new content
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node scripts/translate-content.mjs
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Neural voice-over for new content
-        run: |
-          pip install edge-tts
-          node scripts/build-audio.mjs
+      - run: npm ci
+      - run: pip install edge-tts
+      - name: Generate → translate → voice-over → validate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run weekly -- --max-new ${{ inputs.max_new || '2' }} ${{ inputs.force && '--force' || '' }}
       - name: Commit and request Pages build
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if [ -n "$(git status --porcelain content)" ]; then
+          if [ -n "$(git status --porcelain content scripts/themes.json)" ]; then
             git config user.name "pewnie-bot"
             git config user.email "pewnie-bot@users.noreply.github.com"
-            git add content
-            git commit -m "content: new weekly pack"
+            git add content scripts/themes.json
+            git commit -m "content: weekly update (new weeks, translations, voice-over)"
             git push
             gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
           else

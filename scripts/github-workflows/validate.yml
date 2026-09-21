@@ -1,4 +1,4 @@
-name: Validate content
+name: Validate
 on:
   push:
     branches: [main]
@@ -12,3 +12,5 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/validate.mjs
+      - name: Pipeline test (fake LLM, no network)
+        run: node scripts/test-pipeline.mjs
