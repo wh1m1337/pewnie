@@ -13,7 +13,7 @@ export async function toolkitView(tab = 'exam') {
   const t = TABS.some(([k]) => k === tab) ? tab : 'exam';
   const nav = h('nav', { class: 'tabs', 'aria-label': 'Розділи довідника' }, TABS.map(([k, l]) => h('a', { class: `tab ${k === t ? 'on' : ''}`, href: `#/toolkit/${k}` }, l)));
   let body;
-  requestAnimationFrame(() => nav.querySelector('.on')?.scrollIntoView({ inline: 'center', block: 'nearest' }));
+  setTimeout(() => { const on = nav.querySelector('.on'); if (on) nav.scrollLeft = on.offsetLeft - (nav.clientWidth - on.offsetWidth) / 2; }, 0);
 
   if (t === 'exam') {
     const L = tk.exam.levels[level];

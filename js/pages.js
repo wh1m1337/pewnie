@@ -63,7 +63,7 @@ export async function homeView() {
 
   const skillBars = ['speaking', 'writing', 'listening', 'reading', 'grammar'].map((k) => {
     const sc = store.skillScore(level, k), n = store.skillCount(level, k);
-    return h('div', { class: `skill ${k === 'speaking' || k === 'writing' ? 'skill--main' : ''}` }, h('div', { class: 'skill-h' }, icon(SKILLS[k].icon, 18), h('span', null, SKILLS[k].ua), h('em', null, SKILLS[k].pl)), pencilBar(sc, { sub: n ? `${n} ${plural(n, ['завдання', 'завдання', 'завдань'])}` : 'ще не починали', tone: 'ink' }));
+    return h('a', { class: `skill ${k === 'speaking' || k === 'writing' ? 'skill--main' : ''}`, href: `#/${{ speaking: 'speak', writing: 'write', listening: 'listen', reading: 'read', grammar: 'grammar' }[k]}` }, h('div', { class: 'skill-h' }, icon(SKILLS[k].icon, 18), h('span', null, SKILLS[k].ua), h('em', null, SKILLS[k].pl)), pencilBar(sc, { sub: n ? `${n} ${plural(n, ['завдання', 'завдання', 'завдань'])}` : 'ще не починали', tone: 'ink' }));
   });
 
   return h('div', { class: 'view home' },
@@ -136,32 +136,50 @@ export async function weekView(id) {
       w.vocab?.length ? h('section', { class: 'wsec' }, h('h2', null, icon('cards', 22), 'Слова', h('em', null, 'Słownictwo')), h('div', { class: 'trows' }, h('a', { class: 'trow', href: '#/vocab' }, h('span', { class: 'trow-ico' }, icon('cards', 20)), h('span', { class: 'trow-main' }, h('span', { class: 'trow-title' }, `${w.vocab.length} слів тижня`), h('span', { class: 'trow-sub' }, w.vocab.slice(0, 4).map((v) => v.pl).join(' · ') + ' …')), h('span', { class: 'go' }, icon('arrow', 18))))) : null));
 }
 
-// ------------------------------------------------------------------ хаби: усе мовлення / усе письмо
+// ------------------------------------------------------------------ хаби: усе мовлення / письмо / аудіювання / читання / граматика
+const HUB = {
+  speaking: { route: 'speak', title: 'Мовлення', sub: 'Записуй відповідь, чуй себе з боку, порівнюй із зразком. Діалоги — з «екзаменатором», який говорить польською.',
+    intro: [['Opis ilustracji', 'Опиши, що на картинці: хто, де, що робить, який настрій — і що, на твою думку, було до і буде після.'], ['Monolog', 'Висловлення на задану тему за планом: позиція, аргументи, приклад, висновок. 1,5–2,5 хв без зупинок.'], ['Rozmowa', 'Життєва ситуація з екзаменатором: скарга, домовленість, прохання. Треба реагувати на живі репліки.']] },
+  writing: { route: 'write', title: 'Письмо', sub: 'Редактор-зошит із польськими літерами, таймером і перевіркою червоним олівцем: пункти, зв’язки, кальки, діакритика.',
+    intro: [['Короткий текст', 'SMS, повідомлення, оголошення — 25–60 слів. Головне — чітко й ввічливо, усі пункти.'], ['Лист', 'Неформальний (до друга) або офіційний (до установи). Звертання, завершення, регістр — половина балів.'], ['Розгорнутий текст', 'Опис, розповідь, аргументація на 150–250 слів: вступ, 2–3 думки, висновок і зв’язки між ними.']] },
+  listening: { route: 'listen', title: 'Аудіювання', sub: 'Діалоги, оголошення й інтерв’ю з нейронним озвученням. Слухай двічі, як на іспиті, і відповідай на питання.',
+    intro: [['Спершу питання', 'Перед прослуховуванням прочитай питання й варіанти: так знаєш, на що звертати увагу.'], ['Двічі, не більше', 'На іспиті запис звучить двічі. Тут теж: перший раз — загальний зміст, другий — деталі.'], ['Транскрипт — наприкінці', 'Після відповідей відкрий текст і послухай запис ще раз, читаючи його: так вухо вчиться розпізнавати слова.']] },
+  reading: { route: 'read', title: 'Читання', sub: 'Тексти рівня іспиту: статті, поради, оголошення. Питання перевіряють розуміння головного й деталей.',
+    intro: [['Питання — до тексту', 'Прочитай питання, потім текст: шукаєш відповідь, а не перечитуєш усе підряд.'], ['Перефразування', 'Правильна відповідь рідко повторює слова тексту — шукай синоніми й узагальнення.'], ['Розбір відповідей', 'Після перевірки читай пояснення: чому правильна саме ця й чому інші не підходять.']] },
+  grammar: { route: 'grammar', title: 'Граматика', sub: 'Відмінки, часи, керування й складні речення в живих контекстах. До кожної відповіді — пояснення українською.',
+    intro: [['Форма в контексті', 'Обираєш форму, яка пасує в реченні: відмінок, час, вид, прийменник.'], ['Пояснення', 'Кожне питання має коротке правило — воно й запам’ятовується, а не сама відповідь.'], ['Регулярність', 'Краще 5 питань щодня, ніж 50 раз на тиждень.']] },
+};
+const hubSub = (skill, t) => ({
+  speaking: () => est(t), writing: () => `${t.min}–${t.max} слів · ≈ ${t.time} хв`,
+  listening: () => `${t.questions.length} питання · ≈ 6 хв`, reading: () => `${t.questions.length} питання · ≈ 8 хв`, grammar: () => `${t.questions.length} речень · ≈ 4 хв`,
+}[skill]());
+
 export async function hubView(skill) {
   const level = store.get().level;
+  const cfg = HUB[skill];
   const packs = (await loadAllUnlocked(level)).reverse();
+  const filterable = skill === 'speaking' || skill === 'writing';
   const isSp = skill === 'speaking';
-  const kinds = isSp ? TYPE_LABEL : KIND_LABEL;
-  const usedKinds = [...new Set(packs.flatMap((p) => (p[skill] || []).map((t) => (isSp ? t.type : t.kind))))];
+  const kinds = isSp ? TYPE_LABEL : skill === 'writing' ? KIND_LABEL : {};
+  const usedKinds = filterable ? [...new Set(packs.flatMap((p) => (p[skill] || []).map((t) => (isSp ? t.type : t.kind))))] : [];
   let filter = 'all';
   const list = h('div', { class: 'hub-list' });
   const chips = h('div', { class: 'filters' });
   function draw() {
-    chips.replaceChildren(...['all', ...usedKinds].map((k) => h('button', { type: 'button', class: `fchip ${filter === k ? 'on' : ''}`, onclick: () => { filter = k; draw(); } }, k === 'all' ? 'Усі' : kinds[k])));
+    if (filterable) chips.replaceChildren(...['all', ...usedKinds].map((k) => h('button', { type: 'button', class: `fchip ${filter === k ? 'on' : ''}`, onclick: () => { filter = k; draw(); } }, k === 'all' ? 'Усі' : kinds[k])));
     list.replaceChildren(...packs.map((p) => {
       const items = (p[skill] || []).filter((t) => filter === 'all' || (isSp ? t.type : t.kind) === filter);
       if (!items.length) return null;
       return h('section', { class: 'wsec' }, h('h3', { class: 'hub-week' }, h('span', null, `Tydzień ${p.n}`), p.theme.pl),
-        h('div', { class: 'trows' }, items.map((t) => taskRow({ href: `#/${isSp ? 'speak' : 'write'}/${p.id}/${t.id}`, ico: SKILLS[skill].icon, title: t.title, sub: isSp ? est(t) : `${t.min}–${t.max} слів · ≈ ${t.time} хв`, tag: kinds[isSp ? t.type : t.kind], key: store.taskKey(p.id, level, skill, t.id) }))));
+        h('div', { class: 'trows' }, items.map((t) => taskRow({ href: `#/${cfg.route}/${p.id}/${t.id}`, ico: SKILLS[skill].icon, title: t.title, sub: hubSub(skill, t), tag: filterable ? kinds[isSp ? t.type : t.kind] : SKILLS[skill].pl, key: store.taskKey(p.id, level, skill, t.id) }))));
     }));
   }
   draw();
-  const intro = isSp
-    ? h('div', { class: 'explain' }, [['Opis ilustracji', 'Опиши, що на картинці: хто, де, що робить, який настрій — і що, на твою думку, було до і буде після.'], ['Monolog', 'Висловлення на задану тему за планом: позиція, аргументи, приклад, висновок. 1,5–2,5 хв без зупинок.'], ['Rozmowa', 'Життєва ситуація з екзаменатором: скарга, домовленість, прохання. Треба реагувати на живі репліки.']]
-      .map(([t, d]) => h('div', { class: 'ex' }, h('h3', null, t), h('p', null, d))))
-    : h('div', { class: 'explain' }, [['Короткий текст', 'SMS, повідомлення, оголошення — 25–60 слів. Головне — чітко й ввічливо, усі пункти.'], ['Лист', 'Неформальний (до друга) або офіційний (до установи). Звертання, завершення, регістр — половина балів.'], ['Розгорнутий текст', 'Опис, розповідь, аргументація на 150–250 слів: вступ, 2–3 думки, висновок і зв’язки між ними.']]
-      .map(([t, d]) => h('div', { class: 'ex' }, h('h3', null, t), h('p', null, d))));
+  const sc = store.skillScore(level, skill), n = store.skillCount(level, skill);
+  const total = packs.reduce((a, p) => a + (p[skill] || []).length, 0);
   return h('div', { class: 'view' },
-    pageHead({ eyebrow: isSp ? 'Mówienie' : 'Pisanie', title: isSp ? 'Мовлення' : 'Письмо', sub: isSp ? 'Записуй відповідь, чуй себе з боку, порівнюй із зразком. Діалоги — з «екзаменатором», який говорить польською.' : 'Редактор-зошит із польськими літерами, таймером і перевіркою червоним олівцем: пункти, зв’язки, кальки, діакритика.', actions: levelSwitch() }),
-    intro, chips, list);
+    pageHead({ eyebrow: SKILLS[skill].pl, title: cfg.title, sub: cfg.sub, actions: levelSwitch() }),
+    h('div', { class: 'hub-stat' }, pencilBar(sc, { label: `Твій середній бал · ${level}`, sub: `${n} з ${total} завдань виконано` })),
+    h('div', { class: 'explain' }, cfg.intro.map(([t, d]) => h('div', { class: 'ex' }, h('h3', null, t), h('p', null, d)))),
+    chips, list);
 }

@@ -20,9 +20,12 @@ const NAV = [
   ['#/', 'Головна', 'home', /^\/?$/],
   ['#/speak', 'Мовлення', 'mic', /^\/speak/],
   ['#/write', 'Письмо', 'pen', /^\/write/],
-  ['#/weeks', 'Тижні', 'cal', /^\/(weeks|week|listen|read|grammar)/],
-  ['#/vocab', 'Слова', 'cards', /^\/vocab/],
-  ['#/toolkit', 'Довідник', 'book', /^\/toolkit/],
+  ['#/listen', 'Аудіювання', 'ear', /^\/listen/],
+  ['#/read', 'Читання', 'book', /^\/read/],
+  ['#/grammar', 'Граматика', 'cards', /^\/grammar/],
+  ['#/vocab', 'Слова', 'abc', /^\/vocab/],
+  ['#/weeks', 'Тижні', 'cal', /^\/(weeks|week)/],
+  ['#/toolkit', 'Довідник', 'tool', /^\/toolkit/],
   ['#/progress', 'Прогрес', 'chart', /^\/progress/],
 ];
 
@@ -34,6 +37,7 @@ const ROUTES = [
   [/^\/speak\/([\w-]+)\/([\w-]+)$/, (m) => speakView(m[1], m[2]), 'Мовлення'],
   [/^\/write$/, () => hubView('writing'), 'Письмо'],
   [/^\/write\/([\w-]+)\/([\w-]+)$/, (m) => writeView(m[1], m[2]), 'Письмо'],
+  [/^\/(listen|read|grammar)$/, (m) => hubView({ listen: 'listening', read: 'reading', grammar: 'grammar' }[m[1]]), 'Завдання'],
   [/^\/(listen|read|grammar)\/([\w-]+)\/([\w-]+)$/, (m) => quizView({ listen: 'listening', read: 'reading', grammar: 'grammar' }[m[1]], m[2], m[3]), 'Завдання'],
   [/^\/vocab$/, () => vocabView(), 'Слова'],
   [/^\/toolkit(?:\/(\w+))?$/, (m) => toolkitView(m[1]), 'Довідник'],
@@ -48,12 +52,19 @@ function themeBtn() {
   return h('button', { class: 'themebtn', type: 'button', title: dark ? 'Світлий зошит' : 'Темна дошка', 'aria-label': 'Змінити тему', onclick: () => { store.patch({ theme: dark ? 'light' : 'dark' }); store.applyTheme(); drawSpine(); } }, icon(dark ? 'sun' : 'moon', 20));
 }
 
+function centerActive(bar, sel) {
+  const on = bar?.querySelector(sel);
+  if (on) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
+}
+
 function drawSpine() {
   const path = location.hash.slice(1) || '/';
   spine.replaceChildren(
     h('a', { class: 'brand', href: '#/', 'aria-label': 'Pewnie — головна' }, h('span', { class: 'brand-mark' }, 'P'), h('span', { class: 'brand-name' }, 'Pewnie')),
     h('div', { class: 'spine-items' }, NAV.map(([href, label, ic, re]) => h('a', { class: `navitem ${re.test(path) ? 'on' : ''}`, href, 'aria-current': re.test(path) ? 'page' : null }, icon(ic, 22), h('span', null, label)))),
     h('div', { class: 'spine-foot' }, themeBtn()));
+  // на телефоні панель прокручується: активний розділ має бути видно
+  setTimeout(() => centerActive(spine.querySelector('.spine-items'), '.navitem.on'), 0);
 }
 
 let token = 0;

@@ -1,10 +1,10 @@
 /* Pewnie — «зошит і червоний олівець». Світла тема = зошит у клітинку, темна = крейдяна дошка. */
 :root {
   --paper: #F5F0E1; --paper-hi: #FCFAF3; --paper-lo: #EBE4CF;
-  --ink: #16223F; --ink-2: #465274; --ink-3: #8790AA;
+  --ink: #16223F; --ink-2: #465274; --ink-3: #69738F;
   --grid: rgba(22, 34, 63, .055); --rule: rgba(60, 100, 190, .24); --margin: rgba(214, 54, 43, .55);
   --line: rgba(22, 34, 63, .16);
-  --red: #D6362B; --on-red: #fff; --red-bg: #F8DAD5;
+  --red: #C62F25; --on-red: #fff; --red-bg: #F8DAD5;
   --hi: #FFE27A; --hi-soft: #FFF0B3;
   --green: #2C7A58; --green-bg: #DCEEDD;
   --cover: #1B2A4E; --on-cover: #F5F0E1;
@@ -18,7 +18,7 @@
 }
 :root[data-theme='dark'] {
   --paper: #14231E; --paper-hi: #1B2E27; --paper-lo: #0F1C17;
-  --ink: #EDE9D6; --ink-2: #B7BAA5; --ink-3: #7F8F84;
+  --ink: #EDE9D6; --ink-2: #B7BAA5; --ink-3: #94A499;
   --grid: rgba(237, 233, 214, .045); --rule: rgba(237, 233, 214, .1); --margin: rgba(255, 143, 122, .5);
   --line: rgba(237, 233, 214, .2);
   --red: #FF8F7A; --on-red: #1A1210; --red-bg: #40231F;
@@ -42,6 +42,10 @@ h1, h2, h3, h4, .stat-n, .big, .q-n, .vpl, .lvl-big-l, .brand-mark, .prompt-pl, 
 h1, h2, h3, h4 { font-family: var(--f-display); line-height: 1.1; margin: 0; font-weight: 800; letter-spacing: -.005em; }
 p { margin: 0 0 .7em; }
 a { color: inherit; }
+a.skill { text-decoration: none; display: block; padding: 6px 8px; margin: -6px -8px; border-radius: 6px; }
+a.skill:hover { background: var(--hi-soft); }
+.hub-stat { max-width: 420px; margin: -6px 0 22px; }
+@media (max-height: 760px) { .spine { padding-top: 10px; gap: 4px; } .brand { margin-bottom: 2px; } .brand-name { display: none; } .navitem { padding: 6px 2px; } }
 button { font: inherit; color: inherit; cursor: pointer; }
 :focus-visible { outline: 3px solid var(--red); outline-offset: 2px; border-radius: 4px; }
 ::selection { background: var(--hi); color: #16223F; }
@@ -63,12 +67,13 @@ strong, b { font-weight: 650; }
 .brand { text-decoration: none; display: grid; justify-items: center; gap: 4px; margin-bottom: 10px; }
 .brand-mark {
   width: 46px; height: 46px; display: grid; place-items: center; font: 900 30px/1 var(--f-display); color: var(--cover);
-  background: var(--paper); border: 2px solid var(--red); border-radius: 50% 46% 52% 44% / 46% 52% 44% 50%; transform: rotate(-6deg); box-shadow: 2px 2px 0 var(--red);
+  background: var(--on-cover); border: 2px solid var(--red); border-radius: 50% 46% 52% 44% / 46% 52% 44% 50%; transform: rotate(-6deg); box-shadow: 2px 2px 0 var(--red);
 }
 .brand-name { font: 700 12px var(--f-mono); letter-spacing: .14em; text-transform: uppercase; opacity: .85; }
-.spine-items { display: flex; flex-direction: column; gap: 2px; width: 100%; }
+.spine-items { display: flex; flex-direction: column; gap: 1px; width: 100%; overflow-y: auto; scrollbar-width: none; min-height: 0; }
+.spine-items::-webkit-scrollbar { display: none; }
 .navitem {
-  display: grid; justify-items: center; gap: 3px; padding: 10px 4px; text-decoration: none; font-size: 11.5px; font-weight: 500;
+  display: grid; justify-items: center; gap: 2px; padding: 8px 2px; text-decoration: none; font-size: 11px; font-weight: 500; text-align: center; line-height: 1.15;
   color: color-mix(in srgb, var(--on-cover) 72%, transparent); border-left: 3px solid transparent; transition: color .15s, background .15s;
 }
 .navitem:hover { color: var(--on-cover); background: rgba(255,255,255,.06); }
@@ -447,8 +452,8 @@ a.wcard:hover { transform: translate(-2px, -2px) rotate(-.4deg); }
   .shell { grid-template-columns: minmax(0, 1fr); }
   .spine { position: fixed; inset: auto 0 0 0; top: auto; height: auto; flex-direction: row; padding: 0 0 env(safe-area-inset-bottom); gap: 0; border-top: 2px solid var(--red); background-image: none; }
   .spine::after, .brand, .spine-foot { display: none; }
-  .spine-items { flex-direction: row; justify-content: space-between; }
-  .navitem { flex: 1; padding: 8px 0 7px; font-size: 10px; border-left: 0; border-top: 3px solid transparent; }
+  .spine-items { flex: 1; min-width: 0; flex-direction: row; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x proximity; }
+  .navitem { flex: 1 0 64px; padding: 8px 2px 7px; font-size: 10px; border-left: 0; border-top: 3px solid transparent; }
   .navitem.on { border-top-color: var(--red); }
   .page { padding: 20px 16px 110px; }
   .hero-title { font-size: clamp(60px, 22vw, 96px); }
