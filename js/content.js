@@ -1,6 +1,12 @@
 // Завантаження контенту. Тижні «відкриваються» за датою релізу — сайт сам додає нове щотижня.
 import { todayISO, daysBetween, fmtDate } from './util.js';
 
+import { tx, lang, applyOverlay } from './i18n.js';
+
+// англійська «накладка» (плоска карта шлях -> рядок); якщо файлу немає — лишається українська
+async function overlay(url) {
+  try { const r = await fetch(url, { cache: 'no-cache' }); return r.ok ? await r.json() : {}; } catch { return {}; }
+}
 let manifest;
 const cache = new Map();
 export const PREVIEW = new URLSearchParams(location.search).has('preview');
@@ -8,8 +14,9 @@ export const PREVIEW = new URLSearchParams(location.search).has('preview');
 export async function getManifest() {
   if (!manifest) {
     const r = await fetch('content/index.json', { cache: 'no-cache' });
-    if (!r.ok) throw new Error('Не вдалося завантажити контент');
+    if (!r.ok) throw new Error(tx('Не вдалося завантажити контент'));
     manifest = await r.json();
+    if (lang === 'en') applyOverlay(manifest, await overlay('content/index.en.json'));
     manifest.weeks.sort((a, b) => a.release.localeCompare(b.release));
   }
   return manifest;
@@ -34,11 +41,12 @@ export async function loadWeek(id, level) {
   if (!cache.has(key)) {
     const weeks = await getWeeks();
     const w = weeks.find((x) => x.id === id);
-    if (!w) throw new Error('Такого тижня немає');
-    if (!isUnlocked(w)) throw Object.assign(new Error(`Цей тиждень відкриється ${fmtDate(w.release)} — щопонеділка з’являється новий.`), { locked: true });
+    if (!w) throw new Error(tx('Такого тижня немає'));
+    if (!isUnlocked(w)) throw Object.assign(new Error(tx('Цей тиждень відкриється {0} — щопонеділка з’являється новий.', fmtDate(w.release))), { locked: true });
     const r = await fetch(`content/weeks/${w.id}.${level.toLowerCase()}.json`, { cache: 'no-cache' });
-    if (!r.ok) throw new Error('Не вдалося завантажити тиждень');
+    if (!r.ok) throw new Error(tx('Не вдалося завантажити тиждень'));
     const data = await r.json();
+    if (lang === 'en') applyOverlay(data, await overlay(`content/weeks/${w.id}.${level.toLowerCase()}.en.json`));
     cache.set(key, { ...w, ...data, level });
   }
   return cache.get(key);
@@ -52,6 +60,9 @@ export async function loadAllUnlocked(level) {
 
 let toolkit;
 export async function getToolkit() {
-  if (!toolkit) toolkit = await (await fetch('content/toolkit.json')).json();
+  if (!toolkit) {
+    toolkit = await (await fetch('content/toolkit.json')).json();
+    if (lang === 'en') applyOverlay(toolkit, await overlay('content/toolkit.en.json'));
+  }
   return toolkit;
 }

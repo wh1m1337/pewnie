@@ -1,5 +1,5 @@
 // Офлайн: оболонка — cache-first, контент тижнів — network-first (щоб нові тижні з'являлись одразу).
-const VERSION = 'pewnie-v3';
+const VERSION = 'pewnie-v4';
 const SHELL = [
   './', 'index.html', 'css/app.css', 'css/fonts.css', 'manifest.webmanifest', 'assets/icon.svg',
   'js/app.js', 'js/textutil.js', 'js/util.js', 'js/store.js', 'js/content.js', 'js/speech.js', 'js/analyze.js', 'js/ui.js',

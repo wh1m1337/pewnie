@@ -3,6 +3,7 @@
 // зразок не має містити «помилок», покривати свої пункти й вкладатися в ліміт слів.
 import { readFile, access } from 'node:fs/promises';
 import { analyzeWriting, analyzeSpeech } from '../js/analyze.js';
+import { extractCyr } from './i18n-lib.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = async (p) => JSON.parse(await readFile(new URL(p, root), 'utf8'));
@@ -118,6 +119,19 @@ for (const w of manifest.weeks) {
       if (seenVocab.has(v.pl)) warn(`${level} vocab: «${v.pl}» вже було в ${seenVocab.get(v.pl)}`);
       seenVocab.set(v.pl, `${w.id}/${level}`);
     }
+  }
+}
+
+// англійські переклади: кожен український рядок має мати відповідник у *.en.json
+console.log('\ni18n');
+{
+  const files = [...manifest.weeks.flatMap((w) => ['b1', 'b2'].map((l) => `content/weeks/${w.id}.${l}.json`)), 'content/toolkit.json', 'content/index.json'];
+  for (const f of files) {
+    let src; try { src = extractCyr(await read(f)); } catch { continue; }
+    const en = await read(f.replace(/\.json$/, '.en.json')).catch(() => null);
+    if (!en) { warn(`${f}: немає англійської накладки`); continue; }
+    const miss = [...src.keys()].filter((p) => !(p in en));
+    if (miss.length) warn(`${f}: не перекладено ${miss.length} рядків (напр. ${miss[0]})`);
   }
 }
 

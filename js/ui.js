@@ -3,6 +3,7 @@ import { h, icon, rich, toast } from './util.js';
 import * as store from './store.js';
 import { speak, stopSpeaking, splitSentences, ttsSupported, hasPolishVoice } from './speech.js';
 
+import { tx } from './i18n.js';
 export const stamp = (text, cls = '') => h('span', { class: `stamp ${cls}` }, text);
 
 export function pageHead({ eyebrow, title, sub, actions }) {
@@ -17,7 +18,7 @@ export function pageHead({ eyebrow, title, sub, actions }) {
 export const backTo = (href, label) => h('a', { class: 'back', href }, icon('back', 18), label);
 
 export function circledGrade(grade, small = false) {
-  return h('div', { class: `grade ${small ? 'grade--sm' : ''}`, title: 'Оцінка за шкалою польської школи (1–6)' }, h('span', null, grade));
+  return h('div', { class: `grade ${small ? 'grade--sm' : ''}`, title: tx('Оцінка за шкалою польської школи (1–6)') }, h('span', null, grade));
 }
 
 export function pencilBar(value, { label, sub, tone = 'ink' } = {}) {
@@ -29,20 +30,20 @@ export function pencilBar(value, { label, sub, tone = 'ink' } = {}) {
 }
 
 export function errorBox(err) {
-  if (err?.locked) return h('div', { class: 'note note--yellow lockbox' }, icon('lock', 22), h('strong', null, ' Ще закрито. '), err.message, h('div', { class: 'mt' }, h('a', { class: 'btn', href: '#/weeks' }, 'До всіх тижнів')));
-  return h('div', { class: 'note note--red' }, h('strong', null, 'Щось пішло не так. '), String(err?.message || err),
-    h('div', { class: 'mt' }, h('a', { class: 'btn btn--ghost', href: '#/' }, 'На головну')));
+  if (err?.locked) return h('div', { class: 'note note--yellow lockbox' }, icon('lock', 22), h('strong', null, tx(' Ще закрито. ')), err.message, h('div', { class: 'mt' }, h('a', { class: 'btn', href: '#/weeks' }, tx('До всіх тижнів'))));
+  return h('div', { class: 'note note--red' }, h('strong', null, tx('Щось пішло не так. ')), String(err?.message || err),
+    h('div', { class: 'mt' }, h('a', { class: 'btn btn--ghost', href: '#/' }, tx('На головну'))));
 }
 
 // кнопка «озвучити»
 export function speakBtn(text, { label, cls = '' } = {}) {
   let playing = false;
-  const b = h('button', { class: `ico ${cls}`, type: 'button', title: 'Прослухати', 'aria-label': 'Прослухати польською' }, icon('play', 16), label && h('span', null, label));
+  const b = h('button', { class: `ico ${cls}`, type: 'button', title: tx('Прослухати'), 'aria-label': tx('Прослухати польською') }, icon('play', 16), label && h('span', null, label));
   b.addEventListener('click', (e) => {
     e.stopPropagation();
-    if (!ttsSupported) return toast('Твій браузер не вміє озвучувати. Спробуй Chrome або Safari.');
+    if (!ttsSupported) return toast(tx('Твій браузер не вміє озвучувати. Спробуй Chrome або Safari.'));
     if (playing) { stopSpeaking(); playing = false; b.classList.remove('on'); return; }
-    if (!hasPolishVoice()) toast('Польського голосу в системі не знайдено — додай його в налаштуваннях ОС (Мова → Голоси).', 4200);
+    if (!hasPolishVoice()) toast(tx('Польського голосу в системі не знайдено — додай його в налаштуваннях ОС (Мова → Голоси).'), 4200);
     playing = true; b.classList.add('on');
     speak([text], { rate: store.get().rate, onDone: () => { playing = false; b.classList.remove('on'); } });
   });
@@ -53,20 +54,20 @@ export function speakBtn(text, { label, cls = '' } = {}) {
 export function phraseRows(list, { onPick } = {}) {
   return h('ul', { class: 'phrases' }, list.map((p) =>
     h('li', null,
-      h('button', { class: 'phrase', type: 'button', onclick: () => onPick?.(p.pl), title: onPick ? 'Вставити в текст' : '' },
+      h('button', { class: 'phrase', type: 'button', onclick: () => onPick?.(p.pl), title: onPick ? tx('Вставити в текст') : '' },
         h('span', { class: 'pl' }, p.pl), h('span', { class: 'ua' }, p.ua)),
       speakBtn(p.pl, { cls: 'ico--sm' }))));
 }
 
 // текст, який можна слухати цілком або по реченнях (shadowing)
-export function readAloud(text, { title = 'Слухати й повторювати' } = {}) {
+export function readAloud(text, { title = tx('Слухати й повторювати') } = {}) {
   const sents = splitSentences(text);
   let ctl = null;
   const lines = sents.map((s, i) => h('button', { class: 'sent', type: 'button', onclick: () => play(i, true) }, s + ' '));
   const mark = (i) => lines.forEach((l, j) => l.classList.toggle('now', j === i));
   function play(from = 0, single = false) {
-    if (!ttsSupported) return toast('Озвучення недоступне в цьому браузері.');
-    if (!hasPolishVoice()) toast('Польського голосу в системі не знайдено — додай його в налаштуваннях ОС.', 4200);
+    if (!ttsSupported) return toast(tx('Озвучення недоступне в цьому браузері.'));
+    if (!hasPolishVoice()) toast(tx('Польського голосу в системі не знайдено — додай його в налаштуваннях ОС.'), 4200);
     ctl?.stop();
     const items = single ? [sents[from]] : sents.slice(from);
     ctl = speak(items, { rate: store.get().rate, onItem: (k) => mark(from + k), onDone: () => mark(-1) });
@@ -74,10 +75,10 @@ export function readAloud(text, { title = 'Слухати й повторюва�
   const box = h('div', { class: 'read-aloud' },
     h('div', { class: 'ra-bar' },
       h('span', { class: 'eyebrow' }, title),
-      h('button', { class: 'btn btn--sm', type: 'button', onclick: () => play(0) }, icon('play', 14), 'Слухати все'),
-      h('button', { class: 'btn btn--sm btn--ghost', type: 'button', onclick: () => { ctl?.stop(); stopSpeaking(); mark(-1); } }, icon('stop', 14), 'Стоп')),
+      h('button', { class: 'btn btn--sm', type: 'button', onclick: () => play(0) }, icon('play', 14), tx('Слухати все')),
+      h('button', { class: 'btn btn--sm btn--ghost', type: 'button', onclick: () => { ctl?.stop(); stopSpeaking(); mark(-1); } }, icon('stop', 14), tx('Стоп'))),
     h('p', { class: 'ra-text' }, lines),
-    h('p', { class: 'hint' }, 'Клікни на речення — прослухай і повтори вголос, копіюючи інтонацію. Це і є shadowing.'));
+    h('p', { class: 'hint' }, tx('Клікни на речення — прослухай і повтори вголос, копіюючи інтонацію. Це і є shadowing.')));
   return box;
 }
 
@@ -88,7 +89,7 @@ const SKY = {
 };
 export function sceneEl(scene) {
   const [a, b] = SKY[scene.bg] || SKY.street;
-  const el = h('figure', { class: 'scene', style: { background: `linear-gradient(180deg, ${a}, ${b})` }, role: 'img', 'aria-label': 'Ілюстрація до завдання' },
+  const el = h('figure', { class: 'scene', style: { background: `linear-gradient(180deg, ${a}, ${b})` }, role: 'img', 'aria-label': tx('Ілюстрація до завдання') },
     h('div', { class: 'scene-floor' }),
     scene.desk && h('div', { class: 'scene-desk', style: { left: `${scene.desk[0]}%`, top: `${scene.desk[1]}%`, width: `${scene.desk[2]}%` } }),
     (scene.items || []).map(([e, x, y, s, r]) => h('span', { class: 'sticker', style: { left: `${x}%`, top: `${y}%`, fontSize: `${s}cqw`, transform: `translate(-50%,-50%) rotate(${r || 0}deg)` } }, e)),
@@ -97,7 +98,7 @@ export function sceneEl(scene) {
 }
 
 // підказка-пояснення (клікабельне «?» відкриває пояснення)
-export function tipBox(tips, title = 'Порада від «вчительки»') {
+export function tipBox(tips, title = tx('Порада від «вчительки»')) {
   if (!tips?.length) return null;
   return h('div', { class: 'note note--yellow tips' }, h('div', { class: 'eyebrow' }, icon('bulb', 16), title), h('ul', null, tips.map((t) => h('li', null, rich(t)))));
 }
@@ -113,6 +114,6 @@ export function skillsDots(week, level) {
   return out;
 }
 
-export function loading(text = 'Відкриваю зошит…') {
+export function loading(text = tx('Відкриваю зошит…')) {
   return h('div', { class: 'loading' }, h('span', { class: 'blot' }), text);
 }

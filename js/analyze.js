@@ -1,6 +1,8 @@
 // Локальний «червоний олівець»: перевірка письма та мовлення без сервера.
 // Це формальні ознаки (структура, обсяг, зв'язність, типові помилки), а не заміна екзаменатора.
 
+import { tx, lang } from './i18n.js';
+
 // \b не працює з ą ę ł ż…, тому власні межі слова
 const W = (src, flags = 'giu') => new RegExp(`(?<![\\p{L}\\p{N}])(?:${src})(?![\\p{L}\\p{N}])`, flags);
 const TOKEN = /[\p{L}]+(?:[-'’][\p{L}]+)*/gu;
@@ -25,32 +27,32 @@ const NO_DIACRITICS = {
 
 // -------- типові помилки україномовних (калька / керування / орфографія)
 const PATTERNS = [
-  [/w Ukrainie/, 'З Україною — **na Ukrainie** (як «на Україні»).', 'na Ukrainie'],
-  [/dobry dzień/, 'Привітання: **dzień dobry** (порядок слів інший, ніж в українській).', 'dzień dobry'],
-  [/mnie podoba(?: się)?/, 'Конструкція **podoba mi się** — «mi» стоїть перед «się».', 'podoba mi się'],
-  [/zależy (?:z|ot)/, 'Zależy **od** + родовий: «zależy od pogody».', 'zależy od'],
-  [/w godzinie(?= \d)/, 'Час: **o godzinie 5** або **o piątej** (не «w godzinie»).', 'o godzinie'],
-  [/dlatego,? bo/, 'У письмовому тексті краще **dlatego że** або **ponieważ** (не «dlatego bo»).', 'dlatego że'],
-  [/zainteresowan(?:y|a|i) w /, '**Zainteresowany + narzędnik** без «w»: «zainteresowany muzyką».', null],
-  [/interesuj[ęe] się w /, '**Interesować się + narzędnik** без «w»: «interesuję się sportem».', null],
-  [/mam \d+ roku/, 'Вік: **mam 25 lat** (для чисел 5+ — «lat»).', null],
-  [/po polski/, 'Мови: **po polsku** (не «po polski»).', 'po polsku'],
-  [/w wtorek/, '**We wtorek** — перед «w/z» + збіг приголосних потрібне «we».', 'we wtorek'],
-  [/brać udział na /, '**Brać udział w** + місцевий: «brać udział w konferencji».', null],
-  [/pracuj[ęe] jako \p{L}+(?:em|iem)/u, 'Після **jako** — називний: «pracuję jako kierowca», а не орудний.', null],
-  [/nie(?:mam|jestem|wiem|lubię|chcę|mogę|mieszkam|pracuję|umiem|rozumiem|byłem|byłam|mogłem|mogłam|mam)/, '**«Nie» з дієсловами пишемо окремо**: «nie mam», «nie wiem».', null],
-  [/bardzo (?:dużo|wiele) dziękuj/, 'Кажуть **bardzo dziękuję** (не «bardzo dużo dziękuję»).', 'bardzo dziękuję'],
+  [/w Ukrainie/, tx('З Україною — **na Ukrainie** (як «на Україні»).'), 'na Ukrainie'],
+  [/dobry dzień/, tx('Привітання: **dzień dobry** (порядок слів інший, ніж в українській).'), 'dzień dobry'],
+  [/mnie podoba(?: się)?/, tx('Конструкція **podoba mi się** — «mi» стоїть перед «się».'), 'podoba mi się'],
+  [/zależy (?:z|ot)/, tx('Zależy **od** + родовий: «zależy od pogody».'), 'zależy od'],
+  [/w godzinie(?= \d)/, tx('Час: **o godzinie 5** або **o piątej** (не «w godzinie»).'), 'o godzinie'],
+  [/dlatego,? bo/, tx('У письмовому тексті краще **dlatego że** або **ponieważ** (не «dlatego bo»).'), 'dlatego że'],
+  [/zainteresowan(?:y|a|i) w /, tx('**Zainteresowany + narzędnik** без «w»: «zainteresowany muzyką».'), null],
+  [/interesuj[ęe] się w /, tx('**Interesować się + narzędnik** без «w»: «interesuję się sportem».'), null],
+  [/mam \d+ roku/, tx('Вік: **mam 25 lat** (для чисел 5+ — «lat»).'), null],
+  [/po polski/, tx('Мови: **po polsku** (не «po polski»).'), 'po polsku'],
+  [/w wtorek/, tx('**We wtorek** — перед «w/z» + збіг приголосних потрібне «we».'), 'we wtorek'],
+  [/brać udział na /, tx('**Brać udział w** + місцевий: «brać udział w konferencji».'), null],
+  [/pracuj[ęe] jako \p{L}+(?:em|iem)/u, tx('Після **jako** — називний: «pracuję jako kierowca», а не орудний.'), null],
+  [/nie(?:mam|jestem|wiem|lubię|chcę|mogę|mieszkam|pracuję|umiem|rozumiem|byłem|byłam|mogłem|mogłam|mam)/, tx('**«Nie» з дієсловами пишемо окремо**: «nie mam», «nie wiem».'), null],
+  [/bardzo (?:dużo|wiele) dziękuj/, tx('Кажуть **bardzo dziękuję** (не «bardzo dużo dziękuję»).'), 'bardzo dziękuję'],
 ];
 
 // -------- зв'язки за функціями
 const CONNECTORS = {
-  'додавання': 'ponadto|poza tym|oprócz tego|dodatkowo|również|także|a także|co więcej',
-  'протиставлення': 'jednak|natomiast|z drugiej strony|mimo że|chociaż|jednakże|pomimo|lecz|podczas gdy',
-  'причина': 'ponieważ|dlatego|z tego powodu|gdyż|dzięki temu|w związku z tym|wobec tego',
-  'висновок': 'więc|zatem|w rezultacie|podsumowując|w konsekwencji|reasumując|na zakończenie|na koniec',
-  'послідовність': 'po pierwsze|po drugie|na początku|następnie|potem|w końcu|wreszcie|najpierw|na początek',
-  'думка': 'moim zdaniem|uważam,? że|sądzę,? że|wydaje mi się|według mnie|z mojego punktu widzenia|jestem zdania|jestem przekonany|jestem przekonana',
-  'приклад': 'na przykład|np\\.|przykładowo|między innymi|mianowicie',
+  [tx('додавання')]: 'ponadto|poza tym|oprócz tego|dodatkowo|również|także|a także|co więcej',
+  [tx('протиставлення')]: 'jednak|natomiast|z drugiej strony|mimo że|chociaż|jednakże|pomimo|lecz|podczas gdy',
+  [tx('причина')]: 'ponieważ|dlatego|z tego powodu|gdyż|dzięki temu|w związku z tym|wobec tego',
+  [tx('висновок')]: 'więc|zatem|w rezultacie|podsumowując|w konsekwencji|reasumując|na zakończenie|na koniec',
+  [tx('послідовність')]: 'po pierwsze|po drugie|na początku|następnie|potem|w końcu|wreszcie|najpierw|na początek',
+  [tx('думка')]: 'moim zdaniem|uważam,? że|sądzę,? że|wydaje mi się|według mnie|z mojego punktu widzenia|jestem zdania|jestem przekonany|jestem przekonana',
+  [tx('приклад')]: 'na przykład|np\\.|przykładowo|między innymi|mianowicie',
 };
 
 export function findConnectors(text) {
@@ -93,7 +95,7 @@ export function analyzeWriting(text, task, level) {
 
   // 1. кирилиця
   for (const m of text.matchAll(/[Ѐ-ӿ]+/g)) {
-    findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: 'Кириличні літери в польському тексті (можливо, українська «і», «а», «е» замість латинських).' });
+    findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: tx('Кириличні літери в польському тексті (можливо, українська «і», «а», «е» замість латинських).') });
   }
 
   // 2. без діакритики
@@ -101,7 +103,7 @@ export function analyzeWriting(text, task, level) {
     const fix = NO_DIACRITICS[m[0].toLowerCase()];
     if (fix) {
       const cap = m[0][0] !== m[0][0].toLowerCase() ? fix[0].toUpperCase() + fix.slice(1) : fix;
-      findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: `Діакритика: **${cap}**.`, fix: cap });
+      findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: tx('Діакритика: **{0}**.', cap), fix: cap });
     }
   }
 
@@ -122,14 +124,14 @@ export function analyzeWriting(text, task, level) {
     if (!prevWord) continue;
     if (['dlatego', 'tylko', 'mimo', 'tym', 'tak', 'po', 'zamiast', 'nie', 'pomimo', 'i', 'oraz', 'lub', 'albo', 'ani', 'a', 'ale', 'ponieważ', 'gdyż', 'że', 'tuż', 'dopiero'].includes(prevWord)) continue;
     if (/^który|którego|której|którym|którą|których|która|które|którzy/.test(m[1]) && PREP.has(prevWord)) continue; // «w którym»
-    findings.push({ s: m.index, e: m.index + m[1].length, type: 'warn', msg: `Перед **${m[1]}** ставимо кому.`, fix: null });
+    findings.push({ s: m.index, e: m.index + m[1].length, type: 'warn', msg: tx('Перед **{0}** ставимо кому.', m[1]), fix: null });
   }
 
   // 5. великі літери на початку речення
   const ABBR = /(?:^|[^\p{L}])(?:np|tzn|ul|godz|ok|tzw|itd|itp|pl|al|nr|tel|dr|mgr|prof|inż|ks|św|art|str|zob|por|tj|min|wg|ww|m\.in)\.$/iu;
   for (const m of text.matchAll(/[.!?]\s+([a-ząćęłńóśźż])/g)) {
     if (m[0][0] === '.' && ABBR.test(text.slice(Math.max(0, m.index - 8), m.index + 1))) continue;
-    findings.push({ s: m.index + m[0].length - 1, e: m.index + m[0].length, type: 'warn', msg: 'Речення починаємо з великої літери.' });
+    findings.push({ s: m.index + m[0].length - 1, e: m.index + m[0].length, type: 'warn', msg: tx('Речення починаємо з великої літери.') });
   }
 
   // 6. регістр
@@ -137,14 +139,14 @@ export function analyzeWriting(text, task, level) {
   const isLetter = /letter|email|list|mail/.test(task.kind || '');
   const YOU_LOWER = /(?<![\p{L}])(ty|cię|twój|twoja|twoje|twoim|twoją|twoich|tobie|ciebie)(?![\p{L}])/gu;
   if (kind === 'formal') {
-    for (const m of text.matchAll(W('cześć|hej|siema|spoko|witaj|pozdrawiam serdecznie|buziaki|ściskam'))) findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: 'Занадто неформально для офіційного листа (Pan/Pani/Państwo).' });
-    for (const m of text.matchAll(YOU_LOWER)) findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: 'В офіційному листі — **Pan/Pani/Państwo**, не «ty».' });
+    for (const m of text.matchAll(W('cześć|hej|siema|spoko|witaj|pozdrawiam serdecznie|buziaki|ściskam'))) findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: tx('Занадто неформально для офіційного листа (Pan/Pani/Państwo).') });
+    for (const m of text.matchAll(YOU_LOWER)) findings.push({ s: m.index, e: m.index + m[0].length, type: 'err', msg: tx('В офіційному листі — **Pan/Pani/Państwo**, не «ty».') });
   }
   if (kind === 'informal') {
-    for (const m of text.matchAll(W('szanowni państwo|szanowny panie|szanowna pani|z poważaniem|z wyrazami szacunku'))) findings.push({ s: m.index, e: m.index + m[0].length, type: 'warn', msg: 'Задто офіційно для листа до друга — **Cześć / Kochana… / Pozdrawiam / Ściskam**.' });
+    for (const m of text.matchAll(W('szanowni państwo|szanowny panie|szanowna pani|z poważaniem|z wyrazami szacunku'))) findings.push({ s: m.index, e: m.index + m[0].length, type: 'warn', msg: tx('Задто офіційно для листа до друга — **Cześć / Kochana… / Pozdrawiam / Ściskam**.') });
     if (isLetter) for (const m of text.matchAll(/(?<![\p{L}])(ty|cię|twój|twoja|twoje|twoim|twoją|twoich|tobie|ciebie)(?![\p{L}])/gu)) {
       if (m.index === 0 || /[.!?]\s*$/.test(text.slice(0, m.index))) continue; // на початку речення й так велика
-      findings.push({ s: m.index, e: m.index + m[0].length, type: 'warn', msg: `У листі звертання з великої: **${m[0][0].toUpperCase() + m[0].slice(1)}** (норма листування).`, fix: m[0][0].toUpperCase() + m[0].slice(1) });
+      findings.push({ s: m.index, e: m.index + m[0].length, type: 'warn', msg: tx('У листі звертання з великої: **{0}** (норма листування).', m[0][0].toUpperCase() + m[0].slice(1)), fix: m[0][0].toUpperCase() + m[0].slice(1) });
     }
   }
 
@@ -155,20 +157,20 @@ export function analyzeWriting(text, task, level) {
     const last = text.trim().slice(-160).toLowerCase();
     const greetRe = kind === 'formal' ? /szanown|dzień dobry|dobry wieczór/ : /cześć|hej|drog|kochan|witaj|dzień dobry/;
     const closeRe = kind === 'formal' ? /z poważaniem|z wyrazami szacunku|z pozdrowieniami|łączę wyrazy/ : /pozdrawiam|ściskam|buziaki|do zobaczenia|do usłyszenia|trzymaj|całuję|serdeczności/;
-    structure.push({ ok: greetRe.test(first), text: kind === 'formal' ? 'Офіційне звертання (Szanowni Państwo / Szanowna Pani…)' : 'Звертання (Cześć… / Droga…)' });
-    structure.push({ ok: closeRe.test(last), text: kind === 'formal' ? 'Офіційне завершення (Z poważaniem…)' : 'Прощання (Pozdrawiam / Ściskam…)' });
+    structure.push({ ok: greetRe.test(first), text: kind === 'formal' ? tx('Офіційне звертання (Szanowni Państwo / Szanowna Pani…)') : tx('Звертання (Cześć… / Droga…)') });
+    structure.push({ ok: closeRe.test(last), text: kind === 'formal' ? tx('Офіційне завершення (Z poważaniem…)') : tx('Прощання (Pozdrawiam / Ściskam…)') });
   }
   const paragraphs = text.split(/\n\s*\n/).filter((p) => p.trim()).length;
-  if (task.max >= 120) structure.push({ ok: paragraphs >= 3, text: 'Абзаци: вступ, основна частина, завершення' });
+  if (task.max >= 120) structure.push({ ok: paragraphs >= 3, text: tx('Абзаци: вступ, основна частина, завершення') });
 
   // 8. обсяг
   const min = task.min || 0, max = task.max || 9999;
   const lo = Math.floor(min * 0.9), hi = Math.ceil(max * 1.1);
   const lengthOk = words >= lo && words <= hi;
-  if (words < lo) general.push({ type: 'err', msg: `Замало слів: **${words}** (потрібно ${min}–${max}). Екзаменатор знижує бал за обсяг.` });
-  else if (words > hi) general.push({ type: 'warn', msg: `Забагато слів: **${words}** (ліміт ${min}–${max}, допуск ±10%). Зайве не читають.` });
-  else if (words >= min * 0.98 && words <= max * 1.02) general.push({ type: 'ok', msg: `Обсяг у нормі: **${words}** слів (${min}–${max}).` });
-  else general.push({ type: 'ok', msg: `Обсяг у межах допуску ±10%: **${words}** слів.` });
+  if (words < lo) general.push({ type: 'err', msg: tx('Замало слів: **{0}** (потрібно {1}–{2}). Екзаменатор знижує бал за обсяг.', words, min, max) });
+  else if (words > hi) general.push({ type: 'warn', msg: tx('Забагато слів: **{0}** (ліміт {1}–{2}, допуск ±10%). Зайве не читають.', words, min, max) });
+  else if (words >= min * 0.98 && words <= max * 1.02) general.push({ type: 'ok', msg: tx('Обсяг у нормі: **{0}** слів ({1}–{2}).', words, min, max) });
+  else general.push({ type: 'ok', msg: tx('Обсяг у межах допуску ±10%: **{0}** слів.', words) });
 
   // 9. пункти завдання
   const points = (task.points || []).map((p) => {
@@ -181,26 +183,26 @@ export function analyzeWriting(text, task, level) {
   const freq = new Map();
   for (const m of toks) { const w = m[0].toLowerCase(); if (w.length > 4 && !STOP.has(w)) freq.set(w, (freq.get(w) || 0) + 1); }
   const repeats = [...freq.entries()].filter(([, n]) => n >= (words > 120 ? 4 : 3)).sort((a, b) => b[1] - a[1]).slice(0, 4);
-  if (repeats.length) general.push({ type: 'warn', msg: `Повтори: ${repeats.map(([w, n]) => `**${w}** ×${n}`).join(', ')}. Підберіть синоніми — це «zakres środków» в оцінці.` });
+  if (repeats.length) general.push({ type: 'warn', msg: tx('Повтори: {0}. Підберіть синоніми — це «zakres środków» в оцінці.', repeats.map(([w, n]) => `**${w}** ×${n}`).join(', ')) });
 
   // 11. довжина речень
   if (sentences.length >= 3) {
-    if (avgSentence < (level === 'B2' ? 10 : 7)) general.push({ type: 'warn', msg: `Речення короткі (у середньому ${avgSentence.toFixed(1)} слова). ${level === 'B2' ? 'На B2 очікують складніші: з «który», «chociaż», «żeby».' : 'Спробуйте з’єднати думки через «bo», «ale», «dlatego».'}` });
-    else if (avgSentence > 26) general.push({ type: 'warn', msg: `Речення задовгі (${avgSentence.toFixed(1)} слова в середньому) — легко втратити граматику. Розбийте.` });
+    if (avgSentence < (level === 'B2' ? 10 : 7)) general.push({ type: 'warn', msg: tx('Речення короткі (у середньому {0} слова). {1}', avgSentence.toFixed(1), level === 'B2' ? tx('На B2 очікують складніші: з «który», «chociaż», «żeby».') : tx('Спробуйте з’єднати думки через «bo», «ale», «dlatego».')) });
+    else if (avgSentence > 26) general.push({ type: 'warn', msg: tx('Речення задовгі ({0} слова в середньому) — легко втратити граматику. Розбийте.', avgSentence.toFixed(1)) });
   }
 
   // 12. зв'язки й складність
   const connectors = findConnectors(text);
   const cNeed = level === 'B2' ? 6 : 4;
   if (words > 40) {
-    if (connectors.length < cNeed) general.push({ type: 'warn', msg: `Мало зв’язок: **${connectors.length}** різних, для ${level} бажано ≥ ${cNeed}. Дивіться «Довідник → Зв’язки».` });
-    else general.push({ type: 'ok', msg: `Зв’язки: **${connectors.length}** різних — добре.` });
+    if (connectors.length < cNeed) general.push({ type: 'warn', msg: tx('Мало зв’язок: **{0}** різних, для {1} бажано ≥ {2}. Дивіться «Довідник → Зв’язки».', connectors.length, level, cNeed) });
+    else general.push({ type: 'ok', msg: tx('Зв’язки: **{0}** різних — добре.', connectors.length) });
   }
   const complexity = findComplexity(text);
   if (words > 80) {
     const need = level === 'B2' ? 3 : 1;
-    if (complexity.length < need) general.push({ type: 'warn', msg: `Різноманіття конструкцій: знайдено ${complexity.length}. Для ${level} додайте: ${level === 'B2' ? 'tryb warunkowy, zdanie z «który», imiesłów, «można/należy»' : 'zdanie z «żeby», «który» або tryb warunkowy'}.` });
-    else general.push({ type: 'ok', msg: `Конструкції: ${complexity.join(', ')}.` });
+    if (complexity.length < need) general.push({ type: 'warn', msg: tx('Різноманіття конструкцій: знайдено {0}. Для {1} додайте: {2}.', complexity.length, level, level === 'B2' ? 'tryb warunkowy, zdanie z «który», imiesłów, «można/należy»' : tx('zdanie z «żeby», «który» або tryb warunkowy')) });
+    else general.push({ type: 'ok', msg: tx('Конструкції: {0}.', complexity.join(', ')) });
   }
 
   // ----- орієнтовна оцінка за 4 критеріями (як в екзамені)
@@ -240,10 +242,10 @@ export function gradeFromScore(s) {
 }
 
 export const CRITERIA_UA = {
-  realizacja: ['Realizacja zadania', 'чи розкрито всі пункти, обсяг, форма'],
-  spojnosc: ['Spójność i logika', 'зв’язки, абзаци, вступ/завершення'],
-  zakres: ['Zakres środków', 'багатство слів і конструкцій'],
-  poprawnosc: ['Poprawność', 'граматика, орфографія, діакритика'],
+  realizacja: ['Realizacja zadania', tx('чи розкрито всі пункти, обсяг, форма')],
+  spojnosc: ['Spójność i logika', tx('зв’язки, абзаци, вступ/завершення')],
+  zakres: ['Zakres środków', tx('багатство слів і конструкцій')],
+  poprawnosc: ['Poprawność', tx('граматика, орфографія, діакритика')],
 };
 
 // -------- перевірка усної відповіді (транскрипт від браузера або вписаний вручну)
@@ -297,7 +299,7 @@ export function buildTeacherPrompt({ kind, level, task, text }) {
   const criteria = kind === 'writing'
     ? 'Realizacja zadania, Spójność i logika, Zakres środków językowych, Poprawność językowa'
     : 'Realizacja zadania, Płynność i spójność, Zakres środków językowych, Poprawność, Wymowa (jeśli da się ocenić)';
-  return `Jesteś egzaminatorem państwowego egzaminu certyfikatowego z języka polskiego jako obcego, poziom ${level}. Kandydat jest Ukraińcem/Ukrainką.
+  return `Jesteś egzaminatorem państwowego egzaminu certyfikatowego z języka polskiego jako obcego, poziom ${level}. ${lang === 'en' ? 'Kandydat jest cudzoziemcem (język ojczysty: angielski lub ukraiński).' : 'Kandydat jest Ukraińcem/Ukrainką.'}
 
 ZADANIE (${kind === 'writing' ? 'pisanie' : 'mówienie'}):
 ${task.prompt}
@@ -311,7 +313,7 @@ ${text}
 
 Zrób po kolei:
 1. Oceń według kryteriów: ${criteria}. Każde 0–5 punktów + krótkie uzasadnienie.
-2. Wypisz WSZYSTKIE błędy: cytat → poprawna forma → krótkie wyjaśnienie po ukraińsku (zwróć uwagę na typowe interferencje z ukraińskiego).
+2. Wypisz WSZYSTKIE błędy: cytat → poprawna forma → krótkie wyjaśnienie ${lang === 'en' ? 'po angielsku (zwróć uwagę na typowe błędy osób uczących się polskiego)' : 'po ukraińsku (zwróć uwagę na typowe interferencje z ukraińskiego)'}.
 3. Podaj 3 najważniejsze rzeczy do poprawy przed egzaminem.
 4. Pokaż poprawioną wersję tekstu na poziomie ${level} (nie za trudną).`;
 }

@@ -10,46 +10,48 @@ import { quizView, vocabView } from './quiz.js';
 import { toolkitView } from './toolkit.js';
 import { progressView } from './progress.js';
 
+import { tx, lang, setLang } from './i18n.js';
 store.applyTheme();
+if (lang === 'en') document.querySelector('meta[name=description]')?.setAttribute('content', 'Trainer for the Polish state certificate exam B1/B2: speaking and writing, voice recording, text feedback, new tasks every week.');
 setVoicePref(store.get().voice);
 setNeural(store.get().neural);
 loadClips();
 matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => store.applyTheme());
 
 const NAV = [
-  ['#/', 'Головна', 'home', /^\/?$/],
-  ['#/speak', 'Мовлення', 'mic', /^\/speak/],
-  ['#/write', 'Письмо', 'pen', /^\/write/],
-  ['#/listen', 'Аудіювання', 'ear', /^\/listen/],
-  ['#/read', 'Читання', 'book', /^\/read/],
-  ['#/grammar', 'Граматика', 'cards', /^\/grammar/],
-  ['#/vocab', 'Слова', 'abc', /^\/vocab/],
-  ['#/weeks', 'Тижні', 'cal', /^\/(weeks|week)/],
-  ['#/toolkit', 'Довідник', 'tool', /^\/toolkit/],
-  ['#/progress', 'Прогрес', 'chart', /^\/progress/],
+  ['#/', tx('Головна'), 'home', /^\/?$/],
+  ['#/speak', tx('Мовлення'), 'mic', /^\/speak/],
+  ['#/write', tx('Письмо'), 'pen', /^\/write/],
+  ['#/listen', tx('Аудіювання'), 'ear', /^\/listen/],
+  ['#/read', tx('Читання'), 'book', /^\/read/],
+  ['#/grammar', tx('Граматика'), 'cards', /^\/grammar/],
+  ['#/vocab', tx('Слова'), 'abc', /^\/vocab/],
+  ['#/weeks', tx('Тижні'), 'cal', /^\/(weeks|week)/],
+  ['#/toolkit', tx('Довідник'), 'tool', /^\/toolkit/],
+  ['#/progress', tx('Прогрес'), 'chart', /^\/progress/],
 ];
 
 const ROUTES = [
-  [/^\/?$/, () => homeView(), 'Головна'],
-  [/^\/weeks$/, () => weeksView(), 'Тижні'],
-  [/^\/week\/([\w-]+)$/, (m) => weekView(m[1]), 'Тиждень'],
-  [/^\/speak$/, () => hubView('speaking'), 'Мовлення'],
-  [/^\/speak\/([\w-]+)\/([\w-]+)$/, (m) => speakView(m[1], m[2]), 'Мовлення'],
-  [/^\/write$/, () => hubView('writing'), 'Письмо'],
-  [/^\/write\/([\w-]+)\/([\w-]+)$/, (m) => writeView(m[1], m[2]), 'Письмо'],
-  [/^\/(listen|read|grammar)$/, (m) => hubView({ listen: 'listening', read: 'reading', grammar: 'grammar' }[m[1]]), 'Завдання'],
-  [/^\/(listen|read|grammar)\/([\w-]+)\/([\w-]+)$/, (m) => quizView({ listen: 'listening', read: 'reading', grammar: 'grammar' }[m[1]], m[2], m[3]), 'Завдання'],
-  [/^\/vocab$/, () => vocabView(), 'Слова'],
-  [/^\/toolkit(?:\/(\w+))?$/, (m) => toolkitView(m[1]), 'Довідник'],
-  [/^\/progress$/, () => progressView(), 'Прогрес'],
+  [/^\/?$/, () => homeView(), tx('Головна')],
+  [/^\/weeks$/, () => weeksView(), tx('Тижні')],
+  [/^\/week\/([\w-]+)$/, (m) => weekView(m[1]), tx('Тиждень')],
+  [/^\/speak$/, () => hubView('speaking'), tx('Мовлення')],
+  [/^\/speak\/([\w-]+)\/([\w-]+)$/, (m) => speakView(m[1], m[2]), tx('Мовлення')],
+  [/^\/write$/, () => hubView('writing'), tx('Письмо')],
+  [/^\/write\/([\w-]+)\/([\w-]+)$/, (m) => writeView(m[1], m[2]), tx('Письмо')],
+  [/^\/(listen|read|grammar)$/, (m) => hubView({ listen: 'listening', read: 'reading', grammar: 'grammar' }[m[1]]), tx('Завдання')],
+  [/^\/(listen|read|grammar)\/([\w-]+)\/([\w-]+)$/, (m) => quizView({ listen: 'listening', read: 'reading', grammar: 'grammar' }[m[1]], m[2], m[3]), tx('Завдання')],
+  [/^\/vocab$/, () => vocabView(), tx('Слова')],
+  [/^\/toolkit(?:\/(\w+))?$/, (m) => toolkitView(m[1]), tx('Довідник')],
+  [/^\/progress$/, () => progressView(), tx('Прогрес')],
 ];
 
 const main = h('main', { id: 'main', class: 'page', tabindex: '-1' });
-const spine = h('nav', { class: 'spine', 'aria-label': 'Розділи' });
+const spine = h('nav', { class: 'spine', 'aria-label': tx('Розділи') });
 
 function themeBtn() {
   const dark = document.documentElement.dataset.theme === 'dark';
-  return h('button', { class: 'themebtn', type: 'button', title: dark ? 'Світлий зошит' : 'Темна дошка', 'aria-label': 'Змінити тему', onclick: () => { store.patch({ theme: dark ? 'light' : 'dark' }); store.applyTheme(); drawSpine(); } }, icon(dark ? 'sun' : 'moon', 20));
+  return h('button', { class: 'themebtn', type: 'button', title: dark ? tx('Світлий зошит') : tx('Темна дошка'), 'aria-label': tx('Змінити тему'), onclick: () => { store.patch({ theme: dark ? 'light' : 'dark' }); store.applyTheme(); drawSpine(); } }, icon(dark ? 'sun' : 'moon', 20));
 }
 
 function centerActive(bar, sel) {
@@ -57,12 +59,16 @@ function centerActive(bar, sel) {
   if (on) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
 }
 
+function langBtn() {
+  return h('button', { class: 'themebtn langbtn', type: 'button', title: lang === 'en' ? 'Українська' : 'English', 'aria-label': 'Language', onclick: () => setLang(lang === 'en' ? 'uk' : 'en') }, lang === 'en' ? 'UA' : 'EN');
+}
+
 function drawSpine() {
   const path = location.hash.slice(1) || '/';
   spine.replaceChildren(
-    h('a', { class: 'brand', href: '#/', 'aria-label': 'Pewnie — головна' }, h('span', { class: 'brand-mark' }, 'P'), h('span', { class: 'brand-name' }, 'Pewnie')),
+    h('a', { class: 'brand', href: '#/', 'aria-label': tx('Pewnie — головна') }, h('span', { class: 'brand-mark' }, 'P'), h('span', { class: 'brand-name' }, 'Pewnie')),
     h('div', { class: 'spine-items' }, NAV.map(([href, label, ic, re]) => h('a', { class: `navitem ${re.test(path) ? 'on' : ''}`, href, 'aria-current': re.test(path) ? 'page' : null }, icon(ic, 22), h('span', null, label)))),
-    h('div', { class: 'spine-foot' }, themeBtn()));
+    h('div', { class: 'spine-foot' }, langBtn(), themeBtn()));
   // на телефоні панель прокручується: активний розділ має бути видно
   setTimeout(() => centerActive(spine.querySelector('.spine-items'), '.navitem.on'), 0);
 }
@@ -82,7 +88,7 @@ async function render() {
       const el = await fn(m);
       if (my !== token) return;
       main.replaceChildren(el);
-      document.title = `${title} · Pewnie — польська B1/B2`;
+      document.title = tx('{0} · Pewnie — польська B1/B2', title);
     } catch (e) {
       if (my !== token) return;
       console.error(e);
@@ -91,7 +97,7 @@ async function render() {
     window.scrollTo(0, 0);
     return;
   }
-  main.replaceChildren(errorBox(new Error('Такої сторінки немає.')));
+  main.replaceChildren(errorBox(new Error(tx('Такої сторінки немає.'))));
 }
 
 function onboarding() {
@@ -99,14 +105,15 @@ function onboarding() {
     let level = 'B1';
     const date = h('input', { type: 'date', class: 'input', min: todayISO() });
     const btns = ['B1', 'B2'].map((l) => h('button', { type: 'button', class: `lvl-big ${l === level ? 'on' : ''}`, onclick: () => { level = l; btns.forEach((b, i) => b.classList.toggle('on', ['B1', 'B2'][i] === l)); } },
-      h('span', { class: 'lvl-big-l' }, l), h('span', { class: 'lvl-big-d' }, l === 'B1' ? 'Поріг: життя, робота, громадянство' : 'Самостійний рівень: навчання, кар’єра')));
+      h('span', { class: 'lvl-big-l' }, l), h('span', { class: 'lvl-big-d' }, l === 'B1' ? tx('Поріг: життя, робота, громадянство') : tx('Самостійний рівень: навчання, кар’єра'))));
     const dlg = h('div', { class: 'overlay' }, h('div', { class: 'modal card', role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': 'ob-t' },
-      h('div', { class: 'eyebrow' }, 'Ласкаво просимо'),
-      h('h2', { id: 'ob-t' }, 'Який іспит складаєш?'),
+      h('div', { class: 'lang-pick' }, [['uk', 'Українська'], ['en', 'English']].map(([l, name]) => h('button', { type: 'button', class: `chip ${lang === l ? 'chip--date' : ''}`, 'aria-pressed': lang === l, onclick: () => { if (lang !== l) setLang(l); } }, name))),
+      h('div', { class: 'eyebrow' }, tx('Ласкаво просимо')),
+      h('h2', { id: 'ob-t' }, tx('Який іспит складаєш?')),
       h('div', { class: 'lvl-pick' }, btns),
-      h('label', { class: 'field-label' }, 'Дата іспиту (якщо знаєш)'), date,
-      h('p', { class: 'hint' }, 'Рівень можна змінити будь-коли. Прогрес зберігається на цьому пристрої.'),
-      h('button', { class: 'btn btn--red btn--lg', type: 'button', onclick: () => { store.patch({ level, examDate: date.value || null }); dlg.remove(); resolve(); } }, 'Почати', icon('arrow', 18))));
+      h('label', { class: 'field-label' }, tx('Дата іспиту (якщо знаєш)')), date,
+      h('p', { class: 'hint' }, tx('Рівень можна змінити будь-коли. Прогрес зберігається на цьому пристрої.')),
+      h('button', { class: 'btn btn--red btn--lg', type: 'button', onclick: () => { store.patch({ level, examDate: date.value || null }); dlg.remove(); resolve(); } }, tx('Почати'), icon('arrow', 18))));
     document.body.append(dlg);
   });
 }

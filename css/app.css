@@ -81,6 +81,11 @@ strong, b { font-weight: 650; }
 .spine-foot { margin-top: auto; }
 .themebtn { background: transparent; border: 1.5px solid rgba(255,255,255,.3); color: var(--on-cover); width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; }
 .themebtn:hover { background: rgba(255,255,255,.1); }
+.langbtn { font: 700 12px var(--f-mono); letter-spacing: .04em; margin-bottom: 8px; }
+.spine-foot { display: grid; justify-items: center; }
+.lvl--lang .lvl-btn { padding: 8px 14px; }
+.lang-pick { display: flex; gap: 8px; justify-content: flex-end; margin: -6px 0 10px; }
+.lang-pick .chip { min-height: 32px; cursor: pointer; }
 .page { padding: clamp(20px, 4vw, 52px) clamp(18px, 4vw, 56px) 80px; max-width: 1180px; width: 100%; margin: 0 auto; outline: none; }
 .view.narrow { max-width: 780px; margin: 0 auto; }
 

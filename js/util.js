@@ -1,5 +1,7 @@
 // Дрібні хелпери: DOM, дати, іконки, тости.
 
+import { tx, lang } from './i18n.js';
+
 export function h(tag, props, ...kids) {
   const el = document.createElement(tag);
   if (props) {
@@ -45,7 +47,7 @@ export const parseISO = (s) => { const [y, m, d] = s.split('-').map(Number); ret
 export const daysBetween = (a, b) => Math.round((parseISO(b) - parseISO(a)) / 86400000);
 export const addDays = (s, n) => { const d = parseISO(s); d.setDate(d.getDate() + n); return isoDate(d); };
 
-const MONTHS = ['січня', 'лютого', 'березня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня'];
+const MONTHS = [tx('січня'), tx('лютого'), tx('березня'), tx('квітня'), tx('травня'), tx('червня'), tx('липня'), tx('серпня'), tx('вересня'), tx('жовтня'), tx('листопада'), tx('грудня')];
 export const fmtDate = (s) => { const d = parseISO(s); return `${d.getDate()} ${MONTHS[d.getMonth()]}`; };
 
 export const fmtTime = (sec) => {
@@ -55,6 +57,7 @@ export const fmtTime = (sec) => {
 
 // українська множина: plural(3, ['день','дні','днів'])
 export function plural(n, forms) {
+  if (lang === 'en') return n === 1 ? forms[0] : forms[2]; // англійська: однина / множина
   const a = Math.abs(n) % 100, b = a % 10;
   if (a > 10 && a < 20) return forms[2];
   if (b > 1 && b < 5) return forms[1];
@@ -142,11 +145,11 @@ export function download(name, text, type = 'application/json') {
 }
 
 export const SKILLS = {
-  speaking: { ua: 'Мовлення', pl: 'Mówienie', icon: 'mic' },
-  writing: { ua: 'Письмо', pl: 'Pisanie', icon: 'pen' },
-  listening: { ua: 'Аудіювання', pl: 'Słuchanie', icon: 'ear' },
-  reading: { ua: 'Читання', pl: 'Czytanie', icon: 'book' },
-  grammar: { ua: 'Граматика', pl: 'Gramatyka', icon: 'cards' },
+  speaking: { ua: tx('Мовлення'), pl: 'Mówienie', icon: 'mic' },
+  writing: { ua: tx('Письмо'), pl: 'Pisanie', icon: 'pen' },
+  listening: { ua: tx('Аудіювання'), pl: 'Słuchanie', icon: 'ear' },
+  reading: { ua: tx('Читання'), pl: 'Czytanie', icon: 'book' },
+  grammar: { ua: tx('Граматика'), pl: 'Gramatyka', icon: 'cards' },
 };
 
 // Очищення при виході зі сторінки (зупинити мікрофон, озвучення, таймери)

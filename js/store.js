@@ -1,6 +1,7 @@
 // Прогрес живе в localStorage. Ніякого сервера — можна експортувати/імпортувати файлом.
 import { isoDate, todayISO, addDays } from './util.js';
 
+import { tx } from './i18n.js';
 const KEY = 'pewnie.v1';
 
 const DEFAULTS = () => ({
@@ -116,7 +117,7 @@ export function vocabAnswer(pl, ok) {
 export function exportJSON() { return JSON.stringify(state, null, 2); }
 export function importJSON(text) {
   const obj = JSON.parse(text);
-  if (!obj || typeof obj !== 'object' || obj.v !== 1) throw new Error('Це не файл Pewnie');
+  if (!obj || typeof obj !== 'object' || obj.v !== 1) throw new Error(tx('Це не файл Pewnie'));
   state = { ...DEFAULTS(), ...obj };
   save();
 }
