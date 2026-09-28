@@ -1,0 +1,152 @@
+{
+  "intro": "B2: зміна клімату, «зелений» маркетинг, конфлікт розвитку й екології. Аргументуємо на тему, де факти легко переплітаються з емоціями.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Susza na polach",
+      "scene": { "bg": "street", "caption": "Pole, koniec lipca", "desk": [0, 76, 100], "items": [["🧑‍🌾", 30, 54, 22], ["🌾", 58, 62, 24], ["🌾", 70, 58, 20], ["☀️", 12, 14, 16], ["🚜", 84, 56, 22], ["📊", 46, 38, 11]] },
+      "prompt": "Opisz ilustrację i skomentuj sytuację. Powiedz, jakie są przyczyny i skutki takich zjawisk, i zaproponuj, co można zrobić, żeby im przeciwdziałać.",
+      "promptUa": "Опишіть ілюстрацію й прокоментуйте ситуацію. Скажіть, які причини й наслідки таких явищ, і запропонуйте, що можна зробити, щоб їм протидіяти.",
+      "time": [90, 150], "prep": 90,
+      "points": ["Opis sytuacji", "Przyczyny zjawiska", "Skutki dla rolnika i gospodarki", "Twoja propozycja"],
+      "keywords": ["susza|susz", "plony|plon", "rolnik|rolnik", "klimat|klimat", "opady|opad", "gospodarka|gospodark", "nawadnianie|nawadnian", "przeciwdziałać|przeciwdział"],
+      "phrases": [
+        { "pl": "Na zdjęciu widać wysuszone pole, na którym…", "ua": "На фото видно висохле поле, на якому…" },
+        { "pl": "Można przypuszczać, że przyczyną jest…", "ua": "Можна припустити, що причина в…" },
+        { "pl": "Zjawisko to ma poważne skutki dla…", "ua": "Це явище має серйозні наслідки для…" },
+        { "pl": "Jednym z rozwiązań mogłoby być…", "ua": "Одним із рішень могло б бути…" }
+      ],
+      "model": "Na zdjęciu widać wysuszone pole, na którym rolnik ogląda swoje uschnięte zboże. Ziemia jest spękana, a słońce świeci bardzo mocno, co sugeruje, że od dawna nie padał deszcz. W tle stoi traktor, którego rolnik prawdopodobnie nie potrzebuje, bo i tak nie ma czego zbierać. Można przypuszczać, że przyczyną suszy są zmieniające się warunki klimatyczne, które sprawiają, że lata są coraz cieplejsze, a opady coraz rzadsze. Zjawisko to ma poważne skutki nie tylko dla samego rolnika, który traci dochody, ale też dla całej gospodarki, ponieważ ceny żywności mogą wzrosnąć. Jednym z rozwiązań mogłoby być inwestowanie w nowoczesne systemy nawadniania oraz uprawianie roślin, które lepiej znoszą suszę. Uważam, że państwo powinno wspierać rolników finansowo w takich trudnych sezonach.",
+      "tips": ["**Sugerować, że…** («натякати, що…») — м’який спосіб зробити висновок із деталі на фото.", "Наслідки розкривай на двох рівнях: **особистий (rolnik) → загальний (gospodarka)** — це типова B2-структура.", "Пропозиція має бути конкретна (systemy nawadniania, wsparcie finansowe), а не «trzeba coś zrobić»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Czy jednostka może coś zmienić?",
+      "prompt": "Czy indywidualne działania pojedynczych osób mają realny wpływ na ochronę klimatu, czy liczą się tylko decyzje rządów i wielkich firm? Przedstaw swoje zdanie i uzasadnij je.",
+      "promptUa": "Чи мають індивідуальні дії окремих людей реальний вплив на захист клімату, чи мають значення лише рішення урядів і великих компаній? Викладіть свою думку та обґрунтуйте її.",
+      "time": [120, 180], "prep": 120,
+      "points": ["Twoje stanowisko", "Argument za wpływem jednostki", "Argument o roli państw i firm", "Jak to pogodzić", "Wniosek"],
+      "keywords": ["jednostka|jednostk", "wpływ|wpływ", "decyzje|decyzj", "korporacja|korporacj", "odpowiedzialność|odpowiedzialnoś", "emisja|emisj", "przykład|przykład", "presja|presj"],
+      "phrases": [
+        { "pl": "Uważam, że oba poziomy działania są ważne.", "ua": "Вважаю, що обидва рівні дії важливі." },
+        { "pl": "Z jednej strony indywidualne wybory mają znaczenie, ponieważ…", "ua": "З одного боку, індивідуальний вибір має значення, тому що…" },
+        { "pl": "Z drugiej strony to korporacje odpowiadają za większość emisji.", "ua": "З іншого боку, саме корпорації відповідають за більшість викидів." },
+        { "pl": "Dlatego oba poziomy powinny działać razem.", "ua": "Тому обидва рівні мають діяти разом." }
+      ],
+      "model": "Uważam, że oba poziomy działania są ważne, chociaż nie w takim samym stopniu. Z jednej strony indywidualne wybory mają znaczenie, ponieważ jeśli wiele osób zacznie ograniczać zużycie plastiku czy latanie samolotem, wpłynie to na popyt i zmusi firmy do zmian. Poza tym codzienne decyzje kształtują nasze nawyki i wywierają presję społeczną na innych, na przykład kiedy znajomi widzą, że segregujemy śmieci, sami zaczynają to robić. Z drugiej strony trzeba szczerze przyznać, że to korporacje odpowiadają za zdecydowaną większość emisji dwutlenku węgla, dlatego żadne indywidualne wysiłki nie zastąpią decyzji rządów o regulacjach czy inwestycjach w czystą energię. Rozumiem więc osoby, które twierdzą, że pojedynczy człowiek niewiele może zdziałać, ale sądzę, że to fałszywa alternatywa. Dlatego oba poziomy powinny działać razem: obywatele wywierają presję poprzez swoje wybory i głosy, a rządy i firmy wprowadzają zmiany systemowe. Podsumowując, jednostka nie zmieni klimatu sama, ale bez zaangażowania obywateli trudniej o polityczną wolę do wielkich reform.",
+      "tips": ["**To fałszywa alternatywa** — «це хибна альтернатива»: сильна фраза, коли відкидаєш дилему «або-або».", "**Wywierać presję (na kogoś)** — чинити тиск: корисна колокація для теми впливу.", "Заверши синтезом двох позицій, а не вибором однієї — це найвища оцінка за критерієм аргументації."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Greenwashing w reklamie",
+      "prompt": "Widziałeś (Widziałaś) reklamę firmy, która twierdzi, że jej produkty są w pełni ekologiczne, ale masz co do tego wątpliwości. Rozmawiasz o tym ze znajomym, który pracuje w marketingu. Przedstaw swoje wątpliwości i wysłuchaj jego argumentów.",
+      "promptUa": "Ви бачили рекламу компанії, яка стверджує, що її продукти повністю екологічні, але маєте в цьому сумніви. Обговорюєте це зі знайомим, який працює в маркетингу. Викладіть свої сумніви й вислухайте його аргументи.",
+      "points": ["Przedstaw swoje wątpliwości", "Zareaguj na argument znajomego", "Podaj przykład konkretnego problemu", "Zaproponuj, jak to sprawdzić"],
+      "keywords": ["greenwashing|greenwashing", "ekologiczny|ekologiczn", "reklama|reklam", "wątpliwości|wątpliwości", "certyfikat|certyfikat", "opakowanie|opakowani", "sprawdzić|sprawdz"],
+      "phrases": [
+        { "pl": "Mam wątpliwości co do tej reklamy.", "ua": "У мене є сумніви щодо цієї реклами." },
+        { "pl": "Rozumiem Twój punkt widzenia, ale…", "ua": "Розумію твою точку зору, але…" },
+        { "pl": "Weźmy na przykład…", "ua": "Візьмемо, наприклад…" },
+        { "pl": "Jak można to sprawdzić?", "ua": "Як це можна перевірити?" }
+      ],
+      "turns": [
+        { "ex": "Widziałaś tę nową reklamę? Mówią, że ich opakowania są w stu procentach ekologiczne.", "hint": "Wyraź wątpliwość.", "model": "Widziałam, ale mam co do tego wątpliwości. Napis „ekologiczne” na opakowaniu niewiele mówi, jeśli nie ma żadnego certyfikatu." },
+        { "ex": "Może masz rację, ale przecież firmy muszą jakoś reklamować swoje produkty.", "hint": "Zareaguj i podaj konkretny przykład problemu.", "model": "Rozumiem Twój punkt widzenia, ale to nie usprawiedliwia wprowadzania klientów w błąd. Weźmy na przykład tę markę, która pisze „przyjazne środowisku”, a opakowanie i tak nie nadaje się do recyklingu." },
+        { "ex": "To prawda, sam czasem nie wiem, czy dana etykieta coś naprawdę oznacza.", "hint": "Zaproponuj sposób sprawdzenia.", "model": "Właśnie dlatego warto sprawdzać, czy produkt ma niezależny certyfikat ekologiczny, a nie tylko własne oświadczenie firmy na opakowaniu." },
+        { "ex": "Dobry pomysł, powiem o tym w pracy, może zmienimy sposób opisywania naszych produktów.", "hint": "Zakończ pozytywnie, podsumowując rozmowę.", "model": "Cieszę się, że o tym porozmawialiśmy. Uczciwa reklama chyba bardziej buduje zaufanie klientów niż puste hasła." }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Greenwashing** — «зелене відмивання»: видавання продукту за екологічний без підстав. Термін варто знати активно.", "**Wprowadzać w błąd** — вводити в оману: ключова фраза для критики реклами.", "Заверши конструктивно («powiem o tym w pracy») — суперечка перетворюється на корисну розмову."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "letter-formal", "register": "formal", "title": "Zapytanie o certyfikat ekologiczny",
+      "prompt": "Chcesz kupić duże urządzenie AGD i widziałeś (widziałaś) na stronie sklepu, że jest ono opisane jako „ekologiczne”. Napisz krótki e-mail do sklepu z pytaniem, jaki certyfikat to potwierdza i czym różni się od zwykłego modelu.",
+      "promptUa": "Ви хочете купити велику побутову техніку і бачили на сайті магазину, що вона описана як «екологічна». Напишіть короткого листа до магазину з питанням, який сертифікат це підтверджує і чим вона відрізняється від звичайної моделі.",
+      "min": 60, "max": 90, "time": 15,
+      "points": [
+        { "text": "O jaki produkt chodzi", "keys": ["pralka", "lodówka", "urządzeni", "model"] },
+        { "text": "Pytanie o certyfikat", "keys": ["certyfikat", "jaki dokument", "potwierdza"] },
+        { "text": "Pytanie o różnicę", "keys": ["różni się", "różnica", "porównaniu"] }
+      ],
+      "phrases": [
+        { "pl": "Na Państwa stronie znalazłam informację, że…", "ua": "На вашому сайті я знайшла інформацію, що…" },
+        { "pl": "Chciałabym zapytać, jaki certyfikat to potwierdza.", "ua": "Хотіла б запитати, який сертифікат це підтверджує." },
+        { "pl": "Czym różni się ten model od standardowego?", "ua": "Чим ця модель відрізняється від стандартної?" }
+      ],
+      "model": "Dzień dobry, na Państwa stronie znalazłam pralkę opisaną jako „ekologiczna” i jestem zainteresowana jej zakupem. Chciałabym jednak zapytać, jaki certyfikat to potwierdza i kto go wydał, ponieważ samo słowo „ekologiczna” na opakowaniu niewiele mi mówi. Interesuje mnie też, czym ten model różni się od standardowej wersji pod względem zużycia wody i energii elektrycznej. Będę wdzięczna za odpowiedź przed podjęciem ostatecznej decyzji o zakupie.\n\nZ poważaniem\nAnna Kowalenko",
+      "tips": ["**Pod względem + родовий** — «з точки зору…»: зручна конструкція для порівняння характеристик.", "Питання про сертифікат — практичний спосіб перевірити «зелений маркетинг», згаданий у розмові цього тижня."]
+    },
+    {
+      "id": "w2", "kind": "opinion", "register": "neutral", "title": "Rozwój czy ochrona przyrody?",
+      "prompt": "W Twojej okolicy planowana jest budowa nowej drogi, która skróci dojazd do pracy, ale przetnie las, w którym mieszkańcy spacerują od lat. Napisz list do lokalnej gazety, w którym przedstawisz swoje stanowisko w tej sprawie, uwzględniając argumenty obu stron.",
+      "promptUa": "У вашому районі планується будівництво нової дороги, яка скоротить час на роботу, але пройде через ліс, де мешканці гуляють роками. Напишіть листа до місцевої газети зі своєю позицією з цього питання, врахувавши аргументи обох сторін.",
+      "min": 200, "max": 250, "time": 50,
+      "points": [
+        { "text": "Opis sytuacji i stanowisko", "keys": ["moim zdaniem", "uważam", "droga", "las"] },
+        { "text": "Argumenty za budową", "keys": ["skróci", "korek", "dojazd", "czas"] },
+        { "text": "Argumenty przeciw", "keys": ["przyrod", "drzew", "mieszkańc", "spacer"] },
+        { "text": "Propozycja kompromisu", "keys": ["kompromis", "alternatyw", "proponuję"] },
+        { "text": "Wniosek", "keys": ["podsumowując", "wniosek"] }
+      ],
+      "phrases": [
+        { "pl": "Sprawa budowy nowej drogi budzi wiele emocji wśród mieszkańców.", "ua": "Питання будівництва нової дороги викликає багато емоцій серед мешканців." },
+        { "pl": "Z jednej strony nowa droga skróciłaby czas dojazdu.", "ua": "З одного боку, нова дорога скоротила б час у дорозі." },
+        { "pl": "Z drugiej strony las jest jedynym takim miejscem w okolicy.", "ua": "З іншого боку, ліс — єдине таке місце в районі." },
+        { "pl": "Proponuję rozważyć alternatywną trasę.", "ua": "Пропоную розглянути альтернативний маршрут." }
+      ],
+      "model": "Szanowni Państwo,\n\nsprawa budowy nowej drogi przez las budzi wśród mieszkańców naszej okolicy wiele emocji, dlatego chciałabym przedstawić swoje stanowisko, uwzględniając argumenty obu stron.\n\nZ jednej strony rozumiem mieszkańców, którzy popierają budowę. Codzienne korki wydłużają dojazd do pracy nawet o pół godziny, a nowa droga rzeczywiście mogłaby to zmienić. Dla rodzin z dziećmi czy osób pracujących na zmiany taka oszczędność czasu ma realne znaczenie.\n\nZ drugiej strony las, o którym mowa, jest jednym z niewielu miejsc w okolicy, gdzie można spacerować w ciszy i obserwować dziką przyrodę. Wycięcie części drzew nie tylko zniszczy siedliska zwierząt, ale też pozbawi mieszkańców przestrzeni do odpoczynku, której nie da się łatwo odtworzyć. Warto też pamiętać, że drzewa oczyszczają powietrze i obniżają temperaturę latem, co w mieście ma coraz większe znaczenie.\n\nMoim zdaniem nie musimy wybierać między jednym a drugim. Proponuję, aby urząd miasta rozważył alternatywną trasę, prowadzącą wzdłuż istniejących pól, zamiast przez środek lasu. Taki wariant mógłby być nieco droższy, ale pozwoliłby zachować to cenne miejsce dla przyszłych pokoleń, a jednocześnie skrócić dojazd do pracy prawie tak samo skutecznie jak wersja przechodząca przez las.\n\nPodsumowując, zanim podejmiemy decyzję, warto dokładnie przeanalizować wszystkie warianty, konsultując się zarówno z mieszkańcami, jak i z ekspertami od ochrony środowiska, a nie tylko wybierać najtańszy z nich.",
+      "tips": ["Лист-компроміс: **аргумент однієї сторони → аргумент іншої → пропозиція, що не вибирає ні ту, ні іншу**.", "**Nie da się łatwo odtworzyć** — «неможливо легко відтворити»: підсилює аргумент про унікальність природи.", "Завершення закликом до аналізу, а не готовим рішенням, звучить зважено й дорослою мовою B2."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Debata o elektrowniach wiatrowych", "voices": { "A": "f", "B": "m" }, "intro": "Фрагмент дебатів про вітрові електростанції. Прослухай і дай відповіді.",
+      "lines": [
+        { "who": "A", "t": "Rozmawiamy dziś o elektrowniach wiatrowych. Panie profesorze, dlaczego wzbudzają one tyle kontrowersji?" },
+        { "who": "B", "t": "Głównie dlatego, że część mieszkańców terenów, na których się je buduje, skarży się na hałas oraz na to, jak zmieniają krajobraz. Jednocześnie to jedno z najtańszych źródeł czystej energii." },
+        { "who": "A", "t": "Czy da się pogodzić te interesy?" },
+        { "who": "B", "t": "Do pewnego stopnia tak. Nowoczesne turbiny są cichsze niż te sprzed dziesięciu lat, a odpowiednie planowanie lokalizacji, z dala od domów, znacznie zmniejsza uciążliwość." },
+        { "who": "A", "t": "A co z ptakami, o których też się mówi w tym kontekście?" },
+        { "who": "B", "t": "To realny problem, ale rozwiązywalny. Stosuje się systemy, które wykrywają zbliżające się stada ptaków i chwilowo zatrzymują turbiny. To zwiększa koszty, ale znacznie zmniejsza szkody." }
+      ],
+      "questions": [
+        { "q": "Na co skarżą się niektórzy mieszkańcy terenów z elektrowniami wiatrowymi?", "options": ["Na wysokie ceny prądu.", "Na hałas i zmianę krajobrazu.", "Na brak pracy.", "Na zanieczyszczenie wody."], "answer": 1, "why": "«Skarży się na hałas oraz na to, jak zmieniają krajobraz»." },
+        { "q": "Co zmniejsza uciążliwość nowoczesnych turbin?", "options": ["Wyższa cena energii.", "Cichsza konstrukcja i odpowiednie planowanie lokalizacji.", "Budowa ich w mieście.", "Zmniejszenie ich liczby."], "answer": 1, "why": "«Nowoczesne turbiny są cichsze… odpowiednie planowanie lokalizacji… zmniejsza uciążliwość»." },
+        { "q": "Jak rozwiązuje się problem ptaków?", "options": ["Nie da się go rozwiązać.", "Systemy wykrywają ptaki i chwilowo zatrzymują turbiny.", "Buduje się elektrownie tylko zimą.", "Turbiny są malowane na jaskrawe kolory."], "answer": 1, "why": "«Systemy, które wykrywają zbliżające się stada ptaków i chwilowo zatrzymują turbiny»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Miejska wyspa ciepła", "textTitle": "Dlaczego w mieście jest cieplej niż na wsi",
+      "text": "Latem mieszkańcy dużych miast często zauważają, że temperatura w centrum jest wyraźnie wyższa niż na przedmieściach czy na wsi. Zjawisko to nazywa się miejską wyspą ciepła i wynika przede wszystkim z materiałów, z których zbudowane są miasta. Asfalt i beton nagrzewają się w ciągu dnia i powoli oddają ciepło wieczorem, przez co temperatura nocą spada znacznie wolniej niż na terenach zielonych.\n\nDodatkowym czynnikiem jest brak drzew i innej roślinności, która naturalnie chłodzi powietrze poprzez parowanie wody. Betonowe place i szerokie ulice, choć wygodne dla samochodów, pozbawione są cienia, dlatego są jednymi z najgorętszych miejsc w mieście. Klimatyzacja, choć rozwiązuje problem wewnątrz budynków, dodatkowo podnosi temperaturę na zewnątrz, ponieważ urządzenia wypuszczają ciepłe powietrze na ulicę.\n\nMiasta na całym świecie eksperymentują z rozwiązaniami tego problemu. Sadzi się więcej drzew, buduje zielone dachy i fasady pokryte roślinami, a nawierzchnie dróg maluje się na jasne kolory, które odbijają światło słoneczne zamiast je pochłaniać. Eksperci podkreślają, że nawet niewielkie interwencje, jak fontanny czy skwery, potrafią zauważalnie obniżyć temperaturę w danej okolicy.",
+      "questions": [
+        { "q": "Co jest główną przyczyną miejskiej wyspy ciepła?", "options": ["Duża liczba mieszkańców.", "Materiały budowlane, które nagrzewają się i długo oddają ciepło.", "Brak samochodów elektrycznych.", "Zbyt wysokie budynki."], "answer": 1, "why": "«Asfalt i beton nagrzewają się w ciągu dnia i powoli oddają ciepło wieczorem»." },
+        { "q": "Jak klimatyzacja wpływa na temperaturę na zewnątrz?", "options": ["Obniża ją.", "Nie ma na nią wpływu.", "Podnosi ją, bo urządzenia wypuszczają ciepłe powietrze.", "Działa tylko latem."], "answer": 2, "why": "«Dodatkowo podnosi temperaturę na zewnątrz, ponieważ urządzenia wypuszczają ciepłe powietrze na ulicę»." },
+        { "q": "Jakie rozwiązania stosują miasta?", "options": ["Więcej parkingów.", "Więcej drzew, zielone dachy i jasne nawierzchnie dróg.", "Zakaz jazdy rowerem.", "Wyższe budynki."], "answer": 1, "why": "«Sadzi się więcej drzew, buduje zielone dachy… a nawierzchnie dróg maluje się na jasne kolory»." },
+        { "q": "Co podkreślają eksperci na temat małych interwencji?", "options": ["Że są bezużyteczne.", "Że tylko duże projekty mają znaczenie.", "Że nawet niewielkie zmiany, jak fontanny czy skwery, obniżają temperaturę.", "Że są zbyt drogie dla miast."], "answer": 2, "why": "«Nawet niewielkie interwencje, jak fontanny czy skwery, potrafią zauważalnie obniżyć temperaturę»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Środowisko: składnia B2", "intro": "Складні речення, дієприкметники й сполучники в темі клімату та довкілля.",
+      "questions": [
+        { "q": "Zjawisko, ___ obserwujemy od kilku lat, budzi niepokój naukowców.", "options": ["które", "którego", "któremu", "którym"], "answer": 0, "why": "«Obserwujemy (co?) zjawisko» → знахідний середнього роду: **które**." },
+        { "q": "___ nie ograniczymy emisji, temperatura będzie nadal rosnąć.", "options": ["Jeśli", "Chociaż", "Ponieważ", "Mimo że"], "answer": 0, "why": "**jeśli + майбутній** — умова: «jeśli nie ograniczymy… będzie rosnąć»." },
+        { "q": "___ inwestycje w energię odnawialną, emisje wciąż rosną.", "options": ["Pomimo", "Dzięki", "Z powodu", "Wskutek"], "answer": 0, "why": "**pomimo + родовий** — «незважаючи на», протиставлення очікуваному результату." },
+        { "q": "Naukowcy, ___ badania cytowano w artykule, ostrzegają przed suszą.", "options": ["których", "którzy", "którym", "które"], "answer": 0, "why": "«Cytowano (czyje?) badania» — присвійний зворот, родовий: **których**." },
+        { "q": "Gdyby rządy działały szybciej, sytuacja ___ się inaczej.", "options": ["potoczyłaby", "toczy", "potoczy", "tocząc"], "answer": 0, "why": "Нереальна умова в минулому → **tryb warunkowy**: «potoczyłaby się»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "zmiana klimatu", "ua": "зміна клімату", "ex": "Naukowcy ostrzegają przed skutkami zmiany klimatu." },
+    { "pl": "emisja dwutlenku węgla", "ua": "викиди вуглекислого газу", "ex": "Firma obiecała zmniejszyć emisję dwutlenku węgla." },
+    { "pl": "energia odnawialna", "ua": "відновлювана енергія", "ex": "Inwestujemy w energię odnawialną." },
+    { "pl": "greenwashing", "ua": "«зелений» піар без реальних дій", "ex": "Krytycy oskarżyli markę o greenwashing." },
+    { "pl": "bioróżnorodność", "ua": "біорізноманіття", "ex": "Wylesianie zagraża bioróżnorodności." },
+    { "pl": "susza", "ua": "посуха", "ex": "Tegoroczna susza zniszczyła plony." },
+    { "pl": "recykling", "ua": "переробка (рециклінг)", "ex": "Recykling szkła oszczędza surowce." },
+    { "pl": "neutralność klimatyczna", "ua": "кліматична нейтральність", "ex": "Kraj planuje osiągnąć neutralność klimatyczną do 2050 roku." }
+  ]
+}

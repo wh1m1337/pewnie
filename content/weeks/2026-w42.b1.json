@@ -1,0 +1,152 @@
+{
+  "intro": "Технології: смартфон, інтернет-магазин, скарга на невдале замовлення. Тема, де легко переплутати «komputer» і «internet», але легко й здобути бали — лексика повторюється щодня.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Naprawa telefonu w serwisie",
+      "scene": { "bg": "shop", "caption": "Serwis telefonów, godzina 11:00", "desk": [46, 60, 46], "items": [["🧑", 24, 48, 22], ["🧑‍🔧", 74, 46, 22], ["📱", 42, 57, 8], ["🔧", 58, 57, 8], ["🧾", 86, 58, 8], ["🕚", 50, 13, 12], ["📦", 12, 60, 11]] },
+      "prompt": "Opisz ilustrację. Powiedz, gdzie są te osoby, co robią i jak się czują. Powiedz też, co według Ciebie stanie się później.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, де ці люди, що вони роблять і що відчувають. Скажіть також, що, на вашу думку, станеться пізніше.",
+      "time": [60, 120], "prep": 60,
+      "points": ["Gdzie jesteśmy i kto tu jest?", "Co robią te osoby?", "Jak się czują?", "Co stanie się później?"],
+      "keywords": ["serwis|serwis", "telefon|telefon", "ekran|ekran", "zepsuty|zepsut", "naprawa|napraw", "gwarancja|gwarancj", "klient|klient", "prawdopodobnie|prawdopodob"],
+      "phrases": [
+        { "pl": "Na ilustracji widzę serwis telefonów.", "ua": "На ілюстрації я бачу сервіс телефонів." },
+        { "pl": "Ekran jest pęknięty.", "ua": "Екран тріснутий." },
+        { "pl": "Klient wygląda na zdenerwowanego.", "ua": "Клієнт виглядає знервованим." },
+        { "pl": "Prawdopodobnie naprawa potrwa kilka dni.", "ua": "Ймовірно, ремонт триватиме кілька днів." }
+      ],
+      "model": "Na ilustracji widzę serwis telefonów komórkowych. Po lewej stronie stoi klient, który trzyma telefon z pękniętym ekranem, a po prawej pracownik serwisu ogląda urządzenie. Na ladzie leżą narzędzia i jakiś paragon, a w tle wisi zegar, który pokazuje jedenastą. Klient wygląda na zdenerwowanego, bo pewnie potrzebuje telefonu do pracy. Pracownik jest spokojny i uważnie sprawdza, co się stało. Myślę, że telefon upadł i dlatego pękł ekran. Prawdopodobnie pracownik zapyta, czy klient ma gwarancję, a potem powie, ile będzie kosztować naprawa. Moim zdaniem klient będzie musiał zostawić telefon na kilka dni.",
+      "tips": ["Словник поломок: **pęknięty ekran, nie włącza się, nie ładuje się** — базовий набір для цієї теми.", "**Gwarancja** — гарантія; питання про неї майже завжди частина сценарію в сервісі.", "Прогноз наприкінці («będzie musiał zostawić telefon») закриває пункт «co dalej»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Moje życie z telefonem",
+      "prompt": "Opowiedz, jak korzystasz ze smartfona na co dzień. Powiedz, do czego go najczęściej używasz i czy czasem próbujesz spędzać mniej czasu przy ekranie.",
+      "promptUa": "Розкажіть, як ви користуєтеся смартфоном щодня. Скажіть, для чого найчастіше його використовуєте і чи намагаєтеся іноді менше часу проводити з екраном.",
+      "time": [90, 150], "prep": 60,
+      "points": ["Do czego używasz telefonu?", "Ile czasu dziennie na nim spędzasz?", "Co jest wygodne, a co przeszkadza?", "Czy chciałbyś coś zmienić?"],
+      "keywords": ["aplikacja|aplikacj", "wiadomości|wiadomośc", "powiadomienia|powiadomien", "ekran|ekran", "codziennie|codzienn", "przeglądać|przeglą", "odpoczynek|odpoczyn", "zmienić|zmien"],
+      "phrases": [
+        { "pl": "Najczęściej używam telefonu do…", "ua": "Найчастіше я використовую телефон для…" },
+        { "pl": "Codziennie spędzam przy nim około…", "ua": "Щодня проводжу з ним близько…" },
+        { "pl": "Wygodne jest to, że…, ale przeszkadza mi…", "ua": "Зручно те, що…, але мені заважає…" },
+        { "pl": "Chciałabym spędzać mniej czasu na…", "ua": "Хотіла б проводити менше часу на…" }
+      ],
+      "model": "Najczęściej używam telefonu do pisania wiadomości, sprawdzania map i słuchania muzyki. Codziennie spędzam przy nim chyba trzy godziny, chociaż nie zawsze zdaję sobie z tego sprawę. Wygodne jest to, że wszystko mam pod ręką: mogę szybko zapłacić za zakupy albo znaleźć drogę do nowego miejsca. Przeszkadzają mi jednak ciągłe powiadomienia, które przerywają pracę i odpoczynek. Wieczorem często przeglądam telefon zamiast czytać książkę, i wiem, że to niezdrowy nawyk. Dlatego czasami wyłączam powiadomienia na godzinę przed snem. Chciałabym spędzać mniej czasu na przeglądaniu aplikacji, a więcej na spacerach i rozmowach z rodziną.",
+      "tips": ["**Zdawać sobie sprawę z czegoś** — усвідомлювати щось; корисна конструкція для рефлексії.", "Чесне визнання проблеми («wiem, że to niezdrowy nawyk») звучить природніше за ідеальну відповідь.", "Заверши конкретним наміром на майбутнє — це відповідає пункту «czy chciałbyś coś zmienić»."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Reklamacja zamówienia przez internet",
+      "prompt": "Zamówiłeś (Zamówiłaś) słuchawki w sklepie internetowym, ale przyszły uszkodzone. Dzwonisz na infolinię. Opisz problem i dowiedz się, jak dostać zwrot pieniędzy.",
+      "promptUa": "Ви замовили навушники в інтернет-магазині, але прийшли пошкоджені. Телефонуєте на гарячу лінію. Опишіть проблему й дізнайтеся, як отримати повернення коштів.",
+      "points": ["Powiedz, w jakiej sprawie dzwonisz", "Opisz problem", "Podaj numer zamówienia", "Zapytaj o zwrot pieniędzy"],
+      "keywords": ["zamówienie|zamówien", "uszkodzony|uszkodzon", "paczka|paczk", "zwrot|zwrot", "numer zamówienia|numer zamówienia", "reklamacja|reklamacj"],
+      "phrases": [
+        { "pl": "Dzwonię w sprawie mojego zamówienia.", "ua": "Телефоную щодо свого замовлення." },
+        { "pl": "Produkt przyszedł uszkodzony.", "ua": "Товар прийшов пошкодженим." },
+        { "pl": "Mój numer zamówienia to…", "ua": "Мій номер замовлення — …" },
+        { "pl": "Czy mogę dostać zwrot pieniędzy?", "ua": "Чи можу я отримати повернення коштів?" }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, infolinia sklepu, słucham?", "hint": "Powiedz, w jakiej sprawie dzwonisz.", "model": "Dzień dobry. Dzwonię w sprawie zamówienia, które dostałam wczoraj. Niestety słuchawki przyszły uszkodzone." },
+        { "ex": "Bardzo mi przykro. Czy mogłaby Pani podać numer zamówienia?", "hint": "Podaj numer i opisz uszkodzenie.", "model": "Oczywiście, numer zamówienia to 55892. Jedna słuchawka w ogóle nie działa, a opakowanie było rozdarte." },
+        { "ex": "Rozumiem. Możemy wysłać nowy produkt albo zwrócić pieniądze. Co Pani wybiera?", "hint": "Wybierz zwrot pieniędzy i zapytaj o czas.", "model": "Wolałabym zwrot pieniędzy. Jak długo trzeba będzie czekać na przelew?" },
+        { "ex": "Zwrot pojawi się na Pani koncie w ciągu pięciu dni roboczych. Czy chce Pani coś jeszcze?", "hint": "Podziękuj i zapytaj o etykietę do odesłania paczki.", "model": "To wszystko, dziękuję. Czy dostanę etykietę, żeby odesłać uszkodzony produkt?" }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Numer zamówienia** назви одразу, не чекаючи запитання — це прискорює розмову.", "Вибір «wolałabym + іменник» — ввічливий спосіб висловити перевагу.", "Не забудь запитати про наступний крок (etykieta, termin) — так розмова доведена до кінця."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "informal", "title": "Problem z internetem",
+      "prompt": "Od wczoraj nie działa Ci internet w domu i musisz pracować z kawiarni. Napisz krótką wiadomość do koleżanki z pracy: wyjaśnij sytuację i poproś, żeby przekazała informację szefowi.",
+      "promptUa": "З учора вдома не працює інтернет, і вам доводиться працювати з кав’ярні. Напишіть коротке повідомлення колезі: поясніть ситуацію й попросіть передати інформацію керівнику.",
+      "min": 25, "max": 50, "time": 10,
+      "points": [
+        { "text": "Opis sytuacji", "keys": ["nie działa", "internet", "od wczoraj"] },
+        { "text": "Gdzie pracujesz", "keys": ["kawiarni", "pracuję z"] },
+        { "text": "Prośba o przekazanie informacji", "keys": ["przekazać", "przekaż", "powiedz szefowi", "poinformuj"] }
+      ],
+      "phrases": [
+        { "pl": "Od wczoraj nie działa mi internet.", "ua": "З учора в мене не працює інтернет." },
+        { "pl": "Dlatego pracuję dziś z kawiarni.", "ua": "Тому сьогодні працюю з кав’ярні." },
+        { "pl": "Czy mogłabyś przekazać to szefowi?", "ua": "Чи не могла б ти передати це керівнику?" }
+      ],
+      "model": "Cześć Kasiu! Od wczoraj nie działa mi internet w domu i technik przyjdzie dopiero jutro. Dlatego dziś pracuję z kawiarni obok domu. Czy mogłabyś przekazać to szefowi, gdyby pytał, gdzie jestem? Dziękuję i do zobaczenia na spotkaniu online. Ola",
+      "tips": ["**Dopiero jutro** — «лише завтра»: корисне слово для пояснення затримки.", "Коротке повідомлення = ситуація + де ти + прохання. Більше нічого не потрібно."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "Reklamacja uszkodzonej paczki",
+      "prompt": "Zamówiłeś (Zamówiłaś) laptop w sklepie internetowym, ale przesyłka przyszła z wyraźnie uszkodzonym opakowaniem, a sam sprzęt nie włącza się. Napisz e-mail do sklepu. Opisz problem, podaj numer zamówienia, wyjaśnij, czego oczekujesz, i poproś o szybką odpowiedź.",
+      "promptUa": "Ви замовили ноутбук в інтернет-магазині, але посилка прийшла з явно пошкодженою упаковкою, а сам пристрій не вмикається. Напишіть листа до магазину: опишіть проблему, вкажіть номер замовлення, поясніть, чого очікуєте, і попросіть швидку відповідь.",
+      "min": 150, "max": 175, "time": 35,
+      "points": [
+        { "text": "Dane zamówienia", "keys": ["numer zamówienia", "zamówiłam", "zamówiłem", "w dniu"] },
+        { "text": "Opis uszkodzenia", "keys": ["uszkodzon", "nie włącza się", "opakowani"] },
+        { "text": "Czego oczekujesz", "keys": ["wymiany", "zwrotu", "oczekuję"] },
+        { "text": "Prośba o szybką odpowiedź", "keys": ["proszę o", "jak najszybciej", "w ciągu"] }
+      ],
+      "phrases": [
+        { "pl": "Piszę w sprawie zamówienia numer…", "ua": "Пишу щодо замовлення номер…" },
+        { "pl": "Niestety przesyłka przyszła uszkodzona.", "ua": "На жаль, посилка прийшла пошкодженою." },
+        { "pl": "Oczekuję wymiany na sprawny egzemplarz.", "ua": "Очікую заміни на справний екземпляр." },
+        { "pl": "Uprzejmie proszę o odpowiedź w ciągu kilku dni.", "ua": "Ввічливо прошу відповісти протягом кількох днів." }
+      ],
+      "model": "Szanowni Państwo,\n\npiszę w sprawie mojego zamówienia, numer zamówienia to 78341, które otrzymałam wczoraj kurierem. Niestety przesyłka przyszła z wyraźnie uszkodzonym opakowaniem, a sam laptop w ogóle się nie włącza, mimo że próbowałam go naładować przez kilka godzin i podłączałam różne ładowarki.\n\nZdjęcia uszkodzonego opakowania zrobiłam zaraz po otwarciu paczki i mogę je Państwu przesłać, jeśli będzie taka potrzeba. Podejrzewam, że sprzęt został uszkodzony podczas transportu, ponieważ karton był wyraźnie wgnieciony z jednej strony, a taśma zabezpieczająca była rozerwana jeszcze przed dostawą.\n\nW związku z tym oczekuję wymiany laptopa na sprawny egzemplarz lub, jeśli nie będzie to możliwe, pełnego zwrotu pieniędzy na moje konto. Proszę o informację, czy powinnam odesłać uszkodzony sprzęt na Państwa koszt, i czy otrzymam etykietę zwrotną bez dodatkowych opłat z mojej strony.\n\nUprzejmie proszę o odpowiedź w ciągu kilku dni, ponieważ laptop jest mi pilnie potrzebny do pracy zawodowej.\n\nZ poważaniem\nAnna Kowalenko",
+      "tips": ["Скарга на товар: **дані замовлення → опис пошкодження → припущення про причину → вимога → термін**.", "**Podejrzewam, że…** — «підозрюю, що…»: обережне припущення, корисне в скаргах.", "Обіцянка надіслати докази («mogę je przesłać») підвищує довіру до листа."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Rozmowa o kupnie laptopa", "intro": "Прослухай розмову в магазині електроніки й дай відповіді.",
+      "lines": [
+        { "who": "A", "t": "Dzień dobry, szukam laptopa do pracy biurowej, nic za bardzo wymagającego." },
+        { "who": "B", "t": "Polecam ten model, ma osiem gigabajtów pamięci i dysk SSD, więc działa szybko. Kosztuje dwa tysiące dwieście złotych." },
+        { "who": "A", "t": "A czy jest jakiś tańszy, jeśli nie potrzebuję grać w gry?" },
+        { "who": "B", "t": "Tak, mamy model za tysiąc siedemset złotych, trochę starszy, ale w zupełności wystarczy do dokumentów i internetu." },
+        { "who": "A", "t": "Wezmę ten tańszy. Czy jest na niego gwarancja?" },
+        { "who": "B", "t": "Tak, dwa lata gwarancji. Proszę też rozważyć dodatkowe ubezpieczenie na wypadek uszkodzenia ekranu." },
+        { "who": "A", "t": "Dobrze, wezmę i ubezpieczenie. Czy mogę zapłacić kartą?" },
+        { "who": "B", "t": "Oczywiście, zapraszam do kasy." }
+      ],
+      "questions": [
+        { "q": "Do czego klient szuka laptopa?", "options": ["Do gier.", "Do pracy biurowej.", "Do montażu filmów.", "Dla dziecka."], "answer": 1, "why": "«Szukam laptopa do pracy biurowej»." },
+        { "q": "Który laptop wybrał klient?", "options": ["Za dwa tysiące dwieście złotych.", "Za tysiąc siedemset złotych.", "Najdroższy w sklepie.", "Żaden, wyszedł bez zakupu."], "answer": 1, "why": "«Wezmę ten tańszy» — czyli za 1700 zł." },
+        { "q": "Ile lat gwarancji ma laptop?", "options": ["Jeden rok.", "Dwa lata.", "Trzy lata.", "Bez gwarancji."], "answer": 1, "why": "«Tak, dwa lata gwarancji»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Bezpieczne zakupy w internecie", "textTitle": "Jak nie dać się oszukać online",
+      "text": "Zakupy przez internet są wygodne, ale niosą też ryzyko. Oszuści często zakładają fałszywe sklepy, które wyglądają profesjonalnie i oferują bardzo niskie ceny. Jeśli cena produktu jest dużo niższa niż wszędzie indziej, warto zachować ostrożność.\n\nPrzed zakupem dobrze jest sprawdzić opinie o sklepie w niezależnych źródłach, a nie tylko na jego własnej stronie. Ważne jest też, żeby strona miała bezpieczne połączenie, co widać po symbolu kłódki obok adresu strony. Płatności najlepiej robić kartą albo przez sprawdzony system płatności, ponieważ w razie problemu łatwiej jest odzyskać pieniądze.\n\nWarto też uważać na e-maile, które proszą o podanie hasła albo numeru karty pod pretekstem „potwierdzenia przesyłki”. Prawdziwe sklepy nigdy nie proszą o takie dane przez e-mail. Jeśli coś budzi wątpliwości, lepiej zadzwonić bezpośrednio do sklepu i zapytać.",
+      "questions": [
+        { "q": "Co powinno budzić podejrzenia przy zakupach online?", "options": ["Wysoka cena produktu.", "Cena dużo niższa niż wszędzie indziej.", "Duży wybór produktów.", "Możliwość płatności kartą."], "answer": 1, "why": "«Jeśli cena produktu jest dużo niższa niż wszędzie indziej, warto zachować ostrożność»." },
+        { "q": "Po czym poznać bezpieczne połączenie ze stroną?", "options": ["Po dużej liczbie zdjęć.", "Po symbolu kłódki obok adresu strony.", "Po niskiej cenie.", "Po liczbie opinii."], "answer": 1, "why": "«Co widać po symbolu kłódki obok adresu strony»." },
+        { "q": "Co robią prawdziwe sklepy w sprawie danych karty?", "options": ["Proszą o nie e-mailem.", "Nigdy nie proszą o nie e-mailem.", "Wymagają ich przy każdym kontakcie.", "Publikują je na stronie."], "answer": 1, "why": "«Prawdziwe sklepy nigdy nie proszą o takie dane przez e-mail»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Technologia: przypadki i czasowniki", "intro": "Керування дієслів і прийменники в темі технологій.",
+      "questions": [
+        { "q": "Ten telefon nie działa, bo się ___.", "options": ["zepsuł", "zepsuje", "zepsuwa", "zepsuty"], "answer": 0, "why": "Минулий час доконаного виду: «zepsuł się» (одноразова подія)." },
+        { "q": "Zamówiłam ten produkt ___ internet.", "options": ["przez", "z", "na", "od"], "answer": 0, "why": "**przez internet** — через інтернет (спосіб дії)." },
+        { "q": "Czy mogę zapłacić ___ kartą?", "options": ["", "z", "za", "na"], "answer": 0, "why": "**płacić kartą** — платити карткою, орудний без прийменника." },
+        { "q": "Proszę o zwrot pieniędzy ___ moje konto.", "options": ["na", "do", "w", "z"], "answer": 0, "why": "**na konto** — на рахунок: «zwrot na konto»." },
+        { "q": "Ten laptop jest szybszy ___ tamten.", "options": ["niż", "jak", "od czego", "że"], "answer": 0, "why": "Порівняння: **niż** (літературна норма) або «od + родовий»; «jak» тут розмовний варіант." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "aplikacja", "ua": "застосунок (додаток)", "ex": "Zainstalowałam nową aplikację do nauki polskiego." },
+    { "pl": "hasło", "ua": "пароль", "ex": "Zapomniałam hasła do konta." },
+    { "pl": "łącze internetowe", "ua": "інтернет-з’єднання", "ex": "Łącze internetowe działa bardzo wolno." },
+    { "pl": "przesyłka", "ua": "посилка, відправлення", "ex": "Przesyłka dotarła dwa dni później niż planowano." },
+    { "pl": "płatność online", "ua": "онлайн-оплата", "ex": "Wolę płatność online niż gotówkę." },
+    { "pl": "konto użytkownika", "ua": "обліковий запис користувача", "ex": "Załóż konto użytkownika, żeby śledzić zamówienie." },
+    { "pl": "aktualizacja", "ua": "оновлення (ПЗ)", "ex": "Telefon poprosił o aktualizację systemu." },
+    { "pl": "oszustwo internetowe", "ua": "інтернет-шахрайство", "ex": "Padła ofiarą oszustwa internetowego." }
+  ]
+}

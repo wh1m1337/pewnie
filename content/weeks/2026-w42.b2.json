@@ -1,0 +1,152 @@
+{
+  "intro": "B2: соціальні мережі, кібербезпека, штучний інтелект у повсякденному житті. Тема, де легко впасти в кальку з англійської — вчимося аргументувати по-польськи.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Uzależnienie od telefonu",
+      "scene": { "bg": "home", "caption": "Wieczór, salon", "desk": [4, 68, 26], "items": [["🧑‍🦱", 32, 48, 22], ["📱", 30, 58, 8], ["👨‍👩‍👧", 68, 50, 24], ["📺", 88, 30, 16], ["🕗", 50, 13, 12], ["🛋️", 12, 62, 16]] },
+      "prompt": "Opisz ilustrację i skomentuj sytuację. Powiedz, jak nadmierne korzystanie z telefonu wpływa na relacje rodzinne, i zaproponuj, jak można to zmienić.",
+      "promptUa": "Опишіть ілюстрацію й прокоментуйте ситуацію. Скажіть, як надмірне користування телефоном впливає на сімейні стосунки, і запропонуйте, як це можна змінити.",
+      "time": [90, 150], "prep": 90,
+      "points": ["Opis sytuacji", "Wpływ na relacje", "Możliwe przyczyny", "Twoja propozycja"],
+      "keywords": ["uzależnienie|uzależnien", "relacje|relacj", "ignorować|ignor", "rozmowa|rozmow", "równowaga|równowag", "nawyk|nawyk", "ograniczyć|ograniczyć", "wspólnie|wspóln"],
+      "phrases": [
+        { "pl": "Na pierwszym planie widać…, natomiast w tle…", "ua": "На передньому плані видно…, натомість на задньому…" },
+        { "pl": "Można odnieść wrażenie, że…", "ua": "Можна отримати враження, що…" },
+        { "pl": "Nadmierne korzystanie z telefonu prowadzi do…", "ua": "Надмірне користування телефоном призводить до…" },
+        { "pl": "Warto wprowadzić zasadę, że…", "ua": "Варто запровадити правило, що…" }
+      ],
+      "model": "Na pierwszym planie widać mężczyznę, który siedzi na kanapie i patrzy w telefon, natomiast w tle jego partnerka i dziecko próbują z nim porozmawiać. Można odnieść wrażenie, że mężczyzna zupełnie ich nie zauważa, mimo że telewizor jest włączony, a zegar pokazuje ósmą wieczorem, czyli czas, kiedy rodzina zwykle spędza czas razem. Nadmierne korzystanie z telefonu prowadzi do tego, że bliscy czują się ignorowani, a rozmowy stają się coraz krótsze i powierzchowne. Przyczyną może być stres w pracy, z którego trudno się wyłączyć, albo po prostu przyzwyczajenie do ciągłego sprawdzania powiadomień. Można wręcz mówić o pewnym uzależnieniu od telefonu, ponieważ ten nawyk sięgania po ekran przy każdej wolnej chwili staje się coraz trudniejszy do kontrolowania. Moim zdaniem warto wprowadzić zasadę, że telefony zostają w innym pokoju podczas wspólnego posiłku, żeby ograniczyć pokusę sprawdzania powiadomień. Taka mała zmiana mogłaby znacznie poprawić jakość relacji rodzinnych i przywrócić zdrową równowagę między światem online a czasem spędzanym z bliskimi.",
+      "tips": ["**Odnieść wrażenie, że…** — «отримати враження, що…»: елегантний спосіб висловити здогад на B2.", "Аналізуй причину (przyczyną może być…), а не лише описуй факт — це B2-інтерпретація.", "Конкретна пропозиція («telefony zostają w innym pokoju») цінніша за загальне «trzeba mniej korzystać z telefonu»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Sztuczna inteligencja w codziennym życiu",
+      "prompt": "Czy sztuczna inteligencja czyni nasze życie lepszym, czy raczej niesie zagrożenia? Przedstaw swoje zdanie, podaj przykłady i odnieś się do obaw przeciwników.",
+      "promptUa": "Чи робить штучний інтелект наше життя кращим, чи радше несе загрози? Викладіть свою думку, наведіть приклади й прокоментуйте побоювання опонентів.",
+      "time": [120, 180], "prep": 120,
+      "points": ["Twoje stanowisko", "Korzyści z przykładem", "Zagrożenia", "Odpowiedź na obawy przeciwników", "Wniosek"],
+      "keywords": ["sztuczna inteligencja|sztuczn", "algorytm|algorytm", "automatyzacja|automatyzacj", "prywatność|prywatnoś", "zagrożenie|zagroż", "korzyść|korzyś", "kontrola|kontrol", "odpowiedzialność|odpowiedzialnoś"],
+      "phrases": [
+        { "pl": "Sztuczna inteligencja niesie zarówno korzyści, jak i zagrożenia.", "ua": "Штучний інтелект несе як переваги, так і загрози." },
+        { "pl": "Z jednej strony…, z drugiej jednak…", "ua": "З одного боку…, з іншого, однак…" },
+        { "pl": "Przeciwnicy obawiają się, że…", "ua": "Опоненти побоюються, що…" },
+        { "pl": "Kluczowe jest to, kto ponosi odpowiedzialność za…", "ua": "Ключове те, хто несе відповідальність за…" }
+      ],
+      "model": "Uważam, że sztuczna inteligencja niesie zarówno korzyści, jak i zagrożenia, dlatego trudno o jednoznaczną ocenę. Z jednej strony algorytmy ułatwiają nam życie: tłumaczą teksty w kilka sekund, pomagają lekarzom analizować wyniki badań i automatyzują nudne, powtarzalne zadania w pracy. Sama korzystam z asystenta głosowego, który przypomina mi o spotkaniach i planuje trasę do pracy. Z drugiej strony jednak pojawiają się poważne zagrożenia, przede wszystkim związane z prywatnością, ponieważ firmy gromadzą ogromne ilości danych o naszych zachowaniach. Przeciwnicy obawiają się też, że automatyzacja zabierze ludziom pracę, zwłaszcza w zawodach opartych na powtarzalnych czynnościach. Rozumiem te obawy, ale sądzę, że historia pokazuje, że nowe technologie tworzą również nowe zawody, których jeszcze nie znamy. Kluczowe jest to, kto ponosi odpowiedzialność za decyzje podejmowane przez algorytmy, dlatego potrzebujemy jasnych przepisów. Podsumowując, sztuczna inteligencja może być wielką szansą, pod warunkiem że będzie odpowiednio kontrolowana.",
+      "tips": ["**Trudno o jednoznaczną ocenę** — «важко дати однозначну оцінку»: гарна фраза для збалансованої тези.", "Особистий приклад («korzystam z asystenta głosowego») робить абстрактну тему живою.", "**Pod warunkiem, że…** знову рятує — завершує тезу без категоричності."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Podejrzana wiadomość e-mail",
+      "prompt": "Dostałeś (Dostałaś) e-mail, który wygląda na próbę oszustwa (phishing) i dotyczy Twojego konta bankowego. Dzwonisz na infolinię banku, żeby to sprawdzić. Opisz sytuację i zapytaj o dalsze kroki.",
+      "promptUa": "Ви отримали листа, який виглядає як спроба шахрайства (фішинг), і стосується вашого банківського рахунку. Телефонуєте на гарячу лінію банку, щоб це перевірити. Опишіть ситуацію й запитайте про подальші кроки.",
+      "points": ["Opisz otrzymaną wiadomość", "Zapytaj, czy to prawdziwy e-mail od banku", "Powiedz, czy kliknąłeś w link", "Zapytaj o dalsze kroki bezpieczeństwa"],
+      "keywords": ["wiadomość|wiadomośc", "podejrzana|podejrzan", "link|link", "konto|kont", "hasło|hasł", "zablokować|zablokow", "phishing|phishing", "bezpieczeństwo|bezpieczeństw"],
+      "phrases": [
+        { "pl": "Dostałam podejrzaną wiadomość dotyczącą mojego konta.", "ua": "Я отримала підозрілого листа щодо свого рахунку." },
+        { "pl": "Czy to Państwo wysłali ten e-mail?", "ua": "Це ви надіслали цього листа?" },
+        { "pl": "Nie kliknęłam w żaden link.", "ua": "Я не клікала на жодне посилання." },
+        { "pl": "Co powinnam teraz zrobić?", "ua": "Що мені тепер робити?" }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, infolinia banku, w czym mogę pomóc?", "hint": "Opisz, jaką wiadomość dostałaś.", "model": "Dzień dobry. Dostałam wiadomość e-mail, która wygląda na podejrzaną i dotyczy podobno zablokowania mojego konta. Chciałabym sprawdzić, czy to Państwo ją wysłali." },
+        { "ex": "Nie, nasz bank nigdy nie wysyła takich wiadomości z prośbą o hasło. Czy kliknęła Pani w jakiś link?", "hint": "Powiedz, że nie kliknęłaś, i zapytaj, co dalej.", "model": "Nie, na szczęście nic nie kliknęłam ani nie podałam żadnych danych. Co w takim razie powinnam teraz zrobić z tą wiadomością?" },
+        { "ex": "Proszę ją usunąć i nie odpowiadać. Czy może Pani przesłać nam tę wiadomość, żebyśmy mogli zgłosić ją jako oszustwo?", "hint": "Zgódź się i zapytaj o bezpieczeństwo konta.", "model": "Oczywiście, prześlę ją Państwu. Czy moje konto jest bezpieczne, czy powinnam mimo wszystko zmienić hasło?" },
+        { "ex": "Konto jest bezpieczne, skoro nic Pani nie podała, ale zmiana hasła to zawsze dobry pomysł. Czy jest coś jeszcze?", "hint": "Podziękuj i zapytaj o dodatkowe zabezpieczenia.", "model": "To wszystko, dziękuję za pomoc. Czy mogę włączyć dodatkowe powiadomienia o logowaniu do konta, dla większego bezpieczeństwa?" }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Skoro** («оскільки/раз уже») — прийменниковий сполучник, гарний для B2: «konto jest bezpieczne, skoro nic Pani nie podała».", "Одразу уточни, чи клікав(ла) на посилання — це ключова деталь у будь-якій phishing-ситуації.", "Заверши питанням про профілактику («dodatkowe powiadomienia») — показує проактивність."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "neutral", "title": "Zgłoszenie awarii systemu",
+      "prompt": "W firmie od rana nie działa system do obsługi klientów. Napisz e-mail do działu IT: opisz problem, powiedz, kogo to dotyczy, i poproś o informację, kiedy system znów zacznie działać.",
+      "promptUa": "У фірмі з ранку не працює система обслуговування клієнтів. Напишіть листа до IT-відділу: опишіть проблему, скажіть, кого це стосується, і попросіть повідомити, коли система знову запрацює.",
+      "min": 60, "max": 90, "time": 15,
+      "points": [
+        { "text": "Opis awarii", "keys": ["nie działa", "system", "awari"] },
+        { "text": "Kogo dotyczy problem", "keys": ["całego zespołu", "cały zespół", "wszyscy", "dział obsługi"] },
+        { "text": "Prośba o informację o terminie", "keys": ["kiedy", "termin", "poinformować"] },
+        { "text": "Ton pilny, ale grzeczny", "keys": ["pilne", "proszę", "jak najszybciej"] }
+      ],
+      "phrases": [
+        { "pl": "Piszę w pilnej sprawie awarii systemu.", "ua": "Пишу в терміновій справі — про збій системи." },
+        { "pl": "Problem dotyczy całego zespołu obsługi klienta.", "ua": "Проблема стосується всієї команди обслуговування клієнтів." },
+        { "pl": "Proszę o informację, kiedy system zacznie ponownie działać.", "ua": "Прошу повідомити, коли система знову запрацює." }
+      ],
+      "model": "Dzień dobry, piszę w pilnej sprawie awarii systemu do obsługi klientów, która trwa od dzisiejszego poranka. Problem dotyczy całego zespołu obsługi klienta, więc nie możemy odpowiadać na zgłoszenia ani przeglądać historii zamówień. Proszę o informację, kiedy system zacznie ponownie działać, oraz o wskazówki, jak mamy postępować w międzyczasie. Z góry dziękuję za szybką pomoc.",
+      "tips": ["**W międzyczasie** — «тим часом»: корисне слово, коли просиш поради на час очікування.", "Терміновість передавай без панічного тону: «w pilnej sprawie» + ввічливе прохання."]
+    },
+    {
+      "id": "w2", "kind": "opinion", "register": "neutral", "title": "Media społecznościowe — łączą czy dzielą?",
+      "prompt": "Napisz artykuł na blog na temat: „Media społecznościowe — łączą ludzi czy raczej ich dzielą?”. Przedstaw argumenty za i przeciw, odnieś się do własnego doświadczenia i zaproponuj, jak korzystać z nich świadomie.",
+      "promptUa": "Напишіть статтю для блогу на тему: «Соціальні мережі — об’єднують людей чи радше роз’єднують?». Наведіть аргументи за і проти, зверніться до власного досвіду і запропонуйте, як користуватися ними свідомо.",
+      "min": 200, "max": 250, "time": 50,
+      "points": [
+        { "text": "Wyraźna teza", "keys": ["moim zdaniem", "uważam", "sądzę"] },
+        { "text": "Argumenty za (łączą)", "keys": ["kontakt", "łączą", "znajomych", "rodzin"] },
+        { "text": "Argumenty przeciw (dzielą)", "keys": ["porównywa", "samotność", "izoluj", "dziel"] },
+        { "text": "Własne doświadczenie", "keys": ["z własnego doświadczenia", "zauważyłam", "zauważyłem"] },
+        { "text": "Propozycja świadomego korzystania", "keys": ["proponuję", "warto", "ograniczyć"] }
+      ],
+      "phrases": [
+        { "pl": "Trudno wyobrazić sobie dzisiejszy świat bez mediów społecznościowych.", "ua": "Важко уявити сучасний світ без соціальних мереж." },
+        { "pl": "Z jednej strony pozwalają utrzymać kontakt z…", "ua": "З одного боку, дозволяють підтримувати контакт з…" },
+        { "pl": "Z drugiej strony sprzyjają porównywaniu się z innymi.", "ua": "З іншого боку, сприяють порівнянню себе з іншими." },
+        { "pl": "Dlatego warto świadomie ograniczać czas spędzany online.", "ua": "Тому варто свідомо обмежувати час, проведений онлайн." }
+      ],
+      "model": "Media społecznościowe — łączą czy dzielą?\n\nTrudno wyobrazić sobie dzisiejszy świat bez mediów społecznościowych. Moim zdaniem odpowiedź na pytanie, czy nas łączą, czy dzielą, brzmi: i jedno, i drugie, w zależności od tego, jak z nich korzystamy.\n\nZ jednej strony platformy takie jak komunikatory czy portale społecznościowe pozwalają utrzymać kontakt z rodziną za granicą i odnaleźć dawnych znajomych ze szkoły. Dzięki nim można też szybko poinformować bliskich o ważnych wydarzeniach i dzielić się radością na odległość.\n\nZ drugiej strony sprzyjają porównywaniu się z innymi, ponieważ widzimy głównie starannie wyselekcjonowane, idealne zdjęcia z życia znajomych. Prowadzi to do poczucia, że nasze własne życie jest mniej ciekawe, co paradoksalnie zwiększa samotność, mimo że jesteśmy „połączeni” z setkami osób. Z własnego doświadczenia zauważyłam, że po godzinie przeglądania mediów społecznościowych czuję się bardziej zmęczona niż zadowolona.\n\nDlatego proponuję kilka prostych zasad: wyłączanie powiadomień wieczorem, ograniczanie czasu na aplikacjach i regularne spotkania z ludźmi bez telefonu w ręku. Świadome korzystanie z technologii pozwala zachować to, co w niej najlepsze, bez negatywnych skutków.\n\nPodsumowując, media społecznościowe same w sobie nie są ani dobre, ani złe — wszystko zależy od tego, jak mądrze się z nich korzysta.",
+      "tips": ["**I jedno, i drugie, w zależności od…** — елегантна відповідь на дилему «або-або», типова для B2-есе.", "**Paradoksalnie** — «парадоксально»: слово, яке одразу показує стилістичний рівень.", "Три конкретні правила наприкінці цінніші за загальну пораду «варто менше сидіти в телефоні»."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Bezpieczeństwo dzieci w internecie", "voices": { "A": "m", "B": "f" }, "intro": "Радіоінтерв’ю з психологинею про безпеку дітей онлайн.",
+      "lines": [
+        { "who": "A", "t": "Naszym gościem jest psycholożka dziecięca, pani Marta Wilk. Pani Marto, w jakim wieku dzieci powinny dostać swój pierwszy telefon?" },
+        { "who": "B", "t": "Nie ma jednej dobrej odpowiedzi, bo to zależy od dojrzałości dziecka, a nie tylko od wieku. Ważniejsze niż sam wiek jest to, czy rodzice rozmawiają z dzieckiem o zasadach korzystania z internetu, zanim dadzą mu urządzenie." },
+        { "who": "A", "t": "Jakie zagrożenia są dla dzieci najbardziej realne?" },
+        { "who": "B", "t": "Przede wszystkim kontakt z nieznajomymi, którzy podają się za rówieśników, oraz dostęp do treści nieodpowiednich dla wieku. Coraz częstszym problemem jest też cyberprzemoc, czyli nękanie w internecie." },
+        { "who": "A", "t": "Co mogą zrobić rodzice, żeby chronić dzieci, nie łamiąc ich zaufania?" },
+        { "who": "B", "t": "Warto ustawić kontrolę rodzicielską, ale jeszcze ważniejsza jest otwarta rozmowa. Dziecko powinno wiedzieć, że może przyjść do rodzica, jeśli coś w internecie je zaniepokoi, zamiast bać się kary." }
+      ],
+      "questions": [
+        { "q": "Od czego bardziej zależy gotowość dziecka na pierwszy telefon?", "options": ["Wyłącznie od wieku.", "Od dojrzałości dziecka i rozmów o zasadach.", "Od ceny telefonu.", "Od tego, czy koledzy już go mają."], "answer": 1, "why": "«To zależy od dojrzałości dziecka… ważniejsze… czy rodzice rozmawiają z dzieckiem o zasadach»." },
+        { "q": "Jakie zagrożenie psycholożka wymienia jako coraz częstsze?", "options": ["Uzależnienie od gier.", "Cyberprzemoc.", "Wysokie rachunki za internet.", "Problemy ze wzrokiem."], "answer": 1, "why": "«Coraz częstszym problemem jest też cyberprzemoc»." },
+        { "q": "Co według niej jest ważniejsze niż kontrola rodzicielska?", "options": ["Zakaz korzystania z telefonu.", "Otwarta rozmowa z dzieckiem.", "Kupno droższego telefonu.", "Ograniczenie czasu do minimum."], "answer": 1, "why": "«Warto ustawić kontrolę rodzicielską, ale jeszcze ważniejsza jest otwarta rozmowa»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Praca zdalna a cyberbezpieczeństwo", "textTitle": "Dlaczego firmy boją się pracy z domu",
+      "text": "Praca zdalna dała pracownikom wygodę, ale jednocześnie stworzyła nowe wyzwania dla działów bezpieczeństwa informatycznego. Kiedy pracownik łączy się z firmową siecią z domowego routera, a nie z biurowej sieci chronionej przez specjalistów, ryzyko ataku znacznie rośnie.\n\nEksperci wskazują, że najczęstszym problemem są proste, powtarzane hasła oraz korzystanie z prywatnych urządzeń bez odpowiedniego zabezpieczenia. Cyberprzestępcy coraz częściej wysyłają fałszywe wiadomości, które podszywają się pod dział kadr albo bank, licząc na to, że zmęczony pracownik kliknie w link bez zastanowienia.\n\nFirmy odpowiadają na to szkoleniami z cyberbezpieczeństwa oraz wprowadzeniem dwuetapowej weryfikacji logowania, która wymaga dodatkowego kodu poza hasłem. Specjaliści podkreślają jednak, że najważniejszym elementem ochrony pozostaje zdrowy rozsądek: nieklikanie w podejrzane linki i zgłaszanie wątpliwości działowi IT, zamiast próbowania rozwiązać problem samodzielnie.",
+      "questions": [
+        { "q": "Dlaczego praca zdalna zwiększa ryzyko ataków?", "options": ["Bo pracownicy pracują wolniej.", "Bo domowa sieć jest zwykle mniej chroniona niż biurowa.", "Bo firmy nie mają działów IT.", "Bo pracownicy nie mają komputerów."], "answer": 1, "why": "«Kiedy pracownik łączy się z firmową siecią z domowego routera… ryzyko ataku znacznie rośnie»." },
+        { "q": "Na co liczą cyberprzestępcy, podszywając się pod dział kadr?", "options": ["Że pracownik zadzwoni do nich.", "Że zmęczony pracownik kliknie w link bez zastanowienia.", "Że firma zmieni hasła.", "Że pracownik zgłosi to do IT."], "answer": 1, "why": "«Licząc na to, że zmęczony pracownik kliknie w link bez zastanowienia»." },
+        { "q": "Co eksperci uważają za najważniejszy element ochrony?", "options": ["Drogie oprogramowanie antywirusowe.", "Zdrowy rozsądek pracowników.", "Zakaz pracy z domu.", "Codzienną zmianę hasła."], "answer": 1, "why": "«Najważniejszym elementem ochrony pozostaje zdrowy rozsądek»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Technologia: składnia B2", "intro": "Складні речення, дієприкметники й сполучники в темі технологій та безпеки.",
+      "questions": [
+        { "q": "Wiadomość, ___ dostałam wczoraj, okazała się fałszywa.", "options": ["którą", "która", "której", "którym"], "answer": 0, "why": "«Dostałam (co?) wiadomość» → знахідний жіночого роду: **którą**." },
+        { "q": "___ klikać w podejrzane linki, zawsze sprawdzaj adres nadawcy.", "options": ["Zanim zaczniesz", "Zanim zacząć", "Zaczynając", "Zaczniesz"], "answer": 0, "why": "**zanim + майбутній доконаний**: «zanim zaczniesz»." },
+        { "q": "System ___ awarii już od rana.", "options": ["doznał", "doznaje", "dozna", "doznając"], "answer": 0, "why": "**doznać awarii** — зазнати збою; минулий доконаний час." },
+        { "q": "Hasło powinno być zmieniane regularnie, ___ zwiększyć bezpieczeństwo konta.", "options": ["aby", "bo", "więc", "lecz"], "answer": 0, "why": "**aby** («щоб») — мета: «zmieniane, aby zwiększyć»." },
+        { "q": "Dane osobowe są chronione ___ specjalnym przepisom.", "options": ["dzięki", "przez", "z", "do"], "answer": 0, "why": "**dzięki + давальний** — позитивна причина: «dzięki przepisom»." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "cyberbezpieczeństwo", "ua": "кібербезпека", "ex": "Firma zainwestowała w cyberbezpieczeństwo." },
+    { "pl": "wyciek danych", "ua": "витік даних", "ex": "Doszło do wycieku danych klientów." },
+    { "pl": "podszywać się pod kogoś", "ua": "видавати себе за когось", "ex": "Oszust podszywał się pod pracownika banku." },
+    { "pl": "weryfikacja dwuetapowa", "ua": "двоетапна перевірка", "ex": "Włącz weryfikację dwuetapową dla bezpieczeństwa." },
+    { "pl": "sztuczna inteligencja", "ua": "штучний інтелект", "ex": "Sztuczna inteligencja zmienia rynek pracy." },
+    { "pl": "algorytm", "ua": "алгоритм", "ex": "Algorytm dobiera treści na podstawie naszych zainteresowań." },
+    { "pl": "prywatność danych", "ua": "конфіденційність даних", "ex": "Dbaj o prywatność danych w sieci." },
+    { "pl": "nękanie internetowe", "ua": "кібербулінг, переслідування онлайн", "ex": "Nękanie internetowe to poważny problem wśród nastolatków." }
+  ]
+}

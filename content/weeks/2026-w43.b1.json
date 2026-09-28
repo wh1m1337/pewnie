@@ -1,0 +1,147 @@
+{
+  "intro": "Довкілля: сортування сміття, транспорт, звички вдома. Тема практична для життя в Польщі — з першого тижня в новій квартирі доведеться розібратися, який кошик для чого.",
+  "speaking": [
+    {
+      "id": "s1", "type": "describe", "title": "Segregacja śmieci na osiedlu",
+      "scene": { "bg": "street", "caption": "Osiedle, godzina 17:00", "desk": [6, 66, 40], "items": [["🧍‍♀️", 30, 50, 22], ["🧑", 66, 50, 22], ["🗑️", 14, 60, 12], ["🗑️", 26, 60, 12], ["🗑️", 38, 60, 12], ["🚮", 84, 58, 11], ["🕔", 50, 13, 12]] },
+      "prompt": "Opisz ilustrację. Powiedz, gdzie są te osoby, co robią i jak się czują. Powiedz też, co według Ciebie stanie się później.",
+      "promptUa": "Опишіть ілюстрацію. Скажіть, де ці люди, що вони роблять і що відчувають. Скажіть також, що, на вашу думку, станеться пізніше.",
+      "time": [60, 120], "prep": 60,
+      "points": ["Gdzie jesteśmy i kto tu jest?", "Co robią te osoby?", "Jak się czują?", "Co stanie się później?"],
+      "keywords": ["śmieci|śmieci", "segregacja|segregacj", "pojemnik|pojemnik", "plastik|plastik", "papier|papier", "szkło|szkł", "sąsiad|sąsiad", "prawdopodobnie|prawdopodob"],
+      "phrases": [
+        { "pl": "Na ilustracji widzę pojemniki na śmieci.", "ua": "На ілюстрації я бачу контейнери для сміття." },
+        { "pl": "Kobieta segreguje odpady.", "ua": "Жінка сортує відходи." },
+        { "pl": "Sąsiad wygląda na zaskoczonego.", "ua": "Сусід виглядає здивованим." },
+        { "pl": "Prawdopodobnie tłumaczy mu zasady segregacji.", "ua": "Ймовірно, пояснює йому правила сортування." }
+      ],
+      "model": "Na ilustracji widzę osiedle, na którym stoją kolorowe pojemniki na śmieci. Po lewej stronie kobieta trzyma torbę z plastikowymi butelkami i wrzuca je do żółtego pojemnika, a po prawej stoi sąsiad z workiem, który wygląda na zaskoczonego i chyba nie wie, do którego pojemnika wrzucić odpady. Widać pojemniki na plastik, papier i szkło, a zegar pokazuje siedemnastą. Kobieta jest spokojna i cierpliwa, natomiast sąsiad wygląda na trochę zagubionego. Myślę, że kobieta zaraz wytłumaczy mu zasady segregacji, bo widać, że dopiero się wprowadził. Moim zdaniem po tej rozmowie sąsiad będzie segregował śmieci prawidłowo.",
+      "tips": ["Колір кошиків має значення: **żółty — plastik, niebieski — papier, zielony — szkło**. Використай кольори в описі.", "**Dopiero się wprowadził** — «щойно переїхав»: пояснює, чому хтось не знає правил.", "Прогноз наприкінці («będzie segregował prawidłowo») закриває пункт «co dalej»."]
+    },
+    {
+      "id": "s2", "type": "monologue", "title": "Co robię dla środowiska",
+      "prompt": "Opowiedz, co robisz na co dzień, żeby dbać o środowisko. Powiedz, co jest dla Ciebie łatwe, a co trudne, i czy chciałbyś (chciałabyś) coś zmienić.",
+      "promptUa": "Розкажіть, що ви робите щодня, щоб дбати про довкілля. Скажіть, що для вас легко, а що важко, і чи хотіли б ви щось змінити.",
+      "time": [90, 150], "prep": 60,
+      "points": ["Co robisz dla środowiska?", "Co jest łatwe, a co trudne?", "Dlaczego to robisz?", "Co chciałbyś zmienić?"],
+      "keywords": ["segregować|segreguj", "oszczędzać|oszczędz", "plastik|plastik", "rower|rower", "wielorazowy|wielorazow", "prąd|prąd", "przyzwyczajenie|przyzwyczajen", "planeta|planet"],
+      "phrases": [
+        { "pl": "Na co dzień staram się…", "ua": "Щодня я намагаюся…" },
+        { "pl": "Łatwe jest dla mnie…, ale trudne…", "ua": "Легко для мене…, а важко…" },
+        { "pl": "Robię to, ponieważ…", "ua": "Роблю це, тому що…" },
+        { "pl": "Chciałabym zacząć…", "ua": "Хотіла б почати…" }
+      ],
+      "model": "Na co dzień staram się segregować śmieci i oszczędzać wodę, kiedy myję naczynia. Zamiast plastikowych toreb noszę ze sobą wielorazową torbę na zakupy, a do pracy jeżdżę rowerem, kiedy pogoda na to pozwala. Łatwe jest dla mnie gaszenie światła, kiedy wychodzę z pokoju, ale trudniej jest mi zrezygnować z jednorazowych kubków na kawę, bo często śpieszę się rano. Robię to wszystko, ponieważ myślę o przyszłości moich dzieci i chcę zostawić im czystszą planetę. Chciałabym zacząć kupować więcej produktów bez plastikowego opakowania, ale w moim mieście nie zawsze jest to łatwe. Uważam, że małe codzienne nawyki mają znaczenie, nawet jeśli jedna osoba nie zmieni wszystkiego.",
+      "tips": ["Контраст **łatwe / trudne** дає природну структуру для теми звичок.", "**Kiedy pogoda na to pozwala** — «коли дозволяє погода»: реалістична деталь, а не ідеальна відповідь.", "Заверши думкою про сенс («małe nawyki mają znaczenie») — гарний філософський фінал."]
+    },
+    {
+      "id": "s3", "type": "dialogue", "title": "Rozmowa ze spółdzielnią o śmieciach",
+      "prompt": "Dzwonisz do spółdzielni mieszkaniowej, bo nie wiesz, jak segregować niektóre odpady, i chcesz zgłosić, że pojemniki są zawsze pełne. Zapytaj o zasady i zgłoś problem.",
+      "promptUa": "Ви телефонуєте до житлового кооперативу, бо не знаєте, як сортувати деякі відходи, і хочете повідомити, що контейнери завжди переповнені. Запитайте про правила й повідомте про проблему.",
+      "points": ["Zapytaj o zasady segregacji", "Zapytaj o konkretny odpad (np. baterie)", "Zgłoś, że pojemniki są pełne", "Zapytaj, kiedy odbierają śmieci"],
+      "keywords": ["segregacja|segregacj", "pojemnik|pojemnik", "odpady|odpad", "baterie|bateri", "pełny|pełn", "odbiór|odbio"],
+      "phrases": [
+        { "pl": "Chciałabym zapytać o zasady segregacji.", "ua": "Хотіла б запитати про правила сортування." },
+        { "pl": "Gdzie mam wyrzucać zużyte baterie?", "ua": "Куди мені викидати використані батарейки?" },
+        { "pl": "Pojemniki są zawsze pełne.", "ua": "Контейнери завжди переповнені." },
+        { "pl": "Kiedy odbierają Państwo śmieci?", "ua": "Коли ви забираєте сміття?" }
+      ],
+      "turns": [
+        { "ex": "Dzień dobry, spółdzielnia mieszkaniowa, słucham.", "hint": "Powiedz, że chcesz zapytać o segregację.", "model": "Dzień dobry, chciałabym zapytać o zasady segregacji odpadów na naszym osiedlu." },
+        { "ex": "Oczywiście, mamy cztery pojemniki: na plastik, papier, szkło i odpady zmieszane. Czego dotyczy pytanie?", "hint": "Zapytaj o konkretny odpad, który nie pasuje do tych kategorii.", "model": "A gdzie mam wyrzucać zużyte baterie? Nie pasują chyba do żadnego z tych pojemników." },
+        { "ex": "Baterie trzeba oddać do specjalnego punktu, na przykład w sklepie ze sprzętem elektronicznym. Czy jest coś jeszcze?", "hint": "Zgłoś problem z przepełnionymi pojemnikami.", "model": "Tak, chciałabym też zgłosić, że pojemniki na plastik są zawsze pełne już we wtorek, chociaż odbiór jest dopiero w piątek." },
+        { "ex": "Dziękuję za informację, przekażę to firmie odbierającej śmieci. Czy mogę jeszcze w czymś pomóc?", "hint": "Podziękuj i zapytaj o harmonogram odbioru.", "model": "To wszystko, dziękuję. Czy mogłaby Pani przesłać mi pełny harmonogram odbioru śmieci na ten miesiąc?" }
+      ],
+      "model": "Zobacz pełny dialog po zakończeniu rozmowy.",
+      "tips": ["**Nie pasują chyba do żadnego z tych pojemników** — гарний спосіб сформулювати нетипове питання.", "Скарги на побутові проблеми в Польщі звичайно вирішує **spółdzielnia** або **zarządca** — запам'ятай це слово.", "Заверши конкретним проханням (harmonogram) — розмова доведена до практичного результату."]
+    }
+  ],
+  "writing": [
+    {
+      "id": "w1", "kind": "message", "register": "informal", "title": "Prośba o pożyczenie roweru",
+      "prompt": "Chcesz zacząć jeździć do pracy rowerem zamiast samochodem, ale swój masz w naprawie. Napisz wiadomość do sąsiada: wyjaśnij sytuację i poproś o pożyczenie roweru na tydzień.",
+      "promptUa": "Ви хочете почати їздити на роботу велосипедом замість авто, але ваш у ремонті. Напишіть повідомлення сусідові: поясніть ситуацію й попросіть позичити велосипед на тиждень.",
+      "min": 25, "max": 50, "time": 10,
+      "points": [
+        { "text": "Powód prośby", "keys": ["mój rower", "w naprawie", "chcę jeździć"] },
+        { "text": "Prośba o pożyczenie", "keys": ["czy mógłbyś", "czy mogłabym pożyczyć", "pożyczyć rower"] },
+        { "text": "Na jak długo", "keys": ["tydzień", "kilka dni"] }
+      ],
+      "phrases": [
+        { "pl": "Mój rower jest teraz w naprawie.", "ua": "Мій велосипед зараз у ремонті." },
+        { "pl": "Czy mógłbyś pożyczyć mi swój na tydzień?", "ua": "Чи не міг би ти позичити мені свій на тиждень?" },
+        { "pl": "Oczywiście oddam go w dobrym stanie.", "ua": "Звісно, поверну його в хорошому стані." }
+      ],
+      "model": "Cześć Michał! Chcę zacząć jeździć do pracy rowerem zamiast samochodem, ale mój jest teraz w naprawie. Czy mógłbyś pożyczyć mi swój na tydzień? Oczywiście oddam go w dobrym stanie i mogę też zostawić Ci coś w zamian. Daj znać, co myślisz. Pozdrawiam, Ola",
+      "tips": ["**Zamiast samochodem** — «замість авто»: орудний без прийменника після «zamiast».", "Пропозиція компенсації («coś w zamian») робить прохання ввічливішим."]
+    },
+    {
+      "id": "w2", "kind": "letter-formal", "register": "formal", "title": "List do urzędu miasta o koszach na śmieci",
+      "prompt": "W Twojej okolicy brakuje koszy na śmieci, więc ludzie zostawiają odpadki na ulicy i w parku. Napisz e-mail do urzędu miasta. Opisz problem, wyjaśnij, dlaczego jest ważny, i zaproponuj rozwiązanie.",
+      "promptUa": "У вашому районі бракує сміттєвих урн, тому люди залишають сміття на вулиці й у парку. Напишіть листа до міської ради: опишіть проблему, поясніть, чому вона важлива, і запропонуйте рішення.",
+      "min": 150, "max": 175, "time": 35,
+      "points": [
+        { "text": "Opis problemu", "keys": ["brakuje", "koszy", "śmieci na ulicy"] },
+        { "text": "Dlaczego to ważne", "keys": ["zdrowie", "wygląd", "środowisk", "zanieczyszcz"] },
+        { "text": "Propozycja rozwiązania", "keys": ["proponuję", "ustawić", "dodatkowe kosze"] },
+        { "text": "Prośba o odpowiedź", "keys": ["proszę o", "odpowiedź", "będę wdzięczna"] }
+      ],
+      "phrases": [
+        { "pl": "Piszę w sprawie braku koszy na śmieci w okolicy…", "ua": "Пишу щодо браку сміттєвих урн у районі…" },
+        { "pl": "Problem ten wpływa na wygląd i czystość okolicy.", "ua": "Ця проблема впливає на вигляд і чистоту району." },
+        { "pl": "Proponuję ustawienie dodatkowych koszy przy…", "ua": "Пропоную встановити додаткові урни біля…" },
+        { "pl": "Będę wdzięczna za odpowiedź w tej sprawie.", "ua": "Буду вдячна за відповідь у цій справі." }
+      ],
+      "model": "Szanowni Państwo,\n\npiszę w sprawie braku koszy na śmieci przy ulicy Parkowej oraz w pobliskim parku. Od kilku miesięcy zauważam, że mieszkańcy i turyści zostawiają odpadki na ławkach i trawnikach, ponieważ najbliższy kosz znajduje się kilkaset metrów dalej.\n\nProblem ten wpływa nie tylko na wygląd okolicy, ale też na zdrowie mieszkańców i zwierząt, które mogą zjeść pozostawione resztki jedzenia. Ponadto rozrzucone śmieci zniechęcają ludzi do spędzania czasu w parku, mimo że jest to jedno z niewielu zielonych miejsc w naszej dzielnicy.\n\nProponuję ustawienie co najmniej trzech dodatkowych koszy na śmieci: przy wejściu do parku, obok placu zabaw oraz przy przystanku autobusowym. Warto również rozważyć osobny pojemnik na plastik, ponieważ wiele osób przynosi do parku napoje w butelkach.\n\nBędę wdzięczna za rozważenie mojej propozycji oraz za informację, czy i kiedy sytuacja mogłaby się poprawić.\n\nZ poważaniem\nAnna Kowalenko",
+      "tips": ["Скарга-пропозиція громадянина: **проблема → чому важлива → конкретне рішення (кількість, місце) → прохання про відповідь**.", "Вказуй точну кількість і місце («co najmniej trzech… przy wejściu») — конкретика легше сприймається установою.", "**Zniechęcają ludzi do + інфінітив** — «відбивають бажання…»: корисна конструкція для аргументації."]
+    }
+  ],
+  "listening": [
+    {
+      "id": "l1", "title": "Ogłoszenie o Dniu Sprzątania", "intro": "Прослухай оголошення про суботник і дай відповіді.",
+      "lines": [
+        { "t": "Szanowni Mieszkańcy, w najbliższą sobotę organizujemy Dzień Sprzątania Osiedla. Zbiórka odbędzie się o dziesiątej rano przy placu zabaw." },
+        { "t": "Prosimy o zabranie własnych rękawic, jeśli je Państwo mają. Worki na śmieci oraz chwytaki zapewni spółdzielnia. Akcja potrwa do dwunastej." },
+        { "t": "Po sprzątaniu zapraszamy wszystkich na wspólny piknik przy altanie. Zachęcamy do zapisów u administratora do czwartku, żebyśmy wiedzieli, ile osób weźmie udział." }
+      ],
+      "questions": [
+        { "q": "O której godzinie jest zbiórka?", "options": ["O ósmej rano.", "O dziesiątej rano.", "O dwunastej w południe.", "O piątej po południu."], "answer": 1, "why": "«Zbiórka odbędzie się o dziesiątej rano»." },
+        { "q": "Co zapewnia spółdzielnia?", "options": ["Rękawice i buty.", "Worki na śmieci i chwytaki.", "Jedzenie na piknik.", "Transport."], "answer": 1, "why": "«Worki na śmieci oraz chwytaki zapewni spółdzielnia»." },
+        { "q": "Do kiedy trzeba się zapisać?", "options": ["Do środy.", "Do czwartku.", "Do soboty.", "Zapisy nie są potrzebne."], "answer": 1, "why": "«Zachęcamy do zapisów u administratora do czwartku»." }
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "id": "r1", "title": "Jak zmniejszyć ilość odpadów w domu", "textTitle": "Mniej śmieci — prostsze niż myślisz",
+      "text": "Przeciętna rodzina wyrzuca rocznie setki kilogramów śmieci, ale wiele z nich można łatwo ograniczyć. Pierwszym krokiem jest zmiana nawyków zakupowych: warto kupować produkty na wagę zamiast pakowanych w plastik i nosić ze sobą własne torby wielokrotnego użytku.\n\nDrugim ważnym krokiem jest planowanie posiłków. Kiedy kupujemy jedzenie bez planu, część z niego często się psuje i trafia do kosza. Wystarczy zrobić listę zakupów na cały tydzień, żeby znacznie zmniejszyć ilość wyrzucanego jedzenia.\n\nWarto też zwrócić uwagę na przedmioty jednorazowego użytku, takie jak plastikowe sztućce czy kubki. Zastąpienie ich wersjami wielorazowymi to mała zmiana, która w skali roku robi dużą różnicę. Na koniec, zanim coś wyrzucimy, warto zastanowić się, czy nie da się tego naprawić albo oddać komuś innemu, zamiast kupować nowe.",
+      "questions": [
+        { "q": "Co autor radzi zmienić w nawykach zakupowych?", "options": ["Kupować więcej produktów w plastiku.", "Kupować produkty na wagę i nosić własne torby.", "Robić zakupy rzadziej niż raz w miesiącu.", "Kupować tylko drogie produkty."], "answer": 1, "why": "«Warto kupować produkty na wagę… i nosić ze sobą własne torby»." },
+        { "q": "Dlaczego warto planować posiłki?", "options": ["Żeby jeść więcej.", "Żeby zmniejszyć ilość wyrzucanego jedzenia.", "Żeby szybciej robić zakupy.", "Żeby oszczędzać czas w kuchni."], "answer": 1, "why": "«Wystarczy zrobić listę zakupów… żeby znacznie zmniejszyć ilość wyrzucanego jedzenia»." },
+        { "q": "Co warto zrobić, zanim coś wyrzucimy?", "options": ["Od razu kupić nowe.", "Zastanowić się, czy nie da się tego naprawić albo oddać.", "Sprzedać to sąsiadowi.", "Wyrzucić do najbliższego kosza."], "answer": 1, "why": "«Warto zastanowić się, czy nie da się tego naprawić albo oddać komuś innemu»." }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1", "title": "Środowisko: przypadki i tryby", "intro": "Прийменники й форми дієслів у темі екології.",
+      "questions": [
+        { "q": "Segreguję śmieci, żeby dbać ___ środowisko.", "options": ["o", "na", "dla", "przy"], "answer": 0, "why": "**dbać o + знахідний**: «dbać o środowisko»." },
+        { "q": "Zamiast plastikowej torby noszę ___ torbę.", "options": ["wielorazową", "wielorazowej", "wielorazowa", "wielorazową torbę"], "answer": 0, "why": "Знахідний узгоджений з «torbę» (жін. рід): «wielorazową torbę»." },
+        { "q": "___ segregacji, wyrzucamy mniej śmieci na wysypisko.", "options": ["Dzięki", "Z powodu", "Pomimo", "Wbrew"], "answer": 0, "why": "**dzięki** — позитивна причина: «dzięki segregacji»." },
+        { "q": "Baterie należy oddać do punktu zbiórki, a nie ___ do kosza.", "options": ["wyrzucać", "wyrzucić", "wyrzucając", "wyrzucone"], "answer": 0, "why": "Паралельна структура з інфінітивом: «oddać…, a nie wyrzucać»." },
+        { "q": "Gdyby każdy segregował śmieci, planeta ___ czystsza.", "options": ["byłaby", "jest", "będzie", "była"], "answer": 0, "why": "Умовний спосіб: «gdyby…, byłaby» (нереальна умова)." }
+      ]
+    }
+  ],
+  "vocab": [
+    { "pl": "segregacja odpadów", "ua": "сортування відходів", "ex": "Segregacja odpadów jest obowiązkowa w Polsce." },
+    { "pl": "pojemnik na śmieci", "ua": "контейнер для сміття", "ex": "Pojemnik na plastik jest żółty." },
+    { "pl": "wielorazowego użytku", "ua": "багаторазового використання", "ex": "Kupiłam butelkę wielorazowego użytku." },
+    { "pl": "zanieczyszczenie", "ua": "забруднення", "ex": "Zanieczyszczenie powietrza jest problemem zimą." },
+    { "pl": "odnawialne źródła energii", "ua": "відновлювані джерела енергії", "ex": "Panele słoneczne to odnawialne źródło energii." },
+    { "pl": "kompostownik", "ua": "компостер", "ex": "Mamy kompostownik na resztki jedzenia." },
+    { "pl": "wysypisko śmieci", "ua": "звалище", "ex": "Wysypiska śmieci zajmują coraz więcej miejsca." },
+    { "pl": "ślad węglowy", "ua": "вуглецевий слід", "ex": "Latanie samolotem zwiększa nasz ślad węglowy." }
+  ]
+}
